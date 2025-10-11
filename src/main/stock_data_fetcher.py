@@ -23,8 +23,6 @@ class StockDataFetcher:
             market_cap = row["Market Cap"]
             ticker_symbol = f"{symbol}.NS"
 
-            print(f"Fetching data for {ticker_symbol}...")
-
             try:
                 data = yf.download(
                     ticker_symbol,
