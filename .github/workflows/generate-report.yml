@@ -1,0 +1,41 @@
+name: Generate MACD Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "32 9 * * *"   # daily 3:02 PM IST
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install pandas numpy
+
+    - name: Run MACD script
+      run: |
+        rm -rf output
+        mkdir -p output
+        sh scripts/generate_macd_report.sh
+
+    - name: Prepare GitHub Pages
+      run: |
+        mkdir public
+        cp output/macd_report.csv public/
+        cp web/index.html public/
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
