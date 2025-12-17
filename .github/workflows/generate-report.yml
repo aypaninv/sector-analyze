@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install pandas numpy
+        pip install pandas numpy yfinance
 
     - name: Run MACD script
       run: |
