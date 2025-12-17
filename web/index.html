@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>NSE MACD Strength Dashboard</title>
+
+  <!-- DataTables -->
+  <link rel="stylesheet"
+        href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    .bullish {
+      color: #0a8f08;
+      font-weight: bold;
+    }
+
+    .bearish {
+      color: #c62828;
+      font-weight: bold;
+    }
+
+    .neutral {
+      color: #555;
+    }
+
+    .small {
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>NSE MACD Strength Report</h1>
+<p class="small">4H / Daily / Weekly MACD crossover strength</p>
+
+<table id="macdTable" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Folio</th>
+      <th>Sector</th>
+      <th>Market Cap</th>
+      <th>Close</th>
+      <th>Down From High (%)</th>
+      <th>4H Strength</th>
+      <th>Daily Strength</th>
+      <th>Weekly Strength</th>
+    </tr>
+  </thead>
+</table>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<script>
+function strengthClass(value) {
+  if (value > 0) return "bullish";
+  if (value < 0) return "bearish";
+  return "neutral";
+}
+
+Papa.parse("macd_report.csv", {
+  download: true,
+  header: true,
+  dynamicTyping: true,
+  complete: function (results) {
+
+    $('#macdTable').DataTable({
+      data: results.data,
+      pageLength: 25,
+      order: [[8, "desc"]],   // Weekly strength first
+
+      columns: [
+        { data: "Symbol" },
+        { data: "Folio" },
+        { data: "Sector" },
+        { data: "MarketCap" },
+        { data: "Close" },
+
+        {
+          data: "DownFromHigh_%",
+          render: function (d) {
+            return `<span class="${d < -30 ? 'bearish' : 'neutral'}">${d}%</span>`;
+          }
+        },
+
+        {
+          data: "cross_4h",
+          render: function (d) {
+            return `<span class="${strengthClass(d)}">${d}</span>`;
+          }
+        },
+
+        {
+          data: "cross_daily",
+          render: function (d) {
+            return `<span class="${strengthClass(d)}">${d}</span>`;
+          }
+        },
+
+        {
+          data: "cross_weekly",
+          render: function (d) {
+            return `<span class="${strengthClass(d)}">${d}</span>`;
+          }
+        }
+      ]
+    });
+  }
+});
+</script>
+
+</body>
+</html>
