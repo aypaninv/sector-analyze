@@ -4,9 +4,11 @@ import os
 # ---------------- CONFIG ----------------
 DAILY_INPUT = "output/yfinance_daily_output.csv"
 WEEKLY_INPUT = "output/yfinance_weekly_output.csv"
+FOURHOURS_INPUT = "output/yfinance_4hours_output.csv"
 
 DAILY_OUTPUT = "output/macd_daily_output.csv"
 WEEKLY_OUTPUT = "output/macd_weekly_output.csv"
+FOURHOURS_OUTPUT = "output/macd_4hours_output.csv"
 
 FAST_PERIOD = 12
 SLOW_PERIOD = 26
@@ -35,11 +37,10 @@ def calculate_macd(df: pd.DataFrame) -> pd.DataFrame:
 
         return g
 
-    # groupby apply (future-safe)
     df = (
         df.groupby("Symbol", group_keys=True)
           .apply(macd_for_symbol, include_groups=False)
-          .reset_index(level=0)   # 🔑 restore Symbol column
+          .reset_index(level=0)
     )
 
     return df
@@ -51,7 +52,7 @@ def process_file(input_path: str, output_path: str):
 
     df = pd.read_csv(input_path)
 
-    required_cols = {"Symbol", "Sector", "MarketCap", "Date", "Close"}
+    required_cols = {"Symbol", "Folio", "Sector", "MarketCap", "Date", "Close"}
     if not required_cols.issubset(df.columns):
         raise ValueError(f"Missing required columns in {input_path}")
 
@@ -61,6 +62,7 @@ def process_file(input_path: str, output_path: str):
 
     output_cols = [
         "Symbol",
+        "Folio",
         "Sector",
         "MarketCap",
         "Date",
@@ -83,3 +85,6 @@ if __name__ == "__main__":
 
     # Weekly MACD
     process_file(WEEKLY_INPUT, WEEKLY_OUTPUT)
+
+    # 4 Hours MACD
+    process_file(FOURHOURS_INPUT, FOURHOURS_OUTPUT)
