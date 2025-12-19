@@ -475,6 +475,8 @@ FMGOETZE,NSE,Auto - Replacement,Small Cap
 FOCUS,NSE,Auto - OEM Suppliers,Small Cap
 FOODSIN,NSE,Consumption - FMCG,Small Cap
 FORCEMOT,Watchlist,Auto - PV/Trucks,Small Cap
+TMPV,Watchlist,Auto - PV/Trucks,Large Cap
+TMCV,Watchlist,Auto - PV/Trucks,Large Cap
 FORTIS,NSE,Healthcare - Hospitals,Mid Cap
 FOSECOIND,NSE,Chemicals - Specialty,Small Cap
 FSL,NSE,Tech - BPO,Small Cap
@@ -1353,7 +1355,7 @@ SKMEGGPROD,NSE,Consumption - Misc,Small Cap
 SKYGOLD,NSE,Consumption - Jewelry,Small Cap
 SMARTLINK,NSE,IT - Equipments,Small Cap
 SMCGLOBAL,NSE,Financials - Broking,Small Cap
-SMLISUZU,NSE,Auto - CV,Small Cap
+SMLMAH,NSE,Auto - CV,Small Cap
 SMLT,NSE,Metals - Iron & Steel,Small Cap
 SMSLIFE,NSE,Healthcare - Pharma,Small Cap
 SMSPHARMA,NSE,Healthcare - Pharma,Small Cap
@@ -1408,7 +1410,6 @@ SUMICHEM,NSE,Agrichem - Protection,Mid Cap
 SUMIT,NSE,Real Estate,Small Cap
 SUMMITSEC,NSE,Financials - NBFC,Small Cap
 SUNDARMFIN,NSE,Financials - NBFC,Mid Cap
-SUNDARMHLD,NSE,Financials - Misc,Small Cap
 SUNDRMBRAK,NSE,Auto - Replacement,Small Cap
 SUNDRMFAST,NSE,Auto - OEM Suppliers,Mid Cap
 SUNDROP,NSE,Agri - Edible Oil,Small Cap

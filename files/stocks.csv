@@ -30,7 +30,6 @@ ACE,NSE,Auto - CV,Small Cap
 ACEINTEG,NSE,Human Resources,Small Cap
 ACI,NSE,Chemicals - Bulk,Small Cap
 ACL,NSE,Infra - Cement,Small Cap
-ACLGATI,NSE,Transport - Logistics,Small Cap
 ACUTAAS,Core,Healthcare - Pharma,Small Cap
 ADANIENSOL,NSE,Power - Misc,Large Cap
 ADANIENT,NSE,Metals - Misc,Large Cap
@@ -374,7 +373,6 @@ DEVYANI,NSE,Leisure - Restaurants,Mid Cap
 DGCONTENT,NSE,Media - Misc,Small Cap
 DHAMPURSUG,NSE,Agri - Sugar,Small Cap
 DHANBANK,NSE,Financials - Private Bank,Small Cap
-DHANI,NSE,Financials - Misc,Small Cap
 DHANUKA,NSE,Agrichem - Protection,Small Cap
 DHARMAJ,NSE,Agrichem - Protection,Small Cap
 DHRUV,NSE,IT - Software/Consulting,Small Cap
@@ -477,6 +475,8 @@ FMGOETZE,NSE,Auto - Replacement,Small Cap
 FOCUS,NSE,Auto - OEM Suppliers,Small Cap
 FOODSIN,NSE,Consumption - FMCG,Small Cap
 FORCEMOT,Watchlist,Auto - PV/Trucks,Small Cap
+TMPV,Watchlist,Auto - PV/Trucks,Large Cap
+TMCV,Watchlist,Auto - PV/Trucks,Large Cap
 FORTIS,NSE,Healthcare - Hospitals,Mid Cap
 FOSECOIND,NSE,Chemicals - Specialty,Small Cap
 FSL,NSE,Tech - BPO,Small Cap
@@ -895,7 +895,6 @@ MANAKSTEEL,NSE,Metals - Iron & Steel,Small Cap
 MANALIPETC,NSE,Chemicals - Petro,Small Cap
 MANAPPURAM,NSE,Financials - NBFC,Small Cap
 MANGALAM,NSE,Healthcare - Pharma,Small Cap
-MANGCHEFER,NSE,Agrichem - Fertilizers,Small Cap
 MANGLMCEM,NSE,Infra - Cement,Small Cap
 MANINDS,NSE,Metals - Pipe & Tube,Small Cap
 MANINFRA,NSE,Infra - Construction,Small Cap
@@ -1356,7 +1355,7 @@ SKMEGGPROD,NSE,Consumption - Misc,Small Cap
 SKYGOLD,NSE,Consumption - Jewelry,Small Cap
 SMARTLINK,NSE,IT - Equipments,Small Cap
 SMCGLOBAL,NSE,Financials - Broking,Small Cap
-SMLISUZU,NSE,Auto - CV,Small Cap
+SMLMAH,NSE,Auto - CV,Small Cap
 SMLT,NSE,Metals - Iron & Steel,Small Cap
 SMSLIFE,NSE,Healthcare - Pharma,Small Cap
 SMSPHARMA,NSE,Healthcare - Pharma,Small Cap
@@ -1411,7 +1410,6 @@ SUMICHEM,NSE,Agrichem - Protection,Mid Cap
 SUMIT,NSE,Real Estate,Small Cap
 SUMMITSEC,NSE,Financials - NBFC,Small Cap
 SUNDARMFIN,NSE,Financials - NBFC,Mid Cap
-SUNDARMHLD,NSE,Financials - Misc,Small Cap
 SUNDRMBRAK,NSE,Auto - Replacement,Small Cap
 SUNDRMFAST,NSE,Auto - OEM Suppliers,Mid Cap
 SUNDROP,NSE,Agri - Edible Oil,Small Cap
@@ -1454,7 +1452,6 @@ TATACOMM,NSE,Telecom,Mid Cap
 TATACONSUM,NSE,Consumption - Misc,Large Cap
 TATAELXSI,NSE,IT - Services,Mid Cap
 TATAINVEST,NSE,Financials - Misc,Small Cap
-TATAMOTORS,NSE,Auto - PV/Trucks,Large Cap
 TATAPOWER,NSE,Power - Misc,Large Cap
 TATASTEEL,NSE,Metals - Iron & Steel,Large Cap
 TATVA,NSE,Chemicals - Specialty,Small Cap
