@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio Technical Report</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
 }
 
 .container {
@@ -15,8 +17,9 @@ body {
   height: 100vh;
 }
 
+/* Sidebar */
 .sidebar {
-  width: 220px;
+  width: 240px;
   background: #1e1e1e;
   color: white;
   padding: 10px;
@@ -24,26 +27,24 @@ body {
 }
 
 .sidebar h3 {
-  margin-top: 0;
+  margin-top: 10px;
   text-align: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
 }
 
 .tab {
-  padding: 10px;
-  margin: 5px 0;
+  padding: 8px;
+  margin: 4px 0;
   cursor: pointer;
   background: #333;
   border-radius: 4px;
 }
 
-.tab:hover {
-  background: #555;
-}
+.tab:hover { background: #555; }
+.tab.active { background: #007acc; }
 
-.tab.active {
-  background: #007acc;
-}
-
+/* Content */
 .content {
   flex: 1;
   padding: 10px;
@@ -53,27 +54,32 @@ body {
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 14px;
+  min-width: 900px;
 }
 
 th, td {
   border: 1px solid #ccc;
   padding: 6px;
-  text-align: center;
 }
 
 th {
   background: #f0f0f0;
   position: sticky;
   top: 0;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.green {
-  background-color: #c8f7c5;
-}
+td.text { text-align: left; }
+td.num  { text-align: right; }
 
-.red {
-  background-color: #f7c5c5;
+.green { background: #c8f7c5; }
+.red   { background: #f7c5c5; }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar { width: 180px; }
+  body { font-size: 12px; }
 }
 </style>
 </head>
@@ -82,7 +88,7 @@ th {
 
 <div class="container">
   <div class="sidebar">
-    <h3>Folio</h3>
+    <h3>Filters</h3>
     <div id="tabs"></div>
   </div>
 
@@ -94,7 +100,8 @@ th {
 <script>
 const CSV_FILE = "portfolio_report.csv";
 let rawData = [];
-let currentFilter = null;
+let currentData = [];
+let sortState = {};
 
 function parseCSV(text) {
   const lines = text.trim().split("\n");
@@ -102,60 +109,77 @@ function parseCSV(text) {
   return lines.slice(1).map(row => {
     const values = row.split(",");
     let obj = {};
-    headers.forEach((h, i) => obj[h] = values[i]);
+    headers.forEach((h, i) => obj[h] = values[i] ?? "");
     return obj;
   });
 }
 
+/* ---------- Tabs ---------- */
 function createTabs(data) {
-  const tabsDiv = document.getElementById("tabs");
-  tabsDiv.innerHTML = "";
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
 
-  // EXIT tab
-  const exitTab = document.createElement("div");
-  exitTab.className = "tab";
-  exitTab.innerText = "EXIT";
-  exitTab.onclick = () => {
-    setActiveTab(exitTab);
-    renderTable(data.filter(d =>
-      d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
-    ));
-  };
-  tabsDiv.appendChild(exitTab);
+  createTab("EXIT", d =>
+    d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+  );
 
-  // Folio tabs
-  const folios = [...new Set(data.map(d => d.Folio).filter(Boolean))];
-  folios.forEach(folio => {
-    const tab = document.createElement("div");
-    tab.className = "tab";
-    tab.innerText = folio;
-    tab.onclick = () => {
-      setActiveTab(tab);
-      renderTable(data.filter(d => d.Folio === folio));
-    };
-    tabsDiv.appendChild(tab);
-  });
+  createGroupTabs("Folio", "Folio", data);
+  createGroupTabs("SectorWise", "Sector", data);
+  createGroupTabs("MarketCapWise", "MarketCap", data);
 }
 
-function setActiveTab(tab) {
+function createTab(label, filterFn) {
+  const div = document.createElement("div");
+  div.className = "tab";
+  div.innerText = label;
+  div.onclick = () => {
+    setActive(div);
+    currentData = rawData.filter(filterFn);
+    renderTable(currentData);
+  };
+  tabs.appendChild(div);
+}
+
+function createGroupTabs(title, field, data) {
+  const h = document.createElement("h3");
+  h.innerText = title;
+  tabs.appendChild(h);
+
+  [...new Set(data.map(d => d[field]).filter(Boolean))].sort()
+    .forEach(val => {
+      const div = document.createElement("div");
+      div.className = "tab";
+      div.innerText = val;
+      div.onclick = () => {
+        setActive(div);
+        currentData = rawData.filter(d => d[field] === val);
+        renderTable(currentData);
+      };
+      tabs.appendChild(div);
+    });
+}
+
+function setActive(tab) {
   document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
   tab.classList.add("active");
 }
 
+/* ---------- Table ---------- */
 function renderTable(data) {
   const table = document.getElementById("dataTable");
   table.innerHTML = "";
-
-  if (data.length === 0) return;
+  if (!data.length) return;
 
   const headers = Object.keys(data[0]);
-  const thead = document.createElement("tr");
+
+  const trHead = document.createElement("tr");
   headers.forEach(h => {
     const th = document.createElement("th");
     th.innerText = h;
-    thead.appendChild(th);
+    th.onclick = () => sortBy(h);
+    trHead.appendChild(th);
   });
-  table.appendChild(thead);
+  table.appendChild(trHead);
 
   data.forEach(row => {
     const tr = document.createElement("tr");
@@ -165,31 +189,50 @@ function renderTable(data) {
       const val = row[h];
       td.innerText = val;
 
-      // MACD coloring
-      if (h.includes("MACD") && val !== "") {
-        td.className = parseFloat(val) >= 0 ? "green" : "red";
-      }
+      const num = !isNaN(val) && val !== "";
+      td.className = num ? "num" : "text";
 
-      // RSI coloring
-      if (h.includes("RSI") && val !== "") {
-        td.className = parseFloat(val) >= 53 ? "green" : "red";
-      }
+      if (h.includes("MACD") && val !== "")
+        td.classList.add(parseFloat(val) >= 0 ? "green" : "red");
+
+      if (h.includes("RSI") && val !== "")
+        td.classList.add(parseFloat(val) >= 53 ? "green" : "red");
 
       tr.appendChild(td);
     });
-
     table.appendChild(tr);
   });
 }
 
-// Load CSV
+/* ---------- Sorting ---------- */
+function sortBy(col) {
+  const asc = !sortState[col];
+  sortState = {};
+  sortState[col] = asc;
+
+  currentData.sort((a, b) => {
+    const x = a[col], y = b[col];
+    const nx = parseFloat(x), ny = parseFloat(y);
+
+    if (!isNaN(nx) && !isNaN(ny))
+      return asc ? nx - ny : ny - nx;
+
+    return asc
+      ? String(x).localeCompare(String(y))
+      : String(y).localeCompare(String(x));
+  });
+
+  renderTable(currentData);
+}
+
+/* ---------- Load ---------- */
 fetch(CSV_FILE)
-  .then(res => res.text())
-  .then(text => {
-    rawData = parseCSV(text);
+  .then(r => r.text())
+  .then(t => {
+    rawData = parseCSV(t);
+    currentData = rawData;
     createTabs(rawData);
-  })
-  .catch(err => console.error("CSV load error:", err));
+  });
 </script>
 
 </body>
