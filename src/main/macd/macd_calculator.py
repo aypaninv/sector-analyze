@@ -1,19 +1,20 @@
 import pandas as pd
 import os
+import argparse
 
-# ---------------- CONFIG ----------------
-DAILY_INPUT = "output/yfinance_daily_output.csv"
-WEEKLY_INPUT = "output/yfinance_weekly_output.csv"
-FOURHOURS_INPUT = "output/yfinance_4hours_output.csv"
+# ---------------- DEFAULT CONFIG ----------------
+DEFAULT_DAILY_INPUT = "output/yfinance_daily_output.csv"
+DEFAULT_WEEKLY_INPUT = "output/yfinance_weekly_output.csv"
+DEFAULT_FOURHOURS_INPUT = "output/yfinance_4hours_output.csv"
 
-DAILY_OUTPUT = "output/macd_daily_output.csv"
-WEEKLY_OUTPUT = "output/macd_weekly_output.csv"
-FOURHOURS_OUTPUT = "output/macd_4hours_output.csv"
+DEFAULT_DAILY_OUTPUT = "output/macd_daily_output.csv"
+DEFAULT_WEEKLY_OUTPUT = "output/macd_weekly_output.csv"
+DEFAULT_FOURHOURS_OUTPUT = "output/macd_4hours_output.csv"
 
 FAST_PERIOD = 12
 SLOW_PERIOD = 26
 SIGNAL_PERIOD = 9
-# ---------------------------------------
+# -----------------------------------------------
 
 
 def calculate_macd(df: pd.DataFrame) -> pd.DataFrame:
@@ -48,11 +49,15 @@ def calculate_macd(df: pd.DataFrame) -> pd.DataFrame:
 
 def process_file(input_path: str, output_path: str):
     if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Input file not found: {input_path}")
+        print(f"[SKIP] Input file not found: {input_path}")
+        return
 
     df = pd.read_csv(input_path)
 
-    required_cols = {"Symbol", "Folio", "Sector", "MarketCap", "Date", "Close"}
+    # ✅ Folio removed
+    required_cols = {
+        "Symbol", "Sector", "MarketCap", "Date", "Close"
+    }
     if not required_cols.issubset(df.columns):
         raise ValueError(f"Missing required columns in {input_path}")
 
@@ -62,7 +67,6 @@ def process_file(input_path: str, output_path: str):
 
     output_cols = [
         "Symbol",
-        "Folio",
         "Sector",
         "MarketCap",
         "Date",
@@ -77,14 +81,31 @@ def process_file(input_path: str, output_path: str):
     print(f"[OK] MACD file generated: {output_path} ({len(df)} rows)")
 
 
+# ---------------- Main (CLI) ----------------
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(
+        description="Calculate MACD for Daily, Weekly, and 4H OHLC data"
+    )
+
+    parser.add_argument("--daily-input", default=DEFAULT_DAILY_INPUT)
+    parser.add_argument("--daily-output", default=DEFAULT_DAILY_OUTPUT)
+
+    parser.add_argument("--weekly-input", default=DEFAULT_WEEKLY_INPUT)
+    parser.add_argument("--weekly-output", default=DEFAULT_WEEKLY_OUTPUT)
+
+    parser.add_argument("--fourhours-input", default=DEFAULT_FOURHOURS_INPUT)
+    parser.add_argument("--fourhours-output", default=DEFAULT_FOURHOURS_OUTPUT)
+
+    args = parser.parse_args()
+
     os.makedirs("output", exist_ok=True)
 
-    # Daily MACD
-    process_file(DAILY_INPUT, DAILY_OUTPUT)
+    # Daily
+    process_file(args.daily_input, args.daily_output)
 
-    # Weekly MACD
-    process_file(WEEKLY_INPUT, WEEKLY_OUTPUT)
+    # Weekly
+    process_file(args.weekly_input, args.weekly_output)
 
-    # 4 Hours MACD
-    process_file(FOURHOURS_INPUT, FOURHOURS_OUTPUT)
+    # 4 Hours
+    process_file(args.fourhours_input, args.fourhours_output)

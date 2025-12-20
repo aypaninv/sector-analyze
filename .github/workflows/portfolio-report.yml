@@ -1,4 +1,4 @@
-name: Generate MACD Report
+name: Generate Portfolio Report
 
 on:
   workflow_dispatch:

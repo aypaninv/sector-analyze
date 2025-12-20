@@ -1,13 +1,14 @@
 import pandas as pd
 import os
+import argparse
 
-# ---------------- CONFIG ----------------
-FOURHOURS_MACD_FILE = "output/macd_4hours_output.csv"
-DAILY_MACD_FILE = "output/macd_daily_output.csv"
-WEEKLY_MACD_FILE = "output/macd_weekly_output.csv"
+# ---------------- DEFAULT CONFIG ----------------
+DEFAULT_FOURHOURS_MACD_FILE = "output/macd_4hours_output.csv"
+DEFAULT_DAILY_MACD_FILE = "output/macd_daily_output.csv"
+DEFAULT_WEEKLY_MACD_FILE = "output/macd_weekly_output.csv"
 
-OUTPUT_FILE = "output/macd_report.csv"
-# --------------------------------------
+DEFAULT_OUTPUT_FILE = "output/macd_report.csv"
+# -----------------------------------------------
 
 
 def count_macd_strength(df: pd.DataFrame) -> int:
@@ -16,7 +17,6 @@ def count_macd_strength(df: pd.DataFrame) -> int:
     +ve  -> MACD_Fast above MACD_Slow
     -ve  -> MACD_Fast below MACD_Slow
     """
-
     df = df.sort_values("Date")
 
     count = 0
@@ -39,47 +39,42 @@ def prepare_strength_map(path: str) -> dict:
     df = pd.read_csv(path)
     df["Date"] = pd.to_datetime(df["Date"])
 
-    strength = {}
-    for symbol, g in df.groupby("Symbol"):
-        strength[symbol] = count_macd_strength(g)
-
-    return strength
+    return {
+        symbol: count_macd_strength(g)
+        for symbol, g in df.groupby("Symbol")
+    }
 
 
 def prepare_weekly_high_map(path: str) -> dict:
     df = pd.read_csv(path)
-
-    weekly_high = (
-        df.groupby("Symbol")["Close"]
-          .max()
-          .to_dict()
-    )
-
-    return weekly_high
+    return df.groupby("Symbol")["Close"].max().to_dict()
 
 
 def prepare_latest_daily_map(path: str) -> pd.DataFrame:
     df = pd.read_csv(path)
     df["Date"] = pd.to_datetime(df["Date"])
 
-    latest = (
+    return (
         df.sort_values("Date")
           .groupby("Symbol")
           .tail(1)
           .reset_index(drop=True)
     )
 
-    return latest
 
+def build_report(
+    daily_macd_file: str,
+    weekly_macd_file: str,
+    fourhours_macd_file: str
+) -> pd.DataFrame:
 
-def build_report():
     # ---------- Load reference data ----------
-    daily_latest_df = prepare_latest_daily_map(DAILY_MACD_FILE)
-    weekly_high_map = prepare_weekly_high_map(WEEKLY_MACD_FILE)
+    daily_latest_df = prepare_latest_daily_map(daily_macd_file)
+    weekly_high_map = prepare_weekly_high_map(weekly_macd_file)
 
-    strength_4h = prepare_strength_map(FOURHOURS_MACD_FILE)
-    strength_daily = prepare_strength_map(DAILY_MACD_FILE)
-    strength_weekly = prepare_strength_map(WEEKLY_MACD_FILE)
+    strength_4h = prepare_strength_map(fourhours_macd_file)
+    strength_daily = prepare_strength_map(daily_macd_file)
+    strength_weekly = prepare_strength_map(weekly_macd_file)
 
     rows = []
 
@@ -96,23 +91,59 @@ def build_report():
 
         rows.append({
             "Symbol": symbol,
-            "Folio": row["Folio"],
-            "Sector": row["Sector"],
-            "MarketCap": row["MarketCap"],
+            "Sector": row.get("Sector", ""),
+            "MarketCap": row.get("MarketCap", ""),
             "Close": round(close, 2),
-            "DownFromHigh_%": down_from_high,
-            "cross_4h": strength_4h.get(symbol, 0),
-            "cross_daily": strength_daily.get(symbol, 0),
-            "cross_weekly": strength_weekly.get(symbol, 0),
+            "Down_%": down_from_high,
+            "4hStrength": strength_4h.get(symbol, 0),
+            "DayStrength": strength_daily.get(symbol, 0),
+            "WeekStrength": strength_weekly.get(symbol, 0),
         })
 
     return pd.DataFrame(rows)
 
 
+# ---------------- Main (CLI) ----------------
 if __name__ == "__main__":
-    os.makedirs("output", exist_ok=True)
 
-    report_df = build_report()
-    report_df.to_csv(OUTPUT_FILE, index=False)
+    parser = argparse.ArgumentParser(
+        description="Generate consolidated MACD strength report (Daily / Weekly / 4H)"
+    )
 
-    print(f"[OK] MACD report generated: {OUTPUT_FILE} ({len(report_df)} stocks)")
+    parser.add_argument(
+        "--daily-macd",
+        default=DEFAULT_DAILY_MACD_FILE,
+        help="Daily MACD CSV file"
+    )
+
+    parser.add_argument(
+        "--weekly-macd",
+        default=DEFAULT_WEEKLY_MACD_FILE,
+        help="Weekly MACD CSV file"
+    )
+
+    parser.add_argument(
+        "--fourhours-macd",
+        default=DEFAULT_FOURHOURS_MACD_FILE,
+        help="4 Hours MACD CSV file"
+    )
+
+    parser.add_argument(
+        "--output",
+        default=DEFAULT_OUTPUT_FILE,
+        help="Output MACD report CSV file"
+    )
+
+    args = parser.parse_args()
+
+    os.makedirs(os.path.dirname(args.output), exist_ok=True)
+
+    report_df = build_report(
+        daily_macd_file=args.daily_macd,
+        weekly_macd_file=args.weekly_macd,
+        fourhours_macd_file=args.fourhours_macd
+    )
+
+    report_df.to_csv(args.output, index=False)
+
+    print(f"[OK] MACD report generated: {args.output} ({len(report_df)} stocks)")
