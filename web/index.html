@@ -50,6 +50,7 @@ table {
 th, td {
   border: 1px solid #ccc;
   padding: 6px 8px;
+  background: white;
 }
 
 th {
@@ -57,21 +58,39 @@ th {
   position: sticky;
   top: 0;
   cursor: pointer;
+  z-index: 5;
 }
 
-td.text { text-align: left; }
-td.num  { text-align: right; }
+/* Sticky Symbol column */
+th.symbol-col,
+td.symbol-col {
+  position: sticky;
+  left: 0;
+  background: #fafafa;
+  z-index: 6;
+  font-weight: bold;
+}
 
-.green { background: #c8f7c5; }
-.red   { background: #f7c5c5; }
+/* Zebra striping */
+tbody tr:nth-child(even) td {
+  background: #f9f9f9;
+}
 
+/* Group header */
 .group-header td {
-  background: #ddd;
+  background: #ddd !important;
   font-weight: bold;
   text-align: left;
 }
 
-/* ---------- Mobile ---------- */
+/* Alignment */
+td.text { text-align: left; }
+td.num  { text-align: right; }
+
+.green { background: #c8f7c5 !important; }
+.red   { background: #f7c5c5 !important; }
+
+/* Mobile */
 @media (max-width: 768px) {
   body { font-size: 12px; }
 }
@@ -109,23 +128,18 @@ function buildTopTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  // EXIT
   addTab("EXIT", () =>
     renderTable(rawData.filter(d =>
       d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
     ))
   );
 
-  // Folios
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
-    .forEach(f => {
-      addTab(f, () => renderTable(rawData.filter(d => d.Folio === f)));
-    });
+    .forEach(f => addTab(f, () =>
+      renderTable(rawData.filter(d => d.Folio === f))
+    ));
 
-  // SectorWise
   addTab("SectorWise", () => renderGrouped("Sector"));
-
-  // MarketCapWise
   addTab("MarketCapWise", () => renderGrouped("MarketCap"));
 }
 
@@ -165,7 +179,7 @@ function renderGrouped(field) {
     tr.appendChild(td);
     table.appendChild(tr);
 
-    renderRows(groups[group], headers, true);
+    renderRows(groups[group], headers);
   });
 }
 
@@ -173,12 +187,15 @@ function renderGrouped(field) {
 function renderHeader(headers) {
   const table = document.getElementById("dataTable");
   const tr = document.createElement("tr");
+
   headers.forEach(h => {
     const th = document.createElement("th");
     th.innerText = h;
     th.onclick = () => sortBy(h);
+    if (h === "Symbol") th.classList.add("symbol-col");
     tr.appendChild(th);
   });
+
   table.appendChild(tr);
 }
 
@@ -193,7 +210,7 @@ function renderTable(data) {
   renderRows(data, headers);
 }
 
-function renderRows(data, headers, append=false) {
+function renderRows(data, headers) {
   const table = document.getElementById("dataTable");
   data.forEach(r => {
     const tr = document.createElement("tr");
@@ -202,6 +219,7 @@ function renderRows(data, headers, append=false) {
       const v = r[h];
       td.innerText = v;
       td.className = (!isNaN(v) && v !== "") ? "num" : "text";
+      if (h === "Symbol") td.classList.add("symbol-col");
 
       if (h.includes("MACD") && v !== "")
         td.classList.add(parseFloat(v) >= 0 ? "green" : "red");
