@@ -26,12 +26,12 @@ jobs:
       run: |
         rm -rf output
         mkdir -p output
-        sh scripts/generate_macd_report.sh
+        sh scripts/portfolio.sh
 
     - name: Prepare GitHub Pages
       run: |
         mkdir public
-        cp output/macd_report.csv public/
+        cp output/portfolio/portfolio_report.csv public/
         cp web/index.html public/
 
     - name: Deploy to GitHub Pages

@@ -2,9 +2,10 @@
 Parallel YFinance -> CSV pipeline
 
 Supports:
-- 4h, 1d, 1wk intervals
+- 4h, 1d, 1wk, 1mo intervals
+- Weekly = Friday close
+- Monthly = last working day close
 - Proper datetime/date normalization
-- CLI arguments
 """
 
 from dataclasses import dataclass
@@ -19,7 +20,7 @@ import argparse
 # ---------------- Defaults ----------------
 DEFAULT_INPUT_FILE = "files/stocks.csv"
 DEFAULT_OUTPUT_PATH = "output/yfinance_output.csv"
-DEFAULT_PERIOD = "3mo"
+DEFAULT_PERIOD = "6mo"
 DEFAULT_INTERVAL = "1d"
 
 NSE_SUFFIX = ".NS"
@@ -28,7 +29,6 @@ RETRY_ATTEMPTS = 3
 RETRY_BACKOFF_BASE = 1.5
 
 
-# ---------------- CSV Reader ----------------
 @dataclass
 class CSVReader:
     csv_path: str
@@ -43,31 +43,57 @@ class CSVReader:
         return df
 
 
-# ---------------- YFinance Fetcher ----------------
 class YFinanceFetcher:
     def __init__(self, period: str, interval: str):
         self.period = period
         self.interval = interval
 
     def _symbol_for_fetch(self, symbol: str) -> str:
-        symbol = symbol.strip()
-        return symbol if symbol.endswith(NSE_SUFFIX) else symbol + NSE_SUFFIX
+        return symbol.strip() + NSE_SUFFIX if not symbol.endswith(NSE_SUFFIX) else symbol
+
+    def _resample_weekly_monthly(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Convert daily data to:
+        - Weekly (Friday close)
+        - Monthly (Business month end)
+        """
+        df = df.set_index("date")
+
+        if self.interval == "1wk":
+            rule = "W-FRI"
+        elif self.interval == "1mo":
+            rule = "BME"
+        else:
+            return df.reset_index()
+
+        agg = {
+            "open": "first",
+            "high": "max",
+            "low": "min",
+            "close": "last",
+            "volume": "sum",
+        }
+
+        out = df.resample(rule).agg(agg).dropna()
+        return out.reset_index()
 
     def fetch_with_retries(self, symbol: str) -> Optional[pd.DataFrame]:
         fetch_symbol = self._symbol_for_fetch(symbol)
 
         for attempt in range(1, RETRY_ATTEMPTS + 1):
             try:
+                # 🔑 Weekly/Monthly must be derived from DAILY
+                yf_interval = "1d" if self.interval in {"1wk", "1mo"} else self.interval
+
                 df = yf.Ticker(fetch_symbol).history(
                     period=self.period,
-                    interval=self.interval,
+                    interval=yf_interval,
                     auto_adjust=False
                 )
 
                 if df is None or df.empty:
                     raise RuntimeError("Empty data returned")
 
-                # ---- Normalize index column ----
                 df = df.reset_index()
                 df.columns = [c.lower() for c in df.columns]
 
@@ -76,8 +102,12 @@ class YFinanceFetcher:
                 elif "date" not in df.columns:
                     raise RuntimeError("No date/datetime column found")
 
-                df["date"] = pd.to_datetime(df["date"]).dt.date.astype(str)
+                df["date"] = pd.to_datetime(df["date"])
 
+                # 🔑 Resample if weekly/monthly
+                df = self._resample_weekly_monthly(df)
+
+                df["date"] = df["date"].dt.date.astype(str)
                 return df
 
             except Exception as e:
@@ -90,82 +120,50 @@ class YFinanceFetcher:
         return None
 
 
-# ---------------- Processing ----------------
-def _process_symbol_result(
-    hist: Optional[pd.DataFrame],
-    meta_row: pd.Series
-) -> Optional[pd.DataFrame]:
-
+def _process_symbol_result(hist: Optional[pd.DataFrame], meta_row: pd.Series):
     if hist is None or hist.empty:
         return None
 
-    required_cols = {"date", "open", "high", "low", "close", "volume"}
-    if not required_cols.issubset(hist.columns):
-        print(f"[SKIP] Missing columns for {meta_row['Symbol']}: {hist.columns}")
+    required = {"date", "open", "high", "low", "close", "volume"}
+    if not required.issubset(hist.columns):
         return None
 
-    hist = hist[list(required_cols)].dropna(
-        subset=["open", "high", "low", "close"]
-    )
+    hist["Symbol"] = meta_row["Symbol"]
 
     hist[["open", "high", "low", "close"]] = (
-        hist[["open", "high", "low", "close"]]
-        .astype(float)
-        .round(2)
+        hist[["open", "high", "low", "close"]].astype(float).round(2)
     )
-
-    hist["volume"] = pd.to_numeric(
-        hist["volume"], errors="coerce"
-    ).astype("Int64")
-
-    # ---- Attach metadata ----
-    hist["Symbol"] = meta_row["Symbol"]
-    hist["Sector"] = meta_row.get("Sector", "")
-    hist["MarketCap"] = meta_row.get(
-        "Market Cap",
-        meta_row.get("MarketCap", "")
-    )
+    hist["volume"] = pd.to_numeric(hist["volume"], errors="coerce").astype("Int64")
 
     return hist[
-        ["Symbol", "Sector", "MarketCap",
-         "date", "open", "close", "high", "low", "volume"]
+        ["Symbol", "date", "open", "close", "high", "low", "volume"]
     ]
 
 
-# ---------------- Parallel Builder ----------------
-def build_historical_dataframe_parallel(
-    csv_path: str,
-    period: str,
-    interval: str,
-    max_workers: int = MAX_WORKERS
-) -> pd.DataFrame:
-
+def build_historical_dataframe_parallel(csv_path, period, interval):
     reader = CSVReader(csv_path)
     base_df = reader.read()
-    fetcher = YFinanceFetcher(period=period, interval=interval)
+    fetcher = YFinanceFetcher(period, interval)
 
-    results: List[pd.DataFrame] = []
-
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    results = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
-            executor.submit(fetcher.fetch_with_retries, row["Symbol"]): row
-            for _, row in base_df.iterrows()
+            executor.submit(fetcher.fetch_with_retries, r["Symbol"]): r
+            for _, r in base_df.iterrows()
         }
 
-        for future in as_completed(futures):
-            meta_row = futures[future]
-            hist = future.result()
-
-            processed = _process_symbol_result(hist, meta_row)
-            if processed is not None and not processed.empty:
-                results.append(processed)
+        for f in as_completed(futures):
+            row = futures[f]
+            hist = f.result()
+            out = _process_symbol_result(hist, row)
+            if out is not None:
+                results.append(out)
 
     if not results:
         return pd.DataFrame()
 
-    out = pd.concat(results, ignore_index=True)
-
-    out = out.rename(columns={
+    df = pd.concat(results, ignore_index=True)
+    df = df.rename(columns={
         "date": "Date",
         "open": "Open",
         "close": "Close",
@@ -174,43 +172,22 @@ def build_historical_dataframe_parallel(
         "volume": "Volume",
     })
 
-    return out.sort_values(["Symbol", "Date"]).reset_index(drop=True)
+    return df.sort_values(["Symbol", "Date"]).reset_index(drop=True)
 
 
-# ---------------- Main (CLI) ----------------
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description="Fetch OHLCV data from Yahoo Finance (4h / 1d / 1wk)"
+        description="Fetch OHLCV data (4H / Daily / Weekly / Monthly with proper closes)"
     )
 
-    parser.add_argument(
-        "--input",
-        default=DEFAULT_INPUT_FILE,
-        help="Input CSV file"
-    )
-
-    parser.add_argument(
-        "--output",
-        default=DEFAULT_OUTPUT_PATH,
-        help="Output CSV file"
-    )
-
-    parser.add_argument(
-        "--interval",
-        default=DEFAULT_INTERVAL,
-        choices=["4h", "1h", "1d", "1wk"],
-        help="YFinance interval"
-    )
-
-    parser.add_argument(
-        "--period",
-        default=DEFAULT_PERIOD,
-        help="YFinance period (e.g. 1mo, 60d, 6mo)"
-    )
+    parser.add_argument("--input", default=DEFAULT_INPUT_FILE)
+    parser.add_argument("--output", default=DEFAULT_OUTPUT_PATH)
+    parser.add_argument("--interval", default=DEFAULT_INTERVAL,
+                        choices=["4h", "1d", "1wk", "1mo"])
+    parser.add_argument("--period", default=DEFAULT_PERIOD)
 
     args = parser.parse_args()
-
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
 
     df_out = build_historical_dataframe_parallel(

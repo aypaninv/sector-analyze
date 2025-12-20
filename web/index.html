@@ -1,126 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>NSE MACD Strength Dashboard</title>
+<meta charset="UTF-8">
+<title>Portfolio Technical Report</title>
 
-  <!-- DataTables -->
-  <link rel="stylesheet"
-        href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
+.container {
+  display: flex;
+  height: 100vh;
+}
 
-    h1 {
-      margin-bottom: 5px;
-    }
+.sidebar {
+  width: 220px;
+  background: #1e1e1e;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+}
 
-    .bullish {
-      color: #0a8f08;
-      font-weight: bold;
-    }
+.sidebar h3 {
+  margin-top: 0;
+  text-align: center;
+}
 
-    .bearish {
-      color: #c62828;
-      font-weight: bold;
-    }
+.tab {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background: #333;
+  border-radius: 4px;
+}
 
-    .neutral {
-      color: #555;
-    }
+.tab:hover {
+  background: #555;
+}
 
-    .small {
-      font-size: 0.85em;
-      color: #666;
-    }
-  </style>
+.tab.active {
+  background: #007acc;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background: #f0f0f0;
+  position: sticky;
+  top: 0;
+}
+
+.green {
+  background-color: #c8f7c5;
+}
+
+.red {
+  background-color: #f7c5c5;
+}
+</style>
 </head>
 
 <body>
 
-<h1>NSE MACD Strength Report</h1>
-<p class="small">4H / Daily / Weekly MACD crossover strength</p>
+<div class="container">
+  <div class="sidebar">
+    <h3>Folio</h3>
+    <div id="tabs"></div>
+  </div>
 
-<table id="macdTable" class="display" style="width:100%">
-  <thead>
-    <tr>
-      <th>Symbol</th>
-      <th>Folio</th>
-      <th>Sector</th>
-      <th>Market Cap</th>
-      <th>Close</th>
-      <th>Down From High (%)</th>
-      <th>4H Strength</th>
-      <th>Daily Strength</th>
-      <th>Weekly Strength</th>
-    </tr>
-  </thead>
-</table>
-
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <div class="content">
+    <table id="dataTable"></table>
+  </div>
+</div>
 
 <script>
-function strengthClass(value) {
-  if (value > 0) return "bullish";
-  if (value < 0) return "bearish";
-  return "neutral";
+const CSV_FILE = "portfolio_report.csv";
+let rawData = [];
+let currentFilter = null;
+
+function parseCSV(text) {
+  const lines = text.trim().split("\n");
+  const headers = lines[0].split(",");
+  return lines.slice(1).map(row => {
+    const values = row.split(",");
+    let obj = {};
+    headers.forEach((h, i) => obj[h] = values[i]);
+    return obj;
+  });
 }
 
-Papa.parse("macd_report.csv", {
-  download: true,
-  header: true,
-  dynamicTyping: true,
-  complete: function (results) {
+function createTabs(data) {
+  const tabsDiv = document.getElementById("tabs");
+  tabsDiv.innerHTML = "";
 
-    $('#macdTable').DataTable({
-      data: results.data,
-      pageLength: 25,
-      order: [[8, "desc"]],   // Weekly strength first
+  // EXIT tab
+  const exitTab = document.createElement("div");
+  exitTab.className = "tab";
+  exitTab.innerText = "EXIT";
+  exitTab.onclick = () => {
+    setActiveTab(exitTab);
+    renderTable(data.filter(d =>
+      d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+    ));
+  };
+  tabsDiv.appendChild(exitTab);
 
-      columns: [
-        { data: "Symbol" },
-        { data: "Folio" },
-        { data: "Sector" },
-        { data: "MarketCap" },
-        { data: "Close" },
+  // Folio tabs
+  const folios = [...new Set(data.map(d => d.Folio).filter(Boolean))];
+  folios.forEach(folio => {
+    const tab = document.createElement("div");
+    tab.className = "tab";
+    tab.innerText = folio;
+    tab.onclick = () => {
+      setActiveTab(tab);
+      renderTable(data.filter(d => d.Folio === folio));
+    };
+    tabsDiv.appendChild(tab);
+  });
+}
 
-        {
-          data: "DownFromHigh_%",
-          render: function (d) {
-            return `<span class="${d < -30 ? 'bearish' : 'neutral'}">${d}%</span>`;
-          }
-        },
+function setActiveTab(tab) {
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  tab.classList.add("active");
+}
 
-        {
-          data: "cross_4h",
-          render: function (d) {
-            return `<span class="${strengthClass(d)}">${d}</span>`;
-          }
-        },
+function renderTable(data) {
+  const table = document.getElementById("dataTable");
+  table.innerHTML = "";
 
-        {
-          data: "cross_daily",
-          render: function (d) {
-            return `<span class="${strengthClass(d)}">${d}</span>`;
-          }
-        },
+  if (data.length === 0) return;
 
-        {
-          data: "cross_weekly",
-          render: function (d) {
-            return `<span class="${strengthClass(d)}">${d}</span>`;
-          }
-        }
-      ]
+  const headers = Object.keys(data[0]);
+  const thead = document.createElement("tr");
+  headers.forEach(h => {
+    const th = document.createElement("th");
+    th.innerText = h;
+    thead.appendChild(th);
+  });
+  table.appendChild(thead);
+
+  data.forEach(row => {
+    const tr = document.createElement("tr");
+
+    headers.forEach(h => {
+      const td = document.createElement("td");
+      const val = row[h];
+      td.innerText = val;
+
+      // MACD coloring
+      if (h.includes("MACD") && val !== "") {
+        td.className = parseFloat(val) >= 0 ? "green" : "red";
+      }
+
+      // RSI coloring
+      if (h.includes("RSI") && val !== "") {
+        td.className = parseFloat(val) >= 53 ? "green" : "red";
+      }
+
+      tr.appendChild(td);
     });
-  }
-});
+
+    table.appendChild(tr);
+  });
+}
+
+// Load CSV
+fetch(CSV_FILE)
+  .then(res => res.text())
+  .then(text => {
+    rawData = parseCSV(text);
+    createTabs(rawData);
+  })
+  .catch(err => console.error("CSV load error:", err));
 </script>
 
 </body>
