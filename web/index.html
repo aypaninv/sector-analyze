@@ -12,54 +12,74 @@ body {
   font-size: 13px;
 }
 
-.container {
+/* ---------- Top Tabs ---------- */
+.topbar {
   display: flex;
-  height: 100vh;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 240px;
   background: #1e1e1e;
   color: white;
-  padding: 10px;
-  overflow-y: auto;
-}
-
-.sidebar h3 {
-  margin-top: 10px;
-  text-align: center;
-  border-bottom: 1px solid #444;
-  padding-bottom: 5px;
-}
-
-.tab {
   padding: 8px;
-  margin: 4px 0;
+  gap: 10px;
+}
+
+.top-tab {
+  padding: 8px 14px;
   cursor: pointer;
   background: #333;
   border-radius: 4px;
 }
 
-.tab:hover { background: #555; }
-.tab.active { background: #007acc; }
-
-/* Content */
-.content {
-  flex: 1;
-  padding: 10px;
-  overflow-x: auto;
+.top-tab.active {
+  background: #007acc;
 }
 
+/* ---------- Layout ---------- */
+.container {
+  display: flex;
+  height: calc(100vh - 48px);
+}
+
+.sidebar {
+  width: 220px;
+  background: #2a2a2a;
+  color: white;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+.sidebar .tab {
+  padding: 8px;
+  margin: 4px 0;
+  background: #444;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar .tab.active {
+  background: #007acc;
+}
+
+.content {
+  flex: 1;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+/* ---------- Table ---------- */
 table {
   border-collapse: collapse;
   width: 100%;
-  min-width: 900px;
+  table-layout: fixed;
 }
 
 th, td {
   border: 1px solid #ccc;
   padding: 6px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 th {
@@ -67,7 +87,6 @@ th {
   position: sticky;
   top: 0;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 td.text { text-align: left; }
@@ -76,22 +95,31 @@ td.num  { text-align: right; }
 .green { background: #c8f7c5; }
 .red   { background: #f7c5c5; }
 
-/* Mobile */
+.group-header {
+  background: #ddd;
+  font-weight: bold;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
-  .sidebar { width: 180px; }
   body { font-size: 12px; }
+  .sidebar { width: 160px; }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <div class="sidebar">
-    <h3>Filters</h3>
-    <div id="tabs"></div>
-  </div>
+<!-- ---------- Top Tabs ---------- -->
+<div class="topbar">
+  <div class="top-tab active" onclick="activateTopTab('Folio')">Folio</div>
+  <div class="top-tab" onclick="activateTopTab('EXIT')">EXIT</div>
+  <div class="top-tab" onclick="activateTopTab('SectorWise')">SectorWise</div>
+  <div class="top-tab" onclick="activateTopTab('MarketCapWise')">MarketCapWise</div>
+</div>
 
+<div class="container">
+  <div class="sidebar" id="sidebar"></div>
   <div class="content">
     <table id="dataTable"></table>
   </div>
@@ -102,101 +130,123 @@ const CSV_FILE = "portfolio_report.csv";
 let rawData = [];
 let currentData = [];
 let sortState = {};
+let currentMode = "Folio";
 
+/* ---------- CSV ---------- */
 function parseCSV(text) {
   const lines = text.trim().split("\n");
   const headers = lines[0].split(",");
-  return lines.slice(1).map(row => {
-    const values = row.split(",");
-    let obj = {};
-    headers.forEach((h, i) => obj[h] = values[i] ?? "");
-    return obj;
+  return lines.slice(1).map(r => {
+    const v = r.split(",");
+    let o = {};
+    headers.forEach((h, i) => o[h] = v[i] ?? "");
+    return o;
   });
 }
 
-/* ---------- Tabs ---------- */
-function createTabs(data) {
-  const tabs = document.getElementById("tabs");
-  tabs.innerHTML = "";
+/* ---------- Top Tabs ---------- */
+function activateTopTab(mode) {
+  currentMode = mode;
+  document.querySelectorAll(".top-tab").forEach(t => t.classList.remove("active"));
+  [...document.querySelectorAll(".top-tab")]
+    .find(t => t.innerText === mode).classList.add("active");
 
-  createTab("EXIT", d =>
-    d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
-  );
+  const sidebar = document.getElementById("sidebar");
 
-  createGroupTabs("Folio", "Folio", data);
-  createGroupTabs("SectorWise", "Sector", data);
-  createGroupTabs("MarketCapWise", "MarketCap", data);
-}
+  if (mode === "Folio") {
+    sidebar.classList.remove("hidden");
+    buildFolioSidebar();
+  } else {
+    sidebar.classList.add("hidden");
+  }
 
-function createTab(label, filterFn) {
-  const div = document.createElement("div");
-  div.className = "tab";
-  div.innerText = label;
-  div.onclick = () => {
-    setActive(div);
-    currentData = rawData.filter(filterFn);
+  if (mode === "EXIT") {
+    currentData = rawData.filter(d =>
+      d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+    );
     renderTable(currentData);
-  };
-  tabs.appendChild(div);
+  }
+
+  if (mode === "SectorWise") renderGrouped("Sector");
+  if (mode === "MarketCapWise") renderGrouped("MarketCap");
 }
 
-function createGroupTabs(title, field, data) {
-  const h = document.createElement("h3");
-  h.innerText = title;
-  tabs.appendChild(h);
+/* ---------- Folio Sidebar (UNCHANGED LOGIC) ---------- */
+function buildFolioSidebar() {
+  const sb = document.getElementById("sidebar");
+  sb.innerHTML = "<h3>Folio</h3>";
 
-  [...new Set(data.map(d => d[field]).filter(Boolean))].sort()
-    .forEach(val => {
+  [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
+    .forEach(f => {
       const div = document.createElement("div");
       div.className = "tab";
-      div.innerText = val;
+      div.innerText = f;
       div.onclick = () => {
-        setActive(div);
-        currentData = rawData.filter(d => d[field] === val);
+        document.querySelectorAll(".sidebar .tab").forEach(t => t.classList.remove("active"));
+        div.classList.add("active");
+        currentData = rawData.filter(d => d.Folio === f);
         renderTable(currentData);
       };
-      tabs.appendChild(div);
+      sb.appendChild(div);
     });
 }
 
-function setActive(tab) {
-  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-  tab.classList.add("active");
+/* ---------- Grouped Views ---------- */
+function renderGrouped(field) {
+  const table = document.getElementById("dataTable");
+  table.innerHTML = "";
+
+  const groups = {};
+  rawData.forEach(r => {
+    const key = r[field] || "Others";
+    groups[key] = groups[key] || [];
+    groups[key].push(r);
+  });
+
+  Object.keys(groups).sort().forEach(group => {
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.colSpan = Object.keys(rawData[0]).length;
+    td.className = "group-header";
+    td.innerText = `${field}: ${group}`;
+    tr.appendChild(td);
+    table.appendChild(tr);
+
+    renderTable(groups[group], true);
+  });
 }
 
 /* ---------- Table ---------- */
-function renderTable(data) {
+function renderTable(data, append=false) {
   const table = document.getElementById("dataTable");
-  table.innerHTML = "";
+  if (!append) table.innerHTML = "";
   if (!data.length) return;
 
   const headers = Object.keys(data[0]);
 
-  const trHead = document.createElement("tr");
-  headers.forEach(h => {
-    const th = document.createElement("th");
-    th.innerText = h;
-    th.onclick = () => sortBy(h);
-    trHead.appendChild(th);
-  });
-  table.appendChild(trHead);
+  if (!append) {
+    const trh = document.createElement("tr");
+    headers.forEach(h => {
+      const th = document.createElement("th");
+      th.innerText = h;
+      th.onclick = () => sortBy(h);
+      trh.appendChild(th);
+    });
+    table.appendChild(trh);
+  }
 
-  data.forEach(row => {
+  data.forEach(r => {
     const tr = document.createElement("tr");
-
     headers.forEach(h => {
       const td = document.createElement("td");
-      const val = row[h];
-      td.innerText = val;
+      const v = r[h];
+      td.innerText = v;
+      td.className = (!isNaN(v) && v !== "") ? "num" : "text";
 
-      const num = !isNaN(val) && val !== "";
-      td.className = num ? "num" : "text";
-
-      if (h.includes("MACD") && val !== "")
-        td.classList.add(parseFloat(val) >= 0 ? "green" : "red");
-
-      if (h.includes("RSI") && val !== "")
-        td.classList.add(parseFloat(val) >= 53 ? "green" : "red");
+      if (h.includes("MACD") && v !== "")
+        td.classList.add(parseFloat(v) >= 0 ? "green" : "red");
+      if (h.includes("RSI") && v !== "")
+        td.classList.add(parseFloat(v) >= 53 ? "green" : "red");
 
       tr.appendChild(td);
     });
@@ -207,19 +257,13 @@ function renderTable(data) {
 /* ---------- Sorting ---------- */
 function sortBy(col) {
   const asc = !sortState[col];
-  sortState = {};
-  sortState[col] = asc;
+  sortState = { [col]: asc };
 
-  currentData.sort((a, b) => {
-    const x = a[col], y = b[col];
-    const nx = parseFloat(x), ny = parseFloat(y);
-
-    if (!isNaN(nx) && !isNaN(ny))
-      return asc ? nx - ny : ny - nx;
-
-    return asc
-      ? String(x).localeCompare(String(y))
-      : String(y).localeCompare(String(x));
+  currentData.sort((a,b) => {
+    const x=a[col], y=b[col];
+    const nx=parseFloat(x), ny=parseFloat(y);
+    if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
+    return asc?String(x).localeCompare(y):String(y).localeCompare(x);
   });
 
   renderTable(currentData);
@@ -230,8 +274,7 @@ fetch(CSV_FILE)
   .then(r => r.text())
   .then(t => {
     rawData = parseCSV(t);
-    currentData = rawData;
-    createTabs(rawData);
+    activateTopTab("Folio");   // default behavior preserved
   });
 </script>
 
