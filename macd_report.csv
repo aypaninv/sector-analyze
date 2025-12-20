@@ -1,1120 +1,1467 @@
 Symbol,Folio,Sector,MarketCap,Close,DownFromHigh_%,cross_4h,cross_daily,cross_weekly
-MANGCHEFER,NSE,Agrichem - Fertilizers,Small Cap,307.35,,0,0,0
-ACLGATI,NSE,Transport - Logistics,Small Cap,66.5,0.0,0,0,0
-TATAMOTORS,NSE,Auto - PV/Trucks,Large Cap,345.8,-69.08,0,34,-10
-EASTSILK,NSE,Textile - Misc,Small Cap,86.94,-8.03,12,-3,18
-PAR,NSE,Healthcare - Pharma,Small Cap,109.1,-65.0,10,11,32
-IRCON,NSE,Railways,Small Cap,153.2,-54.51,1,6,-9
-ZENSARTECH,NSE,IT - Software/Consulting,Small Cap,741.5,,2,20,0
-SPORTKING,NSE,Textile - Spinning/Yarn,Small Cap,92.08,-38.54,0,1,-19
-PANAMAPET,NSE,Petro - Lubricants,Small Cap,278.05,-34.61,2,-14,5
-PRIVISCL,NSE,Chemicals - Specialty,Small Cap,3098.0,-8.56,-19,-24,9
-MANINFRA,NSE,Infra - Construction,Small Cap,127.78,,-16,16,0
-PANSARI,NSE,Real Estate,Small Cap,299.5,-3.88,-5,-11,5
-PREMIERPOL,NSE,Infra - Plastic Pipes,Small Cap,40.01,-53.02,-31,-10,5
-PTC,NSE,Power - Misc,Small Cap,154.51,-36.68,-1,5,-17
-ZYDUSLIFE,NSE,Healthcare - Pharma,Mid Cap,919.6,-29.31,-24,18,-8
-MANORAMA,NSE,Agri - Misc,Small Cap,1345.0,,-6,24,0
-PIONEEREMB,NSE,Textile - Misc,Small Cap,29.5,-54.41,-19,1,-20
-NATIONALUM,NSE,Metals - Aluminium,Mid Cap,278.75,0.09,12,5,31
-NDRAUTO,NSE,Auto - OEM Suppliers,Small Cap,817.1,-30.26,1,16,-19
-PGEL,NSE,Consumption - Electronics,Small Cap,580.55,-42.9,10,1,6
-NAUKRI,NSE,IT - Product/Platform,Mid Cap,1342.3,-25.64,-16,-5,9
-IRB,NSE,Infra - Construction,Mid Cap,41.14,-46.47,-6,-30,9
-PTCIL,NSE,Metals - Casting/Forging,Small Cap,17499.0,-7.29,-15,-6,12
-MANOMAY,NSE,Textile - Misc,Small Cap,206.0,,-26,-13,0
-PERSISTENT,NSE,IT - Software/Consulting,Mid Cap,6359.0,-2.48,6,-14,10
-MANKIND,NSE,Healthcare - Pharma,Large Cap,2178.0,,2,1,0
-SPMLINFRA,NSE,Infra - Construction,Small Cap,174.27,-40.4,0,4,-13
-NELCO,NSE,IT - Equipments,Small Cap,733.25,-48.96,-30,-14,-3
-MAHLOG,NSE,Transport - Logistics,Small Cap,315.9,,-6,9,0
-PANACHE,NSE,IT - Services,Small Cap,339.85,-23.8,8,-46,-3
-PFS,NSE,Financials - NBFC,Small Cap,32.7,-44.05,-5,6,-16
-PALASHSECU,NSE,Consumption - FMCG,Small Cap,106.42,-43.6,-2,-14,-3
-STEELCITY,NSE,Financials - Broking,Small Cap,90.46,-23.96,0,-4,-19
-IONEXCHANG,NSE,Infra - Construction,Small Cap,372.8,-48.26,-1,9,1
-MARALOVER,NSE,Textile - Spinning/Yarn,Small Cap,44.88,,1,-20,0
-NHPC,NSE,Power - Misc,Mid Cap,76.6,-32.22,0,11,-6
-NECCLTD,NSE,Transport - Logistics,Small Cap,18.38,-52.41,-3,-31,-1
-PRITI,NSE,Infra - Home Furnish,Small Cap,59.8,-76.0,6,1,-2
-PTL,NSE,Others,Small Cap,39.75,-18.38,7,1,-2
-NAM-INDIA,NSE,Financials - AMC,Small Cap,887.7,-3.8,14,6,-7
-ABBOTINDIA,NSE,Healthcare - Pharma,Mid Cap,28015.0,-19.82,4,-13,-18
-AARON,NSE,Engineering,Small Cap,178.8,-21.73,10,4,-15
-PIXTRANS,NSE,Industrial - Consumables,Small Cap,1453.0,-45.98,-7,-3,13
-SPIC,NSE,Agrichem - Fertilizers,Small Cap,77.43,-33.07,0,-2,-12
-PAKKA,NSE,Paper,Small Cap,101.94,-72.54,-4,6,-17
-IOLCP,NSE,Healthcare - Pharma,Small Cap,82.01,-31.62,2,-13,-10
-PFIZER,NSE,Healthcare - Pharma,Mid Cap,5100.0,-17.26,18,14,-17
-NIACL,NSE,Financials - Non-Life,Mid Cap,155.15,-46.82,-2,6,-9
-MARATHON,NSE,Real Estate,Small Cap,532.8,,-6,-1,0
-PFC,NSE,Financials - NBFC,Mid Cap,338.35,-39.05,4,-32,-7
-SPLIL,NSE,Textile - Misc,Small Cap,36.33,-52.6,0,-30,-2
-MAPMYINDIA,NSE,IT - Product/Platform,Small Cap,1662.0,,9,2,0
-NGLFINE,NSE,Healthcare - Pharma,Small Cap,1271.2,-52.09,-2,8,-4
-MANORG,NSE,Chemicals - Bulk,Small Cap,476.0,,-22,16,0
-IPL,NSE,Agrichem - Protection,Small Cap,172.94,-57.28,2,18,-13
-NATHBIOGEN,NSE,Agri - Seeds,Small Cap,151.77,-40.51,16,7,-20
-PETRONET,NSE,Utility - Gas,Mid Cap,273.6,-26.53,3,1,11
-ABMINTLLTD,NSE,Others,Small Cap,42.0,-55.83,2,-38,-3
-NDLVENTURE,NSE,Media - TV Broadcast,Small Cap,88.3,-40.36,-26,-10,29
-NELCAST,NSE,Metals - Casting/Forging,Small Cap,103.49,-39.76,-7,-2,-15
-MANUGRAPH,NSE,Engineering,Small Cap,16.15,,3,10,0
-PANACEABIO,NSE,Healthcare - Biotech,Small Cap,356.0,-35.43,12,6,-7
-SPLPETRO,NSE,Chemicals - Petro,Small Cap,626.75,-29.74,0,21,-10
-NH,NSE,Healthcare - Hospitals,Mid Cap,1921.3,-15.11,1,-15,5
-NATCOPHARM,NSE,Healthcare - Pharma,Small Cap,916.25,-42.1,-4,-8,5
-PITTIENG,NSE,Electronic - Equipment,Small Cap,797.0,-45.28,-3,5,-5
-MANYAVAR,NSE,Textile - Apparels,Mid Cap,598.5,,1,17,0
-IPCALAB,NSE,Healthcare - Pharma,Mid Cap,1430.2,-17.57,-8,-5,6
-PREMEXPLN,NSE,Defense - Misc,Small Cap,490.05,-45.02,1,-33,-5
-NDTV,NSE,Media - TV Broadcast,Small Cap,88.69,-69.12,12,38,-16
-PALREDTEC,NSE,IT - Software/Consulting,Small Cap,39.74,-81.28,1,7,-4
-STEELCAS,NSE,Metals - Casting/Forging,Small Cap,205.19,-15.32,0,-13,-20
-21STCENMGM,NSE,Financials - Misc,Small Cap,48.5,-63.6,30,13,2
-NAVA,NSE,Power - Misc,Small Cap,577.0,-19.56,26,16,-11
-MANINDS,NSE,Metals - Pipe & Tube,Small Cap,409.3,,-7,-12,0
-PATELENG,NSE,Infra - Construction,Small Cap,31.1,-56.53,5,1,-5
-AAREYDRUGS,NSE,Healthcare - Pharma,Small Cap,69.65,-28.39,9,-26,-3
-MALLCOM,NSE,Industrial - Consumables,Small Cap,1138.4,,10,5,0
-NCLIND,NSE,Infra - Cement,Small Cap,198.5,-21.89,18,5,-20
-20MICRONS,NSE,Metals - Misc,Small Cap,192.49,-43.22,16,16,-16
-MALUPAPER,NSE,Paper,Small Cap,34.4,,-36,-15,0
-NAZARA,NSE,IT - Product/Platform,Small Cap,228.0,-36.24,10,3,-18
-SSWL,NSE,Auto - Replacement,Small Cap,193.54,-30.9,0,7,-21
-NBCC,NSE,Infra - Construction,Small Cap,113.49,-11.14,2,-13,-2
-PDSL,NSE,Textile - Misc,Small Cap,370.1,-39.43,2,1,13
-ZENITHEXPO,NSE,Leather Products,Small Cap,228.25,,-6,-2,0
-PGHL,NSE,Healthcare - Pharma,Small Cap,5692.5,-13.51,9,4,-11
-PIDILITIND,NSE,Chemicals - Specialty,Large Cap,1459.7,-13.2,-6,-3,-13
-PATANJALI,NSE,Agri - Edible Oil,Mid Cap,559.35,-14.95,10,2,-11
-MANAKALUCO,NSE,Metals - Aluminium,Small Cap,23.15,,-3,6,0
-STARPAPER,NSE,Paper,Small Cap,163.31,-40.89,0,1,-10
-NESCO,NSE,Real Estate,Small Cap,1238.1,-19.46,-5,7,-11
-PSB,NSE,Financials - PSU Bank,Mid Cap,26.4,-61.43,-1,-32,29
-PRICOLLTD,NSE,Auto - OEM Suppliers,Small Cap,657.1,-0.41,18,2,18
-NESTLEIND,NSE,Consumption - FMCG,Large Cap,1243.6,-9.41,12,1,15
-ABFRL,NSE,Consumption - Retail,Mid Cap,77.02,-78.13,6,16,18
-MAHESHWARI,NSE,Others,Small Cap,46.52,,-3,6,0
-NCC,NSE,Infra - Construction,Small Cap,155.75,-54.74,-7,0,-7
-PCBL,NSE,Chemicals - Bulk,Small Cap,308.4,-46.09,14,7,-13
-PRIMESECU,NSE,Financials - Misc,Small Cap,289.95,-13.53,15,-21,-2
-MAHSCOOTER,NSE,Financials - Misc,Small Cap,14020.0,,-2,24,0
-NBIFIN,NSE,Financials - NBFC,Small Cap,2239.0,-43.97,-2,9,-19
-STARHEALTH,NSE,Financials - Non-Life,Mid Cap,465.35,-26.8,0,-21,-2
-STARCEMENT,NSE,Infra - Cement,Small Cap,216.55,-25.92,0,15,-11
-PAYTM,NSE,IT - Product/Platform,Mid Cap,1336.6,-0.74,2,-8,-5
-NETWEB,NSE,IT - Equipments,Small Cap,3261.7,-24.36,12,6,-4
-PRSMJOHNSN,NSE,Infra - Cement,Small Cap,135.59,-38.24,2,1,-7
-MAHLIFE,NSE,Real Estate,Small Cap,398.4,,-22,-10,0
-MAHSEAMLES,NSE,Metals - Pipe & Tube,Small Cap,556.2,,-1,-10,0
-PHOENIXLTD,NSE,Real Estate,Mid Cap,1828.4,-7.7,17,6,16
-PRUDENT,NSE,Financials - Misc,Small Cap,2700.0,-23.31,2,19,-13
-PAVNAIND,NSE,Auto - Misc,Small Cap,25.0,-65.4,-5,-3,-9
-PDMJEPAPER,NSE,Paper,Small Cap,97.25,-54.62,-4,8,-11
-MAITHANALL,NSE,Metals - Misc,Small Cap,940.0,,15,8,0
-STAR,NSE,Healthcare - Pharma,Small Cap,930.8,-43.08,0,1,1
-NETWORK18,NSE,Media - Entertainment,Small Cap,41.99,-66.96,-5,0,-11
-MANAKCOAT,NSE,Metals - Casting/Forging,Small Cap,133.89,,-25,-6,0
-NGIL,NSE,Consumption - Misc,Small Cap,30.24,-53.26,-2,10,1
-MAHEPC,NSE,Industrial - Consumables,Small Cap,124.89,,-3,8,0
-SRHHYPOLTD,NSE,Chemicals - Bulk,Small Cap,534.45,-40.36,0,5,-17
-PGHH,NSE,Consumption - Personal,Mid Cap,12763.0,-26.59,10,17,-6
-NAVINFLUOR,NSE,Chemicals - Bulk,Mid Cap,5864.0,-4.22,-4,-2,8
-PIIND,NSE,Agrichem - Protection,Mid Cap,3255.8,-30.96,-12,-26,-19
-PARADEEP,NSE,Agrichem - Fertilizers,Small Cap,155.6,-30.77,-4,16,-15
-IRCTC,NSE,IT - Product/Platform,Mid Cap,674.95,-39.14,15,5,-5
-PRINCEPIPE,NSE,Infra - Plastic Pipes,Small Cap,249.0,-66.5,12,2,-6
-MANGALAM,NSE,Healthcare - Pharma,Small Cap,24.01,,22,7,0
-PARACABLES,NSE,Power - Wiring,Small Cap,35.4,-67.83,-4,-3,-17
-SRF,NSE,Chemicals - Specialty,Large Cap,3090.3,-4.34,0,16,1
-PGIL,NSE,Textile - Apparels,Small Cap,1655.0,-4.99,12,-15,6
-MANGLMCEM,NSE,Infra - Cement,Small Cap,779.5,,-17,14,0
-ZODIACLOTH,NSE,Textile - Apparels,Small Cap,86.47,-43.35,14,6,-7
-AARTECH,NSE,Power - Equipment,Small Cap,47.41,-47.93,-20,-1,-18
-SREEL,NSE,Consumption - Footwear,Small Cap,216.37,-45.52,0,-9,-2
-NEOGEN,NSE,Chemicals - Specialty,Small Cap,1078.0,-53.88,14,6,-6
-PENINLAND,NSE,Real Estate,Small Cap,25.95,-64.62,10,1,-9
-STCINDIA,NSE,Others,Small Cap,117.5,-46.61,0,7,-4
-PILANIINVS,NSE,Financials - Misc,Small Cap,5159.0,-21.54,-1,14,-6
-NFL,NSE,Agrichem - Fertilizers,Small Cap,86.1,-43.62,-2,11,-11
-IRFC,NSE,Railways,Mid Cap,114.48,-47.35,1,1,-7
-MANAPPURAM,NSE,Financials - NBFC,Small Cap,293.05,,16,7,0
-ABCAPITAL,NSE,Financials - Misc,Mid Cap,348.85,-3.88,-14,-7,40
-NDGL,NSE,Financials - NBFC,Small Cap,2830.0,-50.77,10,-36,-22
-NAVNETEDUL,NSE,Media - Publishing,Small Cap,143.74,-13.73,16,5,-6
-NEULANDLAB,NSE,Healthcare - Pharma,Small Cap,15951.0,-10.57,-20,-25,-1
-MAHASTEEL,NSE,Metals - Iron & Steel,Small Cap,829.0,,-5,-3,0
-PEARLPOLY,NSE,Chemicals - Misc,Small Cap,21.69,-48.96,10,5,-13
-NAVKARCORP,NSE,Transport - Logistics,Small Cap,97.73,-39.85,10,9,-7
-MANAKSIA,NSE,Metals - Iron & Steel,Small Cap,59.88,,2,1,0
-PROZONER,NSE,Real Estate,Small Cap,50.65,-27.52,-2,6,-4
-PIGL,NSE,Engineering,Small Cap,122.7,-70.57,-26,-10,-2
-PARAS,NSE,Defense - Misc,Small Cap,639.5,-58.61,-40,-17,-2
-MANAKSTEEL,NSE,Metals - Iron & Steel,Small Cap,65.95,,8,1,0
-NEWGEN,NSE,IT - Software/Consulting,Small Cap,830.0,-50.89,-5,-26,9
-SRGHFL,NSE,Financials - Housing,Small Cap,264.05,-32.81,0,12,-9
-PRESTIGE,NSE,Real Estate,Mid Cap,1625.1,-18.06,-6,-32,-2
-PARAGMILK,NSE,Consumption - Dairy,Small Cap,309.25,-12.55,14,-20,-1
-MANALIPETC,NSE,Chemicals - Petro,Small Cap,61.26,,12,1,0
-STARTECK,NSE,Financials - NBFC,Small Cap,269.95,-23.21,0,-18,-12
-PENIND,NSE,Engineering,Small Cap,195.16,-29.28,10,-30,-6
-PSPPROJECT,NSE,Infra - Construction,Small Cap,863.5,-13.88,-4,-23,14
-PASUPTAC,NSE,Chemicals - Petro,Small Cap,52.6,-12.64,8,-12,8
-MARICO,NSE,Agri - Edible Oil,Large Cap,739.35,,22,5,0
-MATRIMONY,NSE,IT - Product/Platform,Small Cap,516.95,,-8,10,0
-PRECWIRE,NSE,Metals - Copper,Small Cap,232.0,-13.87,1,-20,12
-MSUMI,NSE,Auto - OEM Suppliers,Mid Cap,47.93,,14,1,0
-OILCOUNTUB,NSE,Oil and Gas,Small Cap,62.5,-34.99,-6,-2,-18
-MINDACORP,NSE,Auto - OEM Suppliers,Small Cap,596.9,,16,1,0
-NMDC,NSE,Metals - Misc,Mid Cap,76.3,-18.29,-3,14,2
-ZFCVINDIA,NSE,Auto - OEM Suppliers,Mid Cap,15567.0,,6,27,0
-PPLPHARMA,NSE,Healthcare - Pharma,Small Cap,171.0,-39.35,2,-30,-4
-RAMAPHO,NSE,Agrichem - Fertilizers,Small Cap,155.13,-25.12,10,-28,-3
-3PLAND,NSE,Financials - Misc,Small Cap,38.17,-43.16,6,3,-18
-MSTCLTD,NSE,IT - Product/Platform,Small Cap,471.85,,-3,5,0
-POLYMED,NSE,Healthcare - Equipments,Small Cap,1810.9,-42.12,-28,-12,8
-MINDTECK,NSE,IT - Software/Consulting,Small Cap,202.0,,12,6,0
-OIL,NSE,Oil and Gas,Mid Cap,404.95,-45.35,14,-24,-2
-MIRCELECTR,NSE,Consumption - Electronics,Small Cap,25.01,,6,8,0
-RAMANEWS,NSE,Paper,Small Cap,30.6,-28.89,-6,30,-27
-OFSS,NSE,IT - Product/Platform,Mid Cap,7817.0,-38.19,-19,-4,-7
-RADIANTCMS,NSE,Others,Small Cap,52.0,-43.14,-4,-2,4
-NOCIL,NSE,Chemicals - Specialty,Small Cap,155.0,-51.29,2,-16,-3
-MIRZAINT,NSE,Leather Products,Small Cap,39.19,,-7,-2,0
-MSPL,NSE,Metals - Iron & Steel,Small Cap,36.5,,-7,-2,0
-MITCON,NSE,IT - Software/Consulting,Small Cap,67.8,,12,-15,0
-RALLIS,NSE,Agrichem - Protection,Small Cap,266.0,-29.9,-2,27,-14
-POLYPLEX,NSE,Packaging,Small Cap,811.5,-42.3,1,8,-26
-AARVI,NSE,Human Resources,Small Cap,123.23,-23.51,10,-15,33
-MIDHANI,NSE,Defense - Misc,Small Cap,297.45,,10,2,0
-OLECTRA,NSE,Auto - PV/Trucks,Small Cap,1176.5,-42.16,-4,6,-9
-RADHIKAJWE,NSE,Consumption - Jewelry,Small Cap,72.36,-49.37,1,-25,-11
-POLYCAB,NSE,Power - Wiring,Mid Cap,7431.5,-3.86,2,1,-5
-RAMKY,NSE,Infra - Construction,Small Cap,551.2,-39.28,12,1,-4
-ONGC,NSE,Oil and Gas,Large Cap,232.95,-29.95,-44,-33,-2
-METROPOLIS,NSE,Healthcare - Diagnostics,Small Cap,1885.0,,-24,-11,0
-MUKANDLTD,NSE,Metals - Iron & Steel,Small Cap,132.7,,-4,1,0
-ONEPOINT,NSE,Tech - BPO,Small Cap,54.3,-28.36,5,-11,11
-PRAENG,NSE,Real Estate,Small Cap,26.5,-37.75,-30,-15,-1
-MFSL,NSE,Financials - Life,Mid Cap,1688.5,,-8,-14,0
-RAMCOSYS,NSE,IT - Product/Platform,Small Cap,594.0,-9.83,-6,-2,18
-NKIND,NSE,Agri - Edible Oil,Small Cap,67.7,-27.76,3,1,-8
-POLICYBZR,NSE,IT - Product/Platform,Mid Cap,1884.9,-14.94,-10,-4,4
-OMINFRAL,NSE,Engineering,Small Cap,98.35,-56.85,-26,-10,-5
-AARTIPHARM,NSE,Healthcare - Pharma,Small Cap,746.3,-21.55,-5,15,-20
-MGL,NSE,Utility - Gas,Small Cap,1157.1,,10,1,0
-MTNL,NSE,Telecom,Small Cap,36.05,,-4,7,0
-MHLXMIRU,NSE,Others,Small Cap,217.92,,-10,-8,0
-OMAXE,NSE,Real Estate,Small Cap,66.0,-55.21,10,5,-17
-RAMCOIND,NSE,Infra - Cement,Small Cap,317.0,-18.99,12,6,-7
-OMAXAUTO,NSE,Auto - OEM Suppliers,Small Cap,99.8,-36.84,28,24,-10
-63MOONS,NSE,IT - Software/Consulting,Small Cap,748.05,-30.68,-22,-8,-19
-MHRIL,NSE,Leisure - Hotels,Small Cap,307.5,,1,-4,0
-MTARTECH,NSE,Defense - Misc,Small Cap,2345.1,,10,-24,0
-NLCINDIA,NSE,Power - Misc,Small Cap,239.1,-17.38,17,6,-5
-MICEL,NSE,Electronic - Equipment,Small Cap,43.95,,2,15,0
-RAMCOCEM,NSE,Infra - Cement,Mid Cap,1050.7,-9.0,14,8,-18
-RACE,NSE,Others,Small Cap,141.22,-67.82,-6,13,-6
-NORBTEAEXP,NSE,Agri - Tea/Coffee,Small Cap,71.4,-3.51,-12,-6,16
-OBEROIRLTY,NSE,Real Estate,Mid Cap,1670.4,-27.87,4,2,9
-MRPL,NSE,Petro - Refineries,Small Cap,148.3,,2,-23,0
-ZIMLAB,NSE,Healthcare - Pharma,Small Cap,70.93,,-8,-4,0
-MOL,NSE,Agrichem - Protection,Small Cap,63.38,,10,5,0
-POWERGRID,NSE,Power - Misc,Large Cap,263.3,-26.5,1,-14,-7
-MOLDTECH,NSE,IT - Services,Small Cap,160.26,,-3,6,0
-NRL,NSE,Metals - Misc,Small Cap,57.75,-57.64,12,6,-10
-RAJRATAN,NSE,Auto - OEM Suppliers,Small Cap,454.0,-41.97,0,-3,9
-ZUARI,NSE,Agrichem - Fertilizers,Small Cap,315.05,-16.3,22,10,1
-NURECA,NSE,Healthcare - Equipments,Small Cap,280.15,-34.53,-14,-5,10
-MOTOGENFIN,NSE,Financials - Misc,Small Cap,23.93,,1,-10,0
-MOLDTKPAC,NSE,Packaging,Small Cap,577.7,,10,6,0
-NUCLEUS,NSE,IT - Product/Platform,Small Cap,910.0,-47.59,-3,9,-21
-MPHASIS,NSE,IT - Software/Consulting,Mid Cap,2888.6,,-17,-1,0
-RAIN,NSE,Chemicals - Petro,Small Cap,124.28,-39.76,14,7,-16
-RAJESHEXPO,NSE,Consumption - Jewelry,Mid Cap,211.83,-43.43,1,7,15
-NSIL,NSE,Financials - NBFC,Small Cap,6634.0,-26.47,-4,8,-7
-MOTILALOFS,NSE,Financials - Broking,Small Cap,859.85,,10,-36,0
-POWERINDIA,NSE,Power - Equipment,Small Cap,18600.0,-15.67,-3,-17,-2
-POWERMECH,NSE,Infra - Construction,Small Cap,2325.0,-32.49,12,5,-18
-MONTECARLO,NSE,Textile - Apparels,Small Cap,706.3,,14,-17,0
-NTPC,NSE,Power - Misc,Large Cap,320.55,-26.63,-6,6,-6
-MOTHERSON,NSE,Auto - Replacement,Large Cap,120.84,,-6,-2,0
-MOREPENLAB,NSE,Healthcare - Pharma,Small Cap,40.82,,0,-3,0
-RAINBOW,NSE,Healthcare - Hospitals,Small Cap,1317.7,-20.13,-8,-3,-15
-NSLNISP,NSE,Metals - Iron & Steel,Small Cap,39.99,-43.6,-6,-2,-5
-MONARCH,NSE,Financials - Broking,Small Cap,303.75,,1,5,0
-POKARNA,NSE,Infra - Granites/Marbles,Small Cap,847.3,-37.79,12,-15,8
-NUVAMA,NSE,Financials - AMC,Small Cap,7180.0,-13.36,-2,-1,8
-RAJRILTD,NSE,Textiles - Processing,Small Cap,23.4,-23.95,20,5,-20
-MMFL,NSE,Metals - Casting/Forging,Small Cap,366.0,,-1,26,0
-OBCL,NSE,Transport - Logistics,Small Cap,58.0,-20.0,1,1,1
-PPL,NSE,Infra - Plastic Pipes,Small Cap,240.51,-62.53,-3,7,-22
-MMP,NSE,Metals - Misc,Small Cap,247.0,,-10,-1,0
-RAJTV,NSE,Media - TV Broadcast,Small Cap,42.48,-69.72,6,2,19
-RADICO,NSE,Beverages - Alcohol,Mid Cap,3192.2,-3.59,1,-21,-2
-PONNIERODE,NSE,Agri - Sugar,Small Cap,266.25,-54.58,-4,-2,15
-MMTC,NSE,Others,Small Cap,55.28,,10,1,0
-MRF,NSE,Auto - Tyres,Mid Cap,153600.0,,2,2,0
-OAL,NSE,Chemicals - Specialty,Small Cap,299.1,-51.66,10,4,-4
-NRAIL,NSE,Paper,Small Cap,461.1,-10.6,-1,-1,-1
-AARTISURF,NSE,Chemicals - Specialty,Small Cap,405.0,-52.34,14,4,-19
-MODIRUBBER,NSE,Others,Small Cap,105.95,,2,1,0
-MPSLTD,NSE,Media - Publishing,Small Cap,1994.1,,4,-11,0
-RAJSREESUG,NSE,Agri - Sugar,Small Cap,35.06,-60.2,-4,7,-3
-NRBBEARING,NSE,Industrial - Bearings,Small Cap,279.7,-27.34,-2,-12,-3
-MODISONLTD,NSE,Power - Equipment,Small Cap,135.75,,-19,-8,0
-POONAWALLA,NSE,Financials - NBFC,Mid Cap,449.4,-15.07,2,-10,-7
-MOHITIND,NSE,Textiles - Processing,Small Cap,28.4,,4,7,0
-5PAISA,NSE,Financials - Broking,Small Cap,312.1,-54.94,10,-12,-18
-PPAP,NSE,Auto - OEM Suppliers,Small Cap,213.0,-20.01,-6,-10,-4
-NUVOCO,NSE,Infra - Cement,Small Cap,360.0,-22.4,10,6,-11
-MOIL,NSE,Metals - Misc,Small Cap,322.8,,-3,6,0
-RAILTEL,NSE,Railways,Small Cap,334.9,-43.89,12,6,-8
-NYKAA,NSE,IT - Product/Platform,Mid Cap,249.1,-7.23,2,-15,-2
-MUKTAARTS,NSE,Media - Films,Small Cap,58.49,,-6,-29,0
-METROBRAND,NSE,Consumption - Footwear,Mid Cap,1143.3,,1,8,0
-NITIRAJ,NSE,Electronic - Equipment,Small Cap,188.0,-48.13,-5,7,14
-ORISSAMINE,NSE,Metals - Misc,Small Cap,4687.0,-49.94,12,4,-2
-360ONE,NSE,Financials - Misc,Mid Cap,1137.3,-12.32,4,-10,5
-RCF,NSE,Agrichem - Fertilizers,Small Cap,138.9,-39.17,1,5,-13
-ZODIAC,NSE,Engineering,Small Cap,305.35,-60.27,12,1,-19
-ORIENTPPR,NSE,Paper,Small Cap,22.83,-60.91,-11,1,-10
-MAWANASUG,NSE,Agri - Sugar,Small Cap,84.55,,-4,8,0
-NIITMTS,NSE,IT - Education,Small Cap,423.4,-25.0,2,1,20
-PVP,NSE,Real Estate,Small Cap,33.8,-15.82,14,-15,16
-MAXHEALTH,NSE,Healthcare - Hospitals,Mid Cap,1077.7,,2,-14,0
-RBLBANK,NSE,Financials - Private Bank,Small Cap,300.2,-8.55,-8,-32,-3
-PNBGILTS,NSE,Financials - Misc,Small Cap,78.29,-46.03,-5,-9,-11
-NAHARCAP,NSE,Financials - Misc,Small Cap,262.8,-26.56,2,5,-18
-ORIENTLTD,NSE,Packaging,Small Cap,78.3,-42.42,-4,-3,-6
-MAXIND,NSE,Financials - Misc,Small Cap,188.5,,-28,-38,0
+MURUDCERA,NSE,Infra - Ceramics,Small Cap,34.44,-47.84,4,6,-7
+GOLDTECH,NSE,IT - Software/Consulting,Small Cap,50.4,-70.41,12,-2,-13
+SMLMAH,NSE,Auto - CV,Small Cap,3681.7,-2.21,0,17,3
+GICRE,NSE,Financials - Non-Life,Mid Cap,365.45,-27.06,-6,-21,10
+GUJGASLTD,NSE,Utility - Gas,Mid Cap,395.15,,1,-7,0
+GANECOS,NSE,Textile - Misc,Small Cap,892.85,-62.78,-2,16,-19
+GICHSGFIN,NSE,Financials - Housing,Small Cap,173.92,-38.36,9,4,1
+SIS,NSE,Others,Small Cap,332.9,-35.91,0,5,-16
+GULFOILLUB,NSE,Petro - Lubricants,Small Cap,1211.5,,10,5,0
+SIYSIL,NSE,Textile - Misc,Small Cap,631.8,-36.26,0,-29,-2
+HATSUN,NSE,Consumption - Dairy,Mid Cap,983.1,,-8,-25,0
+NIITMTS,NSE,IT - Education,Small Cap,420.9,-25.44,2,1,20
+HARRMALAYA,NSE,Agri - Tea/Coffee,Small Cap,159.88,,10,4,0
 NAGREEKCAP,NSE,Financials - Misc,Small Cap,27.98,-36.31,9,8,-4
-MAYURUNIQ,NSE,Leather Products,Small Cap,483.95,,-21,-24,0
-RBA,NSE,Leisure - Restaurants,Small Cap,66.6,-46.95,-6,19,-12
-ORIENTHOT,NSE,Leisure - Hotels,Small Cap,100.11,-49.12,-33,-15,-20
-NILKAMAL,NSE,Consumption - Misc,Small Cap,1410.7,-36.97,16,7,-19
-PRECAM,NSE,Auto - OEM Suppliers,Small Cap,164.2,-55.11,10,1,-5
-MAZDA,NSE,Engineering,Small Cap,213.01,,-7,-10,0
-PNBHOUSING,NSE,Financials - Housing,Small Cap,927.5,-18.43,1,6,9
-ORIENTELEC,NSE,Consumption - Appliances,Small Cap,182.0,-33.65,10,5,-5
-PVRINOX,NSE,Media - Films,Small Cap,1064.0,-37.44,-4,-3,-4
-NAGREEKEXP,NSE,Textile - Spinning/Yarn,Small Cap,25.66,-48.79,-4,-1,-6
-MAZDOCK,NSE,Defense - Ship Building,Mid Cap,2410.0,,1,-19,0
-MASTEK,NSE,IT - Software/Consulting,Small Cap,2151.0,,16,-17,0
-ZOTA,NSE,Healthcare - Pharma,Small Cap,1549.3,-8.06,-4,-2,-3
-MARINE,NSE,Electronic - Equipment,Small Cap,203.02,,12,-21,0
-AARTIDRUGS,NSE,Healthcare - Pharma,Small Cap,380.65,-34.69,1,3,-9
+GLOBALVECT,NSE,Transport - Logistics,Small Cap,193.75,-43.92,-5,7,-3
+GOACARBON,NSE,Metals - Misc,Small Cap,394.8,-59.79,12,4,-4
+GPIL,NSE,Metals - Iron & Steel,Small Cap,235.55,-68.88,-1,6,-4
+GANESHBE,NSE,Oil and Gas,Small Cap,80.76,-58.83,10,2,17
+NFL,NSE,Agrichem - Fertilizers,Small Cap,85.9,-43.75,-2,11,-11
+NATIONALUM,NSE,Metals - Aluminium,Mid Cap,278.5,0.0,12,5,31
+NAHARCAP,NSE,Financials - Misc,Small Cap,262.8,-26.56,12,5,-18
+ZENITHEXPO,NSE,Leather Products,Small Cap,228.25,-47.1,-4,-2,-9
+NATHBIOGEN,NSE,Agri - Seeds,Small Cap,150.84,-40.87,16,7,-20
+GLOBUSSPR,NSE,Beverages - Alcohol,Small Cap,984.5,-23.64,12,1,-5
+ZENSARTECH,NSE,IT - Software/Consulting,Small Cap,741.5,-23.38,2,20,-20
+SRGHFL,NSE,Financials - Housing,Small Cap,264.05,-32.81,0,12,-9
+AARTIPHARM,NSE,Healthcare - Pharma,Small Cap,747.1,,-5,15,0
+YESBANK,NSE,Financials - Private Bank,Mid Cap,21.7,-30.89,1,-42,-1
+GROBTEA,NSE,Agri - Tea/Coffee,Small Cap,1026.9,,12,1,0
+GOCLCORP,NSE,Defense - Misc,Small Cap,293.45,-45.25,-2,6,-12
+AARTIIND,NSE,Chemicals - Specialty,Mid Cap,369.8,,12,4,0
+SMSLIFE,NSE,Healthcare - Pharma,Small Cap,1220.2,-26.77,0,-13,8
+GOODLUCK,NSE,Metals - Pipe & Tube,Small Cap,1049.2,-19.09,-8,-12,-6
+GRSE,NSE,Defense - Ship Building,Small Cap,2297.2,,2,-19,0
+SUBROS,NSE,Auto - Replacement,Small Cap,868.95,,0,14,0
+SPLIL,NSE,Textile - Misc,Small Cap,36.33,-52.6,0,-30,-2
+5PAISA,NSE,Financials - Broking,Small Cap,310.8,,12,-12,0
+GPPL,NSE,Infra - Construction,Small Cap,193.61,-16.74,2,9,37
+ABREL,NSE,Paper,Small Cap,1738.7,,10,3,0
+NESCO,NSE,Real Estate,Small Cap,1246.2,-18.94,1,7,-11
+GRWRHITECH,NSE,Industrial - Consumables,Small Cap,3352.5,,-4,-17,0
+HARSHA,NSE,Engineering,Small Cap,373.4,,10,2,0
+SILGO,NSE,Consumption - Jewelry,Small Cap,75.13,-0.62,0,15,1
+GILLANDERS,NSE,Agri - Tea/Coffee,Small Cap,101.74,-30.34,14,-24,-19
+NEOGEN,NSE,Chemicals - Specialty,Small Cap,1079.5,-53.81,14,6,-6
+GENCON,NSE,Infra - Construction,Small Cap,43.98,-32.21,-6,-2,2
+SONACOMS,NSE,Auto - OEM Suppliers,Mid Cap,496.8,-33.61,0,-19,11
+STEELCAS,NSE,Metals - Casting/Forging,Small Cap,205.19,,0,-13,0
+NAUKRI,NSE,IT - Product/Platform,Mid Cap,1340.8,-25.72,-16,-5,9
+ZODIACLOTH,NSE,Textile - Apparels,Small Cap,86.47,-43.35,12,6,-7
+NCLIND,NSE,Infra - Cement,Small Cap,198.15,-22.03,18,5,-20
+NITIRAJ,NSE,Electronic - Equipment,Small Cap,187.74,-48.2,-5,7,14
+NAGREEKEXP,NSE,Textile - Spinning/Yarn,Small Cap,25.66,-48.79,-3,-1,-6
+SOTL,NSE,Petro - Lubricants,Small Cap,357.95,-44.26,0,8,-6
+NDGL,NSE,Financials - NBFC,Small Cap,2841.5,-50.57,10,-36,-22
+AARTIDRUGS,NSE,Healthcare - Pharma,Small Cap,381.55,,1,3,0
+STCINDIA,NSE,Others,Small Cap,117.5,,0,7,0
+ABB,NSE,Power - Equipment,Large Cap,5177.0,,-5,-1,0
+GOCOLORS,NSE,Textile - Apparels,Small Cap,455.15,-66.53,10,6,-20
+SONATSOFTW,NSE,IT - Software/Consulting,Small Cap,344.6,-58.94,0,-10,33
+GUJRAFFIA,NSE,Packaging,Small Cap,50.32,,-20,-7,0
+SRHHYPOLTD,NSE,Chemicals - Bulk,Small Cap,534.45,,0,5,0
+SMCGLOBAL,NSE,Financials - Broking,Small Cap,84.05,-4.81,0,13,2
+SPIC,NSE,Agrichem - Fertilizers,Small Cap,77.43,-33.07,0,-2,-12
+NILKAMAL,NSE,Consumption - Misc,Small Cap,1408.0,-37.09,16,7,-19
+SMLT,NSE,Metals - Iron & Steel,Small Cap,88.51,-74.92,0,-1,-1
 SPENCERS,NSE,Consumption - Retail,Small Cap,40.88,-66.63,0,4,-8
-PKTEA,NSE,Agri - Tea/Coffee,Small Cap,848.0,-11.33,10,6,1
-PUNJABCHEM,NSE,Agrichem - Protection,Small Cap,1237.0,-17.15,-5,-10,-3
-PAGEIND,NSE,Textile - Innerwear,Mid Cap,35750.0,-27.69,-8,-27,-20
-MARKSANS,NSE,Healthcare - Pharma,Small Cap,182.75,,-7,-21,0
-NAHARSPING,NSE,Textile - Misc,Small Cap,194.15,-45.08,-3,-3,2
-OSWALGREEN,NSE,Financials - Misc,Small Cap,33.3,-45.69,-4,6,-19
-NIBL,NSE,Industrial - Bearings,Small Cap,28.35,-39.29,-5,-2,-1
-NAHARPOLY,NSE,Packaging,Small Cap,253.05,-29.98,-3,6,-19
-PNB,NSE,Financials - PSU Bank,Large Cap,119.74,-12.31,10,-13,14
-MARUTI,NSE,Auto - PV/Trucks,Large Cap,16411.0,,-3,24,0
-PLASTIBLEN,NSE,Chemicals - Specialty,Small Cap,162.01,-54.9,10,6,-10
-MASFIN,NSE,Financials - NBFC,Small Cap,319.7,,-6,-2,0
-OSWALAGRO,NSE,Agri - Misc,Small Cap,58.8,-43.4,2,8,-24
-NIITLTD,NSE,IT - Education,Small Cap,86.7,-61.14,9,-34,-7
-PURVA,NSE,Real Estate,Small Cap,236.5,-55.17,-4,8,-7
-MASKINVEST,NSE,Financials - Misc,Small Cap,154.85,,-11,-4,0
-OSIAHYPER,NSE,Consumption - Retail,Small Cap,16.23,-78.85,-3,7,-4
-RECLTD,NSE,Financials - NBFC,Mid Cap,339.25,-46.77,2,-12,-2
-PRECOT,NSE,Textile - Spinning/Yarn,Small Cap,434.0,-33.4,-3,8,-4
-ABB,NSE,Power - Equipment,Large Cap,5173.5,-42.64,-5,-1,14
-NAHARINDUS,NSE,Textile - Spinning/Yarn,Small Cap,107.5,-32.68,-3,-13,-20
-REDTAPE,NSE,Consumption - Footwear,Small Cap,123.69,-48.6,-5,-11,-3
-PAISALO,NSE,Financials - NBFC,Small Cap,35.75,-62.03,-10,-2,32
-RAYMOND,NSE,Textile - Apparels,Small Cap,425.8,-86.82,-5,-1,21
-ZENTEC,NSE,Defense - Technology,Small Cap,1366.1,,1,-13,0
-NIRAJ,NSE,Infra - Construction,Small Cap,36.6,-49.35,8,1,2
-RATEGAIN,NSE,IT - Product/Platform,Small Cap,656.0,-25.05,10,-15,31
-NITCO,NSE,Infra - Ceramics,Small Cap,91.85,-40.47,12,16,-21
-POCL,NSE,Metals - Misc,Small Cap,1300.9,-8.02,3,2,-4
-MEDICO,NSE,Healthcare - Pharma,Small Cap,49.9,,-16,-8,0
-ORBTEXP,NSE,Textiles - Processing,Small Cap,189.35,-31.16,10,3,-3
-QUESS,NSE,Human Resources,Small Cap,209.0,-75.82,2,9,22
-MEDPLUS,NSE,IT - Product/Platform,Small Cap,820.0,,1,-4,0
-RANEHOLDIN,NSE,Auto - Misc,Small Cap,1293.0,-45.0,-4,-2,-6
-MUNJALSHOW,NSE,Auto - Replacement,Small Cap,122.25,-37.19,2,-10,-10
-OPTIEMUS,NSE,Telecom,Small Cap,512.45,-39.8,-6,-3,-8
-MEDICAMEQ,NSE,Healthcare - Biotech,Small Cap,397.0,,15,-22,0
-PRAJIND,NSE,Engineering,Small Cap,342.5,-59.05,14,5,5
-MUNJALAU,NSE,Auto - OEM Suppliers,Small Cap,78.77,-45.09,12,5,-5
-PODDARMENT,NSE,Chemicals - Dyes,Small Cap,266.2,-40.47,18,10,-5
-MEGASTAR,NSE,Consumption - Misc,Small Cap,235.0,,-16,-26,0
-RAMRAT,NSE,Power - Wiring,Small Cap,611.05,-17.83,-4,12,-14
-ONWARDTEC,NSE,IT - Software/Consulting,Small Cap,270.0,-57.57,-20,-5,-14
-NITINSPIN,NSE,Textile - Spinning/Yarn,Small Cap,322.8,-31.35,12,2,5
-ONMOBILE,NSE,IT - Product/Platform,Small Cap,60.5,-48.86,10,13,-4
-MENONBE,NSE,Industrial - Bearings,Small Cap,105.0,,2,8,0
-QUICKHEAL,NSE,IT - Product/Platform,Small Cap,272.8,-66.39,-9,-25,-1
-AARTIIND,NSE,Chemicals - Specialty,Mid Cap,369.25,-50.83,12,4,7
-AAVAS,NSE,Financials - Housing,Small Cap,1465.2,-29.69,-6,-3,-4
-MEGASOFT,NSE,IT - Product/Platform,Small Cap,176.85,,-20,-28,0
-AAATECH,NSE,Others,Small Cap,99.25,-29.94,-2,15,12
-ORCHPHARMA,NSE,Healthcare - Pharma,Small Cap,785.0,-60.4,-9,-16,27
-MEDANTA,NSE,Healthcare - Hospitals,Small Cap,1169.7,,3,1,0
-NACLIND,NSE,Agrichem - Protection,Small Cap,154.0,-49.98,-10,-2,-16
-ORIENTCER,NSE,Metals - Casting/Forging,Small Cap,40.2,-37.33,-19,-9,5
-NINSYS,NSE,IT - Software/Consulting,Small Cap,411.0,-32.48,3,7,-4
-MBAPL,NSE,Agrichem - Fertilizers,Small Cap,400.8,,-5,14,0
-MVGJL,NSE,Consumption - Jewelry,Small Cap,179.02,-46.64,-4,-19,-1
-PNC,NSE,Media - Films,Small Cap,28.7,-59.12,16,7,-4
-MBLINFRA,NSE,Infra - Construction,Small Cap,31.93,,-6,-10,0
-ORIENTCEM,NSE,Infra - Cement,Small Cap,161.5,-54.86,14,7,-6
-RATNAVEER,NSE,Metals - Iron & Steel,Small Cap,160.83,-38.2,0,15,16
-MUTHOOTFIN,NSE,Financials - NBFC,Mid Cap,3776.0,-1.61,-5,-12,29
-ORIENTBELL,NSE,Infra - Ceramics,Small Cap,267.0,-36.63,1,-11,-8
-MURUDCERA,NSE,Infra - Ceramics,Small Cap,34.48,-47.78,10,6,-7
-NIPPOBATRY,NSE,Batteries,Small Cap,401.5,-48.97,-7,-3,-12
-3MINDIA,NSE,Others,Mid Cap,34760.0,-11.81,-1,-21,7
-PRAKASH,NSE,Metals - Pipe & Tube,Small Cap,131.2,-40.66,-4,8,-10
-MCLEODRUSS,NSE,Agri - Tea/Coffee,Small Cap,44.5,,-5,-34,0
-PYRAMID,NSE,Packaging,Small Cap,162.99,-29.38,-6,-3,5
-MCX,NSE,IT - Product/Platform,Small Cap,10309.0,,2,-12,0
-PNCINFRA,NSE,Infra - Construction,Small Cap,253.79,-54.62,-4,9,-11
-RATNAMANI,NSE,Metals - Pipe & Tube,Mid Cap,2305.8,-39.46,-9,-4,9
-ORICONENT,NSE,Packaging,Small Cap,59.74,-2.48,12,3,2
-ABAN,NSE,Oil and Gas,Small Cap,23.58,-72.28,-14,-7,-15
-ZUARIIND,NSE,Agri - Sugar,Small Cap,316.55,-20.44,13,6,-5
-MUTHOOTCAP,NSE,Financials - NBFC,Small Cap,272.0,-31.58,-6,-2,2
-MCL,NSE,Power - Wiring,Small Cap,48.6,,-2,14,0
-NARMADA,NSE,Agri - Animal Feed,Small Cap,20.86,-36.11,7,-12,-7
-HEG,NSE,Metals - Casting/Forging,Small Cap,529.8,-10.36,-8,1,-5
-IOC,NSE,Petro - Refineries,Large Cap,162.64,-13.03,-3,-2,14
-DONEAR,NSE,Textiles - Processing,Small Cap,96.51,-41.68,-26,-11,9
-DOLPHIN,NSE,Oil and Gas,Small Cap,409.95,-52.36,14,7,1
-UNIPARTS,NSE,Engineering,Small Cap,483.9,,-2,-1,0
-DOLLAR,NSE,Textile - Innerwear,Small Cap,363.05,-42.02,17,6,15
-DOLATALGO,NSE,Financials - Misc,Small Cap,86.24,-50.75,-6,13,2
-UNITDSPR,NSE,Beverages - Alcohol,Large Cap,1406.7,,-6,-23,0
-DODLA,NSE,Consumption - Dairy,Small Cap,1218.2,-16.69,-4,23,-13
-DMCC,NSE,Chemicals - Specialty,Small Cap,257.85,-33.85,-6,13,-8
-WIPRO,NSE,IT - Software/Consulting,Large Cap,264.45,,2,29,0
-UNITEDPOLY,NSE,Textile - Misc,Small Cap,28.08,,-25,-25,0
-DLINKINDIA,NSE,IT - Software/Consulting,Small Cap,415.0,-39.42,-6,-4,-19
-UNITEDTEA,NSE,Agri - Tea/Coffee,Small Cap,449.75,,2,25,0
-DLF,NSE,Real Estate,Large Cap,693.7,-24.62,1,-32,-19
-DJML,NSE,Transport - Logistics,Small Cap,72.17,-63.54,10,5,-18
-UNIVASTU,NSE,Engineering,Small Cap,68.05,,1,25,0
-DIXON,NSE,Consumption - Electronics,Mid Cap,13279.0,-27.82,10,4,-10
-DIVISLAB,NSE,Healthcare - Pharma,Large Cap,6484.5,-6.11,3,1,-2
-UNIVCABLES,NSE,Power - Wiring,Small Cap,856.15,,-24,-11,0
-DMART,NSE,Consumption - Retail,Large Cap,3818.7,-28.23,1,1,-11
-AGROPHOS,NSE,Agrichem - Fertilizers,Small Cap,38.14,-31.65,14,4,-5
-UNIONBANK,NSE,Financials - PSU Bank,Mid Cap,154.03,,10,-22,0
-DPABHUSHAN,NSE,Consumption - Jewelry,Small Cap,1436.1,-20.02,2,-16,-2
-ULTRACEMCO,NSE,Infra - Cement,Large Cap,11496.0,,-3,6,0
-DYNPRO,NSE,Chemicals - Dyes,Small Cap,263.45,-42.85,-1,15,-11
-DYNAMATECH,NSE,Defense - Misc,Small Cap,9506.5,-2.15,2,-20,14
-UMAEXPORTS,NSE,Agri - Misc,Small Cap,39.61,,2,10,0
-DYCL,NSE,Power - Wiring,Small Cap,332.35,-35.98,17,8,-20
-DWARKESH,NSE,Agri - Sugar,Small Cap,37.1,-57.48,-5,-1,-3
-UMIYA-MRO,NSE,Real Estate,Small Cap,84.55,,-25,-10,0
-DVL,NSE,Chemicals - Petro,Small Cap,281.35,-44.39,0,7,-10
-DTIL,NSE,Agri - Tea/Coffee,Small Cap,161.74,-46.07,-5,31,-11
-UNICHEMLAB,NSE,Healthcare - Pharma,Small Cap,449.8,,-1,6,0
-AGRITECH,NSE,Agri - Misc,Small Cap,164.41,-34.85,11,16,4
-DSSL,NSE,IT - Services,Small Cap,973.1,-37.32,12,6,6
-DRREDDY,NSE,Healthcare - Pharma,Large Cap,1279.3,-9.03,-5,27,2
-UNIDT,NSE,Engineering,Small Cap,205.15,,2,8,0
-DREDGECORP,NSE,Engineering,Small Cap,942.65,-32.97,-6,-2,8
-DREAMFOLKS,NSE,Infra - Construction,Small Cap,111.48,-80.28,1,-39,11
-UNIENTER,NSE,Chemicals - Misc,Small Cap,140.0,,10,3,0
-DRCSYSTEMS,NSE,IT - Software/Consulting,Small Cap,16.99,-46.37,0,9,-4
-DPWIRES,NSE,Power - Wiring,Small Cap,195.55,-67.15,3,5,-5
-DIVGIITTS,NSE,Auto - Misc,Small Cap,587.2,-42.05,-1,10,-10
-DIGJAMLMTD,NSE,Textile - Misc,Small Cap,51.54,-47.94,17,6,-8
-AHLADA,NSE,Infra - Home Furnish,Small Cap,49.0,-67.44,-3,7,-4
-UNIVPHOTO,NSE,Consumption - Misc,Small Cap,226.2,,-28,-10,0
-UTKARSHBNK,NSE,Financials - Private Bank,Small Cap,15.04,,9,4,0
-BASML,NSE,Textile - Spinning/Yarn,Small Cap,26.91,,-22,-10,0
-BASF,NSE,Chemicals - Specialty,Small Cap,3898.2,,2,-24,0
-UTTAMSUGAR,NSE,Agri - Sugar,Small Cap,262.94,,16,8,0
-BANSWRAS,NSE,Textile - Spinning/Yarn,Small Cap,113.96,,3,-11,0
-BANKINDIA,Track,Financials - PSU Bank,Mid Cap,143.19,,12,-24,0
-V2RETAIL,NSE,Consumption - Retail,Small Cap,2222.3,,10,-13,0
-AHLUCONT,NSE,Infra - Construction,Small Cap,974.8,-33.71,2,-10,3
-BANKBARODA,Track,Financials - PSU Bank,Large Cap,291.95,,5,-13,0
-BANKA,NSE,Engineering,Small Cap,67.0,,12,5,0
-VADILALIND,NSE,Consumption - Dairy,Small Cap,4981.0,,-21,-9,0
-BANG,NSE,Textile - Apparels,Small Cap,48.6,,2,-19,0
-BANDHANBNK,NSE,Financials - Private Bank,Mid Cap,149.98,,12,6,0
-VAIBHAVGBL,NSE,Consumption - Jewelry,Small Cap,237.13,,1,1,0
-BANCOINDIA,NSE,Auto - Replacement,Small Cap,704.6,,-6,11,0
-BANARISUG,NSE,Agri - Sugar,Small Cap,3605.0,,12,-19,0
-VALIANTLAB,NSE,Healthcare - Pharma,Small Cap,67.57,,22,9,0
-BANARBEADS,NSE,Consumption - Jewelry,Small Cap,129.84,,-2,6,0
-AIAENG,Core,Metals - Casting/Forging,Mid Cap,3809.5,-19.09,10,-12,12
-BATAINDIA,NSE,Consumption - Footwear,Mid Cap,951.25,,1,9,0
-AGI,NSE,Packaging,Small Cap,723.05,-41.69,2,1,-14
-BAYERCROP,NSE,Agrichem - Protection,Mid Cap,4312.7,,-25,-9,0
-BBL,NSE,Power - Equipment,Small Cap,2715.1,,-5,-3,0
-DIGISPICE,NSE,IT - Services,Small Cap,25.39,-44.06,5,17,-6
-DICIND,NSE,Chemicals - Misc,Small Cap,476.2,-40.47,-3,-13,-2
-DIAMONDYD,NSE,Consumption - FMCG,Small Cap,1149.0,-12.25,12,6,14
-UNOMINDA,Core,Auto - OEM Suppliers,Mid Cap,1267.8,,8,-13,0
-DIAMINESQ,NSE,Chemicals - Bulk,Small Cap,260.45,-60.39,3,15,-13
-DIACABS,NSE,Power - Wiring,Small Cap,140.84,-23.65,10,-12,-11
-UPL,NSE,Agrichem - Protection,Large Cap,751.55,,-4,-21,0
-DHUNINV,NSE,Financials - Misc,Small Cap,1265.0,-48.81,14,6,-5
-DHRUV,NSE,IT - Software/Consulting,Small Cap,50.61,-68.43,7,5,9
-AHLEAST,NSE,Leisure - Hotels,Small Cap,134.1,-26.46,4,1,-15
-WIPL,NSE,Infra - Laminates,Small Cap,142.88,,-28,-27,0
-URAVIDEF,NSE,Auto - Misc,Small Cap,179.83,,10,5,0
-DHARMAJ,NSE,Agrichem - Protection,Small Cap,245.0,-34.66,6,21,-13
-DHANUKA,NSE,Agrichem - Protection,Small Cap,1185.0,-35.83,-20,18,-18
-USHAMART,NSE,Power - Wiring,Small Cap,452.1,,31,9,0
-BCLIND,NSE,Agri - Edible Oil,Small Cap,31.5,,16,7,0
-BBTCL,NSE,Packaging,Small Cap,192.0,,-3,-16,0
-USK,NSE,Infra - Construction,Small Cap,23.16,,9,4,0
-BBTC,NSE,Consumption - FMCG,Small Cap,1902.4,,26,9,0
-UTIAMC,NSE,Financials - AMC,Small Cap,1134.0,,12,18,0
-E2E,NSE,IT - Software/Consulting,Small Cap,2063.9,-59.7,17,7,-5
-UJJIVANSFB,NSE,Financials - Private Bank,Small Cap,54.06,,10,-13,0
-ECLERX,NSE,IT - Software/Consulting,Small Cap,4518.9,-6.48,-18,-8,-1
-EVERESTIND,NSE,Infra - Cement,Small Cap,505.8,-63.27,15,8,-7
-EVEREADY,NSE,Batteries,Small Cap,333.3,-30.81,16,9,-11
-TRITURBINE,NSE,Power - Equipment,Small Cap,528.4,,0,-8,0
-ETHOSLTD,NSE,Consumption - Jewelry,Small Cap,2954.9,-12.66,-11,-11,11
-AETHER,NSE,Chemicals - Specialty,Small Cap,837.45,-15.99,-4,-13,12
-ETERNAL,NSE,IT - Product/Platform,Large Cap,286.0,-17.89,-6,6,-8
-TRIVENI,NSE,Agri - Sugar,Small Cap,375.0,,17,5,0
-ESTER,NSE,Packaging,Small Cap,106.8,-37.31,29,6,5
-ESSARSHPNG,NSE,Transport - Shipping,Small Cap,27.2,-57.87,-5,-2,-1
-TTKHLTCARE,NSE,Healthcare - Pharma,Small Cap,1044.1,,-5,-32,0
-ESCORTS,NSE,Auto - Misc,Mid Cap,3616.1,-16.57,-24,-9,-2
-ESABINDIA,Core,Engineering,Small Cap,6158.0,-5.06,-6,8,5
-TTKPRESTIG,NSE,Consumption - Appliances,Small Cap,618.25,,-7,-30,0
-ERIS,NSE,Healthcare - Pharma,Small Cap,1574.9,-12.91,-8,-6,-16
-EQUITASBNK,NSE,Financials - Private Bank,Small Cap,58.88,-48.6,6,-14,11
-AFFLE,NSE,IT - Product/Platform,Small Cap,1732.4,-19.24,15,20,-12
-TTML,NSE,Telecom,Small Cap,49.87,,0,4,0
-EPL,NSE,Packaging,Small Cap,212.97,-23.36,-4,27,1
-EPIGRAL,NSE,Chemicals - Specialty,Small Cap,1393.2,-37.58,-2,16,-16
-TRIGYN,NSE,IT - Software/Consulting,Small Cap,67.2,,0,26,0
-TVSELECT,NSE,IT - Equipments,Small Cap,473.6,,10,3,0
-EXCELINDUS,NSE,Chemicals - Specialty,Small Cap,942.75,-43.11,12,14,-16
-EXPLEOSOL,NSE,IT - Services,Small Cap,1030.9,-28.99,10,-13,5
-FINEORG,NSE,Chemicals - Specialty,Small Cap,4268.6,-22.49,-6,-11,-17
-TRANSWORLD,NSE,Transport - Shipping,Small Cap,202.59,,0,4,0
-FINCABLES,NSE,Power - Wiring,Small Cap,787.85,-52.72,15,6,1
-FILATEX,NSE,Textiles - Polyester,Small Cap,50.88,-29.63,-4,6,-4
-TREJHARA,NSE,IT - Software/Consulting,Small Cap,245.8,,0,-9,0
-AERONEU,NSE,Packaging,Small Cap,75.01,-42.48,-5,18,-18
-FIEMIND,Core,Auto - OEM Suppliers,Small Cap,2409.8,0.05,12,1,6
-FIBERWEB,NSE,Textile - Misc,Small Cap,35.57,-42.0,-5,1,-17
-TREL,NSE,Transport - Logistics,Small Cap,30.11,,0,8,0
-FEDERALBNK,Sate,Financials - Private Bank,Mid Cap,268.1,0.09,3,-11,10
-FDC,NSE,Healthcare - Pharma,Small Cap,410.8,-31.22,-6,20,-13
-TRENT,NSE,Consumption - Retail,Mid Cap,4062.2,,0,5,0
-FCL,NSE,Chemicals - Specialty,Small Cap,24.02,-45.67,-14,-3,-1
-FAZE3Q,NSE,Textiles - Processing,Small Cap,444.9,-35.43,10,-15,-3
-WSI,NSE,Engineering,Small Cap,88.03,,14,7,0
-TRF,NSE,Engineering,Small Cap,305.2,,0,6,0
-FAIRCHEMOR,NSE,Chemicals - Specialty,Small Cap,684.0,-52.46,-8,15,-18
-FACT,NSE,Agrichem - Fertilizers,Mid Cap,868.0,-23.49,10,4,-13
-TRIDENT,NSE,Textile - Misc,Mid Cap,26.95,,0,-19,0
-EXIDEIND,NSE,Batteries,Mid Cap,363.15,-36.26,-18,-3,-8
-BALRAMCHIN,NSE,Agri - Sugar,Small Cap,437.4,,14,5,0
-ENIL,NSE,Media - Entertainment,Small Cap,111.89,-67.13,4,2,-10
-TVSHLTD,NSE,Auto - Replacement,Small Cap,14579.0,,1,-31,0
-UCOBANK,NSE,Financials - PSU Bank,Mid Cap,28.65,,12,-31,0
-AGARIND,NSE,Chemicals - Petro,Small Cap,709.95,-46.85,8,2,-6
-ELECTCAST,NSE,Metals - Casting/Forging,Small Cap,73.33,-68.24,15,8,-17
-ELECON,NSE,Electronic - Equipment,Small Cap,482.4,-30.62,17,6,-22
-UDS,NSE,Human Resources,Small Cap,183.59,,15,7,0
-ELDEHSG,NSE,Real Estate,Small Cap,928.85,-17.96,5,12,15
-EKC,NSE,Packaging,Small Cap,116.01,-48.57,16,7,-5
-UFLEX,NSE,Packaging,Small Cap,477.9,,12,5,0
-EIMCOELECO,NSE,Engineering,Small Cap,1566.7,-53.55,9,5,-18
-EIHOTEL,NSE,Leisure - Hotels,Small Cap,364.35,-25.0,-10,-4,-9
-UFO,NSE,Media - Films,Small Cap,85.58,,10,3,0
-EIHAHOTELS,NSE,Leisure - Hotels,Small Cap,355.8,-24.11,10,6,-12
-WOCKPHARMA,NSE,Healthcare - Pharma,Small Cap,1411.1,,6,15,0
-EIFFL,NSE,Consumption - FMCG,Small Cap,237.0,-8.0,12,6,-17
-UGARSUGAR,NSE,Agri - Sugar,Small Cap,41.43,,-2,16,0
-EIDPARRY,NSE,Agrichem - Fertilizers,Small Cap,1000.0,-16.98,-6,-1,-15
-EICHERMOT,Core,Auto - 2W,Large Cap,7224.0,-0.07,-10,-4,-1
-UGROCAP,NSE,Financials - NBFC,Small Cap,170.9,,12,0,0
-EDELWEISS,NSE,Financials - Misc,Small Cap,107.46,-23.31,12,1,-4
-ELECTHERM,NSE,Metals - Iron & Steel,Small Cap,786.0,-44.13,-4,9,-6
-ENGINERSIN,NSE,Infra - Construction,Small Cap,199.6,-30.68,8,1,-20
-ELGIEQUIP,NSE,Industrial - Pumps/Engines,Small Cap,470.45,-36.24,-8,-12,6
-UCAL,NSE,Auto - Replacement,Small Cap,112.1,,15,2,0
-ENERGYDEV,NSE,Power - Misc,Small Cap,19.89,-42.46,14,-16,5
-WONDERLA,NSE,Leisure - Misc,Small Cap,536.5,,1,-9,0
-ENDURANCE,NSE,Auto - OEM Suppliers,Mid Cap,2702.0,-8.96,10,5,-8
-TVSMOTOR,NSE,Auto - 2W,Large Cap,3666.0,,-19,-2,0
-EMUDHRA,NSE,IT - Product/Platform,Small Cap,593.0,-39.25,-8,-2,-17
-EMSLIMITED,NSE,Others,Small Cap,448.75,-50.24,12,6,-8
-TVSSCS,NSE,Transport - Logistics,Small Cap,106.45,,15,6,0
-EMMBI,NSE,Packaging,Small Cap,98.05,-40.4,10,2,-2
-EMKAY,NSE,Financials - Broking,Small Cap,264.3,-25.83,3,-11,-3
-TVSSRICHAK,Sate,Auto - Tyres,Small Cap,4220.1,,1,-14,0
-EMIL,NSE,Consumption - Retail,Small Cap,104.15,-56.64,-5,-32,-5
-EMBDL,NSE,Real Estate,Small Cap,68.79,-54.25,2,1,-20
-TVTODAY,NSE,Media - TV Broadcast,Small Cap,134.26,,10,5,0
-AFSL,NSE,Others,Small Cap,201.47,-66.4,26,2,6
-EMAMIREAL,NSE,Real Estate,Small Cap,84.17,-42.64,18,9,-14
-EMAMIPAP,NSE,Paper,Small Cap,86.94,-39.04,-3,6,-7
-UBL,NSE,Beverages - Alcohol,Mid Cap,1601.2,,-19,-31,0
-EMAMILTD,NSE,Consumption - Personal,Mid Cap,519.75,-37.58,-4,17,-13
-ELIN,NSE,Consumption - Appliances,Small Cap,165.01,-37.19,1,-5,-7
-ELGIRUBCO,NSE,Others,Small Cap,47.6,-67.58,-5,6,-5
-FINOPB,NSE,Financials - Private Bank,Small Cap,260.0,-38.34,-20,-9,-1
-BALPHARMA,NSE,Healthcare - Pharma,Small Cap,73.0,,12,5,0
-VALIANTORG,NSE,Chemicals - Specialty,Small Cap,263.35,,-7,12,0
-ARENTERP,NSE,Others,Small Cap,46.0,-35.22,-22,-9,5
-VPRPL,NSE,Infra - Construction,Small Cap,63.13,,-4,-22,0
-ARE&M,NSE,Batteries,Small Cap,930.0,-45.12,-12,1,-4
-ARCHIES,NSE,Leisure - Misc,Small Cap,18.85,-52.4,3,3,-4
-ARCHIDPLY,NSE,Infra - Laminates,Small Cap,90.8,-35.16,-3,9,-8
-VRLLOG,NSE,Transport - Logistics,Small Cap,267.6,,-6,-3,0
-APTUS,NSE,Financials - Housing,Small Cap,283.3,-24.3,-5,17,-16
-APTECHT,NSE,IT - Education,Small Cap,94.99,-66.48,-2,-1,-21
-AKZOINDIA,NSE,Consumption - Paints,Small Cap,3152.1,-30.24,-6,-3,3
-VSSL,NSE,Metals - Iron & Steel,Small Cap,296.45,,19,11,0
-ALBERTDAVD,NSE,Healthcare - Pharma,Small Cap,743.1,-54.28,-11,-27,32
-APOLLOTYRE,NSE,Auto - Tyres,Mid Cap,507.7,-7.76,-16,-25,17
-VSTIND,NSE,Consumption - Misc,Small Cap,251.3,,-4,7,0
-APOLLOPIPE,NSE,Infra - Plastic Pipes,Small Cap,306.1,-60.74,1,8,-13
-APOLLOHOSP,NSE,Healthcare - Hospitals,Large Cap,7012.5,-11.49,1,-36,-8
-WHEELS,NSE,Auto - OEM Suppliers,Small Cap,851.8,,-3,6,0
-VSTTILLERS,NSE,Auto - Misc,Small Cap,5757.0,,-6,14,0
-APOLLO,NSE,Defense - Technology,Small Cap,237.95,-30.81,4,-10,-8
-APOLSINHOT,NSE,Leisure - Hotels,Small Cap,1229.8,-51.31,5,1,-9
-ARIES,NSE,Agrichem - Fertilizers,Small Cap,316.2,-26.31,-2,4,-12
-VOLTAS,NSE,Consumption - Appliances,Mid Cap,1375.5,,16,6,0
-ARIHANTCAP,NSE,Financials - Broking,Small Cap,91.94,-22.51,2,-11,-9
-AKSHARCHEM,NSE,Chemicals - Dyes,Small Cap,249.15,-31.94,9,3,-14
-VISASTEEL,NSE,Metals - Iron & Steel,Small Cap,48.66,,1,-39,0
-ASAHIINDIA,NSE,Auto - OEM Suppliers,Small Cap,1006.0,,-24,-10,0
-ARVSMART,NSE,Real Estate,Small Cap,612.1,,3,15,0
-VISHNU,NSE,Chemicals - Specialty,Small Cap,520.45,,10,3,0
-WHIRLPOOL,NSE,Consumption - Appliances,Mid Cap,926.2,,14,3,0
-ARVINDFASN,NSE,Textile - Apparels,Small Cap,513.0,,12,5,0
-ARVIND,NSE,Textile - Apparels,Small Cap,318.8,-23.96,2,-15,9
-VLEGOV,NSE,IT - Product/Platform,Small Cap,21.03,,-10,-5,0
-ARVEE,NSE,Chemicals - Bulk,Small Cap,290.78,-0.21,4,11,3
-ARTNIRMAN,NSE,Real Estate,Small Cap,48.4,-44.16,9,4,-4
-VLSFINANCE,NSE,Financials - AMC,Small Cap,297.45,,-19,-6,0
-ARTEMISMED,NSE,Healthcare - Hospitals,Small Cap,277.1,-18.5,16,-14,11
-ARROWGREEN,NSE,Packaging,Small Cap,525.15,-49.09,1,4,-5
-VMART,NSE,Consumption - Retail,Small Cap,737.9,,12,-1,0
-AROGRANITE,NSE,Infra - Granites/Marbles,Small Cap,30.2,-51.52,12,5,-6
-ARMANFIN,NSE,Financials - NBFC,Small Cap,1484.3,-43.12,12,3,-2
-VOLTAMP,NSE,Power - Equipment,Small Cap,8071.5,,1,-18,0
-ARIHANTSUP,NSE,Real Estate,Small Cap,306.0,-42.26,10,-39,-6
-APLLTD,NSE,Healthcare - Pharma,Small Cap,861.45,-30.81,-29,-23,-17
-VTL,NSE,Textile - Spinning/Yarn,Small Cap,453.0,,27,7,0
-APLAPOLLO,Core,Metals - Pipe & Tube,Mid Cap,1820.7,-5.22,6,3,1
-APEX,NSE,Consumption - Misc,Small Cap,286.95,-13.5,10,1,9
-AMDIND,NSE,Packaging,Small Cap,48.16,-42.15,-3,-26,-3
-WELCORP,NSE,Metals - Pipe & Tube,Small Cap,777.5,,9,-25,0
-AMBUJACEM,NSE,Infra - Cement,Large Cap,540.1,-21.31,-2,6,-16
-AMBIKCO,NSE,Textile - Spinning/Yarn,Small Cap,1270.1,-36.31,16,7,-20
-WEWIN,NSE,Tech - BPO,Small Cap,45.49,,0,15,0
-WELENT,NSE,Infra - Construction,Small Cap,510.8,,1,-31,0
-AMBICAAGAR,NSE,Consumption - Misc,Small Cap,25.69,-34.8,-6,0,4
-AMBER,NSE,Consumption - Appliances,Small Cap,6685.0,-19.67,12,5,-7
-WELINV,NSE,Financials - Misc,Small Cap,1363.8,,-5,15,0
-ALPHAGEO,NSE,Oil and Gas,Small Cap,219.0,-55.81,2,1,-4
-ALPA,NSE,Healthcare - Pharma,Small Cap,76.84,-41.8,-20,-3,-21
-WELSPUNLIV,NSE,Textile - Misc,Small Cap,135.76,,-9,-12,0
-ALLDIGI,NSE,Tech - BPO,Small Cap,832.05,-25.8,-6,8,-14
-ALLCARGO,NSE,Transport - Logistics,Small Cap,10.92,-87.97,-12,13,-6
-WENDT,NSE,Engineering,Small Cap,8122.0,,-3,8,0
-ALKYLAMINE,NSE,Chemicals - Specialty,Small Cap,1605.3,-39.22,2,1,-17
-ALKEM,NSE,Healthcare - Pharma,Mid Cap,5564.5,-12.59,-4,-20,36
-WESTLIFE,NSE,Leisure - Restaurants,Small Cap,520.25,,-21,-4,0
-ALKALI,NSE,Chemicals - Specialty,Small Cap,77.0,-48.68,-1,6,-6
-AMJLAND,NSE,Real Estate,Small Cap,50.9,-27.62,8,3,-19
-ASAHISONG,NSE,Chemicals - Dyes,Small Cap,282.0,,10,5,0
-ALICON,NSE,Auto - OEM Suppliers,Small Cap,825.65,-44.43,-6,-30,-1
-WEL,NSE,Consumption - Appliances,Small Cap,140.96,,-24,-11,0
-WABAG,NSE,Infra - Construction,Small Cap,1296.4,,7,-11,0
-APCOTEXIND,NSE,Industrial - Consumables,Small Cap,373.0,-29.11,7,-13,-2
-APCL,NSE,Infra - Cement,Small Cap,119.0,-47.8,17,6,-13
-WALCHANNAG,NSE,Engineering,Small Cap,196.04,,10,6,0
-APARINDS,NSE,Power - Equipment,Small Cap,8733.0,-20.25,-4,-15,-1
-ANURAS,Sate,Chemicals - Specialty,Small Cap,1332.1,-0.1,-6,24,3
-WANBURY,NSE,Healthcare - Pharma,Small Cap,231.1,,-6,-10,0
-ANUP,NSE,Engineering,Small Cap,2176.1,-41.67,-4,-3,10
-ANTELOPUS,NSE,Oil and Gas,Small Cap,411.05,-28.17,24,6,-10
-ALEMBICLTD,NSE,Healthcare - Pharma,Small Cap,99.83,-39.19,-3,6,2
-WEALTH,NSE,Others,Small Cap,950.95,,-6,-1,0
-ANIKINDS,NSE,Metals - Misc,Small Cap,54.0,-57.63,14,1,-33
-ANGELONE,NSE,Financials - Broking,Small Cap,2520.1,-33.6,1,-20,8
-WEBELSOLAR,NSE,Power - Green,Small Cap,84.07,,-19,-24,0
-ANDHRSUGAR,NSE,Chemicals - Bulk,Small Cap,74.67,-40.39,-5,-3,-2
-ANDHRAPAP,NSE,Paper,Small Cap,67.94,-45.83,14,7,-7
-WEIZMANIND,NSE,Textiles - Processing,Small Cap,100.2,,9,-12,0
-ANANTRAJ,NSE,Real Estate,Small Cap,551.8,-38.65,12,5,-4
-ANANDRATHI,NSE,Financials - Misc,Small Cap,3006.6,-3.79,12,7,-6
-AMRUTANJAN,NSE,Healthcare - Pharma,Small Cap,682.6,-16.64,10,6,-9
-ASAL,NSE,Auto - Replacement,Small Cap,482.15,,-22,-9,0
-VISAKAIND,NSE,Infra - Cement,Small Cap,66.72,,1,9,0
-ASALCBR,NSE,Beverages - Alcohol,Small Cap,945.0,,-4,6,0
-AYMSYNTEX,NSE,Textile - Spinning/Yarn,Small Cap,155.62,,-2,7,0
-VENKEYS,NSE,Consumption - Misc,Small Cap,1406.1,,-8,16,0
-AXISCADES,NSE,IT - Services,Small Cap,1303.5,,1,-19,0
-AXISBANK,NSE,Financials - Private Bank,Large Cap,1231.8,,-8,-14,0
-AIROLAM,NSE,Infra - Laminates,Small Cap,103.0,-41.86,8,7,-10
-VENUSPIPES,NSE,Metals - Iron & Steel,Small Cap,1196.0,,-6,-4,0
-AWL,NSE,Agri - Edible Oil,Large Cap,246.25,,1,-30,0
-AWHCL,NSE,Engineering,Small Cap,520.0,,12,6,0
-WINDLAS,NSE,Healthcare - Biotech,Small Cap,777.7,,1,13,0
-VENUSREM,NSE,Healthcare - Pharma,Small Cap,766.95,,-9,-5,0
-AVTNPL,NSE,Agri - Misc,Small Cap,65.6,,-4,-2,0
-AVROIND,NSE,Consumption - Misc,Small Cap,114.5,,2,-10,0
-AVG,NSE,Transport - Logistics,Small Cap,194.99,,10,4,0
-VERANDA,NSE,IT - Services,Small Cap,178.9,,-22,-36,0
-AVANTIFEED,NSE,Agri - Animal Feed,Small Cap,854.25,,10,2,0
-AVALON,NSE,Electronic - Equipment,Small Cap,873.7,,9,2,0
-VERTOZ,NSE,Media - Misc,Small Cap,74.76,,2,39,0
-AVADHSUGAR,NSE,Agri - Sugar,Small Cap,369.65,,-1,7,0
-AUTOIND,NSE,Auto - OEM Suppliers,Small Cap,77.28,,12,17,0
-BAFNAPH,NSE,Healthcare - Pharma,Small Cap,149.68,,14,1,0
-VESUVIUS,NSE,Metals - Casting/Forging,Small Cap,465.75,,-12,-4,0
-VEEDOL,NSE,Petro - Lubricants,Small Cap,1642.8,,14,7,0
-BAJAJCON,NSE,Consumption - Personal,Small Cap,254.35,,-19,-28,0
-BALMLAWRIE,NSE,Others,Small Cap,174.38,,1,-3,0
-BALKRISIND,NSE,Auto - Tyres,Mid Cap,2366.5,,-2,5,0
-VARDHACRLC,NSE,Textiles - Polyester,Small Cap,37.54,,11,5,0
-BALKRISHNA,NSE,Paper,Small Cap,19.2,,-1,-1,0
-BALAXI,NSE,Healthcare - Pharma,Small Cap,27.79,,-32,-13,0
-VARROC,NSE,Auto - OEM Suppliers,Small Cap,635.0,,-5,-13,0
-BALAMINES,NSE,Chemicals - Specialty,Small Cap,1116.1,,1,9,0
-BALAJITELE,NSE,Media - Entertainment,Small Cap,103.0,,10,-19,0
-VASCONEQ,NSE,Engineering,Small Cap,47.12,,10,5,0
-BAJFINANCE,NSE,Financials - NBFC,Large Cap,1010.2,,-18,-7,0
-BAJAJHLDNG,NSE,Financials - Misc,Large Cap,11130.0,,10,5,0
-VASWANI,NSE,Metals - Iron & Steel,Small Cap,60.67,,15,7,0
-BAJAJHIND,NSE,Agri - Sugar,Small Cap,18.53,,-8,-32,0
-BAJAJHCARE,NSE,Healthcare - Pharma,Small Cap,418.8,,3,1,0
-VBL,NSE,Consumption - Misc,Large Cap,469.4,,-21,-3,0
-BAJAJFINSV,NSE,Financials - Misc,Large Cap,2044.2,,-8,-4,0
-BAJAJELEC,NSE,Consumption - Appliances,Small Cap,479.75,,10,27,0
-AIRAN,NSE,IT - Services,Small Cap,17.88,-56.46,1,6,-19
-VEDL,NSE,Metals - Misc,Large Cap,581.6,,12,6,0
-BAJAJ-AUTO,Core,Auto - 2W,Large Cap,9005.5,,-28,-9,0
-WINDMACHIN,NSE,Engineering,Small Cap,269.6,,-8,-3,0
-AUTOAXLES,NSE,Auto - Replacement,Small Cap,1862.0,,-18,16,0
-VETO,NSE,Consumption - Electronics,Small Cap,113.65,,15,5,0
-VINDHYATEL,NSE,Telecom,Small Cap,1392.8,,1,-13,0
-ASTERDM,NSE,Healthcare - Hospitals,Small Cap,597.85,,-26,-38,0
-ASTEC,NSE,Agrichem - Protection,Small Cap,718.1,,2,-10,0
-VINEETLAB,NSE,Healthcare - Pharma,Small Cap,41.8,,-2,6,0
-ASPINWALL,NSE,Transport - Logistics,Small Cap,227.0,,2,-2,0
-ASIANTILES,NSE,Infra - Ceramics,Small Cap,72.05,,12,2,0
-VINYLINDIA,NSE,Chemicals - Misc,Small Cap,245.19,,14,5,0
-ASIANPAINT,NSE,Consumption - Paints,Large Cap,2802.2,,2,-16,0
-ASIANHOTNR,NSE,Leisure - Hotels,Small Cap,319.45,,-3,-2,0
-VIPCLOTHNG,NSE,Textile - Innerwear,Small Cap,32.71,,-16,-2,0
-ASIANENE,NSE,Oil and Gas,Small Cap,292.9,,12,6,0
-ASHOKLEY,NSE,Auto - CV,Mid Cap,173.4,,10,18,0
-ASHOKA,NSE,Infra - Construction,Small Cap,172.37,,16,5,0
-AKASH,NSE,Infra - Construction,Small Cap,25.69,-41.35,-1,9,-5
-VIPIND,NSE,Consumption - Luggage,Small Cap,364.45,,16,7,0
-ASHIMASYN,NSE,Textile - Spinning/Yarn,Small Cap,17.71,,0,2,0
-ASHIANA,NSE,Real Estate,Small Cap,294.45,,4,-10,0
-VIRINCHI,NSE,IT - Product/Platform,Small Cap,21.46,,15,6,0
-ASHAPURMIN,NSE,Metals - Misc,Small Cap,791.35,,18,6,0
-ASTRAL,NSE,Infra - Plastic Pipes,Mid Cap,1423.6,,-2,-2,0
-AUSOMENT,NSE,Others,Small Cap,109.38,,-19,-7,0
-ASTRAMICRO,NSE,Defense - Technology,Small Cap,908.2,,14,6,0
-ASTRAZEN,NSE,Healthcare - Pharma,Small Cap,9056.5,,-8,-3,0
-AURUM,NSE,IT - Product/Platform,Small Cap,179.99,,15,16,0
-AUROPHARMA,Sate,Healthcare - Pharma,Mid Cap,1225.0,,10,-15,0
-VGUARD,NSE,Consumption - Appliances,Small Cap,330.95,,3,1,0
-AJANTPHARM,NSE,Healthcare - Pharma,Mid Cap,2640.0,-21.2,-12,-3,5
-AURIONPRO,NSE,IT - Software/Consulting,Small Cap,1128.3,,-4,7,0
-AUBANK,NSE,Financials - Private Bank,Mid Cap,985.75,,-2,-7,0
-VHL,NSE,Financials - NBFC,Small Cap,3578.9,,12,4,0
-ATULAUTO,NSE,Auto - CV,Small Cap,431.35,,-5,-11,0
-ATUL,NSE,Chemicals - Specialty,Mid Cap,6006.0,,5,3,0
-VIDHIING,NSE,Chemicals - Dyes,Small Cap,340.15,,11,-14,0
-ATLANTAA,NSE,Infra - Construction,Small Cap,43.26,,16,6,0
-ATL,NSE,Transport - Logistics,Small Cap,26.6,,19,7,0
-VIJAYA,NSE,Healthcare - Diagnostics,Small Cap,997.25,,1,-7,0
-ATGL,NSE,Utility - Gas,Large Cap,567.75,,-5,-2,0
-AJMERA,NSE,Real Estate,Small Cap,916.7,-19.34,-6,-3,-5
-ATAM,NSE,Engineering,Small Cap,80.73,,12,4,0
-VIMTALABS,NSE,Healthcare - Pharma,Small Cap,606.5,,12,18,0
-ATALREAL,NSE,Real Estate,Small Cap,25.22,,26,11,0
-WILLAMAGOR,NSE,Financials - Misc,Small Cap,29.93,,9,2,0
-VINATIORGA,NSE,Chemicals - Specialty,Mid Cap,1560.7,,-5,9,0
-TRACXN,NSE,IT - Software/Consulting,Small Cap,40.29,,0,-15,0
-FINPIPE,NSE,Infra - Plastic Pipes,Small Cap,166.09,-52.59,10,2,-10
-FIVESTAR,NSE,Financials - NBFC,Mid Cap,569.6,-35.96,10,-1,8
-SVLL,NSE,Transport - Logistics,Small Cap,716.95,-10.38,0,7,-18
-HOMEFIRST,NSE,Financials - Housing,Small Cap,1167.1,-21.09,-4,9,-20
-HNDFDS,NSE,Consumption - Misc,Small Cap,520.15,-22.99,-4,-18,-1
-SWANCORP,NSE,Real Estate,Small Cap,468.2,-40.52,0,7,32
-HMVL,NSE,Media - Publishing,Small Cap,72.69,-40.64,18,8,-17
-HMAAGRO,NSE,Consumption - Misc,Small Cap,29.01,-65.46,10,-19,36
-SWARAJENG,NSE,Industrial - Pumps/Engines,Small Cap,3619.7,-18.25,0,-2,-22
-HLEGLAS,Core,Engineering,Small Cap,447.0,-23.34,-4,7,-6
-YESBANK,NSE,Financials - Private Bank,Mid Cap,21.7,,1,-42,0
-HITECHGEAR,NSE,Auto - Replacement,Small Cap,655.0,-43.7,15,6,-4
-HITECHCORP,NSE,Packaging,Small Cap,169.5,-47.11,4,-11,-9
-HITECH,NSE,Metals - Iron & Steel,Small Cap,91.3,-55.52,9,1,-3
-SWSOLAR,NSE,Power - Green,Small Cap,213.82,-73.95,0,-11,5
-HISARMETAL,NSE,Metals - Iron & Steel,Small Cap,156.39,-29.19,-20,-12,-19
-HIRECT,NSE,Electronic - Equipment,Small Cap,1413.4,-26.29,-20,-2,-11
-HINDZINC,NSE,Metals - Misc,Large Cap,588.7,-20.73,16,16,15
-SYMPHONY,NSE,Consumption - Appliances,Small Cap,840.0,-53.97,0,-2,8
-HINDWAREAP,NSE,Infra - Home Furnish,Small Cap,262.45,-48.95,6,-32,-4
-SWELECTES,NSE,Power - Equipment,Small Cap,615.25,-57.91,0,5,-6
-HONAUT,NSE,Electronic - Equipment,Mid Cap,33780.0,-41.69,2,-11,-16
-ACL,NSE,Infra - Cement,Small Cap,67.31,-47.92,-3,-1,-9
-HONDAPOWER,NSE,Engineering,Small Cap,2311.1,-44.43,-6,5,-13
-ICICIGI,Core,Financials - Non-Life,Large Cap,1953.9,-13.61,9,-32,-1
-ICICIBANK,NSE,Financials - Private Bank,Large Cap,1354.1,-8.33,-18,-8,-24
-SURYALAXMI,NSE,Textile - Spinning/Yarn,Small Cap,57.39,-42.8,0,-2,-18
-ICEMAKE,NSE,Transport - Logistics,Small Cap,817.85,-19.25,17,18,2
-ICDSLTD,NSE,Others,Small Cap,43.49,-34.31,-7,9,-9
-SURYAROSNI,NSE,Metals - Pipe & Tube,Small Cap,267.1,-33.64,0,7,-19
-HUHTAMAKI,NSE,Packaging,Small Cap,209.37,-52.07,1,1,-4
-HUDCO,NSE,Financials - Housing,Small Cap,211.43,-36.7,2,-13,-2
-SURYODAY,NSE,Financials - Private Bank,Small Cap,134.15,-36.97,0,-11,-3
-ACI,NSE,Chemicals - Bulk,Small Cap,508.0,-36.6,18,8,-11
-HUBTOWN,NSE,Real Estate,Small Cap,239.4,-32.19,2,-21,-12
-HTMEDIA,NSE,Media - Publishing,Small Cap,22.75,-34.63,7,2,-6
-SUTLEJTEX,NSE,Textile - Spinning/Yarn,Small Cap,32.94,-55.77,0,-11,6
-HSCL,NSE,Chemicals - Specialty,Small Cap,476.55,-27.46,-5,12,3
-HPL,NSE,Consumption - Electronics,Small Cap,385.8,-41.43,16,1,-18
-SUVEN,NSE,Healthcare - Pharma,Small Cap,171.0,-41.24,0,14,-18
-HPIL,NSE,Chemicals - Dyes,Small Cap,136.05,-25.85,12,3,-3
-HPAL,NSE,Chemicals - Specialty,Small Cap,42.6,-64.68,12,0,-1
-SUZLON,NSE,Power - Green,Small Cap,52.59,-36.98,0,5,-19
-HINDUNILVR,NSE,Consumption - FMCG,Large Cap,2282.7,-23.34,5,-11,-9
-ACUTAAS,Core,Healthcare - Pharma,Small Cap,1646.4,-10.4,1,-15,23
-SYNGENE,NSE,Healthcare - Pharma,Mid Cap,654.15,-30.47,0,6,28
-HINDPETRO,NSE,Petro - Refineries,Mid Cap,470.15,-2.31,18,5,12
-HESTERBIO,NSE,Healthcare - Diagnostics,Small Cap,1596.9,-50.29,8,-9,-11
-TARIL,NSE,Power - Equipment,Small Cap,293.95,-52.56,0,10,-28
-HEROMOTOCO,NSE,Auto - 2W,Large Cap,5786.5,-8.88,-20,-9,36
-HERITGFOOD,NSE,Consumption - Dairy,Small Cap,458.7,-30.63,-7,-4,-8
-TARMAT,NSE,Infra - Construction,Small Cap,51.99,-60.55,0,-6,31
-HERCULES,NSE,Engineering,Small Cap,158.0,-75.2,2,-9,-2
-ADANIENT,NSE,Metals - Misc,Large Cap,2239.5,-34.35,21,7,-5
-HERANBA,NSE,Agrichem - Protection,Small Cap,244.15,-53.9,10,6,-13
-TARSONS,NSE,Healthcare - Equipments,Small Cap,230.3,-57.76,0,15,-19
-HEMIPROP,NSE,Real Estate,Small Cap,130.89,-45.91,10,1,-8
-HEIDELBERG,NSE,Infra - Cement,Small Cap,171.86,-26.55,10,1,-12
-TASTYBITE,NSE,Consumption - FMCG,Small Cap,8087.5,-44.33,0,6,-18
-ALIVUS,NSE,Healthcare - Pharma,Small Cap,901.95,-26.34,16,7,-28
-HECPROJECT,NSE,Infra - Construction,Small Cap,123.62,-29.68,-8,-3,-17
-TATACHEM,NSE,Chemicals - Bulk,Mid Cap,761.3,-42.12,0,5,-11
-HDFCLIFE,NSE,Financials - Life,Large Cap,768.05,-4.82,-7,-3,-22
-HDFCBANK,NSE,Financials - Private Bank,Large Cap,985.1,-2.23,-9,-14,-20
-ADANIGREEN,NSE,Power - Green,Large Cap,1018.4,-49.18,-2,6,40
-TATACOMM,NSE,Telecom,Mid Cap,1824.7,-14.19,0,-35,11
-HEUBACHIND,NSE,Chemicals - Dyes,Small Cap,461.0,-31.88,18,8,-31
-SURANAT&P,NSE,Power - Green,Small Cap,20.14,-28.25,0,6,-5
-TARC,NSE,Real Estate,Small Cap,147.27,-44.66,0,16,-19
-HFCL,NSE,Telecom,Small Cap,63.92,-60.5,-7,-24,-1
-HINDOILEXP,NSE,Oil and Gas,Small Cap,153.43,-46.32,-16,18,-8
-SYRMA,NSE,Electronic - Equipment,Small Cap,729.7,-18.41,0,-20,-9
-HINDCOPPER,NSE,Metals - Copper,Small Cap,387.65,-0.86,3,14,15
-HINDCON,NSE,Chemicals - Specialty,Small Cap,27.54,-56.94,-2,-1,-3
-TAINWALCHM,NSE,Industrial - Consumables,Small Cap,182.55,-42.27,0,4,-13
-HINDCOMPOS,NSE,Auto - OEM Suppliers,Small Cap,418.65,-32.17,14,2,-13
-HINDALCO,NSE,Metals - Aluminium,Large Cap,852.5,0.05,16,15,32
-ADANIENSOL,NSE,Power - Misc,Large Cap,987.85,-21.71,-5,-3,14
-TAJGVK,NSE,Leisure - Hotels,Small Cap,379.9,-26.0,0,-13,-13
-HIMATSEIDE,NSE,Textile - Misc,Small Cap,115.99,-47.41,12,-15,6
-HILTON,NSE,Metals - Pipe & Tube,Small Cap,43.0,-72.72,3,2,6
-YATRA,NSE,IT - Product/Platform,Mid Cap,174.74,,14,-18,0
-TALBROAUTO,NSE,Auto - OEM Suppliers,Small Cap,278.15,-25.62,0,-1,-5
-HIKAL,NSE,Healthcare - Pharma,Small Cap,237.8,-45.7,-8,0,3
-HGS,NSE,Tech - BPO,Small Cap,441.95,-55.69,10,-22,-4
-TANLA,NSE,IT - Product/Platform,Small Cap,535.75,-54.86,0,9,-8
-HGM,NSE,IT - Software/Consulting,Small Cap,68.66,-15.81,12,5,-7
-HGINFRA,NSE,Infra - Construction,Small Cap,746.65,-57.66,2,-13,-11
-TARAPUR,NSE,Power - Equipment,Small Cap,29.19,-41.46,0,-23,-1
-HEXATRADEX,NSE,Financials - Misc,Small Cap,161.95,-51.95,-7,-4,28
-ICICIPRULI,NSE,Financials - Life,Large Cap,651.25,-17.51,2,8,6
-ICIL,NSE,Textile - Spinning/Yarn,Small Cap,269.1,-35.46,-23,-13,14
-ICRA,NSE,Financials - Ratings,Small Cap,6090.5,-16.03,14,6,-19
-INDSWFTLAB,NSE,Healthcare - Pharma,Small Cap,93.5,-47.06,-3,6,-5
-INDRAMEDCO,NSE,Healthcare - Hospitals,Small Cap,469.8,-24.21,12,4,-3
-ABSLAMC,NSE,Financials - AMC,Small Cap,763.65,-13.44,21,17,-14
-SUKHJITS,NSE,Agri - Misc,Small Cap,146.52,-50.52,0,1,15
-INDOTHAI,NSE,Financials - Broking,Small Cap,362.45,-19.38,-1,-16,13
-INDOTECH,NSE,Power - Equipment,Small Cap,1560.1,-55.7,-4,-16,-1
-SULA,NSE,Beverages - Alcohol,Small Cap,212.4,-67.67,0,-21,-4
-INDOSTAR,NSE,Financials - NBFC,Small Cap,247.3,-28.43,-16,14,1
-INDORAMA,NSE,Textiles - Polyester,Small Cap,48.04,-30.2,10,5,-5
-SUMEETINDS,NSE,Textiles - Polyester,Small Cap,30.79,-68.52,0,1,-4
-INDOCO,NSE,Healthcare - Pharma,Small Cap,240.35,-39.92,1,-3,-13
-INDOBORAX,NSE,Chemicals - Bulk,Small Cap,271.9,-6.39,-3,9,1
-SUMICHEM,NSE,Agrichem - Protection,Mid Cap,442.6,-29.82,0,18,-13
-ACC,NSE,Infra - Cement,Mid Cap,1751.2,-35.63,-31,-13,-1
-INDOAMIN,NSE,Chemicals - Specialty,Small Cap,127.0,-44.42,15,6,-16
-INDNIPPON,NSE,Auto - OEM Suppliers,Small Cap,806.2,-22.93,2,5,-6
-SUMIT,NSE,Real Estate,Small Cap,68.2,-56.56,0,4,-7
-INDIGOPNTS,NSE,Consumption - Paints,Small Cap,1188.3,-29.11,-6,-15,6
-INDIGO,NSE,Transport - Logistics,Large Cap,5154.0,-15.32,9,-14,-17
-SUDARSCHEM,NSE,Chemicals - Dyes,Small Cap,970.4,-35.12,0,23,-12
-SUMMITSEC,NSE,Financials - NBFC,Small Cap,1974.9,-41.8,0,1,-4
-INDTERRAIN,NSE,Textile - Apparels,Small Cap,34.85,-58.21,-2,-26,12
-SUBROS,NSE,Auto - Replacement,Small Cap,868.95,-23.17,0,14,-6
-IOB,NSE,Financials - PSU Bank,Mid Cap,33.99,-52.19,-6,-21,-1
-INTLCONV,NSE,Engineering,Small Cap,91.01,-22.54,-3,12,-7
-STERTOOLS,NSE,Auto - OEM Suppliers,Small Cap,265.95,-61.72,0,1,-5
-INTENTECH,NSE,IT - Product/Platform,Small Cap,114.0,-30.53,1,-13,-1
-ABREL,NSE,Paper,Small Cap,1736.5,-43.12,10,3,7
-INTELLECT,NSE,IT - Software/Consulting,Small Cap,1049.6,-11.64,7,-26,-2
-STLTECH,NSE,Telecom,Small Cap,99.75,-33.1,0,1,-10
-INSPIRISYS,NSE,IT - Services,Small Cap,92.0,-50.15,6,1,-3
-INSECTICID,NSE,Agrichem - Protection,Small Cap,699.4,-33.15,1,-7,-18
-STOVEKRAFT,NSE,Consumption - Appliances,Small Cap,587.75,-37.02,0,7,-4
-INOXWIND,NSE,Power - Equipment,Small Cap,127.07,-50.04,10,3,-4
-INOXGREEN,NSE,Power - Green,Small Cap,204.6,-23.24,10,1,-3
-STYLAMIND,NSE,Paper,Small Cap,2175.0,-13.85,0,-1,31
-INGERRAND,NSE,Industrial - Pumps/Engines,Small Cap,3407.8,-28.94,-6,-16,-7
-INFY,NSE,IT - Software/Consulting,Large Cap,1641.2,-17.93,4,2,15
-ZEEL,NSE,Media - TV Broadcast,Mid Cap,90.53,,-24,-9,0
-STYRENIX,NSE,Chemicals - Specialty,Small Cap,1968.3,-40.76,0,13,-21
-INFOBEAN,NSE,IT - Software/Consulting,Small Cap,763.65,-0.42,24,11,3
-INDUSTOWER,NSE,Telecom,Mid Cap,413.15,-9.89,1,-22,7
-INDUSINDBK,NSE,Financials - Private Bank,Large Cap,843.6,-49.61,-6,-20,12
-HDFCAMC,NSE,Financials - AMC,Mid Cap,2671.7,-8.76,4,7,-12
-INDIANHUME,NSE,Engineering,Small Cap,401.2,-28.09,-8,-4,4
-INDIANB,NSE,Financials - PSU Bank,Mid Cap,782.2,-10.5,10,-29,-2
-ACE,NSE,Auto - CV,Small Cap,927.3,-41.08,-3,5,-6
-SUNTV,NSE,Media - TV Broadcast,Mid Cap,543.0,-40.78,0,-1,12
-IGL,NSE,Utility - Gas,Mid Cap,194.24,-29.73,10,3,-5
-IGARASHI,NSE,Auto - OEM Suppliers,Small Cap,433.85,-46.59,1,5,-6
-SUPERHOUSE,NSE,Leather Products,Small Cap,145.61,-44.87,0,-13,-3
-IFGLEXPOR,NSE,Metals - Casting/Forging,Small Cap,209.8,-48.04,12,6,-8
-IFCI,NSE,Financials - NBFC,Small Cap,47.91,-42.47,1,1,-7
-SUPRAJIT,NSE,Auto - OEM Suppliers,Small Cap,465.35,-25.0,0,3,-10
-IFBIND,NSE,Consumption - Appliances,Small Cap,1573.0,-30.72,-3,1,-3
-IFBAGRO,NSE,Beverages - Alcohol,Small Cap,1321.0,-14.4,17,-24,12
-ACEINTEG,NSE,Human Resources,Small Cap,21.99,-47.71,2,8,-5
-SUPREMEIND,NSE,Industrial - Consumables,Mid Cap,3368.1,-44.23,0,11,-12
-IEX,NSE,IT - Product/Platform,Small Cap,141.21,-38.96,-21,-8,6
-YUKEN,NSE,Industrial - Pumps/Engines,Small Cap,841.2,,12,4,0
-IDFCFIRSTB,NSE,Financials - Private Bank,Mid Cap,84.65,-4.78,12,5,9
-SUPRIYA,NSE,Healthcare - Pharma,Small Cap,737.85,-8.55,0,-23,-1
-IDEAFORGE,NSE,Defense - Technology,Small Cap,425.05,-48.89,3,-16,-11
-IDBI,NSE,Financials - Private Bank,Large Cap,98.26,-5.72,12,-20,8
-SURANASOL,NSE,Power - Green,Small Cap,27.06,-56.43,0,5,-5
-IGPL,NSE,Chemicals - Bulk,Small Cap,399.55,-43.48,-6,16,-17
-INDIANCARD,NSE,Others,Small Cap,239.95,-33.72,-2,-17,-22
-IIFL,NSE,Financials - NBFC,Mid Cap,564.7,-13.87,-7,-12,10
-IIFLCAPS,NSE,Financials - Broking,Small Cap,310.9,-15.83,-10,-1,-5
-SUNDARMFIN,NSE,Financials - NBFC,Mid Cap,4931.6,-7.63,0,5,7
-ACCELYA,NSE,IT - Software/Consulting,Small Cap,1313.1,-33.99,12,15,-7
-INDIAMART,NSE,IT - Product/Platform,Mid Cap,2216.1,-29.17,10,-24,-14
-ZAGGLE,NSE,IT - Software/Consulting,Small Cap,354.45,,10,-20,0
-INDIAGLYCO,NSE,Chemicals - Bulk,Small Cap,1064.9,-5.49,1,-17,9
-SUNDRMBRAK,NSE,Auto - Replacement,Small Cap,673.4,-47.83,0,-28,-5
-INDIACEM,NSE,Infra - Cement,Small Cap,438.55,0.13,22,11,2
-INDHOTEL,NSE,Leisure - Hotels,Mid Cap,730.7,-16.25,1,-4,1
-SUNDRMFAST,NSE,Auto - OEM Suppliers,Mid Cap,939.75,-34.48,0,5,-8
-INDBANK,NSE,Financials - Broking,Small Cap,35.37,-37.38,2,1,-2
-INCREDIBLE,NSE,Metals - Iron & Steel,Small Cap,40.95,-26.14,1,8,-5
-SUNDROP,NSE,Agri - Edible Oil,Small Cap,706.35,-23.44,0,-24,-20
-IMPAL,NSE,Auto - Misc,Small Cap,1040.0,-28.05,2,9,-5
-IMFA,NSE,Metals - Misc,Small Cap,1406.5,-0.59,1,6,29
-SUNFLAG,NSE,Metals - Iron & Steel,Small Cap,261.1,-15.24,0,12,-17
-IMAGICAA,NSE,Leisure - Misc,Small Cap,48.69,-49.5,-5,9,-19
-IKIO,NSE,Consumption - Electronics,Small Cap,174.07,-49.24,2,5,-5
-SUNPHARMA,NSE,Healthcare - Pharma,Large Cap,1744.9,-10.46,0,-11,11
-IITL,NSE,Financials - NBFC,Small Cap,165.05,-59.43,-9,10,23
-SUNTECK,NSE,Real Estate,Small Cap,391.35,-37.43,0,-29,-3
-HCLTECH,NSE,IT - Software/Consulting,Large Cap,1642.2,-17.69,-8,-7,10
-HCG,NSE,Healthcare - Hospitals,Small Cap,706.35,-7.01,-3,-31,-3
-YATHARTH,NSE,Healthcare - Hospitals,Small Cap,675.7,,-4,-3,0
-GLAND,NSE,Healthcare - Pharma,Mid Cap,1679.3,-21.04,2,-31,-11
+GRPLTD,NSE,Industrial - Consumables,Small Cap,1696.6,,-4,-2,0
+ZOTA,NSE,Healthcare - Pharma,Small Cap,1549.3,-8.06,-4,-2,-3
+STEELCITY,NSE,Financials - Broking,Small Cap,90.46,,0,-4,0
+GODFRYPHLP,NSE,Consumption - Misc,Small Cap,2814.8,-23.74,1,8,-13
+SUMICHEM,NSE,Agrichem - Protection,Mid Cap,442.6,,0,18,0
+GMBREW,NSE,Beverages - Alcohol,Small Cap,1002.2,-20.72,2,1,-1
+NIITLTD,NSE,IT - Education,Small Cap,86.8,-61.09,9,-34,-7
+ABBOTINDIA,NSE,Healthcare - Pharma,Mid Cap,28035.0,,4,-13,0
+STYRENIX,NSE,Chemicals - Specialty,Small Cap,1968.3,,0,13,0
+ZIMLAB,NSE,Healthcare - Pharma,Small Cap,70.93,-42.05,-8,-4,5
+NGIL,NSE,Consumption - Misc,Small Cap,29.31,-54.7,-2,10,1
+SOMANYCERA,NSE,Infra - Ceramics,Small Cap,419.6,-49.59,0,7,-17
 GKWLIMITED,NSE,Financials - Misc,Small Cap,1700.0,-55.27,-1,-4,35
-GIPCL,NSE,Power - Misc,Small Cap,148.0,-42.36,10,1,-19
-TIINDIA,NSE,Metals - Pipe & Tube,Large Cap,2634.9,,0,1,0
-GINNIFILA,NSE,Textile - Spinning/Yarn,Small Cap,39.69,-27.9,22,9,-15
-GILLETTE,NSE,Consumption - Personal,Mid Cap,7982.5,-29.09,-27,-5,-17
-TIL,NSE,Engineering,Small Cap,268.4,,0,5,0
-GILLANDERS,NSE,Agri - Tea/Coffee,Small Cap,100.91,-30.91,12,-24,-19
-GICRE,NSE,Financials - Non-Life,Mid Cap,366.25,-26.9,-6,-21,10
-ADVENZYMES,NSE,Healthcare - Biotech,Small Cap,309.0,-42.57,2,-20,-10
-TIMETECHNO,NSE,Industrial - Consumables,Small Cap,184.03,,0,5,0
-GICHSGFIN,NSE,Financials - Housing,Small Cap,174.12,-38.29,10,4,1
-GHCLTEXTIL,NSE,Textile - Spinning/Yarn,Small Cap,73.41,-35.79,12,4,-20
-TIMKEN,NSE,Industrial - Bearings,Mid Cap,3032.7,,0,-13,0
-GHCL,NSE,Chemicals - Bulk,Small Cap,574.2,-24.3,-17,-5,-2
-GFLLIMITED,NSE,Others,Small Cap,58.8,-41.72,2,1,-2
-XCHANGING,NSE,IT - Software/Consulting,Small Cap,81.19,,1,-29,0
-TIPSFILMS,NSE,Media - Films,Small Cap,445.3,,0,14,0
-GESHIP,NSE,Transport - Shipping,Small Cap,1093.2,-24.09,14,-1,39
-TIIL,NSE,Metals - Casting/Forging,Small Cap,2253.7,,0,1,0
-GEOJITFSL,NSE,Financials - Broking,Small Cap,78.4,-51.66,14,5,1
-ADVANIHOTR,NSE,Leisure - Hotels,Small Cap,56.9,-32.46,-7,16,-7
-GLENMARK,NSE,Healthcare - Pharma,Small Cap,1991.8,-10.5,-20,1,-13
-ADSL,NSE,IT - Services,Small Cap,153.71,-47.85,-6,1,-4
-GOACARBON,NSE,Metals - Misc,Small Cap,395.95,-59.68,12,4,-4
-THEMISMED,NSE,Healthcare - Pharma,Small Cap,102.46,,0,9,0
-GNFC,NSE,Agrichem - Fertilizers,Small Cap,485.8,-36.36,-17,-7,-1
-GNA,NSE,Auto - OEM Suppliers,Small Cap,311.0,-37.25,7,1,18
-THERMAX,NSE,Power - Equipment,Mid Cap,2869.9,,0,6,0
-XELPMOC,NSE,IT - Product/Platform,Small Cap,130.69,,-1,7,0
-GMRP&UI,NSE,Infra - Construction,Small Cap,114.7,-27.73,15,4,-3
-GMRAIRPORT,NSE,Infra - Construction,Mid Cap,101.67,-6.17,1,-12,9
+HAPPSTMNDS,NSE,IT - Software/Consulting,Small Cap,483.7,,-19,-8,0
+NIPPOBATRY,NSE,Batteries,Small Cap,402.2,-48.88,-8,-3,-12
+ZUARI,NSE,Agrichem - Fertilizers,Small Cap,315.05,-16.3,22,10,1
+NAM-INDIA,NSE,Financials - AMC,Small Cap,888.45,-3.72,14,6,-7
+SOFTTECH,NSE,IT - Software/Consulting,Small Cap,329.85,-41.54,0,5,-10
+GLENMARK,NSE,Healthcare - Pharma,Small Cap,1992.1,-10.49,-8,1,-13
+AARON,NSE,Engineering,Small Cap,177.21,,-1,4,0
+ABCAPITAL,NSE,Financials - Misc,Mid Cap,348.7,,-15,-7,0
+STOVEKRAFT,NSE,Consumption - Appliances,Small Cap,587.75,,0,7,0
+GREENPANEL,NSE,Infra - Laminates,Small Cap,227.18,-48.39,-2,5,-6
+ZUARIIND,NSE,Agri - Sugar,Small Cap,316.55,-20.44,1,6,-5
+AAATECH,NSE,Others,Small Cap,99.59,,-2,15,0
+AARVI,NSE,Human Resources,Small Cap,124.14,,14,-15,0
+SREEL,NSE,Consumption - Footwear,Small Cap,216.37,-45.52,0,-9,-2
+GODREJPROP,NSE,Real Estate,Mid Cap,2044.8,-37.69,1,1,11
+GREENLAM,NSE,Infra - Laminates,Small Cap,247.8,-19.38,12,5,-3
+SIMPLEXINF,NSE,Infra - Construction,Small Cap,260.0,-23.48,0,-20,-13
+GNA,NSE,Auto - OEM Suppliers,Small Cap,310.05,-37.44,7,1,18
+HAL,NSE,Defense - Misc,Small Cap,4305.3,,10,-21,0
+GUFICBIO,NSE,Healthcare - Pharma,Small Cap,349.0,,4,-8,0
+NBCC,NSE,Infra - Construction,Small Cap,113.7,-10.98,10,-13,-2
+21STCENMGM,NSE,Financials - Misc,Small Cap,48.74,,30,13,0
+GENUSPOWER,NSE,Electronic - Equipment,Small Cap,302.15,-33.78,17,-23,-4
+GSPL,NSE,Utility - Gas,Mid Cap,289.5,,2,1,0
+STAR,NSE,Healthcare - Pharma,Small Cap,930.8,,0,1,0
+GATEWAY,NSE,Transport - Logistics,Small Cap,59.58,-48.7,-5,12,-6
+SJVN,NSE,Power - Misc,Small Cap,72.84,-51.66,0,1,-13
+NACLIND,NSE,Agrichem - Protection,Small Cap,153.81,-50.04,-10,-2,-16
+ZFCVINDIA,NSE,Auto - OEM Suppliers,Mid Cap,15567.0,-10.59,6,27,3
+GUJALKALI,NSE,Chemicals - Bulk,Small Cap,503.85,,12,-21,0
+MUTHOOTFIN,NSE,Financials - NBFC,Mid Cap,3781.2,-1.47,-5,-12,29
+SPMLINFRA,NSE,Infra - Construction,Small Cap,174.27,-40.4,0,4,-13
+NMDC,NSE,Metals - Misc,Mid Cap,76.3,-18.29,-3,14,2
+NIACL,NSE,Financials - Non-Life,Mid Cap,155.74,-46.62,-3,6,-9
+GSS,NSE,IT - Services,Small Cap,16.19,,-12,-3,0
+GRASIM,NSE,Infra - Cement,Large Cap,2812.5,-2.74,-2,14,-7
+SOUTHWEST,NSE,Utility - Misc,Small Cap,184.14,-13.02,0,-12,8
+NECCLTD,NSE,Transport - Logistics,Small Cap,18.42,-52.3,-5,-31,-1
+SKMEGGPROD,NSE,Consumption - Misc,Small Cap,414.9,-6.12,0,-3,8
+GOKULAGRO,NSE,Agri - Edible Oil,Small Cap,189.61,-8.79,-24,-11,5
+GFLLIMITED,NSE,Others,Small Cap,58.77,-41.75,2,1,-2
+STERTOOLS,NSE,Auto - OEM Suppliers,Small Cap,265.95,,0,1,0
+STARHEALTH,NSE,Financials - Non-Life,Mid Cap,465.35,,0,-21,0
+SPANDANA,NSE,Financials - MFI,Small Cap,264.65,-78.17,0,5,50
+NETWORK18,NSE,Media - Entertainment,Small Cap,41.86,-67.07,-5,-2,-11
+NDTV,NSE,Media - TV Broadcast,Small Cap,88.87,-69.06,12,38,-16
+GARFIBRES,NSE,Textile - Misc,Small Cap,689.0,-28.24,17,6,-20
+GLAND,NSE,Healthcare - Pharma,Mid Cap,1671.7,-21.39,2,-31,-11
+GREAVESCOT,NSE,Industrial - Pumps/Engines,Small Cap,180.34,-37.54,10,-31,-6
+MVGJL,NSE,Consumption - Jewelry,Small Cap,178.75,-46.72,0,-19,-1
+GMRP&UI,NSE,Infra - Construction,Small Cap,114.91,-27.59,15,4,-3
+GEOJITFSL,NSE,Financials - Broking,Small Cap,78.52,-51.59,12,5,1
+NLCINDIA,NSE,Power - Misc,Small Cap,239.01,-17.41,17,6,-5
+ABFRL,NSE,Consumption - Retail,Mid Cap,76.82,,6,16,0
+SPAL,NSE,Textile - Apparels,Small Cap,710.3,-33.81,0,-14,6
+AAREYDRUGS,NSE,Healthcare - Pharma,Small Cap,68.51,,9,-26,0
+AAVAS,NSE,Financials - Housing,Small Cap,1458.2,,-6,-3,0
+GTPL,NSE,Media - TV Broadcast,Small Cap,101.05,,13,9,0
+STARCEMENT,NSE,Infra - Cement,Small Cap,216.55,,0,15,0
+360ONE,NSE,Financials - Misc,Mid Cap,1138.9,,10,-10,0
+ZAGGLE,NSE,IT - Software/Consulting,Small Cap,354.45,-36.95,10,-20,-1
+SUKHJITS,NSE,Agri - Misc,Small Cap,146.52,,0,1,0
+GOKEX,NSE,Textile - Apparels,Small Cap,793.9,-33.86,-6,-17,10
+NIRAJ,NSE,Infra - Construction,Small Cap,37.36,-48.3,8,1,2
+NAHARPOLY,NSE,Packaging,Small Cap,248.1,-31.35,-3,6,-19
+GESHIP,NSE,Transport - Shipping,Small Cap,1092.9,-24.11,12,-1,39
+GMRAIRPORT,NSE,Infra - Construction,Mid Cap,101.53,-6.29,0,-12,9
+GLAXO,NSE,Healthcare - Pharma,Mid Cap,2529.0,-26.47,-6,18,-22
+GVPIL,NSE,Power - Equipment,Small Cap,316.65,,8,-12,0
+GOKUL,NSE,Agri - Edible Oil,Small Cap,39.79,-39.84,-5,19,14
+NH,NSE,Healthcare - Hospitals,Mid Cap,1898.6,-16.11,1,-15,5
+NAVNETEDUL,NSE,Media - Publishing,Small Cap,143.63,-13.8,16,5,-6
+GTECJAINX,NSE,IT - Education,Small Cap,24.48,,-7,7,0
+NHPC,NSE,Power - Misc,Mid Cap,76.61,-32.22,0,11,-6
+SKIPPER,NSE,Power - Equipment,Small Cap,423.05,-32.05,0,-30,-11
+SKFINDIA,NSE,Industrial - Bearings,Mid Cap,1739.6,-74.87,0,33,-10
+GEEKAYWIRE,NSE,Power - Wiring,Small Cap,31.09,-49.19,-22,-2,-1
+NAZARA,NSE,IT - Product/Platform,Small Cap,227.85,-36.28,10,3,-18
+GVT&D,NSE,Power - Equipment,Small Cap,2927.0,,-3,7,0
+SINDHUTRAD,NSE,Transport - Logistics,Small Cap,21.07,-49.29,0,-6,-19
+SPORTKING,NSE,Textile - Spinning/Yarn,Small Cap,92.08,-38.54,0,1,-19
+SOLARA,NSE,Healthcare - Pharma,Small Cap,573.8,-32.53,0,13,-11
+GRAVITA,NSE,Metals - Misc,Small Cap,1811.2,-29.9,-4,-2,8
+YATHARTH,NSE,Healthcare - Hospitals,Small Cap,675.7,-16.65,-4,-3,-6
+NAHARSPING,NSE,Textile - Misc,Small Cap,195.08,-44.81,-4,-3,2
+SOLARINDS,NSE,Defense - Misc,Mid Cap,11911.0,-31.87,0,-20,-22
+STLTECH,NSE,Telecom,Small Cap,99.75,,0,1,0
+SULA,NSE,Beverages - Alcohol,Small Cap,212.4,,0,-21,0
+GREENPLY,NSE,Infra - Laminates,Small Cap,246.85,-38.68,-6,-24,-13
+SOBHA,NSE,Real Estate,Small Cap,1465.1,-30.99,0,-26,-4
+SMARTLINK,NSE,IT - Equipments,Small Cap,131.38,-59.49,0,-3,-9
+GENESYS,NSE,IT - Services,Small Cap,427.05,-57.45,22,10,-46
+ZYDUSLIFE,NSE,Healthcare - Pharma,Mid Cap,919.6,-29.31,-22,18,-8
+ZENTEC,NSE,Defense - Technology,Small Cap,1366.1,-46.08,2,-13,1
+SJS,NSE,Auto - OEM Suppliers,Small Cap,1711.8,-2.67,0,-21,33
+GUJAPOLLO,NSE,Engineering,Small Cap,434.95,,12,-11,0
+SSWL,NSE,Auto - Replacement,Small Cap,193.54,,0,7,0
+NAVA,NSE,Power - Misc,Small Cap,577.65,-19.47,27,16,-11
+NEWGEN,NSE,IT - Software/Consulting,Small Cap,828.25,-51.0,-5,-26,9
+YASHO,NSE,Chemicals - Specialty,Small Cap,1435.9,-33.48,-10,-19,-20
+GINNIFILA,NSE,Textile - Spinning/Yarn,Small Cap,39.46,-28.32,22,9,-15
+STARTECK,NSE,Financials - NBFC,Small Cap,269.95,,0,-18,0
+SPLPETRO,NSE,Chemicals - Petro,Small Cap,626.75,-29.74,0,21,-10
+63MOONS,NSE,IT - Software/Consulting,Small Cap,749.6,,-22,-8,0
+HARIOMPIPE,NSE,Metals - Pipe & Tube,Small Cap,351.7,,-5,15,0
+STEL,NSE,Financials - Misc,Small Cap,544.55,,0,-7,0
+NIBL,NSE,Industrial - Bearings,Small Cap,28.52,-38.93,-5,-2,-1
+SPECIALITY,NSE,Leisure - Restaurants,Small Cap,115.11,-55.63,0,-16,-4
+NAHARINDUS,NSE,Textile - Spinning/Yarn,Small Cap,106.62,-33.23,-3,-13,-20
+GODREJAGRO,NSE,Agri - Animal Feed,Small Cap,570.85,-31.97,-10,-1,-18
+GRANULES,NSE,Healthcare - Pharma,Small Cap,583.4,-18.76,12,15,17
+GSFC,NSE,Agrichem - Fertilizers,Small Cap,173.64,,10,-20,0
+SRF,NSE,Chemicals - Specialty,Large Cap,3090.3,-4.34,0,16,1
+SILINV,NSE,Financials - Misc,Small Cap,517.1,-29.26,0,5,-5
+NCC,NSE,Infra - Construction,Small Cap,155.9,-54.7,-7,1,-7
+GILLETTE,NSE,Consumption - Personal,Mid Cap,7983.5,-29.09,-27,-5,-17
+NITINSPIN,NSE,Textile - Spinning/Yarn,Small Cap,321.85,-31.55,12,2,5
+GULFPETRO,NSE,Petro - Lubricants,Small Cap,35.72,,9,4,0
+SMSPHARMA,NSE,Healthcare - Pharma,Small Cap,311.3,-16.0,0,-4,15
+NOCIL,NSE,Chemicals - Specialty,Small Cap,155.21,-51.22,2,-16,-3
+20MICRONS,NSE,Metals - Misc,Small Cap,192.33,,16,16,0
+GHCLTEXTIL,NSE,Textile - Spinning/Yarn,Small Cap,73.18,-35.99,12,4,-20
+GRMOVER,NSE,Agri - Misc,Small Cap,470.2,,6,-19,0
+GMDCLTD,NSE,Metals - Misc,Small Cap,516.75,-15.72,10,5,-5
+NESTLEIND,NSE,Consumption - FMCG,Large Cap,1244.4,-9.36,12,1,15
+SIRCA,NSE,Consumption - Paints,Small Cap,481.1,-7.76,0,-20,-5
+NATCOPHARM,NSE,Healthcare - Pharma,Small Cap,916.75,-42.07,0,-8,5
+NELCO,NSE,IT - Equipments,Small Cap,736.0,-48.77,1,-14,-3
+GPTINFRA,NSE,Infra - Construction,Small Cap,107.95,-46.05,4,1,1
+SOMICONVEY,NSE,Engineering,Small Cap,125.77,-42.53,0,-3,-3
+SUMEETINDS,NSE,Textiles - Polyester,Small Cap,30.79,,0,1,0
+GRINFRA,NSE,Infra - Construction,Small Cap,1011.4,-43.46,10,5,-10
+GEECEE,NSE,Real Estate,Small Cap,336.15,-24.83,-4,-14,-1
+GLOBAL,NSE,Transport - Logistics,Small Cap,92.88,-29.66,1,-7,8
+SOUTHBANK,NSE,Financials - Private Bank,Small Cap,40.02,0.0,0,-34,11
+GOLDIAM,NSE,Consumption - Jewelry,Small Cap,370.1,-29.55,1,-11,5
+SUDARSCHEM,NSE,Chemicals - Dyes,Small Cap,970.4,,0,23,0
+NAVINFLUOR,NSE,Chemicals - Bulk,Mid Cap,5845.0,-4.53,-4,-2,8
+NITCO,NSE,Infra - Ceramics,Small Cap,91.67,-40.58,12,16,-21
+GMMPFAUDLR,NSE,Engineering,Small Cap,1065.9,-33.87,12,-28,-3
+SKYGOLD,NSE,Consumption - Jewelry,Small Cap,319.15,-27.98,0,-35,11
+ZODIAC,NSE,Engineering,Small Cap,305.35,-60.27,12,1,-19
+STARPAPER,NSE,Paper,Small Cap,163.31,,0,1,0
+SILVERTUC,NSE,IT - Software/Consulting,Small Cap,849.6,0.0,0,6,8
+ZEEL,NSE,Media - TV Broadcast,Mid Cap,90.53,-68.02,-24,-9,-20
+GODREJIND,NSE,Chemicals - Specialty,Small Cap,992.6,-26.99,-4,-1,-24
+SPARC,NSE,Healthcare - Pharma,Small Cap,143.82,-66.84,0,-7,6
+NKIND,NSE,Agri - Edible Oil,Small Cap,67.7,-27.76,4,1,-8
+SINTERCOM,NSE,Auto - OEM Suppliers,Small Cap,103.62,-42.19,0,-7,-8
+ABAN,NSE,Oil and Gas,Small Cap,23.58,,-39,-7,0
+NDRAUTO,NSE,Auto - OEM Suppliers,Small Cap,827.25,-29.39,1,16,-19
+NEULANDLAB,NSE,Healthcare - Pharma,Small Cap,16044.0,-10.05,-20,-25,-1
+GRAPHITE,NSE,Metals - Casting/Forging,Small Cap,549.15,-19.82,1,1,-4
+GANGESSECU,NSE,Agri - Tea/Coffee,Small Cap,140.99,-34.36,1,-21,-15
+NAVKARCORP,NSE,Transport - Logistics,Small Cap,97.73,-39.85,10,9,-7
+SOMATEX,NSE,Textile - Misc,Small Cap,106.86,-23.66,0,-29,-1
+NETWEB,NSE,IT - Equipments,Small Cap,3250.9,-24.61,14,6,-4
+GIPCL,NSE,Power - Misc,Small Cap,148.44,-42.19,10,1,-19
+ABMINTLLTD,NSE,Others,Small Cap,41.78,,2,-38,0
+STYLAMIND,NSE,Paper,Small Cap,2175.0,,0,-1,0
+AARTISURF,NSE,Chemicals - Specialty,Small Cap,405.55,,14,4,0
+NELCAST,NSE,Metals - Casting/Forging,Small Cap,103.12,-39.98,-8,-2,-15
+GSLSU,NSE,Infra - Granites/Marbles,Small Cap,108.47,,-4,-21,0
+YATRA,NSE,IT - Product/Platform,Mid Cap,174.74,-6.83,12,-18,37
+AARTECH,NSE,Power - Equipment,Small Cap,47.57,,-20,-1,0
+GNFC,NSE,Agrichem - Fertilizers,Small Cap,485.85,-36.36,-17,-7,-1
+GHCL,NSE,Chemicals - Bulk,Small Cap,571.45,-24.66,-17,-5,-2
+NGLFINE,NSE,Healthcare - Pharma,Small Cap,1278.8,-51.8,-2,8,-4
+3PLAND,NSE,Financials - Misc,Small Cap,38.13,,6,3,0
+3MINDIA,NSE,Others,Mid Cap,34875.0,,-1,-21,0
+NBIFIN,NSE,Financials - NBFC,Small Cap,2227.3,-44.26,-2,9,-19
+MUTHOOTCAP,NSE,Financials - NBFC,Small Cap,271.75,-31.64,-6,-2,2
+NDLVENTURE,NSE,Media - TV Broadcast,Small Cap,88.95,-39.92,-27,-10,29
+NINSYS,NSE,IT - Software/Consulting,Small Cap,407.05,-33.13,1,7,-4
+NARMADA,NSE,Agri - Animal Feed,Small Cap,21.15,-35.22,7,-12,-7
+GANESHHOU,NSE,Real Estate,Small Cap,802.05,-8.18,-8,-3,-14
+GULPOLY,NSE,Chemicals - Bulk,Small Cap,138.1,,4,7,0
+YUKEN,NSE,Industrial - Pumps/Engines,Small Cap,841.2,-43.67,12,4,-18
+GODREJCP,NSE,Consumption - Personal,Large Cap,1186.2,-20.46,16,7,1
+GRINDWELL,NSE,Engineering,Mid Cap,1576.9,-44.79,3,14,15
+SNOWMAN,NSE,Transport - Logistics,Small Cap,40.27,-52.81,0,7,-10
+VOLTAS,NSE,Consumption - Appliances,Mid Cap,1375.5,-28.67,17,6,-3
+XPROINDIA,NSE,Packaging,Small Cap,973.2,-38.93,12,5,-13
+DEVYANI,NSE,Leisure - Restaurants,Mid Cap,130.86,-37.65,-8,1,-11
+JKPAPER,NSE,Paper,Small Cap,359.35,-37.63,-6,-2,-6
+M&MFIN,NSE,Financials - NBFC,Mid Cap,376.6,0.0,5,-10,16
+DGCONTENT,NSE,Media - Misc,Small Cap,32.5,-48.08,15,1,-3
+TMPV,Watchlist,Auto - PV/Trucks,Large Cap,352.65,-13.99,7,5,-5
+VENUSREM,NSE,Healthcare - Pharma,Small Cap,766.95,-7.08,-8,-5,5
+JKTYRE,NSE,Auto - Tyres,Small Cap,485.75,-7.4,10,1,15
+RHL,NSE,Leisure - Hotels,Small Cap,195.98,-32.72,-24,-9,-15
+MAANALU,NSE,Metals - Aluminium,Small Cap,166.08,-31.74,12,6,11
+PILANIINVS,NSE,Financials - Misc,Small Cap,5158.5,-21.55,-1,14,-6
+APOLLOHOSP,NSE,Healthcare - Hospitals,Large Cap,7012.5,-11.49,1,-36,-8
+TMCV,Watchlist,Auto - PV/Trucks,Large Cap,394.35,0.0,7,17,5
+RICOAUTO,Track,Auto - OEM Suppliers,Small Cap,122.56,-18.46,12,4,5
+JKIL,NSE,Infra - Construction,Small Cap,557.5,-38.28,17,2,-19
+JKLAKSHMI,NSE,Infra - Cement,Small Cap,783.95,-20.9,1,9,-16
+RHIM,NSE,Metals - Casting/Forging,Small Cap,456.75,-43.56,10,-21,-3
+APOLLOPIPE,NSE,Infra - Plastic Pipes,Small Cap,306.9,-60.63,1,8,-13
+PIONEEREMB,NSE,Textile - Misc,Small Cap,29.49,-54.43,-19,1,-20
+APOLSINHOT,NSE,Leisure - Hotels,Small Cap,1226.3,-51.45,5,-15,-9
+JMFINANCIL,NSE,Financials - Misc,Small Cap,142.56,-26.14,-2,16,-13
+DENORA,NSE,Metals - Casting/Forging,Small Cap,701.3,-64.12,-3,12,-6
+LYKALABS,NSE,Healthcare - Pharma,Small Cap,75.46,-54.16,-21,1,-19
+PITTIENG,NSE,Electronic - Equipment,Small Cap,792.45,-45.59,1,5,-5
+RESPONIND,NSE,Infra - Plastic Pipes,Small Cap,201.65,-37.54,5,-10,7
+JMA,NSE,Auto - OEM Suppliers,Small Cap,79.0,-41.11,2,-13,-19
+TNPL,NSE,Media - Publishing,Small Cap,143.58,,1,7,0
+DEVIT,NSE,IT - Services,Small Cap,35.54,-52.18,-38,-19,-2
+VENUSPIPES,NSE,Metals - Iron & Steel,Small Cap,1196.0,-50.78,-6,-4,-8
+RGL,NSE,Consumption - Jewelry,Small Cap,128.58,-32.2,-5,10,16
+APOLLOTYRE,NSE,Auto - Tyres,Mid Cap,507.05,-7.88,-19,-25,17
+JLHL,NSE,Healthcare - Hospitals,Small Cap,1401.4,-15.42,-26,-12,-4
+M&M,NSE,Auto - PV/Trucks,Large Cap,3603.6,-4.09,-11,-19,-1
+TNPETRO,NSE,Chemicals - Petro,Small Cap,104.82,,-4,8,0
+MACPOWER,NSE,Engineering,Small Cap,1000.75,-42.26,-5,-4,6
+PIIND,NSE,Agrichem - Protection,Mid Cap,3249.6,-31.09,-12,-26,-19
+TMB,NSE,Financials - Private Bank,Small Cap,508.75,,-20,-10,0
+VERANDA,NSE,IT - Services,Small Cap,178.9,-47.67,-22,-36,-5
+DHARMAJ,NSE,Agrichem - Protection,Small Cap,243.72,-35.0,6,21,-13
+RITES,NSE,Railways,Small Cap,226.55,-42.56,14,1,-13
+JINDWORLD,NSE,Textile - Misc,Small Cap,29.35,-66.57,1,-13,12
+APLAPOLLO,Core,Metals - Pipe & Tube,Mid Cap,1820.1,-5.25,6,3,1
+MAGADSUGAR,NSE,Agri - Sugar,Small Cap,499.0,-47.88,-2,8,-7
+JINDRILL,NSE,Oil and Gas,Small Cap,505.7,-45.36,10,-17,-2
+TIRUPATIFL,NSE,Metals - Misc,Small Cap,32.01,,-4,6,0
+MAGNUM,NSE,Paper,Small Cap,23.09,-67.3,-14,12,34
+VESUVIUS,NSE,Metals - Casting/Forging,Small Cap,465.75,-22.73,-14,-4,-21
+RKDL,NSE,Beverages - Alcohol,Small Cap,22.89,-40.62,-19,-9,-21
+DHRUV,NSE,IT - Software/Consulting,Small Cap,50.18,-68.7,7,5,9
+JINDALSTEL,NSE,Metals - Iron & Steel,Large Cap,992.6,-7.86,-4,-3,-3
+PHOENIXLTD,NSE,Real Estate,Mid Cap,1831.3,-7.55,16,6,16
+DHUNINV,NSE,Financials - Misc,Small Cap,1251.9,-49.34,14,6,-5
+TIRUMALCHM,NSE,Chemicals - Bulk,Small Cap,229.82,,16,7,0
+PIDILITIND,NSE,Chemicals - Specialty,Large Cap,1458.3,-13.29,-5,-3,-13
+REPRO,NSE,Media - Publishing,Small Cap,468.95,-50.24,17,5,-3
+TITAGARH,NSE,Railways,Small Cap,785.0,,12,4,0
+MADRASFERT,NSE,Agrichem - Fertilizers,Small Cap,73.96,-41.0,10,4,-13
+RIIL,NSE,Transport - Logistics,Small Cap,813.65,-46.37,1,-11,-6
+DHAMPURSUG,NSE,Agri - Sugar,Small Cap,123.98,-54.08,-1,7,-5
+JKCEMENT,NSE,Infra - Cement,Mid Cap,5419.5,-23.14,-4,22,-15
+JITFINFRA,NSE,Infra - Construction,Small Cap,271.85,-76.67,-6,-9,-1
+APOLLO,NSE,Defense - Technology,Small Cap,237.95,-30.81,4,-10,-8
+DHANBANK,NSE,Financials - Private Bank,Small Cap,24.52,-52.16,-3,-16,8
+TITAN,NSE,Consumption - Jewelry,Large Cap,3930.1,,17,2,0
+MADHAV,NSE,Infra - Granites/Marbles,Small Cap,41.5,-44.96,8,3,-11
+PIGL,NSE,Engineering,Small Cap,122.57,-70.6,-26,-10,-2
+RISHABH,NSE,Electronic - Equipment,Small Cap,380.4,-37.96,-5,-13,-7
+JISLJALEQS,NSE,Agri - Misc,Small Cap,40.1,-49.42,10,-30,-6
+DHANUKA,NSE,Agrichem - Protection,Small Cap,1181.6,-36.02,-20,18,-18
+RITCO,NSE,Transport - Logistics,Small Cap,274.65,-34.41,-6,-3,6
+JIOFIN,NSE,Financials - NBFC,Small Cap,296.95,-22.21,1,-13,-14
+VERTOZ,NSE,Media - Misc,Small Cap,74.76,-82.59,2,39,45
+APLLTD,NSE,Healthcare - Pharma,Small Cap,859.9,-30.93,-31,-23,-17
+APEX,NSE,Consumption - Misc,Small Cap,286.9,-13.52,8,1,9
+PIXTRANS,NSE,Industrial - Consumables,Small Cap,1451.8,-46.02,-4,-3,13
+VENKEYS,NSE,Consumption - Misc,Small Cap,1406.1,-41.69,-8,16,1
+PNBHOUSING,NSE,Financials - Housing,Small Cap,927.8,-18.4,1,6,9
+ARE&M,NSE,Batteries,Small Cap,925.55,-45.38,1,-4,-4
+RELCHEMQ,NSE,Textile - Spinning/Yarn,Small Cap,135.35,-55.35,-22,-9,-18
+JUBLINGREA,NSE,Chemicals - Specialty,Small Cap,709.9,-17.38,12,1,4
+DEEPAKFERT,Watchlist,Agrichem - Fertilizers,Small Cap,1204.8,-29.54,10,-20,-20
+TPLPLASTEH,NSE,Packaging,Small Cap,67.49,,1,4,0
+LTFOODS,NSE,Agri - Rice,Small Cap,401.35,-20.3,7,2,-18
+LTIM,NSE,IT - Software/Consulting,Large Cap,6197.5,-7.7,-10,-4,32
+JUBLFOOD,NSE,Leisure - Restaurants,Mid Cap,563.7,-25.74,-10,-11,-23
+JTLIND,NSE,Metals - Iron & Steel,Small Cap,60.64,-55.03,2,-12,-9
+VBL,NSE,Consumption - Misc,Large Cap,469.4,-30.01,-21,-3,8
+DEEPAKNTR,NSE,Chemicals - Specialty,Mid Cap,1667.0,-46.16,22,6,-4
+PNBGILTS,NSE,Financials - Misc,Small Cap,77.96,-46.26,-5,-9,-11
+ARCHIES,NSE,Leisure - Misc,Small Cap,18.81,-52.5,3,3,-4
+RELIANCE,NSE,Petro - Refineries,Large Cap,1565.1,-1.98,12,-14,8
+TRACXN,NSE,IT - Software/Consulting,Small Cap,40.29,,2,-15,0
+JUBLPHARMA,NSE,Healthcare - Pharma,Small Cap,1087.1,-13.9,1,1,-19
+VASWANI,NSE,Metals - Iron & Steel,Small Cap,60.67,,18,7,0
+VASCONEQ,NSE,Engineering,Small Cap,47.12,,10,5,0
+ARIES,NSE,Agrichem - Fertilizers,Small Cap,316.1,-26.33,12,4,-12
+JYOTHYLAB,NSE,Consumption - Misc,Small Cap,281.0,-49.54,10,-32,-3
+DCW,NSE,Chemicals - Petro,Small Cap,58.63,-45.27,14,5,-17
+DCXINDIA,NSE,Defense - Technology,Small Cap,186.4,-57.36,10,5,-12
+LT,NSE,Infra - Construction,Large Cap,4073.5,-0.01,12,-14,33
+REGENCERAM,NSE,Infra - Ceramics,Small Cap,47.11,-55.06,18,7,9
+JWL,NSE,Railways,Small Cap,260.25,-64.35,10,1,-6
+TRANSWORLD,NSE,Transport - Shipping,Small Cap,202.59,,14,4,0
+ARENTERP,NSE,Others,Small Cap,45.99,-35.23,-22,-9,5
+LTF,NSE,Financials - NBFC,Mid Cap,300.3,-3.86,-26,-13,47
+PNC,NSE,Media - Films,Small Cap,28.12,-59.95,16,7,-4
+JUSTDIAL,NSE,IT - Product/Platform,Small Cap,730.25,-44.23,10,1,-10
+RELAXO,NSE,Consumption - Footwear,Mid Cap,402.15,-55.49,-10,9,-6
+DECCANCE,NSE,Infra - Cement,Small Cap,766.9,-31.59,22,9,-11
+RELIGARE,NSE,Financials - Misc,Small Cap,234.11,-24.35,12,1,-5
+DEEPINDS,NSE,Oil and Gas,Small Cap,444.25,-24.66,14,5,-11
+TOUCHWOOD,NSE,Media - Misc,Small Cap,103.12,,-2,6,0
+LTTS,NSE,IT - Services,Mid Cap,4515.2,-22.24,-9,-3,29
+VEEDOL,NSE,Petro - Lubricants,Small Cap,1642.8,-38.34,12,7,-6
+DELTACORP,NSE,Leisure - Misc,Small Cap,69.29,-54.5,-4,12,-10
+LUPIN,NSE,Healthcare - Pharma,Mid Cap,2125.8,-10.26,10,3,16
+REPCOHOME,NSE,Financials - Housing,Small Cap,390.75,-31.27,-6,-29,10
+JSL,NSE,Metals - Iron & Steel,Mid Cap,802.2,-3.09,20,23,-7
+PKTEA,NSE,Agri - Tea/Coffee,Small Cap,848.05,-11.33,10,6,1
+APTECHT,NSE,IT - Education,Small Cap,94.97,-66.49,-2,-1,-21
+DELTAMAGNT,NSE,Metals - Misc,Small Cap,67.56,-44.77,-23,-2,-13
+TORNTPHARM,NSE,Healthcare - Pharma,Large Cap,3800.3,,-8,-5,0
+REPL,NSE,Engineering,Small Cap,122.49,-64.41,4,1,-27
+LUXIND,NSE,Textile - Innerwear,Small Cap,1118.7,-52.93,7,3,-6
+JPOLYINVST,NSE,Financials - Misc,Small Cap,1055.6,-4.13,-18,-2,16
+DEN,NSE,Media - TV Broadcast,Small Cap,31.25,-51.25,3,5,-13
+JOCIL,NSE,Chemicals - Bulk,Small Cap,143.87,-43.8,-1,-10,-11
+TOKYOPLAST,NSE,Consumption - Misc,Small Cap,109.81,,-6,-24,0
+JSWENERGY,NSE,Power - Misc,Mid Cap,478.25,-38.87,12,6,-5
+LXCHEM,NSE,Chemicals - Specialty,Small Cap,171.49,-44.79,10,5,-7
+TORNTPOWER,NSE,Power - Misc,Mid Cap,1279.1,,-4,-33,0
+JSWHL,NSE,Financials - Misc,Small Cap,19970.0,-24.41,-9,-3,4
+JTEKTINDIA,NSE,Auto - Replacement,Small Cap,141.74,-35.41,1,-22,-3
+LUMAXIND,NSE,Auto - Replacement,Small Cap,5605.0,-1.14,-19,-6,43
+PNB,NSE,Financials - PSU Bank,Large Cap,119.82,-12.25,10,-13,14
+RELINFRA,NSE,Power - Misc,Small Cap,173.2,-58.07,9,4,-20
+JSWSTEEL,NSE,Metals - Iron & Steel,Large Cap,1079.6,-10.48,-20,-10,-3
+DELHIVERY,NSE,Transport - Logistics,Mid Cap,405.95,-15.22,2,9,-12
+VEDL,NSE,Metals - Misc,Large Cap,581.6,0.0,12,6,15
+TOTAL,NSE,Transport - Logistics,Small Cap,75.36,,-10,-2,0
+ARCHIDPLY,NSE,Infra - Laminates,Small Cap,91.52,-34.64,-3,9,-8
+REMSONSIND,NSE,Engineering,Small Cap,121.18,-46.25,17,5,-3
+JSWINFRA,NSE,Infra - Construction,Small Cap,277.1,-22.3,12,16,-10
+LUMAXTECH,NSE,Auto - Replacement,Small Cap,1542.0,0.0,-8,-10,5
+PLASTIBLEN,NSE,Chemicals - Specialty,Small Cap,161.88,-54.93,12,6,-10
+APTUS,NSE,Financials - Housing,Small Cap,283.55,-24.24,-6,17,-16
+DELPHIFX,NSE,Financials - Misc,Small Cap,253.05,-20.31,-17,-2,2
+RENUKA,NSE,Agri - Sugar,Small Cap,25.6,-51.74,-2,8,-7
+RKEC,NSE,Infra - Construction,Small Cap,53.04,-62.89,-3,8,-6
+JINDALSAW,NSE,Metals - Pipe & Tube,Small Cap,160.92,-56.83,10,28,-9
+MAHABANK,NSE,Financials - PSU Bank,Mid Cap,57.31,-17.0,16,-16,-2
+DODLA,NSE,Consumption - Dairy,Small Cap,1225.5,-16.19,1,23,-13
+RSSOFTWARE,NSE,IT - Software/Consulting,Small Cap,54.33,-83.56,-4,15,2
 THOMASCOOK,NSE,Leisure - Misc,Small Cap,143.29,,0,4,0
-GMMPFAUDLR,NSE,Engineering,Small Cap,1060.6,-34.2,12,-28,-3
-GMDCLTD,NSE,Metals - Misc,Small Cap,515.0,-16.0,10,5,-5
-THOMASCOTT,NSE,Textile - Apparels,Small Cap,323.6,,0,-24,0
-GMBREW,NSE,Beverages - Alcohol,Small Cap,1006.3,-20.4,2,1,-1
-GLOBUSSPR,NSE,Beverages - Alcohol,Small Cap,985.8,-23.54,12,1,-5
+MANAKCOAT,NSE,Metals - Casting/Forging,Small Cap,132.8,-22.95,-25,-6,-8
+ITI,NSE,Telecom,Small Cap,313.8,,2,1,0
+VINDHYATEL,NSE,Telecom,Small Cap,1392.8,-53.57,1,-13,6
+IVP,NSE,Chemicals - Bulk,Small Cap,148.82,,9,-24,0
+PENINLAND,NSE,Real Estate,Small Cap,25.94,-64.64,10,1,-9
+ANDHRAPAP,NSE,Paper,Small Cap,67.81,-45.93,12,7,-7
+RSWM,NSE,Textile - Spinning/Yarn,Small Cap,150.67,-40.04,14,-19,6
+ITDC,NSE,Leisure - Hotels,Small Cap,560.6,,1,1,0
+THERMAX,NSE,Power - Equipment,Mid Cap,2869.9,,0,6,0
+MANAKSIA,NSE,Metals - Iron & Steel,Small Cap,59.68,-56.07,2,0,-12
+RSYSTEMS,NSE,IT - Services,Small Cap,427.6,-25.17,8,12,-12
+DOLATALGO,NSE,Financials - Misc,Small Cap,86.12,-50.82,-6,13,2
+DMCC,NSE,Chemicals - Specialty,Small Cap,257.8,-33.86,-10,13,-8
+ANDHRSUGAR,NSE,Chemicals - Bulk,Small Cap,74.6,-40.45,-5,-3,-2
+IZMO,NSE,IT - Software/Consulting,Small Cap,794.45,,-7,-11,0
+RPPINFRA,NSE,Infra - Construction,Small Cap,97.14,-56.77,-20,-3,-9
+MALLCOM,NSE,Industrial - Consumables,Small Cap,1145.2,-32.48,10,5,-5
+JAGRAN,NSE,Media - Publishing,Small Cap,69.2,,-5,-1,0
 THYROCARE,NSE,Healthcare - Diagnostics,Small Cap,436.7,,0,-19,0
-GLOBALVECT,NSE,Transport - Logistics,Small Cap,193.64,-43.95,-5,7,-3
-GLOBAL,NSE,Transport - Logistics,Small Cap,93.0,-29.57,1,-7,8
-TI,NSE,Beverages - Alcohol,Small Cap,462.2,,0,1,0
-GLAXO,NSE,Healthcare - Pharma,Mid Cap,2529.1,-26.47,-6,18,-22
-GOCLCORP,NSE,Defense - Misc,Small Cap,295.2,-44.92,-2,6,-12
-TIPSMUSIC,NSE,Media - Entertainment,Small Cap,540.2,,0,-1,0
-GENESYS,NSE,IT - Services,Small Cap,426.2,-57.54,22,10,-46
-GABRIEL,NSE,Auto - Replacement,Small Cap,1061.5,-17.7,14,6,-9
-TOKYOPLAST,NSE,Consumption - Misc,Small Cap,109.81,,0,-24,0
-FUSION,NSE,Financials - MFI,Small Cap,161.5,-74.87,1,-9,-5
-FSL,NSE,Tech - BPO,Small Cap,346.2,-13.72,12,-20,-2
-WSTCSTPAPR,NSE,Paper,Small Cap,407.6,,2,6,0
-TORNTPHARM,NSE,Healthcare - Pharma,Large Cap,3800.3,,0,-5,0
-FOSECOIND,NSE,Chemicals - Specialty,Small Cap,4950.5,-23.47,-7,-1,-11
-FORTIS,NSE,Healthcare - Hospitals,Mid Cap,889.5,-18.01,10,4,-6
-TORNTPOWER,NSE,Power - Misc,Mid Cap,1279.1,,0,-33,0
-FORCEMOT,Watchlist,Auto - PV/Trucks,Small Cap,18000.0,-10.95,10,1,-13
-FOODSIN,NSE,Consumption - FMCG,Small Cap,70.0,-59.33,-20,-5,-18
-TOTAL,NSE,Transport - Logistics,Small Cap,75.36,,0,-2,0
-FOCUS,NSE,Auto - OEM Suppliers,Small Cap,75.09,-63.94,-5,8,-18
-FMGOETZE,NSE,Auto - Replacement,Small Cap,437.55,-26.42,-6,-20,-14
-TOUCHWOOD,NSE,Media - Misc,Small Cap,103.12,,0,6,0
-FLUOROCHEM,NSE,Chemicals - Specialty,Mid Cap,3608.5,-23.15,17,9,-4
-FLEXITUFF,NSE,Chemicals - Misc,Small Cap,15.92,-81.78,4,18,1
-AEROFLEX,NSE,Metals - Iron & Steel,Small Cap,191.41,-24.83,12,4,1
-TPLPLASTEH,NSE,Packaging,Small Cap,67.49,,0,4,0
-GAEL,NSE,Agri - Misc,Small Cap,123.57,-39.57,1,1,15
-GENUSPOWER,NSE,Electronic - Equipment,Small Cap,302.85,-33.63,16,-23,-4
-TNPL,NSE,Media - Publishing,Small Cap,143.58,,0,7,0
-AEROENTER,NSE,Metals - Iron & Steel,Small Cap,84.17,-24.03,2,-23,-3
-TIRUMALCHM,NSE,Chemicals - Bulk,Small Cap,229.82,,0,7,0
-GENCON,NSE,Infra - Construction,Small Cap,43.57,-32.85,-6,-2,2
-GEEKAYWIRE,NSE,Power - Wiring,Small Cap,31.07,-49.22,-20,-2,-1
-TIRUPATIFL,NSE,Metals - Misc,Small Cap,32.01,,0,6,0
-GEECEE,NSE,Real Estate,Small Cap,336.3,-24.8,-4,-14,-1
-GATEWAY,NSE,Transport - Logistics,Small Cap,59.67,-48.63,-5,12,-6
-TITAGARH,NSE,Railways,Small Cap,785.0,,0,4,0
-GARFIBRES,NSE,Textile - Misc,Small Cap,692.85,-27.84,17,6,-20
-AEGISLOG,NSE,Utility - Gas,Small Cap,737.6,-20.0,-5,-21,-3
-GANGESSECU,NSE,Agri - Tea/Coffee,Small Cap,141.0,-34.35,1,-21,-15
-TITAN,NSE,Consumption - Jewelry,Large Cap,3930.1,,0,2,0
-GANESHHOU,NSE,Real Estate,Small Cap,801.35,-8.26,-8,-3,-14
-GANESHBE,NSE,Oil and Gas,Small Cap,80.56,-58.93,12,2,17
-TMB,NSE,Financials - Private Bank,Small Cap,508.75,,0,-10,0
-GANECOS,NSE,Textile - Misc,Small Cap,892.5,-62.8,-2,16,-19
-GANDHITUBE,NSE,Metals - Pipe & Tube,Small Cap,752.5,-24.79,12,17,-7
-TNPETRO,NSE,Chemicals - Petro,Small Cap,104.82,,0,8,0
-GALLANTT,NSE,Metals - Iron & Steel,Small Cap,520.1,-31.35,-6,-3,-13
-GALAXYSURF,NSE,Chemicals - Specialty,Small Cap,1999.0,-36.97,12,6,-18
-GAIL,NSE,Utility - Gas,Large Cap,170.02,-28.47,14,-20,-3
-STEL,NSE,Financials - Misc,Small Cap,544.55,-7.15,0,-7,5
-THEJO,NSE,Engineering,Small Cap,1609.0,,0,2,0
-GODFRYPHLP,NSE,Consumption - Misc,Small Cap,2821.6,-23.55,1,8,-13
-GUJRAFFIA,NSE,Packaging,Small Cap,50.32,-50.1,-20,-7,28
-TCI,NSE,Transport - Logistics,Small Cap,1037.0,-16.98,0,1,-9
-GUJGASLTD,NSE,Utility - Gas,Mid Cap,395.75,-40.67,1,-7,-19
-ADANIPOWER,NSE,Power - Misc,Large Cap,141.83,-15.44,12,5,-3
-GUJAPOLLO,NSE,Engineering,Small Cap,435.7,-14.6,12,-11,-11
-TCIEXP,NSE,Transport - Logistics,Small Cap,577.15,-58.97,0,12,-9
-GUJALKALI,NSE,Chemicals - Bulk,Small Cap,503.85,-42.44,12,-21,-4
-GUFICBIO,NSE,Healthcare - Pharma,Small Cap,348.7,-28.17,1,-8,3
-YASHO,NSE,Chemicals - Specialty,Small Cap,1435.9,,-10,-19,0
-TCPLPACK,NSE,Packaging,Small Cap,2932.8,-37.18,0,-12,-35
-GTPL,NSE,Media - TV Broadcast,Small Cap,101.21,-51.57,13,9,-12
-GTECJAINX,NSE,IT - Education,Small Cap,24.0,-80.25,-8,0,49
-GSS,NSE,IT - Services,Small Cap,16.17,-91.55,-12,-3,-2
-TCS,NSE,IT - Software/Consulting,Large Cap,3282.0,-27.93,0,2,11
-GSPL,NSE,Utility - Gas,Mid Cap,290.7,-34.88,1,1,-6
-GSLSU,NSE,Infra - Granites/Marbles,Small Cap,108.89,-64.74,-4,-21,8
-TDPOWERSYS,NSE,Power - Equipment,Small Cap,716.1,-8.86,0,-25,16
-GSFC,NSE,Agrichem - Fertilizers,Small Cap,173.87,-43.38,10,-20,-12
-GRWRHITECH,NSE,Industrial - Consumables,Small Cap,3360.9,-35.42,-4,-17,9
-GULFOILLUB,NSE,Petro - Lubricants,Small Cap,1210.7,-15.64,10,5,-11
-TEAMGTY,NSE,Financials - NBFC,Small Cap,267.7,,0,-3,0
-TBZ,NSE,Consumption - Jewelry,Small Cap,160.83,-50.91,0,-22,-4
-GULPOLY,NSE,Chemicals - Bulk,Small Cap,138.28,-45.05,4,7,-27
-TATACONSUM,NSE,Consumption - Misc,Large Cap,1184.0,-6.15,0,3,14
-HCC,NSE,Infra - Construction,Small Cap,18.51,-66.57,6,1,-5
-HBSL,NSE,Financials - NBFC,Small Cap,73.61,-58.62,10,1,-2
-TATAELXSI,NSE,IT - Services,Mid Cap,5413.5,-38.97,0,1,1
-HBLENGINE,NSE,Railways,Small Cap,846.25,-18.73,4,1,-3
-HAVELLS,NSE,Consumption - Electronics,Large Cap,1416.7,-30.83,4,4,-10
-TATAINVEST,NSE,Financials - Misc,Small Cap,708.6,-29.15,0,8,-6
-HATSUN,NSE,Consumption - Dairy,Mid Cap,982.7,-25.64,-8,-25,16
-HARSHA,NSE,Engineering,Small Cap,374.65,-34.98,10,2,-4
-HARRMALAYA,NSE,Agri - Tea/Coffee,Small Cap,159.03,-52.11,10,4,-12
-HARIOMPIPE,NSE,Metals - Pipe & Tube,Small Cap,351.65,-57.12,-5,15,-8
-TATAPOWER,NSE,Power - Misc,Large Cap,380.55,-21.62,0,-13,-5
-HAPPSTMNDS,NSE,IT - Software/Consulting,Small Cap,483.7,-47.57,-19,-8,-13
-HAL,NSE,Defense - Misc,Small Cap,4305.6,-22.45,10,-21,-8
-TATASTEEL,NSE,Metals - Iron & Steel,Large Cap,168.69,-7.9,0,6,-4
-ADANIPORTS,Sate,Infra - Construction,Large Cap,1496.5,-5.76,-7,-12,11
-GVT&D,NSE,Power - Equipment,Small Cap,2924.9,-7.73,-3,7,-9
-GVPIL,NSE,Power - Equipment,Small Cap,315.25,-15.84,8,-12,-1
-TATVA,NSE,Chemicals - Specialty,Small Cap,1400.0,-12.83,0,-23,10
-GULFPETRO,NSE,Petro - Lubricants,Small Cap,35.6,-59.1,8,4,-5
-GOCOLORS,NSE,Textile - Apparels,Small Cap,455.0,-66.54,10,6,-20
-GRSE,NSE,Defense - Ship Building,Small Cap,2293.0,-30.25,2,-19,-21
-PFOCUS,NSE,Media - Films,Small Cap,220.48,0.34,4,17,2
-GPPL,NSE,Infra - Construction,Small Cap,192.84,-17.08,2,9,37
-TEXINFRA,NSE,Railways,Small Cap,103.8,,0,-4,0
-GPIL,NSE,Metals - Iron & Steel,Small Cap,235.65,-68.86,-1,6,-4
-GOODLUCK,NSE,Metals - Pipe & Tube,Small Cap,1054.0,-18.72,-7,-12,-6
-TEXMOPIPES,NSE,Infra - Plastic Pipes,Small Cap,47.99,,0,-1,0
-GOLDTECH,NSE,IT - Software/Consulting,Small Cap,50.45,-70.38,10,-2,-13
-GOLDIAM,NSE,Consumption - Jewelry,Small Cap,370.0,-29.57,-6,-11,5
-GOKULAGRO,NSE,Agri - Edible Oil,Small Cap,189.99,-8.61,-6,-11,5
-TEXRAIL,NSE,Railways,Small Cap,129.24,,0,7,0
-GOKUL,NSE,Agri - Edible Oil,Small Cap,39.9,-39.67,-7,19,14
-GOKEX,NSE,Textile - Apparels,Small Cap,794.5,-33.81,-6,-17,10
-ADOR,NSE,Engineering,Small Cap,1028.8,-34.37,-9,-14,14
-TFCILTD,NSE,Financials - Misc,Small Cap,65.24,,0,1,0
-GODREJPROP,NSE,Real Estate,Mid Cap,2046.1,-37.65,1,1,11
-GODREJIND,NSE,Chemicals - Specialty,Small Cap,993.0,-26.96,-4,-1,-24
-THANGAMAYL,NSE,Consumption - Jewelry,Small Cap,3339.5,,0,-21,0
-GODREJCP,NSE,Consumption - Personal,Large Cap,1187.3,-20.38,16,7,1
-GODREJAGRO,NSE,Agri - Animal Feed,Small Cap,571.3,-31.92,-12,-1,-18
+ANGELONE,NSE,Financials - Broking,Small Cap,2518.1,-33.65,1,-20,8
+MALUPAPER,NSE,Paper,Small Cap,34.47,-45.55,-36,-15,-3
+PETRONET,NSE,Utility - Gas,Mid Cap,273.85,-26.46,3,1,11
+DMART,NSE,Consumption - Retail,Large Cap,3819.5,-28.21,1,1,-11
+RPSGVENT,NSE,Tech - BPO,Small Cap,739.15,-39.17,0,-23,-16
+J&KBANK,NSE,Financials - Private Bank,Small Cap,98.46,,-2,-13,0
+VINATIORGA,NSE,Chemicals - Specialty,Mid Cap,1560.7,-31.1,-6,9,-20
+THOMASCOTT,NSE,Textile - Apparels,Small Cap,323.6,,0,-24,0
+RRKABEL,NSE,Power - Wiring,Small Cap,1487.0,-17.75,16,6,8
+MANAKALUCO,NSE,Metals - Aluminium,Small Cap,23.26,-46.41,-3,6,-10
+PERSISTENT,NSE,IT - Software/Consulting,Mid Cap,6358.0,-2.49,7,-14,10
+ITC,NSE,Consumption - Misc,Large Cap,401.05,,2,1,0
+MANAKSTEEL,NSE,Metals - Iron & Steel,Small Cap,66.09,-28.74,7,1,1
+PENIND,NSE,Engineering,Small Cap,195.51,-29.15,10,-30,-6
+DOLLAR,NSE,Textile - Innerwear,Small Cap,363.35,-41.98,18,6,15
+PDSL,NSE,Textile - Misc,Small Cap,382.6,-37.39,2,1,13
+IRFC,NSE,Railways,Mid Cap,113.98,,1,1,0
 THEINVEST,NSE,Financials - Misc,Small Cap,115.15,,0,16,0
-GPTINFRA,NSE,Infra - Construction,Small Cap,107.08,-46.49,4,1,1
-GRPLTD,NSE,Industrial - Consumables,Small Cap,1699.7,-60.85,-4,-2,-6
-TERASOFT,NSE,IT - Services,Small Cap,461.15,,0,-23,0
-XPROINDIA,NSE,Packaging,Small Cap,973.2,,12,5,0
+AMRUTANJAN,NSE,Healthcare - Pharma,Small Cap,683.95,-16.48,10,6,-9
+RUPA,NSE,Textile - Innerwear,Small Cap,162.13,-54.03,10,3,-5
+MANGALAM,NSE,Healthcare - Pharma,Small Cap,24.01,-82.18,22,7,-13
+DPWIRES,NSE,Power - Wiring,Small Cap,195.39,-67.18,2,5,-5
+IRCTC,NSE,IT - Product/Platform,Mid Cap,674.0,,16,5,0
+THANGAMAYL,NSE,Consumption - Jewelry,Small Cap,3339.5,,0,-21,0
+VIPCLOTHNG,NSE,Textile - Innerwear,Small Cap,32.71,-35.74,-16,-2,-19
+MANGLMCEM,NSE,Infra - Cement,Small Cap,776.95,-23.84,-17,14,3
+PDMJEPAPER,NSE,Paper,Small Cap,96.71,-54.87,-4,8,-11
+RUSHIL,NSE,Infra - Laminates,Small Cap,23.72,-45.91,17,16,-7
+IRCON,NSE,Railways,Small Cap,152.95,,1,6,0
+AMJLAND,NSE,Real Estate,Small Cap,50.97,-27.52,8,3,-19
+DPABHUSHAN,NSE,Consumption - Jewelry,Small Cap,1439.2,-19.85,2,-16,-2
+DLINKINDIA,NSE,IT - Software/Consulting,Small Cap,414.95,-39.43,-5,-4,-19
+MANAPPURAM,NSE,Financials - NBFC,Small Cap,292.65,0.0,16,7,-13
+RUCHIRA,NSE,Paper,Small Cap,119.02,-30.0,18,13,-11
+ISGEC,NSE,Engineering,Small Cap,814.65,,1,7,0
+VINEETLAB,NSE,Healthcare - Pharma,Small Cap,41.8,-48.81,-2,6,29
+THEMISMED,NSE,Healthcare - Pharma,Small Cap,102.46,,0,9,0
+ANANTRAJ,NSE,Real Estate,Small Cap,551.6,-38.68,12,5,-4
+RTNINDIA,NSE,Power - Misc,Small Cap,41.35,-53.33,10,5,-12
+ISFT,NSE,IT - Product/Platform,Small Cap,92.93,,-6,16,0
+DOLPHIN,NSE,Oil and Gas,Small Cap,406.5,-52.76,14,7,1
+MANALIPETC,NSE,Chemicals - Petro,Small Cap,61.23,-38.26,12,1,-6
+PEARLPOLY,NSE,Chemicals - Misc,Small Cap,21.29,-49.91,0,5,-13
+ANANDRATHI,NSE,Financials - Misc,Small Cap,3003.2,-3.9,12,7,-6
+DONEAR,NSE,Textiles - Processing,Small Cap,96.55,-41.65,-26,-11,9
+RUBYMILLS,NSE,Textile - Spinning/Yarn,Small Cap,221.09,-27.14,12,4,-15
+THEJO,NSE,Engineering,Small Cap,1609.0,,0,2,0
+IRISDOREME,NSE,Textile - Apparels,Small Cap,36.01,,-1,8,0
+VINYLINDIA,NSE,Chemicals - Misc,Small Cap,245.19,-47.03,14,5,-10
+IRIS,NSE,IT - Services,Small Cap,300.1,,-7,-24,0
+ANIKINDS,NSE,Metals - Misc,Small Cap,54.11,-57.54,14,1,-33
+VIMTALABS,NSE,Healthcare - Pharma,Small Cap,606.5,-30.86,10,18,-9
+JAGSNPHARM,NSE,Healthcare - Pharma,Small Cap,200.62,,1,-8,0
+APCL,NSE,Infra - Cement,Small Cap,119.2,-47.71,21,6,-13
+DICIND,NSE,Chemicals - Misc,Small Cap,484.35,-39.45,-3,-13,-2
+MAHEPC,NSE,Industrial - Consumables,Small Cap,123.98,-29.07,-3,8,-12
+PGHH,NSE,Consumption - Personal,Mid Cap,12756.0,-26.63,12,17,-6
+ROLEXRINGS,NSE,Auto - OEM Suppliers,Small Cap,127.23,-52.0,-5,15,1
+JBCHEPHARM,NSE,Healthcare - Pharma,Small Cap,1805.7,,-12,-5,0
+TIMKEN,NSE,Industrial - Bearings,Mid Cap,3032.7,,-3,-13,0
+APARINDS,NSE,Power - Equipment,Small Cap,8757.5,-20.03,-4,-15,-1
+JAYSREETEA,NSE,Agri - Tea/Coffee,Small Cap,88.09,,12,5,0
+MAHESHWARI,NSE,Others,Small Cap,47.63,-44.29,-3,6,-13
+PGEL,NSE,Consumption - Electronics,Small Cap,582.0,-42.75,10,1,6
+ROML,NSE,Agri - Edible Oil,Small Cap,49.2,-38.23,-4,-21,-3
+DIGISPICE,NSE,IT - Services,Small Cap,25.32,-44.22,5,17,-6
+VHL,NSE,Financials - NBFC,Small Cap,3578.9,-28.26,12,4,-6
+DIGJAMLMTD,NSE,Textile - Misc,Small Cap,51.54,-47.94,17,6,-8
+DIAMONDYD,NSE,Consumption - FMCG,Small Cap,1134.5,-13.36,10,6,14
+TIMETECHNO,NSE,Industrial - Consumables,Small Cap,184.03,,15,5,0
+VGUARD,NSE,Consumption - Appliances,Small Cap,330.95,-36.86,3,1,-19
+ROHLTD,NSE,Leisure - Hotels,Small Cap,394.75,-27.26,6,3,-8
+PGIL,NSE,Textile - Apparels,Small Cap,1654.6,-5.02,12,-15,6
+DIACABS,NSE,Power - Wiring,Small Cap,140.77,-23.69,9,-12,-11
+RKFORGE,NSE,Metals - Casting/Forging,Small Cap,477.95,-53.18,-28,-14,16
+JINDALPOLY,NSE,Packaging,Small Cap,478.5,-53.95,-3,-22,-3
+VETO,NSE,Consumption - Electronics,Small Cap,113.65,-38.5,15,5,-6
+JINDALPHOT,NSE,Consumption - Misc,Small Cap,1503.8,-3.32,-9,-4,17
+TIPSMUSIC,NSE,Media - Entertainment,Small Cap,540.2,,-4,-1,0
+MAHAPEXLTD,NSE,Financials - Misc,Small Cap,106.38,-46.11,12,6,1
+APCOTEXIND,NSE,Industrial - Consumables,Small Cap,373.45,-29.03,7,-13,-2
+RML,NSE,Auto - OEM Suppliers,Small Cap,736.2,-46.18,12,3,-17
+DIAMINESQ,NSE,Chemicals - Bulk,Small Cap,259.75,-60.5,3,15,-13
+JCHAC,NSE,Consumption - Appliances,Small Cap,1482.1,,14,2,0
+PGHL,NSE,Healthcare - Pharma,Small Cap,5662.0,-13.97,9,4,-11
+TIPSFILMS,NSE,Media - Films,Small Cap,445.3,,2,14,0
+MAHASTEEL,NSE,Metals - Iron & Steel,Small Cap,829.0,0.0,-5,-3,15
+JBMA,NSE,Auto - Misc,Small Cap,572.1,,2,-12,0
+REFEX,NSE,Chemicals - Misc,Small Cap,276.25,-51.85,-21,-10,-22
+JAYNECOIND,NSE,Metals - Iron & Steel,Small Cap,76.29,,17,7,0
+ROSSARI,NSE,Chemicals - Specialty,Small Cap,569.75,-38.39,-18,-9,-5
+JAIPURKURT,NSE,Textile - Apparels,Small Cap,28.62,,6,-29,0
+VIJAYA,NSE,Healthcare - Diagnostics,Small Cap,997.25,-19.69,1,-7,-12
+MAHSEAMLES,NSE,Metals - Pipe & Tube,Small Cap,554.85,-44.38,8,-10,-20
+PFIZER,NSE,Healthcare - Pharma,Mid Cap,5097.6,-17.3,24,14,-17
+TIIL,NSE,Metals - Casting/Forging,Small Cap,2253.7,,0,1,0
+ANTELOPUS,NSE,Oil and Gas,Small Cap,411.1,-28.16,22,6,-10
+DJML,NSE,Transport - Logistics,Small Cap,72.21,-63.52,10,5,-18
+RPGLIFE,NSE,Healthcare - Pharma,Small Cap,2343.4,-16.51,-1,9,-19
+JAICORPLTD,NSE,Industrial - Consumables,Small Cap,127.81,,12,1,0
+DLF,NSE,Real Estate,Large Cap,691.2,-24.89,1,-32,-19
+MAITHANALL,NSE,Metals - Misc,Small Cap,939.85,-28.77,15,8,-10
+TI,NSE,Beverages - Alcohol,Small Cap,462.2,,0,1,0
+PFC,NSE,Financials - NBFC,Mid Cap,338.7,-38.99,4,0,-7
+RPOWER,NSE,Power - Misc,Small Cap,38.56,-44.26,7,2,-21
+JAIBALAJI,NSE,Metals - Iron & Steel,Small Cap,61.75,,10,6,0
+ROUTE,NSE,IT - Product/Platform,Small Cap,719.9,-60.52,9,17,1
+MAHLIFE,NSE,Real Estate,Small Cap,399.45,-40.02,-22,-10,35
+DIXON,NSE,Consumption - Electronics,Mid Cap,13268.0,-27.88,10,4,-10
+PFOCUS,NSE,Media - Films,Small Cap,219.74,0.0,4,17,2
+ANURAS,Sate,Chemicals - Specialty,Small Cap,1333.4,0.0,-6,24,3
+JAYBARMARU,NSE,Auto - Replacement,Small Cap,86.79,,12,5,0
+DIVGIITTS,NSE,Auto - Misc,Small Cap,587.3,-42.04,-1,10,-10
+TIL,NSE,Engineering,Small Cap,268.4,,0,5,0
+PFS,NSE,Financials - NBFC,Small Cap,32.75,-43.97,-4,6,-16
+ROSSELLIND,NSE,Defense - Misc,Small Cap,50.59,-91.7,-10,-24,51
+JAYAGROGN,NSE,Chemicals - Specialty,Small Cap,202.62,,9,3,0
+VIDHIING,NSE,Chemicals - Dyes,Small Cap,340.15,-39.64,9,-14,6
+JASH,NSE,Engineering,Small Cap,434.8,,1,-23,0
+MAHLOG,NSE,Transport - Logistics,Small Cap,315.05,-41.13,-6,9,-5
+DIVISLAB,NSE,Healthcare - Pharma,Large Cap,6478.5,-6.2,3,1,-2
+ROTO,NSE,Industrial - Pumps/Engines,Small Cap,75.81,-34.0,10,17,-20
+ANUP,NSE,Engineering,Small Cap,2176.5,-41.66,-4,-3,10
+TIINDIA,NSE,Metals - Pipe & Tube,Large Cap,2634.9,,0,1,0
+MAHSCOOTER,NSE,Financials - Misc,Small Cap,14018.0,-22.03,1,24,-9
+JAMNAAUTO,NSE,Auto - Replacement,Small Cap,125.9,,-4,-1,0
+DRCSYSTEMS,NSE,IT - Software/Consulting,Small Cap,16.98,-46.4,-7,9,-4
+PNCINFRA,NSE,Infra - Construction,Small Cap,253.21,-54.73,-4,9,-11
+LOYALTEX,NSE,Textile - Spinning/Yarn,Small Cap,211.64,-69.24,12,19,-13
+UNOMINDA,Core,Auto - OEM Suppliers,Mid Cap,1267.8,,8,-13,0
+RACE,NSE,Others,Small Cap,141.5,-67.75,-7,13,-6
+KIRLOSIND,NSE,Power - Green,Small Cap,3281.6,-49.29,15,5,-9
+LAMBODHARA,NSE,Textile - Spinning/Yarn,Small Cap,122.81,-43.75,10,-17,-3
+AUTOAXLES,NSE,Auto - Replacement,Small Cap,1863.6,-16.24,-18,16,3
+PRECOT,NSE,Textile - Spinning/Yarn,Small Cap,432.45,-33.64,-3,8,-4
+AUSOMENT,NSE,Others,Small Cap,108.07,-36.83,-19,-7,3
+ASHOKA,NSE,Infra - Construction,Small Cap,172.65,-43.47,16,5,-3
+UFO,NSE,Media - Films,Small Cap,85.58,,17,3,0
+RADHIKAJWE,NSE,Consumption - Jewelry,Small Cap,72.13,-49.53,1,-25,-11
+KIRLOSBROS,NSE,Industrial - Pumps/Engines,Small Cap,1645.4,-36.79,12,6,-19
+LANDMARK,NSE,Auto - Misc,Small Cap,506.7,-39.27,-4,8,-6
+AUTOIND,NSE,Auto - OEM Suppliers,Small Cap,77.61,-48.97,12,17,3
+UFLEX,NSE,Packaging,Small Cap,477.9,,12,5,0
+KIRLOSENG,NSE,Industrial - Pumps/Engines,Small Cap,1244.8,-10.65,24,4,8
+KIRLPNU,NSE,Industrial - Pumps/Engines,Small Cap,1036.5,-41.41,1,6,-18
+QUICKHEAL,NSE,IT - Product/Platform,Small Cap,272.25,-66.46,-25,-25,-1
+UGARSUGAR,NSE,Agri - Sugar,Small Cap,41.43,,-2,16,0
+KUANTUM,NSE,Paper,Small Cap,93.39,-50.7,12,4,-17
+PYRAMID,NSE,Packaging,Small Cap,162.39,-29.64,-6,-3,5
+LAGNAM,NSE,Textile - Misc,Small Cap,71.46,-57.34,9,3,-27
+AUROPHARMA,Sate,Healthcare - Pharma,Mid Cap,1225.1,-21.94,10,-15,14
+KKCL,NSE,Textile - Apparels,Small Cap,489.8,-36.52,8,4,-7
+UNIVPHOTO,NSE,Consumption - Misc,Small Cap,226.2,,-29,-10,0
+PREMEXPLN,NSE,Defense - Misc,Small Cap,491.75,-44.83,1,-33,-5
+ASIANENE,NSE,Oil and Gas,Small Cap,292.25,-28.5,12,6,-8
+UGROCAP,NSE,Financials - NBFC,Small Cap,170.9,,12,0,0
+QUESS,NSE,Human Resources,Small Cap,209.01,-75.82,2,9,22
+KITEX,NSE,Textile - Apparels,Small Cap,188.72,-36.66,-8,-17,-1
+AURUM,NSE,IT - Product/Platform,Small Cap,179.94,-30.98,15,16,3
+ASHOKLEY,NSE,Auto - CV,Mid Cap,173.56,0.0,10,18,18
+LALPATHLAB,NSE,Healthcare - Diagnostics,Mid Cap,1391.6,-20.61,-36,-16,-11
+PRECWIRE,NSE,Metals - Copper,Small Cap,232.3,-13.76,1,-20,12
+UPL,NSE,Agrichem - Protection,Large Cap,751.55,,1,-21,0
+RADIANTCMS,NSE,Others,Small Cap,51.85,-43.3,-4,-2,4
+KIRIINDUS,NSE,Chemicals - Dyes,Small Cap,568.8,-14.37,-19,-7,3
+PRECAM,NSE,Auto - OEM Suppliers,Small Cap,166.98,-54.35,10,1,-5
+RAIN,NSE,Chemicals - Petro,Small Cap,124.6,-39.6,14,7,-16
+KILITCH,NSE,Healthcare - Pharma,Small Cap,338.8,-26.71,14,2,-19
+AVG,NSE,Transport - Logistics,Small Cap,194.72,-68.44,10,4,-5
+RAINBOW,NSE,Healthcare - Hospitals,Small Cap,1317.8,-20.12,-8,-3,-15
+KICL,NSE,Financials - Misc,Small Cap,4898.0,-34.4,14,-14,-3
+UCAL,NSE,Auto - Replacement,Small Cap,112.1,,15,2,0
+USHAMART,NSE,Power - Wiring,Small Cap,452.1,,-1,9,0
+LAURUSLABS,NSE,Healthcare - Pharma,Mid Cap,1045.2,0.0,2,-12,8
+KHANDSE,NSE,Financials - Broking,Small Cap,22.23,-35.38,10,5,-11
+PRAENG,NSE,Real Estate,Small Cap,26.75,-37.16,-30,-15,-1
+ASALCBR,NSE,Beverages - Alcohol,Small Cap,945.15,-33.7,-4,6,-4
+AVROIND,NSE,Consumption - Misc,Small Cap,114.14,-50.49,2,-10,-23
+RAJESHEXPO,NSE,Consumption - Jewelry,Mid Cap,204.36,-45.42,1,7,15
+KHAITANLTD,NSE,Consumption - Electronics,Small Cap,100.93,-28.25,1,15,-9
+UBL,NSE,Beverages - Alcohol,Mid Cap,1601.2,,-20,-31,0
+ASHAPURMIN,NSE,Metals - Misc,Small Cap,790.9,0.0,18,6,30
+KMSUGAR,NSE,Agri - Sugar,Small Cap,26.65,-44.56,14,5,-2
+PRAJIND,NSE,Engineering,Small Cap,343.2,-58.96,14,5,5
+UCOBANK,NSE,Financials - PSU Bank,Mid Cap,28.65,,10,-31,0
+ASHIMASYN,NSE,Textile - Spinning/Yarn,Small Cap,17.85,-61.96,1,2,-22
+AVADHSUGAR,NSE,Agri - Sugar,Small Cap,369.5,-53.94,-1,7,-22
+RADICO,NSE,Beverages - Alcohol,Mid Cap,3194.9,-3.5,2,-21,-2
+KIOCL,NSE,Metals - Iron & Steel,Small Cap,335.85,-36.49,-3,16,-7
+LAOPALA,NSE,Consumption - Misc,Small Cap,203.16,-48.06,10,1,-11
+UDS,NSE,Human Resources,Small Cap,183.59,,15,7,0
+LATENTVIEW,NSE,IT - Product/Platform,Small Cap,480.2,-12.65,-4,-15,35
+PRAKASH,NSE,Metals - Pipe & Tube,Small Cap,131.81,-40.38,-4,8,-10
+KINGFA,NSE,Industrial - Consumables,Small Cap,4014.7,-15.13,7,1,-6
+URAVIDEF,NSE,Auto - Misc,Small Cap,179.83,,12,5,0
+AVALON,NSE,Electronic - Equipment,Small Cap,875.3,-28.86,10,2,-5
+ASHIANA,NSE,Real Estate,Small Cap,295.45,-33.06,4,-10,3
+RAILTEL,NSE,Railways,Small Cap,333.3,-44.16,12,6,-8
+KIMS,NSE,Healthcare - Hospitals,Small Cap,639.3,-16.1,-19,-8,-14
+AVANTIFEED,NSE,Agri - Animal Feed,Small Cap,854.35,-8.52,10,2,9
+LATTEYS,NSE,Industrial - Pumps/Engines,Small Cap,21.95,-53.93,-20,-8,-2
+LAXMICOT,NSE,Textile - Spinning/Yarn,Small Cap,18.94,-54.34,1,-11,-19
+UJJIVANSFB,NSE,Financials - Private Bank,Small Cap,54.06,,10,-13,0
+AURIONPRO,NSE,IT - Software/Consulting,Small Cap,1125.2,-41.77,-4,7,1
+KPIL,NSE,Infra - Construction,Small Cap,1151.2,-18.21,-4,-2,-9
+KRITINUT,NSE,Agri - Edible Oil,Small Cap,66.15,-58.34,8,-23,-20
+PRITI,NSE,Infra - Home Furnish,Small Cap,58.5,-76.52,6,1,-2
+ATAM,NSE,Engineering,Small Cap,81.52,-63.57,14,4,-3
+PSPPROJECT,NSE,Infra - Construction,Small Cap,861.4,-14.09,-4,-23,14
+KPIGREEN,NSE,Power - Green,Small Cap,417.75,-41.16,12,5,-6
+PSB,NSE,Financials - PSU Bank,Mid Cap,26.25,-61.65,-1,-32,29
+UNITEDPOLY,NSE,Textile - Misc,Small Cap,28.08,,-26,-25,0
+KOTHARIPRO,NSE,Others,Small Cap,72.76,-29.8,9,1,-5
+ASTEC,NSE,Agrichem - Protection,Small Cap,718.65,-50.72,5,-10,-1
+PTC,NSE,Power - Misc,Small Cap,154.4,-36.72,-1,5,-17
+KRSNAA,NSE,Healthcare - Diagnostics,Small Cap,718.95,-27.78,-2,-14,-10
+PRINCEPIPE,NSE,Infra - Plastic Pipes,Small Cap,249.2,-66.48,12,2,-6
+ATGL,NSE,Utility - Gas,Large Cap,568.75,-47.85,-4,-2,-3
+UNIDT,NSE,Engineering,Small Cap,205.15,,-1,8,0
+UNIENTER,NSE,Chemicals - Misc,Small Cap,140.0,,10,3,0
+ATALREAL,NSE,Real Estate,Small Cap,25.25,-1.25,27,11,-3
+ASTERDM,NSE,Healthcare - Hospitals,Small Cap,598.2,-15.25,-26,-38,-5
+KREBSBIO,NSE,Healthcare - Pharma,Small Cap,69.43,-38.88,-4,12,1
+PROZONER,NSE,Real Estate,Small Cap,50.65,-27.52,-2,6,-4
+ASTRAMICRO,NSE,Defense - Technology,Small Cap,908.25,-20.52,17,6,-10
+ASTRAL,NSE,Infra - Plastic Pipes,Mid Cap,1423.6,-40.84,1,-2,16
+PRSMJOHNSN,NSE,Infra - Cement,Small Cap,134.74,-38.63,2,1,-7
+KRBL,NSE,Agri - Rice,Small Cap,394.4,-16.67,16,-16,-13
+ASTRAZEN,NSE,Healthcare - Pharma,Small Cap,9091.5,-13.49,1,1,-7
+KRISHANA,NSE,Agrichem - Fertilizers,Small Cap,518.55,-13.85,-2,7,-14
+KPRMILL,NSE,Textile - Apparels,Mid Cap,974.6,-25.39,12,-17,-3
+UNIONBANK,NSE,Financials - PSU Bank,Mid Cap,154.03,,10,-22,0
+PRIVISCL,NSE,Chemicals - Specialty,Small Cap,3088.4,-8.84,-8,-24,9
+PRUDENT,NSE,Financials - Misc,Small Cap,2698.0,-23.36,2,19,-13
+UNITDSPR,NSE,Beverages - Alcohol,Large Cap,1406.7,,-5,-23,0
+KPITTECH,NSE,IT - Services,Mid Cap,1224.6,-34.36,-19,-8,6
+KRITI,NSE,Industrial - Consumables,Small Cap,88.78,-64.74,12,6,-17
+KOTHARIPET,NSE,Chemicals - Petro,Small Cap,123.72,-51.07,16,4,-20
+ASPINWALL,NSE,Transport - Logistics,Small Cap,227.08,-31.54,2,-2,-19
+KSB,NSE,Industrial - Pumps/Engines,Small Cap,766.25,-23.46,2,18,-18
+ATL,NSE,Transport - Logistics,Small Cap,26.41,-64.17,19,7,-5
+PURVA,NSE,Real Estate,Small Cap,236.54,-55.17,-4,8,-7
+ASIANPAINT,NSE,Consumption - Paints,Large Cap,2799.9,-17.71,1,-16,9
+ATULAUTO,NSE,Auto - CV,Small Cap,427.7,-45.27,-5,-11,-6
+KOKUYOCMLN,NSE,Consumption - Misc,Small Cap,88.43,-59.98,10,4,-12
+KSOLVES,NSE,IT - Software/Consulting,Small Cap,285.65,-58.16,1,-12,18
+PRESTIGE,NSE,Real Estate,Mid Cap,1624.1,-18.11,-6,-32,-2
+ULTRACEMCO,NSE,Infra - Cement,Large Cap,11496.0,,-3,6,0
+PVP,NSE,Real Estate,Small Cap,33.81,-15.79,14,-15,16
+KOHINOOR,NSE,Agri - Misc,Small Cap,26.89,-45.29,1,0,-17
+AUBANK,NSE,Financials - Private Bank,Mid Cap,985.15,0.0,-2,-7,9
+UNIVCABLES,NSE,Power - Wiring,Small Cap,856.15,,-6,-11,0
+KTKBANK,NSE,Financials - Private Bank,Small Cap,200.47,-27.06,-26,-8,9
+PVRINOX,NSE,Media - Films,Small Cap,1060.4,-37.65,-4,-3,-4
+PREMIERPOL,NSE,Infra - Plastic Pipes,Small Cap,40.33,-52.64,-33,-10,5
+ASIANHOTNR,NSE,Leisure - Hotels,Small Cap,322.3,-19.33,-2,-2,-37
+UMAEXPORTS,NSE,Agri - Misc,Small Cap,39.61,,2,10,0
+KNRCON,NSE,Infra - Construction,Small Cap,146.46,-62.32,12,1,-6
+KOLTEPATIL,NSE,Real Estate,Small Cap,390.4,-30.12,22,9,-13
+ATUL,NSE,Chemicals - Specialty,Mid Cap,6007.0,-24.79,5,3,1
+UNICHEMLAB,NSE,Healthcare - Pharma,Small Cap,449.8,,14,6,0
+PRIMESECU,NSE,Financials - Misc,Small Cap,287.15,-14.36,15,-21,-2
+PTCIL,NSE,Metals - Casting/Forging,Small Cap,17492.0,-7.33,-15,-6,12
+KOTARISUG,NSE,Agri - Sugar,Small Cap,27.54,-58.02,-3,7,-1
+UNITEDTEA,NSE,Agri - Tea/Coffee,Small Cap,449.75,,2,25,0
+ATLANTAA,NSE,Infra - Construction,Small Cap,42.85,-32.17,16,6,-3
+PTL,NSE,Others,Small Cap,39.73,-18.42,8,1,-2
+KOTAKBANK,NSE,Financials - Private Bank,Large Cap,2159.5,-2.75,-5,17,11
+UMIYA-MRO,NSE,Real Estate,Small Cap,84.55,,-21,-10,0
+ASIANTILES,NSE,Infra - Ceramics,Small Cap,72.05,-22.49,12,2,9
+KSCL,NSE,Agri - Seeds,Small Cap,930.0,-38.25,-3,-1,-28
+PUNJABCHEM,NSE,Agrichem - Protection,Small Cap,1243.9,-16.69,-5,-10,-3
+KOPRAN,NSE,Healthcare - Pharma,Small Cap,129.93,-62.44,-21,15,-6
+KSL,NSE,Metals - Iron & Steel,Small Cap,735.8,-37.35,10,2,-16
+PRICOLLTD,NSE,Auto - OEM Suppliers,Small Cap,659.8,0.0,17,2,18
+UNIVASTU,NSE,Engineering,Small Cap,68.05,,1,25,0
+AVTNPL,NSE,Agri - Misc,Small Cap,65.64,-38.25,-4,-2,-10
+RAJRATAN,NSE,Auto - OEM Suppliers,Small Cap,452.0,-42.23,2,-3,9
+KHAICHEM,NSE,Agrichem - Fertilizers,Small Cap,77.93,-39.67,-5,14,-8
+TRITURBINE,NSE,Power - Equipment,Small Cap,528.4,,-14,-8,0
+KANSAINER,NSE,Consumption - Paints,Mid Cap,222.98,-35.24,10,1,-5
+VALIANTLAB,NSE,Healthcare - Pharma,Small Cap,67.57,,22,9,0
+RATNAVEER,NSE,Metals - Iron & Steel,Small Cap,159.87,-38.57,-1,15,16
+ARROWGREEN,NSE,Packaging,Small Cap,524.9,-49.12,1,4,-5
+KANPRPLA,NSE,Packaging,Small Cap,193.83,-20.15,-5,-15,-20
+DBSTOCKBRO,NSE,Financials - Broking,Small Cap,25.03,-62.78,29,17,30
+LMW,NSE,Engineering,Small Cap,14965.0,-16.48,-5,-1,9
+DCAL,NSE,Healthcare - Pharma,Small Cap,242.96,-19.13,10,5,-7
+TRIGYN,NSE,IT - Software/Consulting,Small Cap,67.2,,-7,26,0
+AROGRANITE,NSE,Infra - Granites/Marbles,Small Cap,30.29,-51.38,12,5,-6
+RAYMOND,NSE,Textile - Apparels,Small Cap,424.85,-86.84,-5,-1,21
+KANORICHEM,NSE,Chemicals - Bulk,Small Cap,78.22,-47.55,12,6,1
+LODHA,NSE,Real Estate,Mid Cap,1090.2,-31.64,12,-24,-4
+POLYCAB,NSE,Power - Wiring,Mid Cap,7439.0,-3.76,2,1,-5
+KAPSTON,NSE,Others,Small Cap,296.35,-11.85,25,-19,11
+POLYMED,NSE,Healthcare - Equipments,Small Cap,1810.3,-42.14,-28,-12,8
+LLOYDSME,NSE,Metals - Iron & Steel,Small Cap,1300.9,-16.27,21,10,-21
+ARTNIRMAN,NSE,Real Estate,Small Cap,47.05,-45.72,9,4,-4
+TTKHLTCARE,NSE,Healthcare - Pharma,Small Cap,1044.1,,-5,-32,0
+LINDEINDIA,NSE,Chemicals - Misc,Mid Cap,5896.0,-37.82,-3,11,-21
+RANEHOLDIN,NSE,Auto - Misc,Small Cap,1282.7,-45.44,-4,-2,-6
+KARURVYSYA,NSE,Financials - Private Bank,Small Cap,252.39,0.0,10,1,9
+POLYPLEX,NSE,Packaging,Small Cap,808.55,-42.51,1,8,-26
+VAIBHAVGBL,NSE,Consumption - Jewelry,Small Cap,237.13,,1,1,0
+DBOL,NSE,Agri - Sugar,Small Cap,75.65,-52.64,-8,18,-10
+RATEGAIN,NSE,IT - Product/Platform,Small Cap,655.95,-25.06,10,-15,31
+TRIVENI,NSE,Agri - Sugar,Small Cap,375.0,,12,5,0
+LLOYDSENGG,NSE,Metals - Iron & Steel,Small Cap,56.14,-37.13,18,6,-16
+KARMAENG,NSE,Power - Equipment,Small Cap,50.04,-50.43,-3,-3,-7
+ARTEMISMED,NSE,Healthcare - Hospitals,Small Cap,276.25,-18.75,-1,-14,11
+DBREALTY,NSE,Real Estate,Small Cap,118.41,-58.11,12,4,-21
+RATNAMANI,NSE,Metals - Pipe & Tube,Mid Cap,2297.1,-39.69,-9,-4,9
+POLICYBZR,NSE,IT - Product/Platform,Mid Cap,1888.9,-14.76,-10,-4,4
+DCBBANK,NSE,Financials - Private Bank,Small Cap,168.52,-9.43,4,-18,9
+VALIANTORG,NSE,Chemicals - Specialty,Small Cap,263.35,,-7,12,0
+RBA,NSE,Leisure - Restaurants,Small Cap,66.47,-47.06,-6,19,-12
+PODDARMENT,NSE,Chemicals - Dyes,Small Cap,266.8,-40.33,18,10,-5
+RECLTD,NSE,Financials - NBFC,Mid Cap,339.2,-46.78,2,-12,-2
+KALAMANDIR,NSE,Others,Small Cap,152.75,-44.95,2,1,-6
+KAKATCEM,NSE,Infra - Cement,Small Cap,127.44,-50.6,-4,-2,-11
+DCMSHRIRAM,NSE,Others,Small Cap,1212.5,-13.9,-7,-1,-16
+REDINGTON,NSE,IT - Services,Small Cap,272.2,-15.48,-3,-17,-3
+VARROC,NSE,Auto - OEM Suppliers,Small Cap,635.0,,1,-13,0
+LOVABLE,NSE,Textile - Innerwear,Small Cap,82.09,-53.72,3,7,-5
+KAJARIACER,NSE,Infra - Ceramics,Mid Cap,1053.7,-29.91,-1,6,-9
+POCL,NSE,Metals - Misc,Small Cap,1301.8,-7.96,3,2,-4
+ARIHANTCAP,NSE,Financials - Broking,Small Cap,92.46,-22.07,1,-11,-9
+TREL,NSE,Transport - Logistics,Small Cap,30.11,,15,8,0
+DCMSRIND,NSE,Agri - Sugar,Small Cap,163.28,-31.0,-2,-11,-1
+REDTAPE,NSE,Consumption - Footwear,Small Cap,122.9,-48.93,-5,-11,-3
+KABRAEXTRU,NSE,Electronic - Equipment,Small Cap,219.86,-61.72,-24,-8,4
+LOTUSEYE,NSE,Healthcare - Hospitals,Small Cap,125.3,-3.12,-2,13,-5
+KAUSHALYA,NSE,Infra - Construction,Small Cap,888.85,-46.38,-1,9,-9
+TRENT,NSE,Consumption - Retail,Mid Cap,4062.2,,10,5,0
+DCMNVL,NSE,Textile - Spinning/Yarn,Small Cap,126.58,-54.84,1,-10,-17
+KAMDHENU,NSE,Metals - Iron & Steel,Small Cap,22.58,-64.99,-7,-4,-1
+TRIDENT,NSE,Textile - Misc,Mid Cap,26.95,,-8,-19,0
+KAMATHOTEL,NSE,Leisure - Hotels,Small Cap,234.93,-32.28,7,18,-7
+LOKESHMACH,NSE,Engineering,Small Cap,167.04,-63.35,1,7,-5
+ARMANFIN,NSE,Financials - NBFC,Small Cap,1481.0,-43.25,12,3,-2
+DCI,NSE,IT - Software/Consulting,Small Cap,244.2,-42.6,-1,4,14
+RBLBANK,NSE,Financials - Private Bank,Small Cap,300.25,-8.53,-7,-32,-3
+KALYANKJIL,NSE,Consumption - Jewelry,Small Cap,484.85,-37.66,10,-13,-2
+LORDSCHLO,NSE,Chemicals - Bulk,Small Cap,176.07,-21.01,1,6,-5
+POKARNA,NSE,Infra - Granites/Marbles,Small Cap,849.75,-37.61,12,-15,8
+DCM,NSE,IT - Services,Small Cap,92.12,-34.12,3,-10,-21
+TRF,NSE,Engineering,Small Cap,305.2,,14,6,0
+VARDHACRLC,NSE,Textiles - Polyester,Small Cap,37.54,,11,5,0
+RCF,NSE,Agrichem - Fertilizers,Small Cap,138.6,-39.31,1,5,-13
+KALYANIFRG,NSE,Metals - Casting/Forging,Small Cap,640.2,-20.95,-2,6,-8
+ARIHANTSUP,NSE,Real Estate,Small Cap,305.8,-42.3,10,-39,-6
+DBL,NSE,Infra - Construction,Small Cap,459.25,-18.83,6,18,-9
+KAVDEFENCE,NSE,Telecom,Small Cap,68.92,-51.02,-42,-20,-5
+RAMRAT,NSE,Power - Wiring,Small Cap,612.6,-17.62,-4,12,-14
+RAJTV,NSE,Media - TV Broadcast,Small Cap,42.46,-69.74,6,2,19
+KERNEX,NSE,Railways,Small Cap,1141.4,-21.4,16,2,-3
+PPAP,NSE,Auto - OEM Suppliers,Small Cap,212.99,-20.01,-21,-10,-4
+ASAHIINDIA,NSE,Auto - OEM Suppliers,Small Cap,1008.7,-1.79,-23,-10,35
+TVSSCS,NSE,Transport - Logistics,Small Cap,106.45,,14,6,0
+LGBBROSLTD,NSE,Auto - OEM Suppliers,Small Cap,1847.2,-5.83,-7,-21,18
+RALLIS,NSE,Agrichem - Protection,Small Cap,265.4,-30.06,14,27,-14
+KELLTONTEC,NSE,IT - Software/Consulting,Small Cap,18.44,-44.46,1,5,-13
+UTKARSHBNK,NSE,Financials - Private Bank,Small Cap,15.04,,9,4,0
+DABUR,NSE,Consumption - Personal,Large Cap,493.95,-26.01,1,-20,-2
+TVSMOTOR,NSE,Auto - 2W,Large Cap,3666.0,,-19,-2,0
+LIBERTSHOE,NSE,Consumption - Footwear,Small Cap,274.65,-50.92,1,-11,-7
+POWERMECH,NSE,Infra - Construction,Small Cap,2323.9,-32.53,12,5,-18
+ARVSMART,NSE,Real Estate,Small Cap,603.6,-39.5,3,15,15
+RAMANEWS,NSE,Paper,Small Cap,30.6,-28.89,-6,30,-27
+CYIENTDLM,NSE,Electronic - Equipment,Small Cap,421.25,-49.81,12,6,-1
+KEI,NSE,Power - Wiring,Mid Cap,4284.4,-10.74,10,1,-7
+LFIC,NSE,Others,Small Cap,174.34,-47.25,12,-31,-11
+KEYFINSERV,NSE,Financials - Misc,Small Cap,318.45,-27.37,-2,10,11
+USK,NSE,Infra - Construction,Small Cap,23.16,,9,4,0
+LEMONTREE,NSE,Leisure - Hotels,Small Cap,159.83,-8.86,-15,16,-8
+PPLPHARMA,NSE,Healthcare - Pharma,Small Cap,171.28,-39.25,2,-30,-4
+ASAL,NSE,Auto - Replacement,Small Cap,483.7,-53.36,-22,-9,-4
+CYBERTECH,NSE,IT - Software/Consulting,Small Cap,145.18,-99.29,-6,15,26
+TVTODAY,NSE,Media - TV Broadcast,Small Cap,134.26,,10,5,0
+RAJRILTD,NSE,Textiles - Processing,Small Cap,23.39,-23.98,20,5,-20
+KHADIM,NSE,Consumption - Footwear,Small Cap,160.53,-62.9,-43,-31,-6
+LEXUS,NSE,Infra - Ceramics,Small Cap,26.97,-49.02,1,1,9
+PPL,NSE,Infra - Plastic Pipes,Small Cap,241.19,-62.42,-3,7,-22
+KFINTECH,NSE,IT - Product/Platform,Small Cap,1078.1,-28.67,3,2,-21
+CYIENT,NSE,IT - Services,Small Cap,1157.6,-51.53,0,15,32
+RAJSREESUG,NSE,Agri - Sugar,Small Cap,35.15,-60.1,-4,7,-3
+TVSSRICHAK,Sate,Auto - Tyres,Small Cap,4220.1,,1,-14,0
+UTIAMC,NSE,Financials - AMC,Small Cap,1134.0,,12,18,0
+ASAHISONG,NSE,Chemicals - Dyes,Small Cap,284.15,-48.28,10,5,1
+TREJHARA,NSE,IT - Software/Consulting,Small Cap,245.8,,-21,-9,0
+DALBHARAT,NSE,Infra - Cement,Mid Cap,2015.3,-16.43,-2,23,-13
+LICHSGFIN,NSE,Financials - Housing,Mid Cap,532.45,-33.18,3,0,-5
+ARVIND,NSE,Textile - Apparels,Small Cap,319.7,-23.74,2,-15,9
+TTML,NSE,Telecom,Small Cap,49.87,,0,4,0
+RAMCOSYS,NSE,IT - Product/Platform,Small Cap,592.95,-9.99,-6,-2,18
+KAYNES,NSE,Electronic - Equipment,Small Cap,4185.0,-44.53,10,1,-8
+LINC,NSE,Consumption - Misc,Small Cap,111.94,-41.82,2,-31,-19
+POONAWALLA,NSE,Financials - NBFC,Mid Cap,448.8,-15.18,2,-10,-7
+ARVEE,NSE,Chemicals - Bulk,Small Cap,290.78,-0.21,4,11,3
+DATAPATTNS,Core,Defense - Technology,Small Cap,2556.4,-24.6,10,-16,-2
+RAMKY,NSE,Infra - Construction,Small Cap,553.8,-38.99,12,1,-4
+KAYA,NSE,Leisure - Misc,Small Cap,359.8,-45.79,2,-13,-9
+DBCORP,NSE,Media - Publishing,Small Cap,258.8,-32.87,10,4,-11
+TTKPRESTIG,NSE,Consumption - Appliances,Small Cap,618.25,,-7,-30,0
+VADILALIND,NSE,Consumption - Dairy,Small Cap,4981.0,,-20,-9,0
+LINCOLN,NSE,Healthcare - Pharma,Small Cap,483.6,-47.99,9,-18,-3
+PONNIERODE,NSE,Agri - Sugar,Small Cap,268.35,-54.23,-5,-2,15
+LIKHITHA,NSE,Infra - Construction,Small Cap,182.97,-59.98,1,6,-19
+KECL,NSE,Power - Equipment,Small Cap,99.19,-59.0,-4,1,-4
+V2RETAIL,NSE,Consumption - Retail,Small Cap,2222.3,,10,-13,0
+DATAMATICS,NSE,IT - Services,Small Cap,826.05,-18.24,12,4,-12
+POWERINDIA,NSE,Power - Equipment,Small Cap,18555.0,-15.87,-3,-17,-2
+DALMIASUG,NSE,Agri - Sugar,Small Cap,296.5,-47.61,-1,7,-22
+RAMAPHO,NSE,Agrichem - Fertilizers,Small Cap,154.13,-25.6,12,-28,-3
+TVSHLTD,NSE,Auto - Replacement,Small Cap,14579.0,,1,-31,0
+UTTAMSUGAR,NSE,Agri - Sugar,Small Cap,262.94,,16,8,0
+KEC,NSE,Railways,Small Cap,711.0,-42.51,10,13,-8
+RAMCOCEM,NSE,Infra - Cement,Mid Cap,1050.3,-9.03,14,8,-18
+KDDL,NSE,Consumption - Jewelry,Small Cap,2297.5,-35.93,10,-13,-3
+ARVINDFASN,NSE,Textile - Apparels,Small Cap,512.9,-16.03,12,5,-10
+DAMODARIND,NSE,Textile - Spinning/Yarn,Small Cap,30.12,-53.59,-5,-2,-12
+TVSELECT,NSE,IT - Equipments,Small Cap,473.6,,10,3,0
+LICI,NSE,Financials - Life,Large Cap,852.0,-28.06,2,-21,-3
+POWERGRID,NSE,Power - Misc,Large Cap,263.45,-26.46,1,-14,-7
+RAMCOIND,NSE,Infra - Cement,Small Cap,317.65,-18.82,12,6,-7
+KCPSUGIND,NSE,Agri - Sugar,Small Cap,26.01,-56.63,-6,8,-6
+KCP,NSE,Infra - Cement,Small Cap,178.81,-29.82,-2,8,-6
+RUSTOMJEE,NSE,Real Estate,Small Cap,527.5,-31.52,-10,20,-12
+IRB,NSE,Infra - Construction,Mid Cap,41.09,,-6,-30,0
+MANINDS,NSE,Metals - Pipe & Tube,Small Cap,408.1,-12.77,-7,-12,-1
+AEGISLOG,NSE,Utility - Gas,Small Cap,736.25,,-5,-21,0
+HITECHCORP,NSE,Packaging,Small Cap,169.5,,4,-11,0
+FAIRCHEMOR,NSE,Chemicals - Specialty,Small Cap,683.05,-52.53,-9,15,-18
+MMTC,NSE,Others,Small Cap,55.26,-48.47,10,1,-5
+OMAXE,NSE,Real Estate,Small Cap,65.7,-55.42,10,5,-17
+SHALBY,NSE,Healthcare - Hospitals,Small Cap,199.48,-36.78,12,4,-5
+HITECHGEAR,NSE,Auto - Replacement,Small Cap,655.0,,15,6,0
+SUZLON,NSE,Power - Green,Small Cap,52.59,,0,5,0
+FAZE3Q,NSE,Textiles - Processing,Small Cap,444.05,-35.56,12,-15,-3
+WEWIN,NSE,Tech - BPO,Small Cap,45.49,-50.33,-22,15,-5
+MODIRUBBER,NSE,Others,Small Cap,104.51,-27.82,2,1,-5
+ADVENZYMES,NSE,Healthcare - Biotech,Small Cap,308.65,,2,-20,0
+SHALPAINTS,NSE,Consumption - Paints,Small Cap,55.13,-74.68,-7,-42,-3
+HISARMETAL,NSE,Metals - Iron & Steel,Small Cap,156.53,,-19,-12,0
+HITECH,NSE,Metals - Iron & Steel,Small Cap,91.1,,9,1,0
+SHAKTIPUMP,NSE,Industrial - Pumps/Engines,Small Cap,723.1,-43.41,12,6,-46
+SVLL,NSE,Transport - Logistics,Small Cap,716.95,,0,7,0
+WESTLIFE,NSE,Leisure - Restaurants,Small Cap,520.25,-44.09,-22,-4,-12
+HMVL,NSE,Media - Publishing,Small Cap,72.71,,17,8,0
+WENDT,NSE,Engineering,Small Cap,8122.0,-51.73,-3,8,-8
+EXIDEIND,NSE,Batteries,Mid Cap,363.25,-36.24,-17,-3,-8
+SHAHALLOYS,NSE,Metals - Iron & Steel,Small Cap,67.62,-33.95,12,-20,-1
+HMAAGRO,NSE,Consumption - Misc,Small Cap,29.1,,10,-19,0
+ONEPOINT,NSE,Tech - BPO,Small Cap,54.2,-28.5,3,-11,11
+EXPLEOSOL,NSE,IT - Services,Small Cap,1029.4,-29.09,10,-13,5
+AEROENTER,NSE,Metals - Iron & Steel,Small Cap,84.11,,2,-23,0
+SWANCORP,NSE,Real Estate,Small Cap,468.2,,0,7,0
+MMFL,NSE,Metals - Casting/Forging,Small Cap,367.35,-44.08,-1,26,14
+SHAILY,NSE,Industrial - Consumables,Small Cap,2367.7,-9.73,-23,-20,-2
+HLEGLAS,Core,Engineering,Small Cap,445.2,,-4,7,0
+MMP,NSE,Metals - Misc,Small Cap,246.65,-39.34,-10,-1,-6
+OMINFRAL,NSE,Engineering,Small Cap,98.1,-56.95,-26,-10,-5
+FACT,NSE,Agrichem - Fertilizers,Mid Cap,863.05,-23.92,10,4,-13
+FCL,NSE,Chemicals - Specialty,Small Cap,24.01,-45.69,-14,-3,-1
+SUVEN,NSE,Healthcare - Pharma,Small Cap,171.0,,0,14,0
+OMAXAUTO,NSE,Auto - OEM Suppliers,Small Cap,99.48,-37.04,28,24,-10
+ADVANIHOTR,NSE,Leisure - Hotels,Small Cap,57.15,,-8,16,0
+WHIRLPOOL,NSE,Consumption - Appliances,Mid Cap,926.2,-60.87,14,3,-5
+FIBERWEB,NSE,Textile - Misc,Small Cap,35.84,-41.56,-5,1,-17
+HINDPETRO,NSE,Petro - Refineries,Mid Cap,469.75,,18,5,0
+HINDOILEXP,NSE,Oil and Gas,Small Cap,153.65,,-16,18,0
+ADOR,NSE,Engineering,Small Cap,1029.4,,-8,-14,0
+SURYAROSNI,NSE,Metals - Pipe & Tube,Small Cap,267.1,,0,7,0
+MOL,NSE,Agrichem - Protection,Small Cap,61.5,-43.77,10,5,-18
+SHAREINDIA,NSE,Financials - Broking,Small Cap,169.42,-56.9,0,6,11
+OIL,NSE,Oil and Gas,Mid Cap,405.05,-45.34,14,-24,-2
+FIEMIND,Core,Auto - OEM Suppliers,Small Cap,2408.6,0.0,12,1,6
+HINDCOPPER,NSE,Metals - Copper,Small Cap,387.55,,3,14,0
+MOLDTECH,NSE,IT - Services,Small Cap,159.97,-42.32,-3,6,-4
+FILATEX,NSE,Textiles - Polyester,Small Cap,50.87,-29.64,-4,6,-4
+SURYALAXMI,NSE,Textile - Spinning/Yarn,Small Cap,57.39,,0,-2,0
+WILLAMAGOR,NSE,Financials - Misc,Small Cap,29.93,-24.67,9,2,-8
+SHARDAMOTR,NSE,Auto - OEM Suppliers,Small Cap,953.6,-64.88,0,13,-5
+MITCON,NSE,IT - Software/Consulting,Small Cap,69.16,-50.84,14,-15,9
+OILCOUNTUB,NSE,Oil and Gas,Small Cap,62.04,-35.47,-6,-2,-18
+SURYODAY,NSE,Financials - Private Bank,Small Cap,134.15,,0,-11,0
+SHANKARA,NSE,Infra - Construction,Small Cap,109.41,-90.54,0,45,-17
+HIRECT,NSE,Electronic - Equipment,Small Cap,1403.8,,-20,-2,0
+MODISONLTD,NSE,Power - Equipment,Small Cap,135.21,-31.87,-19,-8,-17
+HINDZINC,NSE,Metals - Misc,Large Cap,588.75,,16,16,0
+FDC,NSE,Healthcare - Pharma,Small Cap,411.0,-31.18,-6,20,-13
+WHEELS,NSE,Auto - OEM Suppliers,Small Cap,851.8,-10.1,-3,6,-4
+SUTLEJTEX,NSE,Textile - Spinning/Yarn,Small Cap,32.94,,0,-11,0
+MOHITIND,NSE,Textiles - Processing,Small Cap,28.18,-43.0,4,7,-9
+OLECTRA,NSE,Auto - PV/Trucks,Small Cap,1175.3,-42.22,-4,6,-9
+SHANTIGEAR,NSE,Auto - OEM Suppliers,Small Cap,471.5,-29.14,0,24,-12
+HINDWAREAP,NSE,Infra - Home Furnish,Small Cap,262.2,,2,-32,0
+ADSL,NSE,IT - Services,Small Cap,153.76,,-6,1,0
+FEDERALBNK,Sate,Financials - Private Bank,Mid Cap,267.85,0.0,2,-11,10
+SHARDACROP,NSE,Agrichem - Protection,Small Cap,883.85,-20.15,0,20,-15
+HINDUNILVR,NSE,Consumption - FMCG,Large Cap,2280.0,,5,-11,0
+MOIL,NSE,Metals - Misc,Small Cap,322.9,-41.4,-4,6,-6
+SHEMAROO,NSE,Media - Entertainment,Small Cap,106.16,-53.15,0,-15,-2
+SWARAJENG,NSE,Industrial - Pumps/Engines,Small Cap,3619.7,,0,-2,0
+SGIL,NSE,Power - Green,Small Cap,530.45,-7.23,-18,-9,-14
+ORCHPHARMA,NSE,Healthcare - Pharma,Small Cap,787.05,-60.3,-9,-16,27
+SEJALLTD,NSE,Others,Small Cap,837.4,-13.02,14,-15,-1
+HUDCO,NSE,Financials - Housing,Small Cap,211.27,,10,-13,0
+WELCORP,NSE,Metals - Pipe & Tube,Small Cap,777.5,-19.54,8,-25,-5
+ESCORTS,NSE,Auto - Misc,Mid Cap,3615.8,-16.58,-24,-9,-2
+ESSARSHPNG,NSE,Transport - Shipping,Small Cap,27.06,-58.09,-5,-2,-1
+MHRIL,NSE,Leisure - Hotels,Small Cap,309.1,-35.71,2,-4,-13
+SELMC,NSE,Textile - Spinning/Yarn,Small Cap,38.34,-59.34,14,10,12
+SYRMA,NSE,Electronic - Equipment,Small Cap,729.7,,0,-20,0
+MICEL,NSE,Electronic - Equipment,Small Cap,43.93,-56.06,2,15,-6
+ORBTEXP,NSE,Textiles - Processing,Small Cap,189.43,-31.13,10,3,-3
+AFSL,NSE,Others,Small Cap,202.28,,20,2,0
+HTMEDIA,NSE,Media - Publishing,Small Cap,22.83,,7,2,0
+SEMAC,NSE,Engineering,Small Cap,302.45,-90.77,9,7,-12
+HUBTOWN,NSE,Real Estate,Small Cap,238.65,,2,-21,0
+TAINWALCHM,NSE,Industrial - Consumables,Small Cap,182.55,,0,4,0
+AGARIND,NSE,Chemicals - Petro,Small Cap,710.05,,8,2,0
+HUHTAMAKI,NSE,Packaging,Small Cap,208.84,,1,1,0
+TALBROAUTO,NSE,Auto - OEM Suppliers,Small Cap,278.15,,0,-1,0
+SDBL,NSE,Beverages - Alcohol,Small Cap,106.32,-36.59,2,1,-21
+ICICIBANK,NSE,Financials - Private Bank,Large Cap,1354.1,,-18,-8,0
+MGL,NSE,Utility - Gas,Small Cap,1151.0,-40.87,10,1,-20
+ERIS,NSE,Healthcare - Pharma,Small Cap,1571.6,-13.09,-7,-6,-16
+SEAMECLTD,NSE,Transport - Shipping,Small Cap,1026.9,-35.3,-9,27,31
+ICEMAKE,NSE,Transport - Logistics,Small Cap,816.55,,17,18,0
+WEL,NSE,Consumption - Appliances,Small Cap,140.96,-28.87,-22,-11,7
+ICDSLTD,NSE,Others,Small Cap,42.55,,-7,0,0
+TAJGVK,NSE,Leisure - Hotels,Small Cap,379.9,,0,-13,0
+ORICONENT,NSE,Packaging,Small Cap,61.26,0.0,12,3,2
+AGI,NSE,Packaging,Small Cap,721.65,,4,1,0
+SECURKLOUD,NSE,IT - Services,Small Cap,23.92,-65.28,-10,-7,5
+ESABINDIA,Core,Engineering,Small Cap,6156.0,-5.09,-6,8,5
+MHLXMIRU,NSE,Others,Small Cap,214.16,-33.49,-10,-8,5
+ESTER,NSE,Packaging,Small Cap,106.28,-37.61,18,6,5
+HSCL,NSE,Chemicals - Specialty,Small Cap,478.35,,-5,12,0
+WELENT,NSE,Infra - Construction,Small Cap,510.8,-20.09,1,-31,-2
+SYNGENE,NSE,Healthcare - Pharma,Mid Cap,654.15,,0,6,0
+HONDAPOWER,NSE,Engineering,Small Cap,2291.5,,-4,5,0
+MIRCELECTR,NSE,Consumption - Electronics,Small Cap,25.07,-21.73,6,8,-6
+ONMOBILE,NSE,IT - Product/Platform,Small Cap,60.32,-49.01,10,13,-4
+SESHAPAPER,NSE,Paper,Small Cap,238.73,-34.96,-3,6,-20
+HONAUT,NSE,Electronic - Equipment,Mid Cap,33785.0,,2,-11,0
+EVERESTIND,NSE,Infra - Cement,Small Cap,506.0,-63.25,15,8,-7
+SWELECTES,NSE,Power - Equipment,Small Cap,615.25,,0,5,0
+WELSPUNLIV,NSE,Textile - Misc,Small Cap,135.76,-31.14,-8,-12,10
+AERONEU,NSE,Packaging,Small Cap,74.89,,-5,18,0
+SFL,NSE,Infra - Home Furnish,Small Cap,576.1,-53.56,1,1,-5
+HOMEFIRST,NSE,Financials - Housing,Small Cap,1149.8,,-4,9,0
+MIRZAINT,NSE,Leather Products,Small Cap,38.8,-37.01,-7,-2,34
+ONGC,NSE,Oil and Gas,Large Cap,232.89,-29.97,-43,-33,-2
+AEROFLEX,NSE,Metals - Iron & Steel,Small Cap,193.69,,12,4,0
+EXCELINDUS,NSE,Chemicals - Specialty,Small Cap,941.65,-43.18,2,14,-16
+SWSOLAR,NSE,Power - Green,Small Cap,213.82,,0,-11,0
+HNDFDS,NSE,Consumption - Misc,Small Cap,519.45,,-4,-18,0
+EVEREADY,NSE,Batteries,Small Cap,331.75,-31.13,16,9,-11
+AETHER,NSE,Chemicals - Specialty,Small Cap,838.05,,-3,-13,0
+MIDHANI,NSE,Defense - Misc,Small Cap,297.25,-43.41,12,2,-20
+OPTIEMUS,NSE,Telecom,Small Cap,510.9,-39.98,-9,-3,-8
+AFFLE,NSE,IT - Product/Platform,Small Cap,1719.0,,16,20,0
+SENCO,NSE,Consumption - Jewelry,Small Cap,317.9,-56.58,19,6,-5
+HPL,NSE,Consumption - Electronics,Small Cap,385.45,,16,1,0
+ETERNAL,NSE,IT - Product/Platform,Large Cap,286.05,-17.87,-6,6,-8
+SYMPHONY,NSE,Consumption - Appliances,Small Cap,840.0,,0,-2,0
+MINDACORP,NSE,Auto - OEM Suppliers,Small Cap,596.65,-5.47,16,1,14
+SEQUENT,NSE,Healthcare - Pharma,Small Cap,210.32,-11.9,15,1,-1
+HPIL,NSE,Chemicals - Dyes,Small Cap,136.84,,12,3,0
+ETHOSLTD,NSE,Consumption - Jewelry,Small Cap,2947.7,-12.87,-11,-11,11
+HPAL,NSE,Chemicals - Specialty,Small Cap,42.87,,12,1,0
+WELINV,NSE,Financials - Misc,Small Cap,1363.8,-4.88,-5,15,10
+MINDTECK,NSE,IT - Software/Consulting,Small Cap,199.81,-43.05,10,6,-5
+ONWARDTEC,NSE,IT - Software/Consulting,Small Cap,270.25,-57.53,-20,-5,-14
+SERVOTECH,NSE,Electronic - Equipment,Small Cap,79.5,-59.1,1,7,-19
+HINDCON,NSE,Chemicals - Specialty,Small Cap,27.36,,-2,-1,0
+ADL,NSE,Infra - Laminates,Small Cap,76.01,,-2,8,0
+MOLDTKPAC,NSE,Packaging,Small Cap,578.45,-36.96,10,6,-12
+HECPROJECT,NSE,Infra - Construction,Small Cap,123.3,,-8,-3,0
+SUNDROP,NSE,Agri - Edible Oil,Small Cap,706.35,,0,-24,0
+MSTCLTD,NSE,IT - Product/Platform,Small Cap,468.4,-54.33,1,5,-3
+MSUMI,NSE,Auto - OEM Suppliers,Mid Cap,47.65,-6.07,14,1,-3
+NSLNISP,NSE,Metals - Iron & Steel,Small Cap,40.11,-43.43,-6,-2,-5
+ACEINTEG,NSE,Human Resources,Small Cap,21.73,,0,8,0
+HEG,NSE,Metals - Casting/Forging,Small Cap,530.2,,-8,1,0
+FUSION,NSE,Financials - MFI,Small Cap,160.51,-75.02,1,-9,-5
+HDFCLIFE,NSE,Financials - Life,Large Cap,766.45,,-7,-3,0
+SUNDRMFAST,NSE,Auto - OEM Suppliers,Mid Cap,939.75,,0,5,0
+WSTCSTPAPR,NSE,Paper,Small Cap,407.6,-44.68,1,6,-15
+SHYAMMETL,NSE,Metals - Iron & Steel,Small Cap,818.05,-16.41,0,9,-15
+HDFCBANK,NSE,Financials - Private Bank,Large Cap,985.5,,-7,-14,0
+MTARTECH,NSE,Defense - Misc,Small Cap,2339.4,-10.93,10,-24,15
+SHRIRAMPPS,NSE,Real Estate,Small Cap,83.36,-39.19,0,-27,-6
+ACI,NSE,Chemicals - Bulk,Small Cap,511.25,,17,8,0
+SHRIRAMFIN,NSE,Financials - NBFC,Mid Cap,901.7,0.0,0,1,11
+WSI,NSE,Engineering,Small Cap,88.03,-50.17,14,7,32
+MRPL,NSE,Petro - Refineries,Small Cap,148.22,-41.07,17,-23,12
+NUCLEUS,NSE,IT - Product/Platform,Small Cap,911.9,-47.48,-3,9,-21
+FORTIS,NSE,Healthcare - Hospitals,Mid Cap,890.9,-17.88,10,4,-6
+WONDERLA,NSE,Leisure - Misc,Small Cap,536.5,-47.99,1,-9,-10
+SUNPHARMA,NSE,Healthcare - Pharma,Large Cap,1744.9,,0,-11,0
+ACL,NSE,Infra - Cement,Small Cap,67.45,,-3,-1,0
+SHREYANIND,NSE,Paper,Small Cap,173.92,-43.74,0,14,-11
+HEMIPROP,NSE,Real Estate,Small Cap,130.52,,12,1,0
+FOSECOIND,NSE,Chemicals - Specialty,Small Cap,4991.0,-22.85,-7,11,-11
+MSPL,NSE,Metals - Iron & Steel,Small Cap,36.14,-36.62,-7,-2,4
+SUNFLAG,NSE,Metals - Iron & Steel,Small Cap,261.1,,0,12,0
+NTPC,NSE,Power - Misc,Large Cap,319.9,-26.78,-6,6,-6
+SHRIPISTON,NSE,Auto - OEM Suppliers,Small Cap,3086.5,-0.5,0,11,2
+HEIDELBERG,NSE,Infra - Cement,Small Cap,171.71,,10,1,0
+FSL,NSE,Tech - BPO,Small Cap,346.5,-13.64,12,-20,-2
+NSIL,NSE,Financials - NBFC,Small Cap,6610.5,-26.73,-4,8,-7
+GABRIEL,NSE,Auto - Replacement,Small Cap,1060.8,-17.75,12,6,-9
+ACE,NSE,Auto - CV,Small Cap,927.5,,-3,5,0
+GAEL,NSE,Agri - Misc,Small Cap,123.85,-39.43,1,1,15
+SIGMA,NSE,IT - Services,Small Cap,51.11,-89.73,0,-13,38
+HBSL,NSE,Financials - NBFC,Small Cap,73.78,,10,1,0
+XELPMOC,NSE,IT - Product/Platform,Small Cap,130.69,-13.23,-2,7,33
+ACC,NSE,Infra - Cement,Mid Cap,1751.5,,2,-13,0
+GALLANTT,NSE,Metals - Iron & Steel,Small Cap,520.95,-31.24,-6,-3,-13
+HBLENGINE,NSE,Railways,Small Cap,845.45,,4,1,0
+MUNJALAU,NSE,Auto - OEM Suppliers,Small Cap,78.68,-45.15,12,5,-5
+NRAIL,NSE,Paper,Small Cap,463.5,-10.14,-1,-1,-1
+SIGNATURE,NSE,Real Estate,Small Cap,1146.5,-27.82,0,1,6
+ABSLAMC,NSE,Financials - AMC,Small Cap,760.7,,22,17,0
+GANDHITUBE,NSE,Metals - Pipe & Tube,Small Cap,754.65,-24.58,12,17,-7
+SUMIT,NSE,Real Estate,Small Cap,68.2,,0,4,0
+HAVELLS,NSE,Consumption - Electronics,Large Cap,1416.9,,4,4,0
+MUNJALSHOW,NSE,Auto - Replacement,Small Cap,122.58,-37.03,2,0,-10
+NORBTEAEXP,NSE,Agri - Tea/Coffee,Small Cap,71.4,-3.51,-12,-6,16
+MUKTAARTS,NSE,Media - Films,Small Cap,58.48,-38.56,-26,-29,-19
+HERANBA,NSE,Agrichem - Protection,Small Cap,243.55,,10,6,0
+SUMMITSEC,NSE,Financials - NBFC,Small Cap,1974.9,,0,1,0
+GALAXYSURF,NSE,Chemicals - Specialty,Small Cap,1991.8,-37.2,12,6,-18
+SIEMENS,NSE,Power - Equipment,Large Cap,3111.6,-32.78,0,-9,32
+HDFCAMC,NSE,Financials - AMC,Mid Cap,2672.2,,4,7,0
+SUNDRMBRAK,NSE,Auto - Replacement,Small Cap,673.4,,0,-28,0
+MTNL,NSE,Telecom,Small Cap,36.05,-62.87,0,7,-20
+HCLTECH,NSE,IT - Software/Consulting,Large Cap,1642.4,,-8,-7,0
+NRL,NSE,Metals - Misc,Small Cap,57.95,-57.49,2,6,-10
+XCHANGING,NSE,IT - Software/Consulting,Small Cap,81.19,-49.62,1,-29,-2
+GAIL,NSE,Utility - Gas,Large Cap,169.76,-28.58,14,-20,-3
+SIGACHI,NSE,Healthcare - Pharma,Small Cap,34.18,-60.78,0,1,-1
+HCG,NSE,Healthcare - Hospitals,Small Cap,706.65,,-3,-31,0
+SUNDARMFIN,NSE,Financials - NBFC,Mid Cap,4931.6,,0,5,0
+ACCELYA,NSE,IT - Software/Consulting,Small Cap,1314.9,,12,15,0
+MUKANDLTD,NSE,Metals - Iron & Steel,Small Cap,131.64,-34.11,-4,-3,-11
+SIGIND,NSE,Others,Small Cap,55.25,-41.1,0,8,-4
+HCC,NSE,Infra - Construction,Small Cap,18.54,,5,1,0
+NRBBEARING,NSE,Industrial - Bearings,Small Cap,279.95,-27.28,-2,-12,-3
+SHREERAMA,NSE,Packaging,Small Cap,57.48,-8.7,0,6,-7
+FORCEMOT,Watchlist,Auto - PV/Trucks,Small Cap,17801.0,-11.94,10,1,-13
+HERCULES,NSE,Engineering,Small Cap,158.21,,2,-9,0
+OBCL,NSE,Transport - Logistics,Small Cap,58.29,-19.6,1,1,1
+FINPIPE,NSE,Infra - Plastic Pipes,Small Cap,166.18,-52.56,10,2,-10
+SHIVAMILLS,NSE,Textile - Spinning/Yarn,Small Cap,59.84,-44.72,0,-5,-10
+HIKAL,NSE,Healthcare - Pharma,Small Cap,237.11,,-8,-1,0
+SUPRIYA,NSE,Healthcare - Pharma,Small Cap,737.85,,0,-23,0
+WINDMACHIN,NSE,Engineering,Small Cap,269.6,-35.06,-8,-3,-23
+MOREPENLAB,NSE,Healthcare - Pharma,Small Cap,40.85,-56.37,0,-3,-20
+SHIVATEX,NSE,Textile - Spinning/Yarn,Small Cap,177.09,-33.81,0,-12,7
+HGS,NSE,Tech - BPO,Small Cap,441.15,,10,-22,0
+ADANIPORTS,Sate,Infra - Construction,Large Cap,1496.4,,-7,-12,0
+FIVESTAR,NSE,Financials - NBFC,Mid Cap,569.9,-35.93,10,-1,8
+MOTHERSON,NSE,Auto - Replacement,Large Cap,120.98,-15.63,-6,-2,15
+OAL,NSE,Chemicals - Specialty,Small Cap,298.9,-51.7,10,4,-4
+HGM,NSE,IT - Software/Consulting,Small Cap,69.51,,12,5,0
+SUPREMEIND,NSE,Industrial - Consumables,Mid Cap,3368.1,,0,11,0
+FINOPB,NSE,Financials - Private Bank,Small Cap,258.85,-38.62,-20,-9,-1
+SHK,NSE,Consumption - Personal,Small Cap,166.66,-49.08,0,15,-13
+MONTECARLO,NSE,Textile - Apparels,Small Cap,707.1,-22.57,15,-17,32
+SHIVAMAUTO,NSE,Auto - OEM Suppliers,Small Cap,26.69,-56.2,0,6,-3
+OFSS,NSE,IT - Product/Platform,Mid Cap,7823.5,-38.14,-18,-4,-7
+FINCABLES,NSE,Power - Wiring,Small Cap,787.25,-52.76,15,6,1
+SHILPAMED,NSE,Healthcare - Pharma,Small Cap,324.75,-34.11,0,-22,-18
+HINDCOMPOS,NSE,Auto - OEM Suppliers,Small Cap,418.9,,14,2,0
+ADFFOODS,NSE,Consumption - Misc,Small Cap,209.89,,-2,6,0
+SURANAT&P,NSE,Power - Green,Small Cap,20.14,,0,6,0
+MONARCH,NSE,Financials - Broking,Small Cap,305.1,-34.56,1,5,-13
+OBEROIRLTY,NSE,Real Estate,Mid Cap,1675.3,-27.66,4,2,9
+SHIVALIK,NSE,Agrichem - Protection,Small Cap,360.05,-55.03,0,-25,-4
+HINDALCO,NSE,Metals - Aluminium,Large Cap,852.0,,16,15,0
+WINDLAS,NSE,Healthcare - Biotech,Small Cap,777.7,-32.03,-6,13,-13
+FINEORG,NSE,Chemicals - Specialty,Small Cap,4265.7,-22.54,-6,-11,-17
+HIMATSEIDE,NSE,Textile - Misc,Small Cap,115.79,,12,-15,0
+SURANASOL,NSE,Power - Green,Small Cap,27.06,,0,5,0
+ADANIPOWER,NSE,Power - Misc,Large Cap,141.76,,12,5,0
+HILTON,NSE,Metals - Pipe & Tube,Small Cap,42.75,,3,2,0
+EQUITASBNK,NSE,Financials - Private Bank,Small Cap,58.81,-48.66,6,-14,11
+HGINFRA,NSE,Infra - Construction,Small Cap,747.45,,2,-13,0
+MOTILALOFS,NSE,Financials - Broking,Small Cap,860.5,-32.05,9,-36,-5
+ADANIENSOL,NSE,Power - Misc,Large Cap,988.25,,-5,-3,0
+FOCUS,NSE,Auto - OEM Suppliers,Small Cap,74.86,-64.05,-5,8,-18
+SUNTV,NSE,Media - TV Broadcast,Mid Cap,543.0,,0,-1,0
+NUVAMA,NSE,Financials - AMC,Small Cap,7169.0,-13.5,-2,-1,8
+SHREECEM,NSE,Infra - Cement,Large Cap,25600.0,-19.03,0,18,-29
+HEROMOTOCO,NSE,Auto - 2W,Large Cap,5781.0,,-19,-9,0
+WOCKPHARMA,NSE,Healthcare - Pharma,Small Cap,1411.1,-20.56,6,15,-20
+FOODSIN,NSE,Consumption - FMCG,Small Cap,70.08,-59.28,-22,-5,-18
+MPSLTD,NSE,Media - Publishing,Small Cap,1996.9,-31.08,4,-11,-23
+SHREEPUSHK,NSE,Chemicals - Dyes,Small Cap,377.95,-13.6,0,-13,-4
+HERITGFOOD,NSE,Consumption - Dairy,Small Cap,458.0,,-7,-4,0
+MRF,NSE,Auto - Tyres,Mid Cap,153580.0,-4.13,2,2,-5
+NURECA,NSE,Healthcare - Equipments,Small Cap,283.75,-33.69,-14,-5,10
+ACUTAAS,Core,Healthcare - Pharma,Small Cap,1648.5,,1,-15,0
+SUNTECK,NSE,Real Estate,Small Cap,391.35,,0,-29,0
+MPHASIS,NSE,IT - Software/Consulting,Mid Cap,2890.2,-9.55,-17,-1,3
+WIPL,NSE,Infra - Laminates,Small Cap,142.88,-43.16,-29,-27,-2
+HESTERBIO,NSE,Healthcare - Diagnostics,Small Cap,1585.9,,10,-9,0
+HEUBACHIND,NSE,Chemicals - Dyes,Small Cap,462.2,,18,8,0
+NYKAA,NSE,IT - Product/Platform,Mid Cap,249.05,-7.25,2,-15,-2
+ADANIGREEN,NSE,Power - Green,Large Cap,1020.9,,-3,6,0
+FLEXITUFF,NSE,Chemicals - Misc,Small Cap,15.67,-82.07,4,18,1
+SUPRAJIT,NSE,Auto - OEM Suppliers,Small Cap,465.35,,0,3,0
+SHOPERSTOP,NSE,Consumption - Retail,Small Cap,452.1,-50.54,0,9,-7
+HFCL,NSE,Telecom,Small Cap,64.12,,-6,-24,0
+FLUOROCHEM,NSE,Chemicals - Specialty,Mid Cap,3611.9,-23.08,17,9,-4
+MOTOGENFIN,NSE,Financials - Misc,Small Cap,23.88,-47.86,1,-10,-2
+NUVOCO,NSE,Infra - Cement,Small Cap,361.0,-22.18,10,6,-11
+SHRADHA,NSE,Infra - Construction,Small Cap,39.54,-59.78,0,-13,-21
+HEXATRADEX,NSE,Financials - Misc,Small Cap,161.41,,-7,-4,0
+FMGOETZE,NSE,Auto - Replacement,Small Cap,438.0,-26.34,-6,-20,-14
+SUPERHOUSE,NSE,Leather Products,Small Cap,145.61,,0,-13,0
+WIPRO,NSE,IT - Software/Consulting,Large Cap,264.45,-17.39,2,29,6
+ADANIENT,NSE,Metals - Misc,Large Cap,2239.0,,21,7,0
+SHREDIGCEM,NSE,Infra - Cement,Small Cap,90.05,-23.17,0,-11,-6
+AGRITECH,NSE,Agri - Misc,Small Cap,165.35,,10,16,0
+ORIENTBELL,NSE,Infra - Ceramics,Small Cap,266.25,-36.81,1,-11,-8
+MFSL,NSE,Financials - Life,Mid Cap,1689.9,-1.69,-8,-14,3
+INDTERRAIN,NSE,Textile - Apparels,Small Cap,34.94,,-2,-26,0
+SAMHI,NSE,Leisure - Hotels,Small Cap,177.08,-27.96,0,-9,-18
+MARKSANS,NSE,Healthcare - Pharma,Small Cap,182.82,-46.66,-7,-21,7
+PAR,NSE,Healthcare - Pharma,Small Cap,110.81,-64.46,10,11,32
+EICHERMOT,Core,Auto - 2W,Large Cap,7217.0,-0.17,1,-4,-1
+INDSWFTLAB,NSE,Healthcare - Pharma,Small Cap,93.41,,-3,6,0
 TEAMLEASE,NSE,Human Resources,Small Cap,1603.9,,0,1,0
-GROBTEA,NSE,Agri - Tea/Coffee,Small Cap,1029.8,-29.28,9,1,-4
-ADFFOODS,NSE,Consumption - Misc,Small Cap,209.6,-38.99,-2,6,-20
-GRMOVER,NSE,Agri - Misc,Small Cap,471.65,-3.19,6,-19,9
+TEAMGTY,NSE,Financials - NBFC,Small Cap,267.7,,0,-3,0
+ALKYLAMINE,NSE,Chemicals - Specialty,Small Cap,1608.7,,2,1,0
+SAMMAANCAP,NSE,Financials - Housing,Small Cap,145.05,-29.93,12,4,-3
+INDRAMEDCO,NSE,Healthcare - Hospitals,Small Cap,470.2,,12,4,0
+EIDPARRY,NSE,Agrichem - Fertilizers,Small Cap,1000.2,-16.97,-6,-1,-15
+MARUTI,NSE,Auto - PV/Trucks,Large Cap,16414.0,-0.65,-4,24,-4
+ALKEM,NSE,Healthcare - Pharma,Mid Cap,5555.5,,-4,-20,0
+VMART,NSE,Consumption - Retail,Small Cap,737.9,-33.96,10,-1,-3
+PARACABLES,NSE,Power - Wiring,Small Cap,35.31,-67.91,-4,-3,-17
+MARINE,NSE,Electronic - Equipment,Small Cap,202.89,-32.81,12,-21,-2
+INDUSINDBK,NSE,Financials - Private Bank,Large Cap,844.7,,-20,-20,0
+SALONA,NSE,Textile - Spinning/Yarn,Small Cap,268.05,-21.78,-6,-2,14
+MARATHON,NSE,Real Estate,Small Cap,535.3,-29.07,-4,11,-16
+ALLDIGI,NSE,Tech - BPO,Small Cap,831.55,,-6,8,0
+EASTSILK,NSE,Textile - Misc,Small Cap,86.94,-8.03,12,-4,18
+INFOBEAN,NSE,IT - Software/Consulting,Small Cap,766.85,,24,11,0
 TECHM,NSE,IT - Software/Consulting,Large Cap,1612.5,,0,28,0
-GRINFRA,NSE,Infra - Construction,Small Cap,1015.1,-43.25,10,5,-10
-GRINDWELL,NSE,Engineering,Mid Cap,1576.5,-44.81,3,14,15
+PARADEEP,NSE,Agrichem - Fertilizers,Small Cap,155.32,-30.9,-4,16,-15
+SALSTEEL,NSE,Metals - Iron & Steel,Small Cap,42.65,-1.68,14,3,18
+INDUSTOWER,NSE,Telecom,Mid Cap,414.05,,1,-22,0
+MARICO,NSE,Agri - Edible Oil,Large Cap,741.2,0.0,22,5,-22
+ECLERX,NSE,IT - Software/Consulting,Small Cap,4524.5,-6.37,-18,-8,-1
+VLSFINANCE,NSE,Financials - AMC,Small Cap,297.45,-28.43,-19,-6,34
+ALLCARGO,NSE,Transport - Logistics,Small Cap,10.87,,-12,13,0
+EDELWEISS,NSE,Financials - Misc,Small Cap,106.82,-23.77,10,1,-4
+SALZERELEC,NSE,Power - Equipment,Small Cap,687.25,-56.94,-6,15,-5
+TDPOWERSYS,NSE,Power - Equipment,Small Cap,716.1,,0,-25,0
+SAMPANN,NSE,Power - Green,Small Cap,32.22,-22.0,16,1,-2
+INDOTHAI,NSE,Financials - Broking,Small Cap,359.45,,-1,-16,0
+PANSARI,NSE,Real Estate,Small Cap,299.5,-3.88,-6,-11,5
+INDOCO,NSE,Healthcare - Pharma,Small Cap,239.6,,-3,-3,0
+ALIVUS,NSE,Healthcare - Pharma,Small Cap,900.65,,16,7,0
+EIMCOELECO,NSE,Engineering,Small Cap,1564.8,-53.6,9,5,-18
+SANGAMIND,NSE,Textile - Spinning/Yarn,Small Cap,431.95,-27.37,-3,-2,12
+INDOBORAX,NSE,Chemicals - Bulk,Small Cap,270.97,,-3,9,0
+TCIEXP,NSE,Transport - Logistics,Small Cap,577.15,,0,12,0
+MATRIMONY,NSE,IT - Product/Platform,Small Cap,517.05,-37.55,-8,10,2
+INDOAMIN,NSE,Chemicals - Specialty,Small Cap,126.97,,15,6,0
+PANACEABIO,NSE,Healthcare - Biotech,Small Cap,356.1,-35.41,12,6,-7
+EKC,NSE,Packaging,Small Cap,115.41,-48.84,4,7,-5
+VPRPL,NSE,Infra - Construction,Small Cap,63.13,-79.82,-4,-22,-17
+SANGHIIND,NSE,Infra - Cement,Small Cap,62.31,-56.4,-2,6,-5
+ALICON,NSE,Auto - OEM Suppliers,Small Cap,830.2,,-6,-30,0
+INDNIPPON,NSE,Auto - OEM Suppliers,Small Cap,803.5,,2,5,0
+ELDEHSG,NSE,Real Estate,Small Cap,941.95,-16.8,5,12,15
+SANDUMA,NSE,Metals - Misc,Small Cap,216.91,-2.51,12,5,13
 TECHNOE,NSE,Engineering,Small Cap,1093.3,,0,5,0
-GREENPLY,NSE,Infra - Laminates,Small Cap,247.7,-38.47,-6,-24,-13
-GREENPANEL,NSE,Infra - Laminates,Small Cap,227.65,-48.28,-2,5,-6
+PANACHE,NSE,IT - Services,Small Cap,336.8,-24.48,8,-46,-3
+UNIPARTS,NSE,Engineering,Small Cap,483.9,,-2,-1,0
+INDOTECH,NSE,Power - Equipment,Small Cap,1564.3,,-4,-16,0
+EIFFL,NSE,Consumption - FMCG,Small Cap,237.3,-7.88,12,6,-17
+VOLTAMP,NSE,Power - Equipment,Small Cap,8071.5,-44.17,1,-18,6
+SANDESH,NSE,Media - Publishing,Small Cap,1068.5,-42.22,14,3,-5
+MASFIN,NSE,Financials - NBFC,Small Cap,315.95,-6.84,-7,-2,-1
+EIHAHOTELS,NSE,Leisure - Hotels,Small Cap,356.25,-24.02,10,6,-12
+TCS,NSE,IT - Software/Consulting,Large Cap,3282.0,,0,2,0
+ALKALI,NSE,Chemicals - Specialty,Small Cap,77.67,,-1,6,0
+INDOSTAR,NSE,Financials - NBFC,Small Cap,247.91,,-16,14,0
+MASKINVEST,NSE,Financials - Misc,Small Cap,154.85,-43.74,-11,-4,-2
+PANAMAPET,NSE,Petro - Lubricants,Small Cap,277.2,-34.81,2,-14,5
+SANDHAR,NSE,Auto - OEM Suppliers,Small Cap,559.3,-15.4,-7,-10,11
+INDORAMA,NSE,Textiles - Polyester,Small Cap,48.26,,10,5,0
+EIHOTEL,NSE,Leisure - Hotels,Small Cap,366.85,-24.49,-10,-4,-9
+TCPLPACK,NSE,Packaging,Small Cap,2932.8,,0,-12,0
+MASTEK,NSE,IT - Software/Consulting,Small Cap,2153.3,-33.59,16,-17,-13
+VLEGOV,NSE,IT - Product/Platform,Small Cap,21.03,-89.0,0,-5,31
+INFY,NSE,IT - Software/Consulting,Large Cap,1638.7,,3,2,0
+INGERRAND,NSE,Industrial - Pumps/Engines,Small Cap,3414.6,,-6,-16,0
+TEXMOPIPES,NSE,Infra - Plastic Pipes,Small Cap,47.99,,0,-1,0
+VIRINCHI,NSE,IT - Product/Platform,Small Cap,21.46,-48.6,0,6,-8
+PAVNAIND,NSE,Auto - Misc,Small Cap,25.03,-65.36,-6,-3,-9
+DSSL,NSE,IT - Services,Small Cap,967.5,-37.69,12,6,6
+AMBIKCO,NSE,Textile - Spinning/Yarn,Small Cap,1268.2,-36.4,16,7,-20
+SAFARI,NSE,Consumption - Luggage,Small Cap,2208.4,-18.68,-28,-10,6
+IOC,NSE,Petro - Refineries,Large Cap,162.6,,-3,-2,0
+MANOMAY,NSE,Textile - Misc,Small Cap,205.1,-32.12,-26,-13,29
+DTIL,NSE,Agri - Tea/Coffee,Small Cap,160.47,-46.49,-4,31,-11
+TEXINFRA,NSE,Railways,Small Cap,103.8,,0,-4,0
+IOB,NSE,Financials - PSU Bank,Mid Cap,33.99,,-6,-21,0
+MANORAMA,NSE,Agri - Misc,Small Cap,1341.8,-14.9,-6,24,-20
+PATELENG,NSE,Infra - Construction,Small Cap,31.08,-56.56,5,1,-5
+VISAKAIND,NSE,Infra - Cement,Small Cap,66.72,-61.47,1,9,-13
+SAGARDEEP,NSE,Metals - Misc,Small Cap,25.51,-29.86,-5,0,-5
+IOLCP,NSE,Healthcare - Pharma,Small Cap,82.31,,2,-13,0
+INTLCONV,NSE,Engineering,Small Cap,91.17,,-4,12,0
+S&SPOWER,NSE,Power - Wiring,Small Cap,268.99,-43.33,-1,7,-11
+MANKIND,NSE,Healthcare - Pharma,Large Cap,2172.1,-26.06,2,1,-12
+PCBL,NSE,Chemicals - Bulk,Small Cap,307.1,-46.32,14,7,-13
+DREAMFOLKS,NSE,Infra - Construction,Small Cap,111.29,-80.31,1,-39,11
+TFCILTD,NSE,Financials - Misc,Small Cap,65.24,,0,1,0
+RVHL,NSE,Real Estate,Small Cap,56.31,-28.17,16,5,16
+IPL,NSE,Agrichem - Protection,Small Cap,173.21,,2,18,0
+VIPIND,NSE,Consumption - Luggage,Small Cap,364.45,-40.04,16,7,-12
+AMDIND,NSE,Packaging,Small Cap,48.63,-41.59,-4,-26,-3
+DREDGECORP,NSE,Engineering,Small Cap,940.3,-33.14,-6,-2,8
+IPCALAB,NSE,Healthcare - Pharma,Mid Cap,1424.8,,-9,-5,0
+MANINFRA,NSE,Infra - Construction,Small Cap,127.7,-49.97,-19,16,-17
+TEXRAIL,NSE,Railways,Small Cap,129.24,,0,7,0
+PAYTM,NSE,IT - Product/Platform,Mid Cap,1336.0,-0.78,2,-8,-5
+AMBUJACEM,NSE,Infra - Cement,Large Cap,539.65,-21.38,-2,6,-16
+RVNL,NSE,Railways,Mid Cap,319.15,-49.08,1,1,1
+IONEXCHANG,NSE,Infra - Construction,Small Cap,373.85,,-1,9,0
+DRREDDY,NSE,Healthcare - Pharma,Large Cap,1278.2,-9.11,-5,27,2
+TCI,NSE,Transport - Logistics,Small Cap,1037.0,,0,1,0
+DVL,NSE,Chemicals - Petro,Small Cap,281.45,-44.37,1,7,-10
+AMBICAAGAR,NSE,Consumption - Misc,Small Cap,25.33,-35.71,0,-13,4
+MAPMYINDIA,NSE,IT - Product/Platform,Small Cap,1667.3,-34.14,9,2,-3
+SAKAR,NSE,Healthcare - Pharma,Small Cap,425.05,-3.24,-3,8,12
+DYNAMATECH,NSE,Defense - Misc,Small Cap,9515.5,-2.05,2,-20,14
+INOXWIND,NSE,Power - Equipment,Small Cap,126.87,,10,3,0
+VISHNU,NSE,Chemicals - Specialty,Small Cap,520.45,-5.86,9,3,1
+PARAS,NSE,Defense - Misc,Small Cap,639.45,-58.61,-8,-17,-2
+DYNPRO,NSE,Chemicals - Dyes,Small Cap,262.8,-42.99,12,15,-11
 TEGA,NSE,Engineering,Small Cap,1956.2,,0,5,0
-GREENLAM,NSE,Infra - Laminates,Small Cap,247.15,-19.59,12,5,-3
-GREAVESCOT,NSE,Industrial - Pumps/Engines,Small Cap,180.79,-37.39,10,-31,-6
-ADL,NSE,Infra - Laminates,Small Cap,78.4,-40.58,-2,8,-20
+SAKHTISUG,NSE,Agri - Sugar,Small Cap,19.04,-55.49,-5,1,-13
+INOXGREEN,NSE,Power - Green,Small Cap,203.92,,10,1,0
+ALPA,NSE,Healthcare - Pharma,Small Cap,76.95,,-20,-3,0
+SAKSOFT,NSE,IT - Software/Consulting,Small Cap,200.97,-30.36,12,3,-13
+MARALOVER,NSE,Textile - Spinning/Yarn,Small Cap,44.72,-50.67,1,-20,6
+PARAGMILK,NSE,Consumption - Dairy,Small Cap,308.95,-12.64,12,-20,-1
+E2E,NSE,IT - Software/Consulting,Small Cap,2063.2,-59.71,17,7,-5
 TEJASNET,NSE,IT - Equipments,Small Cap,449.2,,0,-9,0
-GRAVITA,NSE,Metals - Misc,Small Cap,1828.8,-29.22,-4,-2,8
-GRASIM,NSE,Infra - Cement,Large Cap,2813.2,-2.71,-2,14,-7
+TERASOFT,NSE,IT - Services,Small Cap,461.15,,0,-23,0
+MANYAVAR,NSE,Textile - Apparels,Mid Cap,598.2,-58.29,1,17,-7
+INSECTICID,NSE,Agrichem - Protection,Small Cap,699.95,,1,-7,0
+SAGCEM,NSE,Infra - Cement,Small Cap,208.24,-29.22,-3,9,-11
+INTENTECH,NSE,IT - Product/Platform,Small Cap,114.4,,2,-13,0
+MANORG,NSE,Chemicals - Bulk,Small Cap,476.1,-28.0,-22,16,-13
+PATANJALI,NSE,Agri - Edible Oil,Mid Cap,559.4,-14.95,10,2,-11
+DWARKESH,NSE,Agri - Sugar,Small Cap,37.02,-57.57,-5,-1,-3
+SAHYADRI,NSE,Infra - Cement,Small Cap,248.45,-42.86,10,5,-17
+INTELLECT,NSE,IT - Software/Consulting,Small Cap,1053.6,,6,-26,0
 TEMBO,NSE,Metals - Iron & Steel,Small Cap,724.7,,0,-19,0
-GRAPHITE,NSE,Metals - Casting/Forging,Small Cap,550.85,-19.57,2,1,-4
-GRANULES,NSE,Healthcare - Pharma,Small Cap,583.5,-18.74,12,15,17
+VISASTEEL,NSE,Metals - Iron & Steel,Small Cap,48.66,-28.0,1,-39,-2
+MANUGRAPH,NSE,Engineering,Small Cap,16.03,-47.1,2,10,-8
+INSPIRISYS,NSE,IT - Services,Small Cap,89.9,,6,-21,0
+AMBER,NSE,Consumption - Appliances,Small Cap,6681.0,,10,5,0
+DYCL,NSE,Power - Wiring,Small Cap,333.7,-35.72,17,8,-20
+SAIL,NSE,Metals - Iron & Steel,Mid Cap,125.91,-25.72,-3,-23,-3
+PASUPTAC,NSE,Chemicals - Petro,Small Cap,52.54,-12.74,8,-12,8
+ALPHAGEO,NSE,Oil and Gas,Small Cap,218.04,,2,1,0
+SIKKO,NSE,Agrichem - Protection,Small Cap,5.25,-7.73,0,-7,13
+MAWANASUG,NSE,Agri - Sugar,Small Cap,84.34,-35.45,-4,8,-20
+ALEMBICLTD,NSE,Healthcare - Pharma,Small Cap,99.88,,-3,6,0
+AIAENG,Core,Metals - Casting/Forging,Mid Cap,3803.9,,10,-12,0
+TARSONS,NSE,Healthcare - Equipments,Small Cap,230.3,,0,15,0
+MEDICO,NSE,Healthcare - Pharma,Small Cap,49.73,-43.62,-15,-8,13
+SBICARD,NSE,Financials - NBFC,Large Cap,870.3,-13.57,1,-4,-5
+IFBIND,NSE,Consumption - Appliances,Small Cap,1570.7,,-3,1,0
+MEDPLUS,NSE,IT - Product/Platform,Small Cap,820.55,-15.09,1,-4,2
+IFCI,NSE,Financials - NBFC,Small Cap,47.92,,1,1,0
+ORIENTLTD,NSE,Packaging,Small Cap,76.85,-43.49,-4,-3,-6
+WANBURY,NSE,Healthcare - Pharma,Small Cap,231.1,-25.98,-5,-10,-23
+TARMAT,NSE,Infra - Construction,Small Cap,51.99,,0,-6,0
+SBILIFE,NSE,Financials - Life,Large Cap,2028.4,0.0,-5,-24,7
+IFBAGRO,NSE,Beverages - Alcohol,Small Cap,1319.9,,17,-24,0
+AHLUCONT,NSE,Infra - Construction,Small Cap,975.15,,1,-10,0
+ENDURANCE,NSE,Auto - OEM Suppliers,Mid Cap,2695.8,-9.17,10,5,-8
+EMUDHRA,NSE,IT - Product/Platform,Small Cap,592.9,-39.26,-8,-2,-17
+EMSLIMITED,NSE,Others,Small Cap,447.6,-50.36,12,6,-8
+ORIENTPPR,NSE,Paper,Small Cap,22.77,-61.01,0,1,-10
+IFGLEXPOR,NSE,Metals - Casting/Forging,Small Cap,208.6,,12,6,0
+AIROLAM,NSE,Infra - Laminates,Small Cap,103.5,,8,7,0
+TATACHEM,NSE,Chemicals - Bulk,Mid Cap,761.3,,0,5,0
+SBCL,NSE,Electronic - Equipment,Small Cap,440.1,-37.01,-4,12,-11
+MEDANTA,NSE,Healthcare - Hospitals,Small Cap,1169.6,-21.35,3,1,-13
+ORISSAMINE,NSE,Metals - Misc,Small Cap,4669.1,-50.13,12,4,-2
+IGL,NSE,Utility - Gas,Mid Cap,193.96,,10,3,0
+EMKAY,NSE,Financials - Broking,Small Cap,262.55,-26.32,3,-11,-3
+AIRAN,NSE,IT - Services,Small Cap,17.79,,2,6,0
+SBFC,NSE,Financials - NBFC,Small Cap,103.63,-12.93,-5,-30,-6
+EMMBI,NSE,Packaging,Small Cap,98.65,-40.03,10,2,-2
+MEDICAMEQ,NSE,Healthcare - Biotech,Small Cap,396.1,-34.48,15,-22,9
+IGARASHI,NSE,Auto - OEM Suppliers,Small Cap,433.9,,-3,5,0
+TASTYBITE,NSE,Consumption - FMCG,Small Cap,8087.5,,0,6,0
+WALCHANNAG,NSE,Engineering,Small Cap,196.04,-53.08,10,6,1
+SBGLP,NSE,Real Estate,Small Cap,38.14,-72.14,20,8,31
+MEGASOFT,NSE,IT - Product/Platform,Small Cap,174.76,-17.31,-20,-28,-1
+ORIENTHOT,NSE,Leisure - Hotels,Small Cap,100.94,-48.7,-33,-15,-20
+SBIN,NSE,Financials - PSU Bank,Large Cap,980.3,0.0,16,-21,15
+IEX,NSE,IT - Product/Platform,Small Cap,141.4,,-20,-8,0
+ICRA,NSE,Financials - Ratings,Small Cap,6101.0,,14,6,0
+TARAPUR,NSE,Power - Equipment,Small Cap,29.19,,0,-23,0
+METROBRAND,NSE,Consumption - Footwear,Mid Cap,1147.2,-15.0,1,8,-9
+EPIGRAL,NSE,Chemicals - Specialty,Small Cap,1389.1,-37.77,-2,16,-16
+AGROPHOS,NSE,Agrichem - Fertilizers,Small Cap,38.51,,12,4,0
+SCI,NSE,Transport - Shipping,Small Cap,209.71,-39.33,-8,-27,-3
+ICIL,NSE,Textile - Spinning/Yarn,Small Cap,269.45,,-23,-13,0
+ICICIPRULI,NSE,Financials - Life,Large Cap,650.4,,2,8,0
+METROPOLIS,NSE,Healthcare - Diagnostics,Small Cap,1885.8,-17.07,-24,-11,-11
+ORIENTCEM,NSE,Infra - Cement,Small Cap,161.7,-54.81,14,7,-6
+TANLA,NSE,IT - Product/Platform,Small Cap,535.75,,0,9,0
+WEIZMANIND,NSE,Textiles - Processing,Small Cap,100.2,-30.37,9,-12,-19
+SCPL,NSE,Consumption - Dairy,Small Cap,308.04,-49.53,18,9,2
+EPL,NSE,Packaging,Small Cap,213.1,-23.32,-4,27,1
+ICICIGI,Core,Financials - Non-Life,Large Cap,1954.3,,9,-32,0
+SCHNEIDER,NSE,Power - Equipment,Small Cap,726.6,-27.43,1,1,-13
+WABAG,NSE,Infra - Construction,Small Cap,1296.4,-31.98,7,-11,-13
+WEBELSOLAR,NSE,Power - Green,Small Cap,84.07,-52.52,-19,-24,-27
+ORIENTCER,NSE,Metals - Casting/Forging,Small Cap,40.55,-36.79,-20,-9,5
+ENERGYDEV,NSE,Power - Misc,Small Cap,19.72,-42.96,10,-16,5
+TARIL,NSE,Power - Equipment,Small Cap,293.95,,0,10,0
+IDFCFIRSTB,NSE,Financials - Private Bank,Mid Cap,84.68,,12,5,0
+WEALTH,NSE,Others,Small Cap,950.95,-41.39,-10,-1,-11
+MEGASTAR,NSE,Consumption - Misc,Small Cap,235.0,-35.8,-17,-26,8
+SCHAEFFLER,NSE,Industrial - Bearings,Mid Cap,3839.8,-20.43,1,-21,-10
+ORIENTELEC,NSE,Consumption - Appliances,Small Cap,182.12,-33.61,10,5,-5
+AHLEAST,NSE,Leisure - Hotels,Small Cap,135.88,,4,1,0
+IDEAFORGE,NSE,Defense - Technology,Small Cap,424.5,,10,-16,0
+ENGINERSIN,NSE,Infra - Construction,Small Cap,199.22,-30.81,5,1,-20
+TARC,NSE,Real Estate,Small Cap,147.27,,0,16,0
+AHLADA,NSE,Infra - Home Furnish,Small Cap,49.03,,-2,7,0
+MENONBE,NSE,Industrial - Bearings,Small Cap,104.76,-25.89,2,8,-11
+SCHAND,NSE,Media - Publishing,Small Cap,157.17,-49.31,-1,5,-20
+IDBI,NSE,Financials - Private Bank,Large Cap,98.13,,12,-20,0
+ENIL,NSE,Media - Entertainment,Small Cap,112.41,-66.98,4,2,-10
+IGPL,NSE,Chemicals - Bulk,Small Cap,398.2,,-6,16,0
+EMIL,NSE,Consumption - Retail,Small Cap,104.27,-56.59,-5,-32,-5
+IKIO,NSE,Consumption - Electronics,Small Cap,175.48,,2,5,0
+SAPPHIRE,NSE,Leisure - Restaurants,Small Cap,230.64,-38.12,1,-9,-19
+INDIANB,NSE,Financials - PSU Bank,Mid Cap,781.4,,10,-29,0
+VSSL,NSE,Metals - Iron & Steel,Small Cap,296.45,-9.44,31,11,-4
+ELGIEQUIP,NSE,Industrial - Pumps/Engines,Small Cap,470.6,-36.22,-8,-12,6
+AKZOINDIA,NSE,Consumption - Paints,Small Cap,3149.4,,-6,-3,0
+TATASTEEL,NSE,Metals - Iron & Steel,Large Cap,168.69,,0,6,0
+SARDAEN,NSE,Metals - Iron & Steel,Small Cap,510.45,-14.69,16,9,-9
+INDIAMART,NSE,IT - Product/Platform,Mid Cap,2216.6,,5,-24,0
+MAZDA,NSE,Engineering,Small Cap,213.0,-45.94,-7,-10,-8
+INDIAGLYCO,NSE,Chemicals - Bulk,Small Cap,1065.5,,1,-17,0
+PAISALO,NSE,Financials - NBFC,Small Cap,35.67,-62.11,-10,-2,32
+ELGIRUBCO,NSE,Others,Small Cap,47.46,-67.68,-5,6,-5
+SAREGAMA,NSE,Media - Entertainment,Small Cap,348.2,-42.73,-4,8,-27
+TATAPOWER,NSE,Power - Misc,Large Cap,380.55,,0,-13,0
+INDIACEM,NSE,Infra - Cement,Small Cap,438.0,,6,11,0
+ELECTHERM,NSE,Metals - Iron & Steel,Small Cap,786.75,-44.08,-4,9,-6
+VSTIND,NSE,Consumption - Misc,Small Cap,251.3,-47.78,-4,7,3
+PAKKA,NSE,Paper,Small Cap,100.39,-72.96,-4,6,-17
+TATVA,NSE,Chemicals - Specialty,Small Cap,1400.0,,0,-23,0
+INDIGOPNTS,NSE,Consumption - Paints,Small Cap,1188.6,,-6,-15,0
+MAXHEALTH,NSE,Healthcare - Hospitals,Mid Cap,1075.8,-17.13,2,-14,-19
+PALREDTEC,NSE,IT - Software/Consulting,Small Cap,39.68,-81.31,1,7,-4
+ELECON,NSE,Electronic - Equipment,Small Cap,482.8,-30.56,17,6,-22
+TBZ,NSE,Consumption - Jewelry,Small Cap,160.83,,0,-22,0
+VRLLOG,NSE,Transport - Logistics,Small Cap,267.6,-30.54,-6,-3,-18
+SANOFI,NSE,Healthcare - Pharma,Small Cap,4069.0,-57.5,-15,-30,-21
+INDIGO,NSE,Transport - Logistics,Large Cap,5153.5,,9,-14,0
+INDIANHUME,NSE,Engineering,Small Cap,400.0,,-8,-4,0
+MAXIND,NSE,Financials - Misc,Small Cap,187.78,-41.27,-28,-38,-5
+PALASHSECU,NSE,Consumption - FMCG,Small Cap,106.42,-43.6,-2,-14,-3
+ALBERTDAVD,NSE,Healthcare - Pharma,Small Cap,743.55,,-11,-27,0
+ELECTCAST,NSE,Metals - Casting/Forging,Small Cap,73.45,-68.19,15,8,-17
+SANSERA,NSE,Auto - OEM Suppliers,Small Cap,1724.2,-1.42,3,-11,16
+INDIANCARD,NSE,Others,Small Cap,239.95,,-2,-17,0
+MAYURUNIQ,NSE,Leather Products,Small Cap,480.95,-27.42,-19,-24,-5
+SANGHVIMOV,NSE,Auto - CV,Small Cap,329.3,-51.29,12,4,-4
+AKSHARCHEM,NSE,Chemicals - Dyes,Small Cap,249.45,,9,3,0
+ELIN,NSE,Consumption - Appliances,Small Cap,164.94,-37.22,-12,-5,-7
+EMAMIREAL,NSE,Real Estate,Small Cap,84.2,-42.62,10,9,-14
+SATIA,NSE,Paper,Small Cap,65.41,-54.23,-16,14,-10
+TATACONSUM,NSE,Consumption - Misc,Large Cap,1184.0,,0,3,0
+OSWALAGRO,NSE,Agri - Misc,Small Cap,58.82,-43.38,1,8,-24
+IMFA,NSE,Metals - Misc,Small Cap,1414.9,,-3,6,0
+VTL,NSE,Textile - Spinning/Yarn,Small Cap,453.0,-18.93,27,7,8
+SATIN,NSE,Financials - MFI,Small Cap,140.46,-48.35,3,-32,-1
+IMAGICAA,NSE,Leisure - Misc,Small Cap,48.67,,-5,9,0
+AJANTPHARM,NSE,Healthcare - Pharma,Mid Cap,2632.6,,-12,-3,0
+EMBDL,NSE,Real Estate,Small Cap,68.63,-54.35,2,0,-20
+MCLEODRUSS,NSE,Agri - Tea/Coffee,Small Cap,44.46,-35.07,-5,-34,-2
+TATACOMM,NSE,Telecom,Mid Cap,1824.7,,0,-35,0
+MCX,NSE,IT - Product/Platform,Small Cap,10307.0,-0.35,3,-12,10
+OSIAHYPER,NSE,Consumption - Retail,Small Cap,16.33,-78.72,-3,7,-4
+SBC,NSE,Others,Small Cap,28.28,0.0,-1,15,36
+MCL,NSE,Power - Wiring,Small Cap,48.93,-39.67,-2,14,-9
+MAZDOCK,NSE,Defense - Ship Building,Mid Cap,2408.2,-31.63,2,-19,-23
+IMPAL,NSE,Auto - Misc,Small Cap,1040.6,,2,9,0
+AJMERA,NSE,Real Estate,Small Cap,918.8,,-6,-3,0
+SARLAPOLY,NSE,Textile - Spinning/Yarn,Small Cap,85.28,-30.77,2,-10,-20
+INDHOTEL,NSE,Leisure - Hotels,Mid Cap,731.2,,1,-4,0
+MBAPL,NSE,Agrichem - Fertilizers,Small Cap,401.4,-10.35,-5,14,-16
+PAGEIND,NSE,Textile - Innerwear,Mid Cap,35745.0,-27.7,-8,-27,-20
+AKASH,NSE,Infra - Construction,Small Cap,25.47,,-1,9,0
+TATAINVEST,NSE,Financials - Misc,Small Cap,708.6,,0,8,0
+SASKEN,NSE,IT - Services,Small Cap,1180.1,-47.19,1,-22,-3
+INDBANK,NSE,Financials - Broking,Small Cap,35.15,,2,1,0
+EMAMILTD,NSE,Consumption - Personal,Mid Cap,519.25,-37.64,-4,17,-13
+VSTTILLERS,NSE,Auto - Misc,Small Cap,5757.0,-3.88,-6,14,-4
+TATAELXSI,NSE,IT - Services,Mid Cap,5413.5,,0,1,0
+MBLINFRA,NSE,Infra - Construction,Small Cap,31.84,-59.33,-6,-10,-5
+OSWALGREEN,NSE,Financials - Misc,Small Cap,33.1,-46.02,-4,6,-19
+SASTASUNDR,NSE,IT - Product/Platform,Small Cap,303.85,-30.87,8,-11,-1
+INCREDIBLE,NSE,Metals - Iron & Steel,Small Cap,39.78,,-1,8,0
+EMAMIPAP,NSE,Paper,Small Cap,86.17,-39.58,-3,-1,-7
 ZYDUSWELL,NSE,Consumption - FMCG,Small Cap,426.1,-17.41,17,7,-7
