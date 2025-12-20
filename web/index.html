@@ -15,71 +15,41 @@ body {
 /* ---------- Top Tabs ---------- */
 .topbar {
   display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
   background: #1e1e1e;
   color: white;
   padding: 8px;
-  gap: 10px;
 }
 
-.top-tab {
-  padding: 8px 14px;
+.tab {
+  padding: 6px 12px;
   cursor: pointer;
   background: #333;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
-.top-tab.active {
+.tab.active {
   background: #007acc;
 }
 
-/* ---------- Layout ---------- */
-.container {
-  display: flex;
-  height: calc(100vh - 48px);
-}
-
-.sidebar {
-  width: 220px;
-  background: #2a2a2a;
-  color: white;
-  padding: 10px;
-  overflow-y: auto;
-}
-
-.sidebar.hidden {
-  display: none;
-}
-
-.sidebar .tab {
-  padding: 8px;
-  margin: 4px 0;
-  background: #444;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.sidebar .tab.active {
-  background: #007acc;
-}
-
+/* ---------- Content ---------- */
 .content {
-  flex: 1;
+  height: calc(100vh - 52px);
+  overflow: auto;
   padding: 8px;
-  overflow-y: auto;
 }
 
 /* ---------- Table ---------- */
 table {
   border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;
+  font-size: 13px;
 }
 
 th, td {
   border: 1px solid #ccc;
-  padding: 6px;
-  word-wrap: break-word;
-  white-space: normal;
+  padding: 6px 8px;
 }
 
 th {
@@ -95,34 +65,25 @@ td.num  { text-align: right; }
 .green { background: #c8f7c5; }
 .red   { background: #f7c5c5; }
 
-.group-header {
+.group-header td {
   background: #ddd;
   font-weight: bold;
   text-align: left;
 }
 
+/* ---------- Mobile ---------- */
 @media (max-width: 768px) {
   body { font-size: 12px; }
-  .sidebar { width: 160px; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- ---------- Top Tabs ---------- -->
-<div class="topbar">
-  <div class="top-tab active" onclick="activateTopTab('Folio')">Folio</div>
-  <div class="top-tab" onclick="activateTopTab('EXIT')">EXIT</div>
-  <div class="top-tab" onclick="activateTopTab('SectorWise')">SectorWise</div>
-  <div class="top-tab" onclick="activateTopTab('MarketCapWise')">MarketCapWise</div>
-</div>
+<div class="topbar" id="topTabs"></div>
 
-<div class="container">
-  <div class="sidebar" id="sidebar"></div>
-  <div class="content">
-    <table id="dataTable"></table>
-  </div>
+<div class="content">
+  <table id="dataTable"></table>
 </div>
 
 <script>
@@ -130,7 +91,6 @@ const CSV_FILE = "portfolio_report.csv";
 let rawData = [];
 let currentData = [];
 let sortState = {};
-let currentMode = "Folio";
 
 /* ---------- CSV ---------- */
 function parseCSV(text) {
@@ -144,51 +104,41 @@ function parseCSV(text) {
   });
 }
 
-/* ---------- Top Tabs ---------- */
-function activateTopTab(mode) {
-  currentMode = mode;
-  document.querySelectorAll(".top-tab").forEach(t => t.classList.remove("active"));
-  [...document.querySelectorAll(".top-tab")]
-    .find(t => t.innerText === mode).classList.add("active");
+/* ---------- Tabs ---------- */
+function buildTopTabs() {
+  const bar = document.getElementById("topTabs");
+  bar.innerHTML = "";
 
-  const sidebar = document.getElementById("sidebar");
-
-  if (mode === "Folio") {
-    sidebar.classList.remove("hidden");
-    buildFolioSidebar();
-  } else {
-    sidebar.classList.add("hidden");
-  }
-
-  if (mode === "EXIT") {
-    currentData = rawData.filter(d =>
+  // EXIT
+  addTab("EXIT", () =>
+    renderTable(rawData.filter(d =>
       d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
-    );
-    renderTable(currentData);
-  }
+    ))
+  );
 
-  if (mode === "SectorWise") renderGrouped("Sector");
-  if (mode === "MarketCapWise") renderGrouped("MarketCap");
-}
-
-/* ---------- Folio Sidebar (UNCHANGED LOGIC) ---------- */
-function buildFolioSidebar() {
-  const sb = document.getElementById("sidebar");
-  sb.innerHTML = "<h3>Folio</h3>";
-
+  // Folios
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
     .forEach(f => {
-      const div = document.createElement("div");
-      div.className = "tab";
-      div.innerText = f;
-      div.onclick = () => {
-        document.querySelectorAll(".sidebar .tab").forEach(t => t.classList.remove("active"));
-        div.classList.add("active");
-        currentData = rawData.filter(d => d.Folio === f);
-        renderTable(currentData);
-      };
-      sb.appendChild(div);
+      addTab(f, () => renderTable(rawData.filter(d => d.Folio === f)));
     });
+
+  // SectorWise
+  addTab("SectorWise", () => renderGrouped("Sector"));
+
+  // MarketCapWise
+  addTab("MarketCapWise", () => renderGrouped("MarketCap"));
+}
+
+function addTab(label, action) {
+  const div = document.createElement("div");
+  div.className = "tab";
+  div.innerText = label;
+  div.onclick = () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    div.classList.add("active");
+    action();
+  };
+  document.getElementById("topTabs").appendChild(div);
 }
 
 /* ---------- Grouped Views ---------- */
@@ -203,38 +153,48 @@ function renderGrouped(field) {
     groups[key].push(r);
   });
 
+  const headers = Object.keys(rawData[0]);
+  renderHeader(headers);
+
   Object.keys(groups).sort().forEach(group => {
     const tr = document.createElement("tr");
+    tr.className = "group-header";
     const td = document.createElement("td");
-    td.colSpan = Object.keys(rawData[0]).length;
-    td.className = "group-header";
+    td.colSpan = headers.length;
     td.innerText = `${field}: ${group}`;
     tr.appendChild(td);
     table.appendChild(tr);
 
-    renderTable(groups[group], true);
+    renderRows(groups[group], headers, true);
   });
 }
 
 /* ---------- Table ---------- */
-function renderTable(data, append=false) {
+function renderHeader(headers) {
   const table = document.getElementById("dataTable");
-  if (!append) table.innerHTML = "";
+  const tr = document.createElement("tr");
+  headers.forEach(h => {
+    const th = document.createElement("th");
+    th.innerText = h;
+    th.onclick = () => sortBy(h);
+    tr.appendChild(th);
+  });
+  table.appendChild(tr);
+}
+
+function renderTable(data) {
+  currentData = [...data];
+  const table = document.getElementById("dataTable");
+  table.innerHTML = "";
   if (!data.length) return;
 
   const headers = Object.keys(data[0]);
+  renderHeader(headers);
+  renderRows(data, headers);
+}
 
-  if (!append) {
-    const trh = document.createElement("tr");
-    headers.forEach(h => {
-      const th = document.createElement("th");
-      th.innerText = h;
-      th.onclick = () => sortBy(h);
-      trh.appendChild(th);
-    });
-    table.appendChild(trh);
-  }
-
+function renderRows(data, headers, append=false) {
+  const table = document.getElementById("dataTable");
   data.forEach(r => {
     const tr = document.createElement("tr");
     headers.forEach(h => {
@@ -274,7 +234,8 @@ fetch(CSV_FILE)
   .then(r => r.text())
   .then(t => {
     rawData = parseCSV(t);
-    activateTopTab("Folio");   // default behavior preserved
+    buildTopTabs();
+    document.querySelector(".tab").click(); // default EXIT
   });
 </script>
 
