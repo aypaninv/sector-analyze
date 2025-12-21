@@ -105,49 +105,31 @@ td.num  { text-align: right; }
 .modal-content {
   position: relative;
   background: #fff;
-  width: 95%;
-  height: 95%;
+  width: 96%;
+  height: 96%;
   margin: 1.5% auto;
   border-radius: 6px;
   overflow: hidden;
 }
 
-/* Modal header with buttons */
 .modal-header {
   padding: 6px 10px;
   background: #1e1e1e;
   color: white;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.modal-left {
-  display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.tf-btn {
-  padding: 4px 10px;
-  background: #333;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-.tf-btn.active {
-  background: #007acc;
-}
-
-.close-btn {
+.modal-header span {
   cursor: pointer;
   font-size: 16px;
 }
 
-#tv_chart {
+.modal iframe {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(100% - 34px);
+  border: none;
 }
 </style>
 </head>
@@ -160,29 +142,28 @@ td.num  { text-align: right; }
   <table id="dataTable"></table>
 </div>
 
-<!-- ---------- TradingView Modal ---------- -->
+<!-- ---------- TradingView Modal (IFRAME) ---------- -->
 <div id="tvModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <div class="modal-left">
-        <div id="tvTitle"></div>
-        <div class="tf-btn active" onclick="loadChart('D', this)">D</div>
-        <div class="tf-btn" onclick="loadChart('W', this)">W</div>
-        <div class="tf-btn" onclick="loadChart('M', this)">M</div>
-      </div>
-      <div class="close-btn" onclick="closeModal()">✖</div>
+      <div id="tvTitle"></div>
+      <span onclick="closeModal()">✖</span>
     </div>
-    <div id="tv_chart"></div>
+    <iframe id="tvFrame"></iframe>
   </div>
 </div>
 
 <script>
+/* ========= CONFIG ========= */
 const CSV_FILE = "portfolio_report.csv";
+
+/* 🔑 TradingView chart layout ID that already HAS MACD */
+const TV_CHART_ID = "n42CrBun";  // <-- replace if needed
+/* ========================== */
+
 let rawData = [];
 let currentData = [];
 let sortState = {};
-let currentSymbol = "";
-let currentInterval = "D";
 
 /* ---------- CSV ---------- */
 function parseCSV(text) {
@@ -325,57 +306,21 @@ function sortBy(col) {
   renderTable(currentData);
 }
 
-/* ---------- TradingView Embed Widget ---------- */
+/* ---------- TradingView IFRAME ---------- */
 function openChart(symbol) {
-  currentSymbol = symbol;
-  currentInterval = "D";
-  setActiveTF("D");
+  const url =
+    `https://in.tradingview.com/chart/${TV_CHART_ID}/?symbol=NSE:${symbol}`;
 
+  document.getElementById("tvTitle").innerText =
+    symbol + " - TradingView (MACD)";
+
+  document.getElementById("tvFrame").src = url;
   document.getElementById("tvModal").style.display = "block";
-  document.getElementById("tvTitle").innerText = symbol + " - TradingView";
-  loadChart("D");
-}
-
-function loadChart(interval, btn) {
-  currentInterval = interval;
-  if (btn) setActiveTF(interval);
-
-  const container = document.getElementById("tv_chart");
-  container.innerHTML = "";
-
-  const script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
-  script.async = true;
-
-  script.innerHTML = JSON.stringify({
-    autosize: true,
-    symbol: `NSE:${currentSymbol}`,
-    interval: currentInterval,
-    timezone: "Asia/Kolkata",
-    theme: "light",
-    style: "1",
-    locale: "in",
-    allow_symbol_change: false,
-    hide_top_toolbar: false,
-    hide_side_toolbar: false,
-    withdateranges: true,
-    studies: ["MACD@tv-basicstudies"]
-  });
-
-  container.appendChild(script);
-}
-
-function setActiveTF(interval) {
-  document.querySelectorAll(".tf-btn").forEach(b => b.classList.remove("active"));
-  document.querySelectorAll(".tf-btn").forEach(b => {
-    if (b.innerText === interval) b.classList.add("active");
-  });
 }
 
 function closeModal() {
+  document.getElementById("tvFrame").src = "";
   document.getElementById("tvModal").style.display = "none";
-  document.getElementById("tv_chart").innerHTML = "";
 }
 
 /* ---------- Load ---------- */
