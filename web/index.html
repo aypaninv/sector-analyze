@@ -118,22 +118,22 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  /* EXIT */
-  addTab("EXIT", () => {
-    renderTable(
-      rawData.filter(
-        d => d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
-      )
-    );
-  });
-
-  /* STRENGTH */
+  /* STRENGTH (FIRST + DEFAULT) */
   addTab("Strength", () => {
     renderTable(
       rawData.filter(d => {
         const v = parseFloat(d.Day_MACD);
         return !isNaN(v) && v >= 1 && v <= 5;
       })
+    );
+  });
+
+  /* EXIT */
+  addTab("EXIT", () => {
+    renderTable(
+      rawData.filter(
+        d => d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+      )
     );
   });
 
@@ -246,7 +246,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click(); // default EXIT
+    document.querySelector(".tab").click(); // DEFAULT = Strength
   });
 </script>
 
