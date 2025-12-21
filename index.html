@@ -98,7 +98,7 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* ===== Canonical column order (controls layout width) ===== */
+/* Canonical column order */
 const COLUMN_ORDER = [
   "Symbol",
   "Folio",
@@ -141,21 +141,23 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  /* Strength (default, first) */
+  /* Strength (default) */
   addTab("Strength", () => {
-    renderTable(
-      rawData.filter(d => {
-        const v = parseFloat(d.D_MACD);
-        return !isNaN(v) && v >= 1 && v <= 5;
-      })
-    );
+    const filtered = rawData.filter(d => {
+      if (!("D_MACD" in d)) return false;
+      const v = parseFloat(d.D_MACD);
+      return !isNaN(v) && v >= 1 && v <= 5;
+    });
+    renderTable(filtered);
   });
 
   /* Exit */
   addTab("EXIT", () => {
     renderTable(
-      rawData.filter(
-        d => d.StopLoss && parseFloat(d.LastClose) < parseFloat(d.StopLoss)
+      rawData.filter(d =>
+        d.StopLoss &&
+        !isNaN(parseFloat(d.LastClose)) &&
+        parseFloat(d.LastClose) < parseFloat(d.StopLoss)
       )
     );
   });
@@ -223,7 +225,12 @@ function renderRows(data) {
       if (!(h in r)) return;
 
       const td = document.createElement("td");
-      const v = r[h];
+      let v = r[h];
+
+      /* RSI: force 0 decimals in UI */
+      if (h.endsWith("_RSI") && v !== "") {
+        v = Math.round(parseFloat(v));
+      }
 
       if (h === "Symbol") {
         td.className = "symbol-col text";
