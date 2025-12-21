@@ -24,7 +24,7 @@ jobs:
 
     - name: Run Portfolio report script
       run: |
-        rm -rf output
+        rm -rf output/portfolio/
         mkdir -p output
         sh scripts/portfolio.sh
 
