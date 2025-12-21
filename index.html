@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio Technical Report</title>
 
-<!-- TradingView Widget -->
-<script src="https://s3.tradingview.com/tv.js"></script>
-
 <style>
 body {
   margin: 0;
@@ -108,30 +105,49 @@ td.num  { text-align: right; }
 .modal-content {
   position: relative;
   background: #fff;
-  width: 94%;
-  height: 94%;
-  margin: 2% auto;
+  width: 95%;
+  height: 95%;
+  margin: 1.5% auto;
   border-radius: 6px;
   overflow: hidden;
 }
 
+/* Modal header with buttons */
 .modal-header {
   padding: 6px 10px;
   background: #1e1e1e;
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.modal-header span {
+.modal-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tf-btn {
+  padding: 4px 10px;
+  background: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.tf-btn.active {
+  background: #007acc;
+}
+
+.close-btn {
   cursor: pointer;
   font-size: 16px;
 }
 
 #tv_chart {
   width: 100%;
-  height: calc(100% - 34px);
+  height: calc(100% - 40px);
 }
 </style>
 </head>
@@ -148,8 +164,13 @@ td.num  { text-align: right; }
 <div id="tvModal" class="modal">
   <div class="modal-content">
     <div class="modal-header">
-      <div id="tvTitle"></div>
-      <span onclick="closeModal()">✖</span>
+      <div class="modal-left">
+        <div id="tvTitle"></div>
+        <div class="tf-btn active" onclick="loadChart('D', this)">D</div>
+        <div class="tf-btn" onclick="loadChart('W', this)">W</div>
+        <div class="tf-btn" onclick="loadChart('M', this)">M</div>
+      </div>
+      <div class="close-btn" onclick="closeModal()">✖</div>
     </div>
     <div id="tv_chart"></div>
   </div>
@@ -160,7 +181,8 @@ const CSV_FILE = "portfolio_report.csv";
 let rawData = [];
 let currentData = [];
 let sortState = {};
-let tvWidget = null;
+let currentSymbol = "";
+let currentInterval = "D";
 
 /* ---------- CSV ---------- */
 function parseCSV(text) {
@@ -303,36 +325,57 @@ function sortBy(col) {
   renderTable(currentData);
 }
 
-/* ---------- TradingView Widget (with MACD) ---------- */
+/* ---------- TradingView Embed Widget ---------- */
 function openChart(symbol) {
+  currentSymbol = symbol;
+  currentInterval = "D";
+  setActiveTF("D");
+
   document.getElementById("tvModal").style.display = "block";
   document.getElementById("tvTitle").innerText = symbol + " - TradingView";
+  loadChart("D");
+}
 
-  document.getElementById("tv_chart").innerHTML = "";
+function loadChart(interval, btn) {
+  currentInterval = interval;
+  if (btn) setActiveTF(interval);
 
-  tvWidget = new TradingView.widget({
+  const container = document.getElementById("tv_chart");
+  container.innerHTML = "";
+
+  const script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+  script.async = true;
+
+  script.innerHTML = JSON.stringify({
     autosize: true,
-    symbol: "NSE:" + symbol + "-EQ",
-    interval: "D",
+    symbol: `NSE:${currentSymbol}`,
+    interval: currentInterval,
     timezone: "Asia/Kolkata",
     theme: "light",
     style: "1",
     locale: "in",
-    toolbar_bg: "#f1f3f6",
+    allow_symbol_change: false,
     hide_top_toolbar: false,
     hide_side_toolbar: false,
-    allow_symbol_change: false,
-    studies: [
-      "MACD@tv-basicstudies"   // ✅ MACD added
-    ],
-    container_id: "tv_chart"
+    withdateranges: true,
+    studies: ["MACD@tv-basicstudies"]
+  });
+
+  container.appendChild(script);
+}
+
+function setActiveTF(interval) {
+  document.querySelectorAll(".tf-btn").forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".tf-btn").forEach(b => {
+    if (b.innerText === interval) b.classList.add("active");
   });
 }
 
 function closeModal() {
   document.getElementById("tvModal").style.display = "none";
   document.getElementById("tv_chart").innerHTML = "";
-  tvWidget = null;
 }
 
 /* ---------- Load ---------- */
