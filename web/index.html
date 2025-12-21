@@ -89,48 +89,6 @@ td.num  { text-align: right; }
 
 .green { background: #c8f7c5 !important; }
 .red   { background: #f7c5c5 !important; }
-
-/* ---------- Modal ---------- */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.75);
-}
-
-.modal-content {
-  position: relative;
-  background: #fff;
-  width: 96%;
-  height: 96%;
-  margin: 1.5% auto;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.modal-header {
-  padding: 6px 10px;
-  background: #1e1e1e;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-header span {
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.modal iframe {
-  width: 100%;
-  height: calc(100% - 34px);
-  border: none;
-}
 </style>
 </head>
 
@@ -142,24 +100,26 @@ td.num  { text-align: right; }
   <table id="dataTable"></table>
 </div>
 
-<!-- ---------- TradingView Modal (IFRAME) ---------- -->
-<div id="tvModal" class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <div id="tvTitle"></div>
-      <span onclick="closeModal()">✖</span>
-    </div>
-    <iframe id="tvFrame"></iframe>
-  </div>
-</div>
-
 <script>
-/* ========= CONFIG ========= */
+/* ================= CONFIG ================= */
+
+/*
+OPTION A (RECOMMENDED):
+Use your SAVED TradingView layout that already has MACD added.
+Example layout URL:
+https://in.tradingview.com/chart/n42CrBun/
+*/
+const TV_LAYOUT_ID = "n42CrBun"; // <-- replace with your layout ID
+
+/*
+OPTION B (NO layout):
+TradingView will remember MACD once you add it manually.
+Uncomment OPTION B URL in openChart() if you prefer.
+*/
+
 const CSV_FILE = "portfolio_report.csv";
 
-/* 🔑 TradingView chart layout ID that already HAS MACD */
-const TV_CHART_ID = "n42CrBun";  // <-- replace if needed
-/* ========================== */
+/* ========================================= */
 
 let rawData = [];
 let currentData = [];
@@ -306,21 +266,23 @@ function sortBy(col) {
   renderTable(currentData);
 }
 
-/* ---------- TradingView IFRAME ---------- */
+/* ---------- TradingView (NEW WINDOW) ---------- */
 function openChart(symbol) {
+
+  /* OPTION A: Saved layout with MACD */
   const url =
-    `https://in.tradingview.com/chart/${TV_CHART_ID}/?symbol=NSE:${symbol}`;
+    `https://in.tradingview.com/chart/${TV_LAYOUT_ID}/?symbol=NSE:${symbol}`;
 
-  document.getElementById("tvTitle").innerText =
-    symbol + " - TradingView (MACD)";
+  /* OPTION B: No layout (TradingView remembers MACD once added)
+  const url =
+    `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`;
+  */
 
-  document.getElementById("tvFrame").src = url;
-  document.getElementById("tvModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("tvFrame").src = "";
-  document.getElementById("tvModal").style.display = "none";
+  window.open(
+    url,
+    "_blank",
+    "width=1300,height=900,noopener,noreferrer"
+  );
 }
 
 /* ---------- Load ---------- */
