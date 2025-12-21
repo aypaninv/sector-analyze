@@ -108,8 +108,8 @@ td.num  { text-align: right; }
 .modal-content {
   position: relative;
   background: #fff;
-  width: 92%;
-  height: 92%;
+  width: 94%;
+  height: 94%;
   margin: 2% auto;
   border-radius: 6px;
   overflow: hidden;
@@ -131,12 +131,7 @@ td.num  { text-align: right; }
 
 #tv_chart {
   width: 100%;
-  height: calc(100% - 32px);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  body { font-size: 12px; }
+  height: calc(100% - 34px);
 }
 </style>
 </head>
@@ -308,7 +303,7 @@ function sortBy(col) {
   renderTable(currentData);
 }
 
-/* ---------- TradingView Widget ---------- */
+/* ---------- TradingView Widget (with MACD) ---------- */
 function openChart(symbol) {
   document.getElementById("tvModal").style.display = "block";
   document.getElementById("tvTitle").innerText = symbol + " - TradingView";
@@ -317,7 +312,7 @@ function openChart(symbol) {
 
   tvWidget = new TradingView.widget({
     autosize: true,
-    symbol: "NSE:" + symbol,
+    symbol: "NSE:" + symbol + "-EQ",
     interval: "D",
     timezone: "Asia/Kolkata",
     theme: "light",
@@ -327,6 +322,9 @@ function openChart(symbol) {
     hide_top_toolbar: false,
     hide_side_toolbar: false,
     allow_symbol_change: false,
+    studies: [
+      "MACD@tv-basicstudies"   // ✅ MACD added
+    ],
     container_id: "tv_chart"
   });
 }
