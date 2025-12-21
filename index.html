@@ -81,6 +81,7 @@ tbody tr:nth-child(even) td {
 td.text { text-align: left; }
 td.num  { text-align: right; }
 
+/* Coloring */
 .green { background: #c8f7c5 !important; }
 .red   { background: #f7c5c5 !important; }
 </style>
@@ -97,7 +98,7 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* 🔒 Canonical column order (matches portfolio_report.py output) */
+/* ===== Canonical column order (controls layout width) ===== */
 const COLUMN_ORDER = [
   "Symbol",
   "Folio",
@@ -140,17 +141,17 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  /* STRENGTH (default) */
+  /* Strength (default, first) */
   addTab("Strength", () => {
     renderTable(
       rawData.filter(d => {
-        const v = parseFloat(d.Day_MACD);
+        const v = parseFloat(d.D_MACD);
         return !isNaN(v) && v >= 1 && v <= 5;
       })
     );
   });
 
-  /* EXIT */
+  /* Exit */
   addTab("EXIT", () => {
     renderTable(
       rawData.filter(
@@ -159,12 +160,12 @@ function buildTabs() {
     );
   });
 
-  /* PORTFOLIO */
+  /* Portfolio */
   addTab("Portfolio", () => {
     renderTable([...rawData]);
   });
 
-  /* Individual Folio tabs */
+  /* Folio tabs */
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
     .forEach(folio =>
       addTab(folio, () => {
@@ -234,6 +235,7 @@ function renderRows(data) {
 
       if (h.includes("MACD") && v !== "")
         td.classList.add(parseFloat(v) >= 0 ? "green" : "red");
+
       if (h.includes("RSI") && v !== "")
         td.classList.add(parseFloat(v) >= 53 ? "green" : "red");
 
@@ -249,7 +251,7 @@ function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
 
-  currentData.sort((a,b) => {
+  currentData.sort((a, b) => {
     const x = a[col], y = b[col];
     const nx = parseFloat(x), ny = parseFloat(y);
     if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
