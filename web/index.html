@@ -12,6 +12,7 @@ body {
   font-size: 13px;
 }
 
+/* ---------- Top Tabs ---------- */
 .topbar {
   display: flex;
   flex-wrap: wrap;
@@ -26,35 +27,42 @@ body {
   cursor: pointer;
   background: #333;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .tab.active {
   background: #007acc;
 }
 
+/* ---------- Content ---------- */
 .content {
   height: calc(100vh - 52px);
   overflow: auto;
   padding: 8px;
 }
 
+/* ---------- Table ---------- */
 table {
   border-collapse: collapse;
   width: max-content;
+  font-size: 13px;
 }
 
 th, td {
   border: 1px solid #ccc;
-  padding: 6px;
+  padding: 6px 8px;
+  background: white;
 }
 
 th {
   background: #f0f0f0;
   position: sticky;
   top: 0;
+  cursor: pointer;
   z-index: 5;
 }
 
+/* Sticky Symbol column */
 th.symbol-col,
 td.symbol-col {
   position: sticky;
@@ -64,21 +72,17 @@ td.symbol-col {
   font-weight: bold;
 }
 
+/* Zebra striping */
 tbody tr:nth-child(even) td {
   background: #f9f9f9;
 }
 
+/* Alignment */
 td.text { text-align: left; }
-td.num { text-align: right; }
+td.num  { text-align: right; }
 
 .green { background: #c8f7c5 !important; }
-.red { background: #f7c5c5 !important; }
-
-.filter {
-  width: 90%;
-  margin-top: 4px;
-  font-size: 11px;
-}
+.red   { background: #f7c5c5 !important; }
 </style>
 </head>
 
@@ -94,8 +98,8 @@ td.num { text-align: right; }
 const CSV_FILE = "portfolio_report.csv";
 
 let rawData = [];
-let currentView = [];
-let activeTabData = [];
+let currentData = [];
+let sortState = {};
 
 /* ---------- CSV ---------- */
 function parseCSV(text) {
@@ -114,23 +118,25 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
+  /* EXIT tab */
   addTab("EXIT", () => {
-    activeTabData = rawData.filter(
-      d => d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+    renderTable(
+      rawData.filter(
+        d => d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+      )
     );
-    renderTable(activeTabData);
   });
 
+  /* Portfolio tab */
   addTab("Portfolio", () => {
-    activeTabData = [...rawData];
-    renderTable(activeTabData);
+    renderTable([...rawData]);
   });
 
+  /* Individual Folio tabs */
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
     .forEach(folio =>
       addTab(folio, () => {
-        activeTabData = rawData.filter(d => d.Folio === folio);
-        renderTable(activeTabData);
+        renderTable(rawData.filter(d => d.Folio === folio));
       })
     );
 }
@@ -149,7 +155,7 @@ function addTab(label, action) {
 
 /* ---------- Table ---------- */
 function renderTable(data) {
-  currentView = [...data];
+  currentData = [...data];
   const table = document.getElementById("dataTable");
   table.innerHTML = "";
   if (!data.length) return;
@@ -165,28 +171,9 @@ function renderHeader(headers) {
 
   headers.forEach(h => {
     const th = document.createElement("th");
-    th.innerHTML = `<div>${h}</div>`;
+    th.innerText = h;
+    th.onclick = () => sortBy(h);
     if (h === "Symbol") th.classList.add("symbol-col");
-
-    /* String filters */
-    if (["Folio","MarketCap","Sector","Notes"].includes(h)) {
-      th.innerHTML += `<input class="filter" oninput="applyFilters()">`;
-    }
-
-    /* Numeric filters */
-    if (/MACD|RSI|DD_High/.test(h)) {
-      th.innerHTML += `
-        <select class="filter" onchange="applyFilters()">
-          <option value=""></option>
-          <option value=">">></option>
-          <option value="<"><</option>
-          <option value="between">between</option>
-        </select>
-        <input class="filter" placeholder="value" oninput="applyFilters()">
-        <input class="filter" placeholder="and" oninput="applyFilters()">
-      `;
-    }
-
     tr.appendChild(th);
   });
 
@@ -220,40 +207,27 @@ function renderRows(data, headers) {
   });
 }
 
-/* ---------- Filters ---------- */
-function applyFilters() {
-  const table = document.getElementById("dataTable");
-  const headerCells = table.rows[0].cells;
-  let filtered = activeTabData.filter(row => {
-    for (let i = 0; i < headerCells.length; i++) {
-      const h = table.rows[0].cells[i].innerText.split("\n")[0];
-      const inputs = headerCells[i].querySelectorAll("input,select");
-      if (!inputs.length) continue;
+/* ---------- Sorting ---------- */
+function sortBy(col) {
+  const asc = !sortState[col];
+  sortState = { [col]: asc };
 
-      const val = row[h];
-      if (/MACD|RSI|DD_High/.test(h)) {
-        const op = inputs[0].value;
-        const v1 = parseFloat(inputs[1].value);
-        const v2 = parseFloat(inputs[2].value);
-        const num = parseFloat(val);
-        if (op === ">" && !(num > v1)) return false;
-        if (op === "<" && !(num < v1)) return false;
-        if (op === "between" && !(num >= v1 && num <= v2)) return false;
-      } else {
-        const txt = inputs[0].value.toLowerCase();
-        if (txt && !String(val).toLowerCase().includes(txt)) return false;
-      }
-    }
-    return true;
+  currentData.sort((a,b) => {
+    const x = a[col], y = b[col];
+    const nx = parseFloat(x), ny = parseFloat(y);
+    if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
+    return asc
+      ? String(x).localeCompare(y)
+      : String(y).localeCompare(x);
   });
 
-  renderTable(filtered);
+  renderTable(currentData);
 }
 
-/* ---------- TradingView ---------- */
+/* ---------- TradingView (NEW WINDOW) ---------- */
 function openChart(symbol) {
   const url = `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`;
-  window.open(url, "_blank", "width=1300,height=900");
+  window.open(url, "_blank", "width=1300,height=900,noopener,noreferrer");
 }
 
 /* ---------- Load ---------- */
@@ -262,7 +236,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click();
+    document.querySelector(".tab").click(); // default EXIT
   });
 </script>
 
