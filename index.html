@@ -12,7 +12,6 @@ body {
   font-size: 13px;
 }
 
-/* ---------- Top Tabs ---------- */
 .topbar {
   display: flex;
   flex-wrap: wrap;
@@ -27,41 +26,35 @@ body {
   cursor: pointer;
   background: #333;
   border-radius: 4px;
-  white-space: nowrap;
 }
 
 .tab.active {
   background: #007acc;
 }
 
-/* ---------- Content ---------- */
 .content {
   height: calc(100vh - 52px);
   overflow: auto;
   padding: 8px;
 }
 
-/* ---------- Table ---------- */
 table {
   border-collapse: collapse;
-  font-size: 13px;
+  width: max-content;
 }
 
 th, td {
   border: 1px solid #ccc;
-  padding: 6px 8px;
-  background: white;
+  padding: 6px;
 }
 
 th {
   background: #f0f0f0;
   position: sticky;
   top: 0;
-  cursor: pointer;
   z-index: 5;
 }
 
-/* Sticky Symbol column */
 th.symbol-col,
 td.symbol-col {
   position: sticky;
@@ -71,24 +64,21 @@ td.symbol-col {
   font-weight: bold;
 }
 
-/* Zebra striping */
 tbody tr:nth-child(even) td {
   background: #f9f9f9;
 }
 
-/* Group header */
-.group-header td {
-  background: #ddd !important;
-  font-weight: bold;
-  text-align: left;
-}
-
-/* Alignment */
 td.text { text-align: left; }
-td.num  { text-align: right; }
+td.num { text-align: right; }
 
 .green { background: #c8f7c5 !important; }
-.red   { background: #f7c5c5 !important; }
+.red { background: #f7c5c5 !important; }
+
+.filter {
+  width: 90%;
+  margin-top: 4px;
+  font-size: 11px;
+}
 </style>
 </head>
 
@@ -101,29 +91,11 @@ td.num  { text-align: right; }
 </div>
 
 <script>
-/* ================= CONFIG ================= */
-
-/*
-OPTION A (RECOMMENDED):
-Use your SAVED TradingView layout that already has MACD added.
-Example layout URL:
-https://in.tradingview.com/chart/n42CrBun/
-*/
-const TV_LAYOUT_ID = "n42CrBun"; // <-- replace with your layout ID
-
-/*
-OPTION B (NO layout):
-TradingView will remember MACD once you add it manually.
-Uncomment OPTION B URL in openChart() if you prefer.
-*/
-
 const CSV_FILE = "portfolio_report.csv";
 
-/* ========================================= */
-
 let rawData = [];
-let currentData = [];
-let sortState = {};
+let currentView = [];
+let activeTabData = [];
 
 /* ---------- CSV ---------- */
 function parseCSV(text) {
@@ -138,23 +110,29 @@ function parseCSV(text) {
 }
 
 /* ---------- Tabs ---------- */
-function buildTopTabs() {
+function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  addTab("EXIT", () =>
-    renderTable(rawData.filter(d =>
-      d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
-    ))
-  );
+  addTab("EXIT", () => {
+    activeTabData = rawData.filter(
+      d => d.StopLoss && parseFloat(d.Close) < parseFloat(d.StopLoss)
+    );
+    renderTable(activeTabData);
+  });
+
+  addTab("Portfolio", () => {
+    activeTabData = [...rawData];
+    renderTable(activeTabData);
+  });
 
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
-    .forEach(f => addTab(f, () =>
-      renderTable(rawData.filter(d => d.Folio === f))
-    ));
-
-  addTab("SectorWise", () => renderGrouped("Sector"));
-  addTab("MarketCapWise", () => renderGrouped("MarketCap"));
+    .forEach(folio =>
+      addTab(folio, () => {
+        activeTabData = rawData.filter(d => d.Folio === folio);
+        renderTable(activeTabData);
+      })
+    );
 }
 
 function addTab(label, action) {
@@ -169,52 +147,9 @@ function addTab(label, action) {
   document.getElementById("topTabs").appendChild(div);
 }
 
-/* ---------- Grouped Views ---------- */
-function renderGrouped(field) {
-  const table = document.getElementById("dataTable");
-  table.innerHTML = "";
-
-  const groups = {};
-  rawData.forEach(r => {
-    const key = r[field] || "Others";
-    groups[key] = groups[key] || [];
-    groups[key].push(r);
-  });
-
-  const headers = Object.keys(rawData[0]);
-  renderHeader(headers);
-
-  Object.keys(groups).sort().forEach(group => {
-    const tr = document.createElement("tr");
-    tr.className = "group-header";
-    const td = document.createElement("td");
-    td.colSpan = headers.length;
-    td.innerText = `${field}: ${group}`;
-    tr.appendChild(td);
-    table.appendChild(tr);
-
-    renderRows(groups[group], headers);
-  });
-}
-
 /* ---------- Table ---------- */
-function renderHeader(headers) {
-  const table = document.getElementById("dataTable");
-  const tr = document.createElement("tr");
-
-  headers.forEach(h => {
-    const th = document.createElement("th");
-    th.innerText = h;
-    th.onclick = () => sortBy(h);
-    if (h === "Symbol") th.classList.add("symbol-col");
-    tr.appendChild(th);
-  });
-
-  table.appendChild(tr);
-}
-
 function renderTable(data) {
-  currentData = [...data];
+  currentView = [...data];
   const table = document.getElementById("dataTable");
   table.innerHTML = "";
   if (!data.length) return;
@@ -222,6 +157,40 @@ function renderTable(data) {
   const headers = Object.keys(data[0]);
   renderHeader(headers);
   renderRows(data, headers);
+}
+
+function renderHeader(headers) {
+  const table = document.getElementById("dataTable");
+  const tr = document.createElement("tr");
+
+  headers.forEach(h => {
+    const th = document.createElement("th");
+    th.innerHTML = `<div>${h}</div>`;
+    if (h === "Symbol") th.classList.add("symbol-col");
+
+    /* String filters */
+    if (["Folio","MarketCap","Sector","Notes"].includes(h)) {
+      th.innerHTML += `<input class="filter" oninput="applyFilters()">`;
+    }
+
+    /* Numeric filters */
+    if (/MACD|RSI|DD_High/.test(h)) {
+      th.innerHTML += `
+        <select class="filter" onchange="applyFilters()">
+          <option value=""></option>
+          <option value=">">></option>
+          <option value="<"><</option>
+          <option value="between">between</option>
+        </select>
+        <input class="filter" placeholder="value" oninput="applyFilters()">
+        <input class="filter" placeholder="and" oninput="applyFilters()">
+      `;
+    }
+
+    tr.appendChild(th);
+  });
+
+  table.appendChild(tr);
 }
 
 function renderRows(data, headers) {
@@ -233,7 +202,7 @@ function renderRows(data, headers) {
       const v = r[h];
 
       if (h === "Symbol") {
-        td.classList.add("symbol-col", "text");
+        td.className = "symbol-col text";
         td.innerHTML = `<a href="#" onclick="openChart('${v}')">${v}</a>`;
       } else {
         td.innerText = v;
@@ -251,38 +220,40 @@ function renderRows(data, headers) {
   });
 }
 
-/* ---------- Sorting ---------- */
-function sortBy(col) {
-  const asc = !sortState[col];
-  sortState = { [col]: asc };
+/* ---------- Filters ---------- */
+function applyFilters() {
+  const table = document.getElementById("dataTable");
+  const headerCells = table.rows[0].cells;
+  let filtered = activeTabData.filter(row => {
+    for (let i = 0; i < headerCells.length; i++) {
+      const h = table.rows[0].cells[i].innerText.split("\n")[0];
+      const inputs = headerCells[i].querySelectorAll("input,select");
+      if (!inputs.length) continue;
 
-  currentData.sort((a,b) => {
-    const x=a[col], y=b[col];
-    const nx=parseFloat(x), ny=parseFloat(y);
-    if(!isNaN(nx)&&!isNaN(ny)) return asc?nx-ny:ny-nx;
-    return asc?String(x).localeCompare(y):String(y).localeCompare(x);
+      const val = row[h];
+      if (/MACD|RSI|DD_High/.test(h)) {
+        const op = inputs[0].value;
+        const v1 = parseFloat(inputs[1].value);
+        const v2 = parseFloat(inputs[2].value);
+        const num = parseFloat(val);
+        if (op === ">" && !(num > v1)) return false;
+        if (op === "<" && !(num < v1)) return false;
+        if (op === "between" && !(num >= v1 && num <= v2)) return false;
+      } else {
+        const txt = inputs[0].value.toLowerCase();
+        if (txt && !String(val).toLowerCase().includes(txt)) return false;
+      }
+    }
+    return true;
   });
 
-  renderTable(currentData);
+  renderTable(filtered);
 }
 
-/* ---------- TradingView (NEW WINDOW) ---------- */
+/* ---------- TradingView ---------- */
 function openChart(symbol) {
-
-  /* OPTION A: Saved layout with MACD */
-  const url =
-    `https://in.tradingview.com/chart/${TV_LAYOUT_ID}/?symbol=NSE:${symbol}`;
-
-  /* OPTION B: No layout (TradingView remembers MACD once added)
-  const url =
-    `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`;
-  */
-
-  window.open(
-    url,
-    "_blank",
-    "width=1300,height=900,noopener,noreferrer"
-  );
+  const url = `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`;
+  window.open(url, "_blank", "width=1300,height=900");
 }
 
 /* ---------- Load ---------- */
@@ -290,8 +261,8 @@ fetch(CSV_FILE)
   .then(r => r.text())
   .then(t => {
     rawData = parseCSV(t);
-    buildTopTabs();
-    document.querySelector(".tab").click(); // default EXIT
+    buildTabs();
+    document.querySelector(".tab").click();
   });
 </script>
 
