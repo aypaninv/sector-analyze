@@ -98,12 +98,13 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* Canonical column order */
+/* ===== Canonical column order (UPDATED with PnL) ===== */
 const COLUMN_ORDER = [
   "Symbol",
   "Folio",
   "IC",
   "CC",
+  "PnL",
   "AvgPrice",
   "LastClose",
   "StopLoss",
@@ -144,7 +145,6 @@ function buildTabs() {
   /* Strength (default) */
   addTab("Strength", () => {
     const filtered = rawData.filter(d => {
-      if (!("D_MACD" in d)) return false;
       const v = parseFloat(d.D_MACD);
       return !isNaN(v) && v >= 1 && v <= 5;
     });
@@ -227,7 +227,7 @@ function renderRows(data) {
       const td = document.createElement("td");
       let v = r[h];
 
-      /* RSI: force 0 decimals in UI */
+      /* RSI: force 0 decimals */
       if (h.endsWith("_RSI") && v !== "") {
         v = Math.round(parseFloat(v));
       }
