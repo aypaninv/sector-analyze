@@ -44,7 +44,10 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     if {"Qty", "AvgPrice"}.issubset(df.columns):
         df["InvestedValue"] = df["Qty"] * df["AvgPrice"]
         total_invested = df["InvestedValue"].sum(skipna=True)
-        df["IC"] = (df["InvestedValue"] / total_invested * 100).round(1) if total_invested > 0 else pd.NA
+        df["IC"] = (
+            (df["InvestedValue"] / total_invested * 100).round(1)
+            if total_invested > 0 else pd.NA
+        )
     else:
         df["IC"] = pd.NA
 
@@ -54,9 +57,22 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     if {"Qty", "LastClose"}.issubset(df.columns):
         df["CurrentValue"] = df["Qty"] * df["LastClose"]
         total_current = df["CurrentValue"].sum(skipna=True)
-        df["CC"] = (df["CurrentValue"] / total_current * 100).round(1) if total_current > 0 else pd.NA
+        df["CC"] = (
+            (df["CurrentValue"] / total_current * 100).round(1)
+            if total_current > 0 else pd.NA
+        )
     else:
         df["CC"] = pd.NA
+
+    # -----------------------------
+    # Profit / Loss % (PnL)  ✅ NEW
+    # -----------------------------
+    if {"AvgPrice", "LastClose"}.issubset(df.columns):
+        df["PnL"] = (
+            ((df["LastClose"] - df["AvgPrice"]) / df["AvgPrice"]) * 100
+        ).round(1)
+    else:
+        df["PnL"] = pd.NA
 
     # -----------------------------
     # RSI formatting (0 decimals)
@@ -77,14 +93,17 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         "Month_RSI": "M_RSI",
     }, inplace=True)
 
-    # Drop helpers
-    df.drop(columns=[c for c in ["InvestedValue", "CurrentValue"] if c in df.columns], inplace=True)
+    # Drop helper columns
+    df.drop(
+        columns=[c for c in ["InvestedValue", "CurrentValue"] if c in df.columns],
+        inplace=True
+    )
 
     # -----------------------------
     # Column order
     # -----------------------------
     desired_order = [
-        "Symbol", "Folio", "IC", "CC",
+        "Symbol", "Folio", "IC", "CC", "PnL",
         "AvgPrice", "LastClose", "StopLoss",
         "MarketCap", "Sector", "Notes",
         "DD_High", "4H_MACD",

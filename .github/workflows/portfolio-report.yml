@@ -3,7 +3,7 @@ name: Generate Portfolio Report
 on:
   workflow_dispatch:
   schedule:
-    - cron: "32 9 * * *"   # daily 3:02 PM IST
+    - cron: "30 3-10 * * 1-5"
 
 jobs:
   build:
