@@ -129,12 +129,28 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  /* Strength (default) */
-  addTab("Strength", () => {
+  /* Sate Strength (default) */
+  addTab("Sate_STH", () => {
     renderAndDefaultSort(
       rawData.filter(d => {
         const v = parseFloat(d.D_MACD);
-        return !isNaN(v) && v >= 1 && v <= 5;
+        return (
+          d.Folio && d.Folio.includes("Sate") &&
+          !isNaN(v) && v >= 1 && v <= 5
+        );
+      })
+    );
+  });
+
+  /* Core Strength */
+  addTab("Core_STH", () => {
+    renderAndDefaultSort(
+      rawData.filter(d => {
+        const v = parseFloat(d.D_MACD);
+        return (
+          d.Folio && d.Folio.includes("Core") &&
+          !isNaN(v) && v >= 1 && v <= 5
+        );
       })
     );
   });
@@ -151,16 +167,16 @@ function buildTabs() {
   });
 
   /* Core Portfolio */
-  addTab("CoreALL", () => {
+  addTab("CorePortfolio", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Core"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Core_"))
     );
   });
 
   /* Sate Portfolio */
-  addTab("SateALL", () => {
+  addTab("SatePortfolio", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Sate"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Sate_"))
     );
   });
 
@@ -309,7 +325,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click();
+    document.querySelector(".tab").click(); // Sate_STH default
   });
 </script>
 
