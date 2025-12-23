@@ -1,98 +1,98 @@
 Symbol,Folio,IC,CC,PnL,AvgPrice,LastClose,StopLoss,MarketCap,Sector,Notes,DD_High,4H_MACD,D_MACD,W_MACD,M_MACD,D_RSI,W_RSI,M_RSI,Qty
-MON100,Core_BreakOut,4.4,5.2,27.9,183.86,235.16,,Index,NASDAQ ETF,,-9.13,10,6,-3,6,51.0,62.0,72.0,600
-CUB,Core_BreakOut,3.2,4.2,41.4,203.36,287.45,,Small Cap,Financials - Private Bank,,-0.12,14,1,10,25,67.0,80.0,68.0,400
-POLYCAB,Core_BreakOut,2.4,2.5,11.7,6844.4,7642.5,,Mid Cap,Power - Wiring,,-3.3,5,3,-6,3,59.0,62.0,67.0,9
-PRIVISCL,Core_BreakOut,2.9,3.3,25.1,2577.6,3223.9,,Small Cap,Chemicals - Specialty,,-6.3,3,1,10,21,57.0,68.0,72.0,28
-TVSMOTOR,Sate_BreakOut,3.1,3.4,18.4,3121.16,3694.5,3341.0,Large Cap,Auto - 2W,,-1.08,3,2,-7,7,60.0,69.0,78.0,25
-CHOLAFIN,Core_BreakOut,3.2,3.1,4.0,1633.98,1699.6,,Large Cap,Financials - MFI,,-4.62,-11,-5,13,3,51.0,57.0,64.0,50
-HEROMOTOCO,Sate_BreakOut,3.1,3.2,8.8,5260.17,5722.0,5465.0,Large Cap,Auto - 2W,,-10.43,-29,-11,-1,4,39.0,59.0,64.0,15
-BAJAJ-AUTO,Core_LowCheat,1.4,1.3,3.1,8862.67,9137.5,,Large Cap,Auto - 2W,,-28.47,3,1,36,-12,56.0,59.0,61.0,4
-BAJFINANCE,Core_BreakOut,2.7,2.6,5.4,959.72,1011.6,,Large Cap,Financials - NBFC,,-8.24,3,-9,-4,12,48.0,55.0,60.0,70
-M&M,Sate_BreakOut,1.5,1.5,1.7,3550.35,3610.8,3500.0,Large Cap,Auto - PV/Trucks,,-4.85,1,-21,-2,7,45.0,57.0,74.0,11
-SRF,Core_BreakOut,1.4,1.4,4.9,2957.0,3102.7,,Large Cap,Chemicals - Specialty,,-6.69,21,18,2,12,68.0,58.0,58.0,12
-KRISHANA,Core_LowCheat,0.8,0.8,7.5,505.09,543.0,,Small Cap,Agrichem - Fertilizers,,-12.28,1,9,-15,9,62.0,58.0,70.0,40
-ACUTAAS,Core_BreakOut,1.5,1.5,5.2,1573.73,1656.0,,Small Cap,Healthcare - Pharma,,-12.93,4,-17,-1,6,46.0,56.0,90.0,24
-HLEGLAS,Core_LowCheat,0.7,0.7,-1.4,464.12,457.85,,Small Cap,Engineering,,-34.44,1,9,-7,7,45.0,49.0,46.0,40
-NEULANDLAB,Core_BreakOut,1.3,1.1,-10.1,16790.0,15100.0,,Small Cap,Healthcare - Pharma,,-23.53,-22,-27,-2,3,36.0,49.0,62.0,2
-FEDERALBNK,Sate_BreakOut,1.6,1.7,12.1,238.48,267.3,243.0,Mid Cap,Financials - Private Bank,,-1.4,4,-13,11,3,71.0,81.0,74.0,175
-NAVINFLUOR,Core_BreakOut,2.2,2.2,7.2,5486.75,5880.5,,Mid Cap,Chemicals - Bulk,,-5.5,-7,-4,9,12,52.0,64.0,66.0,10
-TATVA,Sate_LowCheat,1.1,1.0,3.9,1348.26,1400.2,1320.0,Small Cap,Chemicals - Specialty,,-36.12,-9,-29,11,8,47.0,64.0,54.0,20
-COFORGE,Core_Cheat,1.1,1.0,-3.1,1829.05,1771.7,,Mid Cap,IT - Software/Consulting,,-11.65,-2,-10,7,-1,39.0,51.0,60.0,15
-MCX,Sate_BreakOut,2.2,2.4,16.5,9269.83,10800.0,8980.0,Small Cap,IT - Product/Platform,,-1.17,5,2,11,30,67.0,75.0,77.0,6
-SHRIRAMFIN,Sate_BreakOut,2.6,2.8,14.8,824.89,946.6,800.0,Mid Cap,Financials - NBFC,,-0.34,15,3,12,2,79.0,81.0,72.0,80
-CANBK,Sate_BreakOut,2.1,2.2,11.6,134.43,150.04,124.0,Large Cap,Financials - PSU Bank,,-2.7,13,-17,15,4,59.0,74.0,68.0,400
-IDFCFIRSTB,Sate_LowCheat,2.2,2.2,5.7,80.66,85.28,78.0,Mid Cap,Financials - Private Bank,,-15.31,17,7,10,3,67.0,68.0,62.0,700
-PRECWIRE,Sate_BreakOut,2.1,2.1,7.2,219.7,235.6,215.0,Small Cap,Metals - Copper,,-14.99,4,-22,13,3,50.0,61.0,67.0,240
-SOUTHBANK,Sate_BreakOut,2.9,2.8,2.0,38.65,39.41,36.0,Small Cap,Financials - Private Bank,,-5.38,4,-36,12,7,52.0,69.0,71.0,1900
-PERSISTENT,Core_BreakOut,1.4,1.4,9.8,5941.87,6524.0,,Mid Cap,IT - Software/Consulting,,-3.9,8,1,11,-6,62.0,65.0,68.0,6
-TORNTPHARM,Core_BreakOut,1.5,1.4,4.0,3672.45,3820.4,,Large Cap,Healthcare - Pharma,,-1.59,3,1,7,-4,61.0,64.0,69.0,10
-BANKINDIA,Sate_Cheat,0.7,0.6,-0.2,142.78,142.45,136.0,Mid Cap,Financials - PSU Bank,,-9.81,15,-26,15,3,51.0,64.0,59.0,120
-PHOENIXLTD,Sate_LowCheat,0.7,0.7,4.6,1758.2,1838.3,1700.0,Mid Cap,Real Estate,,-11.13,21,8,17,-11,69.0,65.0,66.0,10
-CIPLA,Core_LowCheat,0.5,0.4,-3.0,1560.0,1512.6,,Large Cap,Healthcare - Pharma,,-11.13,5,3,-9,-11,50.0,48.0,51.0,8
-CUMMINSIND,Sate_BreakOut,1.9,1.8,0.4,4470.3,4490.0,4300.0,Mid Cap,Industrial - Pumps/Engines,,-2.71,-11,-6,40,4,54.0,69.0,75.0,11
-LAURUSLABS,Sate_BreakOut,2.0,2.0,4.8,1013.95,1062.5,970.0,Mid Cap,Healthcare - Pharma,,-0.85,5,2,9,29,69.0,73.0,79.0,50
-NYKAA,Sate_LowCheat,0.3,0.2,0.2,253.0,253.4,241.0,Mid Cap,IT - Product/Platform,,-7.25,4,-17,-3,9,49.0,59.0,62.0,25
-SMLMAH,Sate_LowCheat,0.3,0.3,15.4,3258.1,3759.1,2800.0,Small Cap,Auto - CV,,-4.23,-12,19,4,2,64.0,85.0,100.0,2
-UJJIVANSFB,Sate_LowCheat,0.8,0.8,0.6,53.22,53.53,50.0,Small Cap,Financials - Private Bank,,-15.03,12,-15,12,6,51.0,63.0,62.0,400
-UNOMINDA,Core_BreakOut,0.6,0.6,3.5,1249.31,1292.7,,Mid Cap,Auto - OEM Suppliers,IAS-Sept2025,-6.46,12,2,-10,5,56.0,59.0,65.0,12
-BPCL,Sate_Cheat,1.4,1.4,4.0,357.03,371.15,350.0,Large Cap,Petro - Refineries,,-2.73,15,6,12,3,60.0,67.0,68.0,100
-VINCOFE,Sate_BreakOut,1.3,1.2,-0.7,161.15,160.0,152.0,Small Cap,Agri - Misc,,-8.31,-10,-25,-2,6,49.0,55.0,47.0,200
-SIRCA,Core_BreakOut,0.4,0.4,-2.5,520.5,507.5,,Small Cap,Consumption - Paints,IAS-Sept2025,-5.84,12,2,-6,7,58.0,64.0,65.0,20
-BANKBARODA,Sate_Cheat,0.7,0.7,-0.5,295.2,293.7,280.0,Large Cap,Financials - PSU Bank,,-3.37,8,2,15,3,59.0,68.0,60.0,60
-ICICIGI,Core_LowCheat,0.2,0.2,-4.0,2032.1,1950.3,,Large Cap,Financials - Non-Life,,-15.27,12,-33,-2,-11,43.0,52.0,53.0,3
-KMEW,Sate_BreakOut,0.9,0.5,-42.0,2958.11,1715.8,2791.0,Small Cap,Engineering,,-48.6,-5,-8,-3,4,34.0,41.0,56.0,8
-SBILIFE,Sate_BreakOut,1.3,1.2,0.7,2012.17,2025.5,1950.0,Large Cap,Financials - Life,,-2.93,-8,-26,8,8,58.0,67.0,69.0,16
-TITAN,Core_BreakOut,1.7,1.6,2.4,3847.4,3939.0,,Large Cap,Consumption - Jewelry,,-0.58,19,4,11,3,62.0,64.0,56.0,11
-RAJRATAN,Core_LowCheat,0.8,0.8,3.2,460.08,474.85,,Small Cap,Auto - OEM Suppliers,,-48.94,34,2,10,3,61.0,64.0,40.0,44
-GOLDBEES,Sate_BreakOut,1.2,1.3,9.5,103.36,113.23,3341.0,Gold,Gold ETF,,-0.45,1,19,17,36,74.0,78.0,95.0,300
-MFSL,Sate_BreakOut,1.2,1.1,-0.4,1687.83,1680.6,1639.0,Mid Cap,Financials - Life,,-4.04,1,-16,-1,9,51.0,62.0,72.0,18
-NATIONALUM,Sate_BreakOut,1.7,1.7,8.2,270.93,293.1,260.0,Mid Cap,Metals - Aluminium,,-0.51,15,7,32,2,76.0,77.0,76.0,160
-PRICOLLTD,Sate_BreakOut,2.0,1.9,1.1,640.25,647.5,590.0,Small Cap,Auto - OEM Suppliers,,-6.6,11,4,19,2,60.0,72.0,73.0,80
-CARYSIL,Core_LowCheat,0.3,0.2,-13.8,1057.0,911.4,,Small Cap,Consumption - Appliances,,-20.81,3,-23,-3,5,44.0,52.0,55.0,6
-FIEMIND,Core_BreakOut,1.2,1.2,3.6,2340.56,2424.9,,Small Cap,Auto - OEM Suppliers,,-0.82,6,3,7,8,70.0,74.0,76.0,13
-SUNPHARMA,Core_BreakOut,0.7,0.7,2.2,1731.9,1770.7,,Large Cap,Healthcare - Pharma,,-9.67,-31,-13,12,-10,50.0,57.0,59.0,10
-AUROPHARMA,Sate_LowCheat,0.2,0.2,0.9,1219.0,1229.4,1160.0,Mid Cap,Healthcare - Pharma,,-22.78,13,2,15,-12,60.0,59.0,56.0,5
-APLAPOLLO,Core_Cheat,0.6,0.6,6.7,1754.75,1871.6,,Mid Cap,Metals - Pipe & Tube,,-3.33,9,5,2,3,74.0,64.0,66.0,8
-BSE,Core_Cheat,0.2,0.2,-3.0,2830.87,2747.0,,Small Cap,IT - Product/Platform,,-9.34,7,-18,8,31,52.0,60.0,70.0,2
-DATAPATTNS,Core_LowCheat,0.1,0.1,-14.0,3094.3,2662.5,,Small Cap,Defense - Technology,,-27.15,6,-19,-3,2,46.0,49.0,58.0,1
-LTIM,Core_LowCheat,0.7,0.7,5.4,5856.5,6174.0,,Large Cap,IT - Software/Consulting,,-8.78,-19,-7,33,2,56.0,66.0,61.0,3
-NH,Core_BreakOut,0.3,0.3,-6.5,2010.74,1880.1,,Mid Cap,Healthcare - Hospitals,,-20.68,3,-17,6,11,49.0,54.0,64.0,4
-GMRAIRPORT,Sate_BreakOut,1.2,1.1,-2.9,104.95,101.95,97.0,Mid Cap,Infra - Construction,,-7.62,1,-14,10,2,51.0,61.0,63.0,300
-AIAENG,Core_LowCheat,0.1,0.1,3.2,3776.36,3896.2,,Mid Cap,Metals - Casting/Forging,,-21.29,13,-14,13,1,59.0,71.0,60.0,1
-ADANIPORTS,Sate_Cheat,0.5,0.4,0.7,1495.0,1505.6,1460.0,Large Cap,Infra - Construction,,-7.14,1,-14,12,2,53.0,59.0,52.0,8
-ANURAS,Sate_BreakOut,1.1,1.0,4.6,1265.88,1324.0,1200.0,Small Cap,Chemicals - Specialty,,-1.63,-13,0,4,8,67.0,73.0,67.0,21
-EICHERMOT,Core_BreakOut,0.9,0.8,0.8,7267.7,7328.5,,Large Cap,Auto - 2W,,-0.13,3,2,-2,32,62.0,70.0,80.0,3
-BHARATFORG,Sate_Cheat,0.8,0.8,3.7,1397.0,1448.8,1347.0,Mid Cap,Metals - Casting/Forging,,-19.71,15,2,15,1,61.0,67.0,59.0,15
-BHEL,Sate_Cheat,0.2,0.2,-2.2,289.95,283.6,268.0,Mid Cap,Power - Equipment,,-15.43,3,-22,12,-13,56.0,62.0,61.0,20
-MOTILALOFS,Core_Cheat,0.4,0.4,-3.6,913.65,880.8,,Small Cap,Financials - Broking,,-32.17,14,2,-6,7,45.0,47.0,54.0,12
-PSPPROJECT,Core_BreakOut,0.4,0.4,0.6,897.85,903.5,,Small Cap,Infra - Construction,,-12.27,4,1,15,7,53.0,59.0,68.0,12
-SAFARI,Core_LowCheat,0.2,0.2,-11.3,2481.19,2200.1,,Small Cap,Consumption - Luggage,,-19.84,-32,-12,7,-11,40.0,50.0,55.0,2
-JKTYRE,Sate_Cheat,0.6,0.6,8.3,476.68,516.15,440.0,Small Cap,Auto - Tyres,,-6.82,14,3,16,2,74.0,77.0,65.0,30
-KAPSTON,Sate_BreakOut,0.6,0.5,-4.7,316.0,301.15,285.0,Small Cap,Others,,-15.59,17,-21,12,2,49.0,61.0,76.0,45
-KTKBANK,Sate_LowCheat,0.2,0.2,-2.9,212.4,206.2,175.0,Small Cap,Financials - Private Bank,,-27.65,3,-10,10,-17,58.0,61.0,51.0,20
-MANINDS,Sate_Cheat,0.2,0.1,-16.3,483.51,404.5,422.0,Small Cap,Metals - Pipe & Tube,,-21.26,-11,-14,-2,2,40.0,50.0,57.0,10
-MOTHERSON,Sate_Cheat,1.0,0.9,0.9,119.0,120.06,113.0,Large Cap,Auto - Replacement,,-17.01,-10,-4,16,1,59.0,69.0,64.0,210
-TVSSRICHAK,Sate_LowCheat,0.2,0.2,-3.9,4360.0,4188.1,4005.0,Small Cap,Auto - Tyres,,-17.83,3,-16,37,3,43.0,62.0,60.0,1
-UNIVCABLES,Sate_BreakOut,0.7,0.7,-3.8,924.95,889.8,867.0,Small Cap,Power - Wiring,,-11.73,1,-14,7,3,53.0,62.0,64.0,20
-USHAMART,Sate_BreakOut,0.5,0.5,6.8,426.3,455.3,410.0,Small Cap,Power - Wiring,,-8.41,1,11,-5,4,56.0,62.0,63.0,30
-BSOFT,Sate_LowCheat,0.2,0.2,6.0,431.1,456.8,378.0,Small Cap,IT - Software/Consulting,,-47.0,1,16,10,-16,74.0,65.0,50.0,12
-HINDCOPPER,Sate_Cheat,1.0,1.1,11.7,369.67,412.8,351.0,Small Cap,Metals - Copper,,-0.72,6,17,16,3,74.0,77.0,69.0,70
-INFOBEAN,Sate_Cheat,0.2,0.2,11.0,718.4,797.35,581.0,Small Cap,IT - Software/Consulting,,-6.57,38,13,4,6,71.0,74.0,68.0,7
-SHRIPISTON,Sate_BreakOut,0.2,0.2,12.3,2847.4,3196.5,2591.0,Small Cap,Auto - OEM Suppliers,,-1.94,-9,13,3,5,69.0,75.0,80.0,2
-GMDCLTD,Sate_Cheat,0.4,0.4,1.3,527.34,534.0,466.0,Small Cap,Metals - Misc,,-17.97,15,8,-6,4,51.0,55.0,65.0,20
-RACLGEAR,Sate_LowCheat,0.3,0.3,-2.7,1065.43,1037.1,1000.0,Small Cap,Auto - OEM Suppliers,,-23.05,-6,1,-5,6,47.0,51.0,41.0,8
-IOC,Sate_Cheat,0.4,0.4,-2.0,167.24,163.95,160.0,Large Cap,Petro - Refineries,,-16.69,-5,-4,15,1,49.0,61.0,63.0,60
-RICOAUTO,Sate_LowCheat,0.2,0.2,3.9,122.14,126.87,100.0,Small Cap,Auto - OEM Suppliers,,-19.19,15,6,6,2,63.0,69.0,64.0,40
-BECTORFOOD,Core_Cheat,0.2,0.2,-12.0,271.05,238.5,,Small Cap,Consumption - FMCG,,-45.8,-10,-5,-2,-11,36.0,39.0,48.0,20
-CARBORUNIV,Core_LowCheat,0.1,0.1,-2.2,860.93,842.05,,Mid Cap,Engineering,,-54.26,-9,-2,3,-13,41.0,39.0,43.0,2
-CCL,Core_Cheat,0.4,0.4,-2.0,997.4,977.1,,Small Cap,Agri - Tea/Coffee,,-9.06,3,-22,7,8,50.0,58.0,68.0,10
-ESABINDIA,Core_Cheat,0.5,0.5,0.4,6232.01,6260.0,,Small Cap,Engineering,,-10.56,-10,-1,6,1,68.0,71.0,61.0,2
-HDFCAMC,Core_Cheat,0.3,0.3,-0.1,2700.09,2698.1,,Mid Cap,Financials - AMC,,-9.07,7,9,-13,8,54.0,53.0,65.0,3
-LT,Core_Cheat,0.2,0.2,2.4,3984.85,4081.0,,Large Cap,Infra - Construction,,-1.43,5,-16,34,2,60.0,67.0,69.0,1
-MANORAMA,Core_Cheat,0.3,0.3,-0.9,1363.36,1350.6,,Small Cap,Agri - Misc,,-23.26,-9,26,-21,-1,52.0,49.0,67.0,6
-SIEMENS,Core_Cheat,0.3,0.2,-7.0,3358.99,3122.8,,Large Cap,Power - Equipment,,-34.56,1,-11,33,-11,44.0,48.0,51.0,2
-HINDZINC,Sate_Cheat,0.2,0.2,4.3,587.9,613.25,,Large Cap,Metals - Misc,,-24.07,19,18,16,1,82.0,74.0,67.0,10
-ICICIAMC,Sate_BreakOut,0.5,0.6,20.5,2165.0,2609.9,,Large Cap,Financials - AMC,,-2.01,3,2,1,0,100.0,100.0,,6
-LUPIN,Sate_LowCheat,0.2,0.2,-0.1,2121.5,2118.8,,Mid Cap,Healthcare - Pharma,,-11.82,14,5,17,-10,62.0,60.0,64.0,2
-NAM-INDIA,Sate_Cheat,0.3,0.3,0.6,900.0,905.2,,Small Cap,Financials - AMC,,-8.32,17,8,-8,7,61.0,60.0,73.0,8
-PAYTM,Sate_Cheat,0.2,0.2,-3.1,1371.0,1328.3,,Mid Cap,IT - Product/Platform,,-3.87,5,1,-6,15,55.0,63.0,70.0,4
+MON100,Core_BreakOut,4.4,5.2,27.8,183.86,234.92,,Index,NASDAQ ETF,,-9.23,10,6,-3,6,50.0,62.0,72.0,600
+CUB,Core_BreakOut,3.2,4.2,41.1,203.36,287.0,,Small Cap,Financials - Private Bank,,-0.35,14,1,10,25,66.0,80.0,68.0,400
+POLYCAB,Core_BreakOut,2.4,2.5,11.4,6844.4,7622.0,,Mid Cap,Power - Wiring,,-3.56,5,3,-6,3,58.0,61.0,67.0,9
+PRIVISCL,Core_BreakOut,2.9,3.3,24.7,2577.6,3214.8,,Small Cap,Chemicals - Specialty,,-6.56,3,1,10,21,57.0,68.0,72.0,28
+TVSMOTOR,Sate_BreakOut,3.1,3.4,18.1,3121.16,3685.6,3341.0,Large Cap,Auto - 2W,,-1.32,3,2,-7,7,59.0,69.0,78.0,25
+CHOLAFIN,Core_BreakOut,3.2,3.1,3.3,1633.98,1688.2,,Large Cap,Financials - MFI,,-5.26,-11,-5,13,3,49.0,56.0,63.0,50
+HEROMOTOCO,Sate_BreakOut,3.1,3.2,8.5,5260.17,5706.5,5465.0,Large Cap,Auto - 2W,,-10.68,-29,-11,-1,4,38.0,58.0,64.0,15
+BAJAJ-AUTO,Core_LowCheat,1.4,1.3,2.9,8862.67,9117.5,,Large Cap,Auto - 2W,,-28.62,3,1,36,-12,55.0,58.0,61.0,4
+BAJFINANCE,Core_BreakOut,2.7,2.6,5.0,959.72,1007.3,,Large Cap,Financials - NBFC,,-8.63,3,-9,-4,12,46.0,54.0,59.0,70
+M&M,Sate_BreakOut,1.5,1.5,1.6,3550.35,3608.8,3500.0,Large Cap,Auto - PV/Trucks,,-4.91,1,-21,-2,7,44.0,57.0,74.0,11
+SRF,Core_BreakOut,1.4,1.4,4.8,2957.0,3100.2,,Large Cap,Chemicals - Specialty,,-6.76,21,18,2,12,68.0,58.0,58.0,12
+KRISHANA,Core_LowCheat,0.8,0.8,7.7,505.09,544.0,,Small Cap,Agrichem - Fertilizers,,-12.12,1,9,-15,9,63.0,59.0,70.0,40
+ACUTAAS,Core_BreakOut,1.5,1.5,4.8,1573.73,1649.0,,Small Cap,Healthcare - Pharma,,-13.3,4,-17,-1,6,45.0,56.0,90.0,24
+HLEGLAS,Core_LowCheat,0.7,0.7,-1.5,464.12,457.25,,Small Cap,Engineering,,-34.53,1,9,-7,7,44.0,49.0,46.0,40
+NEULANDLAB,Core_BreakOut,1.3,1.1,-9.4,16790.0,15214.0,,Small Cap,Healthcare - Pharma,,-22.96,-22,-27,-2,3,37.0,50.0,62.0,2
+FEDERALBNK,Sate_BreakOut,1.6,1.7,11.7,238.48,266.35,243.0,Mid Cap,Financials - Private Bank,,-1.75,4,-13,11,3,69.0,80.0,73.0,175
+NAVINFLUOR,Core_BreakOut,2.2,2.2,7.2,5486.75,5881.0,,Mid Cap,Chemicals - Bulk,,-5.5,-7,-4,9,12,52.0,64.0,66.0,10
+TATVA,Sate_LowCheat,1.1,1.0,3.3,1348.26,1393.0,1320.0,Small Cap,Chemicals - Specialty,,-36.45,-9,-29,11,8,46.0,63.0,54.0,20
+COFORGE,Core_Cheat,1.1,1.0,-3.2,1829.05,1771.1,,Mid Cap,IT - Software/Consulting,,-11.68,-2,-10,7,-1,39.0,51.0,60.0,15
+MCX,Sate_BreakOut,2.2,2.4,16.3,9269.83,10782.0,8980.0,Small Cap,IT - Product/Platform,,-1.34,5,2,11,30,67.0,75.0,77.0,6
+SHRIRAMFIN,Sate_BreakOut,2.6,2.8,14.7,824.89,946.55,800.0,Mid Cap,Financials - NBFC,,-0.34,15,3,12,2,79.0,81.0,72.0,80
+CANBK,Sate_BreakOut,2.1,2.2,11.5,134.43,149.86,124.0,Large Cap,Financials - PSU Bank,,-2.82,13,-17,15,4,58.0,74.0,68.0,400
+IDFCFIRSTB,Sate_LowCheat,2.2,2.2,5.4,80.66,85.05,78.0,Mid Cap,Financials - Private Bank,,-15.54,17,7,10,3,66.0,68.0,62.0,700
+PRECWIRE,Sate_BreakOut,2.1,2.1,7.4,219.7,236.0,215.0,Small Cap,Metals - Copper,,-14.85,4,-22,13,3,50.0,61.0,67.0,240
+SOUTHBANK,Sate_BreakOut,2.9,2.8,1.8,38.65,39.35,36.0,Small Cap,Financials - Private Bank,,-5.52,4,-36,12,7,52.0,68.0,71.0,1900
+PERSISTENT,Core_BreakOut,1.4,1.4,9.7,5941.87,6515.5,,Mid Cap,IT - Software/Consulting,,-4.03,8,1,11,-6,61.0,65.0,68.0,6
+TORNTPHARM,Core_BreakOut,1.5,1.4,4.0,3672.45,3820.3,,Large Cap,Healthcare - Pharma,,-1.59,3,1,7,-4,61.0,64.0,69.0,10
+BANKINDIA,Sate_Cheat,0.7,0.6,-0.5,142.78,142.12,136.0,Mid Cap,Financials - PSU Bank,,-10.02,15,-26,15,3,50.0,64.0,59.0,120
+PHOENIXLTD,Sate_LowCheat,0.7,0.7,4.5,1758.2,1837.9,1700.0,Mid Cap,Real Estate,,-11.15,21,8,17,-11,69.0,65.0,66.0,10
+CIPLA,Core_LowCheat,0.5,0.4,-3.3,1560.0,1509.1,,Large Cap,Healthcare - Pharma,,-11.34,5,3,-9,-11,49.0,47.0,51.0,8
+CUMMINSIND,Sate_BreakOut,1.9,1.8,0.4,4470.3,4490.1,4300.0,Mid Cap,Industrial - Pumps/Engines,,-2.71,-11,-6,40,4,54.0,69.0,75.0,11
+LAURUSLABS,Sate_BreakOut,2.0,2.0,4.1,1013.95,1055.4,970.0,Mid Cap,Healthcare - Pharma,,-1.51,5,2,9,29,66.0,73.0,79.0,50
+NYKAA,Sate_LowCheat,0.3,0.2,0.2,253.0,253.55,241.0,Mid Cap,IT - Product/Platform,,-7.2,4,-17,-3,9,49.0,59.0,62.0,25
+SMLMAH,Sate_LowCheat,0.3,0.3,16.5,3258.1,3797.0,2800.0,Small Cap,Auto - CV,,-3.26,-12,19,4,2,66.0,85.0,100.0,2
+UJJIVANSFB,Sate_LowCheat,0.8,0.8,-0.0,53.22,53.21,50.0,Small Cap,Financials - Private Bank,,-15.54,12,-15,12,6,49.0,62.0,61.0,400
+UNOMINDA,Core_BreakOut,0.6,0.6,3.5,1249.31,1292.5,,Mid Cap,Auto - OEM Suppliers,IAS-Sept2025,-6.48,12,2,-10,5,56.0,59.0,65.0,12
+BPCL,Sate_Cheat,1.4,1.4,3.8,357.03,370.45,350.0,Large Cap,Petro - Refineries,,-2.91,15,6,12,3,59.0,67.0,68.0,100
+VINCOFE,Sate_BreakOut,1.3,1.2,-1.6,161.15,158.51,152.0,Small Cap,Agri - Misc,,-9.16,-10,-25,-2,6,47.0,55.0,47.0,200
+SIRCA,Core_BreakOut,0.4,0.4,-4.7,520.5,496.0,,Small Cap,Consumption - Paints,IAS-Sept2025,-7.98,12,2,-6,7,52.0,61.0,63.0,20
+BANKBARODA,Sate_Cheat,0.7,0.6,-0.9,295.2,292.6,280.0,Large Cap,Financials - PSU Bank,,-3.73,8,2,15,3,58.0,68.0,60.0,60
+ICICIGI,Core_LowCheat,0.2,0.2,-3.9,2032.1,1952.0,,Large Cap,Financials - Non-Life,,-15.2,12,-33,-2,-11,44.0,52.0,53.0,3
+KMEW,Sate_BreakOut,0.9,0.5,-42.6,2958.11,1696.6,2791.0,Small Cap,Engineering,,-49.17,-5,-8,-3,4,33.0,41.0,56.0,8
+SBILIFE,Sate_BreakOut,1.3,1.2,0.8,2012.17,2028.7,1950.0,Large Cap,Financials - Life,,-2.77,-8,-26,8,8,58.0,68.0,69.0,16
+TITAN,Core_BreakOut,1.7,1.6,2.1,3847.4,3929.9,,Large Cap,Consumption - Jewelry,,-0.81,19,4,11,3,61.0,64.0,56.0,11
+RAJRATAN,Core_LowCheat,0.8,0.8,2.8,460.08,473.15,,Small Cap,Auto - OEM Suppliers,,-49.12,34,2,10,3,61.0,64.0,40.0,44
+GOLDBEES,Sate_BreakOut,1.2,1.3,9.4,103.36,113.04,3341.0,Gold,Gold ETF,,-0.62,1,19,17,36,73.0,78.0,95.0,300
+MFSL,Sate_BreakOut,1.2,1.1,-0.6,1687.83,1678.0,1639.0,Mid Cap,Financials - Life,,-4.19,1,-16,-1,9,50.0,62.0,72.0,18
+NATIONALUM,Sate_BreakOut,1.7,1.7,8.0,270.93,292.65,260.0,Mid Cap,Metals - Aluminium,,-0.66,15,7,32,2,76.0,77.0,76.0,160
+PRICOLLTD,Sate_BreakOut,2.0,1.9,0.4,640.25,642.5,590.0,Small Cap,Auto - OEM Suppliers,,-7.32,11,4,19,2,58.0,70.0,73.0,80
+CARYSIL,Core_LowCheat,0.3,0.2,-13.6,1057.0,913.0,,Small Cap,Consumption - Appliances,,-20.67,3,-23,-3,5,44.0,52.0,55.0,6
+FIEMIND,Core_BreakOut,1.2,1.2,3.0,2340.56,2410.3,,Small Cap,Auto - OEM Suppliers,,-1.42,6,3,7,8,68.0,74.0,76.0,13
+SUNPHARMA,Core_BreakOut,0.7,0.7,2.0,1731.9,1765.9,,Large Cap,Healthcare - Pharma,,-9.92,-31,-13,12,-10,48.0,56.0,59.0,10
+AUROPHARMA,Sate_LowCheat,0.2,0.2,0.9,1219.0,1230.5,1160.0,Mid Cap,Healthcare - Pharma,,-22.71,13,2,15,-12,60.0,59.0,56.0,5
+APLAPOLLO,Core_Cheat,0.6,0.6,6.9,1754.75,1875.1,,Mid Cap,Metals - Pipe & Tube,,-3.15,9,5,2,3,74.0,64.0,66.0,8
+BSE,Core_Cheat,0.2,0.2,-3.2,2830.87,2739.2,,Small Cap,IT - Product/Platform,,-9.6,7,-18,8,31,52.0,59.0,70.0,2
+DATAPATTNS,Core_LowCheat,0.1,0.1,-14.2,3094.3,2654.0,,Small Cap,Defense - Technology,,-27.39,6,-19,-3,2,46.0,49.0,58.0,1
+LTIM,Core_LowCheat,0.7,0.7,5.6,5856.5,6182.5,,Large Cap,IT - Software/Consulting,,-8.65,-19,-7,33,2,57.0,66.0,61.0,3
+NH,Core_BreakOut,0.3,0.3,-6.8,2010.74,1874.1,,Mid Cap,Healthcare - Hospitals,,-20.93,3,-17,6,11,48.0,53.0,63.0,4
+GMRAIRPORT,Sate_BreakOut,1.2,1.1,-2.9,104.95,101.91,97.0,Mid Cap,Infra - Construction,,-7.66,1,-14,10,2,51.0,61.0,63.0,300
+AIAENG,Core_LowCheat,0.1,0.1,4.1,3776.36,3929.9,,Mid Cap,Metals - Casting/Forging,,-20.61,13,-14,13,1,61.0,71.0,61.0,1
+ADANIPORTS,Sate_Cheat,0.5,0.4,0.4,1495.0,1501.0,1460.0,Large Cap,Infra - Construction,,-7.43,1,-14,12,2,52.0,59.0,52.0,8
+ANURAS,Sate_BreakOut,1.1,1.0,4.6,1265.88,1323.6,1200.0,Small Cap,Chemicals - Specialty,,-1.66,-13,-1,4,8,67.0,73.0,67.0,21
+EICHERMOT,Core_BreakOut,0.9,0.8,0.7,7267.7,7318.0,,Large Cap,Auto - 2W,,-0.27,3,2,-2,32,62.0,70.0,80.0,3
+BHARATFORG,Sate_Cheat,0.8,0.8,3.7,1397.0,1448.9,1347.0,Mid Cap,Metals - Casting/Forging,,-19.71,15,2,15,1,61.0,67.0,59.0,15
+BHEL,Sate_Cheat,0.2,0.2,-2.4,289.95,282.85,268.0,Mid Cap,Power - Equipment,,-15.66,3,-22,12,-13,56.0,62.0,61.0,20
+MOTILALOFS,Core_Cheat,0.4,0.4,-4.1,913.65,875.85,,Small Cap,Financials - Broking,,-32.55,14,2,-6,7,44.0,46.0,54.0,12
+PSPPROJECT,Core_BreakOut,0.4,0.4,-0.1,897.85,897.0,,Small Cap,Infra - Construction,,-12.9,4,1,15,7,52.0,59.0,67.0,12
+SAFARI,Core_LowCheat,0.2,0.2,-11.6,2481.19,2193.8,,Small Cap,Consumption - Luggage,,-20.07,-32,-12,7,-11,39.0,49.0,55.0,2
+JKTYRE,Sate_Cheat,0.6,0.6,7.3,476.68,511.4,440.0,Small Cap,Auto - Tyres,,-7.68,14,3,16,2,73.0,76.0,65.0,30
+KAPSTON,Sate_BreakOut,0.6,0.5,-4.7,316.0,301.05,285.0,Small Cap,Others,,-15.61,17,-21,12,2,49.0,61.0,76.0,45
+KTKBANK,Sate_LowCheat,0.2,0.2,-3.3,212.4,205.36,175.0,Small Cap,Financials - Private Bank,,-27.94,3,-10,10,-17,57.0,60.0,50.0,20
+MANINDS,Sate_Cheat,0.2,0.1,-16.5,483.51,403.75,422.0,Small Cap,Metals - Pipe & Tube,,-21.4,-11,-14,-2,2,40.0,50.0,57.0,10
+MOTHERSON,Sate_Cheat,1.0,0.9,1.0,119.0,120.21,113.0,Large Cap,Auto - Replacement,,-16.9,-10,-4,16,1,59.0,69.0,64.0,210
+TVSSRICHAK,Sate_LowCheat,0.2,0.2,-4.6,4360.0,4160.0,4005.0,Small Cap,Auto - Tyres,,-18.38,3,-16,37,3,42.0,61.0,60.0,1
+UNIVCABLES,Sate_BreakOut,0.7,0.7,-4.3,924.95,885.0,867.0,Small Cap,Power - Wiring,,-12.2,1,-14,7,3,52.0,61.0,63.0,20
+USHAMART,Sate_BreakOut,0.5,0.5,8.1,426.3,460.7,410.0,Small Cap,Power - Wiring,,-7.32,1,11,-5,4,59.0,64.0,64.0,30
+BSOFT,Sate_LowCheat,0.2,0.2,5.8,431.1,456.15,378.0,Small Cap,IT - Software/Consulting,,-47.07,1,16,10,-16,73.0,64.0,50.0,12
+HINDCOPPER,Sate_Cheat,1.0,1.1,10.9,369.67,409.95,351.0,Small Cap,Metals - Copper,,-1.41,6,17,16,3,73.0,77.0,69.0,70
+INFOBEAN,Sate_Cheat,0.2,0.2,10.8,718.4,795.75,581.0,Small Cap,IT - Software/Consulting,,-6.76,38,13,4,6,70.0,74.0,67.0,7
+SHRIPISTON,Sate_BreakOut,0.2,0.2,11.7,2847.4,3181.5,2591.0,Small Cap,Auto - OEM Suppliers,,-2.4,-9,13,3,5,69.0,75.0,79.0,2
+GMDCLTD,Sate_Cheat,0.4,0.4,0.8,527.34,531.8,466.0,Small Cap,Metals - Misc,,-18.31,15,8,-6,4,51.0,55.0,65.0,20
+RACLGEAR,Sate_LowCheat,0.3,0.3,-2.8,1065.43,1035.1,1000.0,Small Cap,Auto - OEM Suppliers,,-23.2,-6,1,-5,6,47.0,51.0,41.0,8
+IOC,Sate_Cheat,0.4,0.4,-2.3,167.24,163.38,160.0,Large Cap,Petro - Refineries,,-16.98,-5,-4,15,1,48.0,61.0,63.0,60
+RICOAUTO,Sate_LowCheat,0.2,0.2,4.1,122.14,127.2,100.0,Small Cap,Auto - OEM Suppliers,,-18.98,15,6,6,2,64.0,69.0,64.0,40
+BECTORFOOD,Core_Cheat,0.2,0.2,-11.6,271.05,239.5,,Small Cap,Consumption - FMCG,,-45.57,-10,-5,-2,-11,37.0,39.0,48.0,20
+CARBORUNIV,Core_LowCheat,0.1,0.1,-2.1,860.93,843.05,,Mid Cap,Engineering,,-54.21,-9,-2,3,-13,41.0,39.0,43.0,2
+CCL,Core_Cheat,0.4,0.4,-2.3,997.4,974.3,,Small Cap,Agri - Tea/Coffee,,-9.32,-1,-22,7,8,50.0,58.0,68.0,10
+ESABINDIA,Core_Cheat,0.5,0.5,-0.1,6232.01,6226.5,,Small Cap,Engineering,,-11.04,-10,-1,6,1,66.0,71.0,60.0,2
+HDFCAMC,Core_Cheat,0.3,0.3,0.0,2700.09,2701.0,,Mid Cap,Financials - AMC,,-8.97,7,9,-13,8,54.0,53.0,65.0,3
+LT,Core_Cheat,0.2,0.2,2.3,3984.85,4074.6,,Large Cap,Infra - Construction,,-1.58,5,-16,34,2,59.0,67.0,68.0,1
+MANORAMA,Core_Cheat,0.3,0.3,-0.6,1363.36,1354.9,,Small Cap,Agri - Misc,,-23.02,-9,26,-21,-1,53.0,50.0,68.0,6
+SIEMENS,Core_Cheat,0.3,0.2,-7.1,3358.99,3120.8,,Large Cap,Power - Equipment,,-34.61,1,-11,33,-11,43.0,48.0,51.0,2
+HINDZINC,Sate_Cheat,0.2,0.2,3.3,587.9,607.15,,Large Cap,Metals - Misc,,-24.83,19,18,16,1,81.0,73.0,66.0,10
+ICICIAMC,Sate_BreakOut,0.5,0.6,20.4,2165.0,2607.1,,Large Cap,Financials - AMC,,-2.11,3,2,1,0,99.0,100.0,,6
+LUPIN,Sate_LowCheat,0.2,0.2,-0.3,2121.5,2114.5,,Mid Cap,Healthcare - Pharma,,-12.0,14,5,17,-10,61.0,60.0,64.0,2
+NAM-INDIA,Sate_Cheat,0.3,0.3,0.3,900.0,902.7,,Small Cap,Financials - AMC,,-8.57,17,8,-8,7,60.0,60.0,73.0,8
+PAYTM,Sate_Cheat,0.2,0.2,-3.4,1371.0,1324.1,,Mid Cap,IT - Product/Platform,,-4.18,5,1,-6,15,54.0,63.0,70.0,4
