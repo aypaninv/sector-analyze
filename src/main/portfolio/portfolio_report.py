@@ -4,6 +4,10 @@ import os
 
 
 def merge_files(stock_file: str, technical_file: str, output_file: str):
+
+    # -----------------------------
+    # Read inputs
+    # -----------------------------
     df_stock = pd.read_csv(stock_file)
     df_tech = pd.read_csv(technical_file)
 
@@ -13,6 +17,9 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     if "Symbol" not in df_stock.columns or "Symbol" not in df_tech.columns:
         raise ValueError("Both input files must contain 'Symbol' column")
 
+    # -----------------------------
+    # Merge
+    # -----------------------------
     df = pd.merge(df_stock, df_tech, on="Symbol", how="left")
 
     # -----------------------------
@@ -35,6 +42,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
             )
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
+    # Ensure LastClose exists
     if "LastClose" not in df.columns and "Close" in df.columns:
         df.rename(columns={"Close": "LastClose"}, inplace=True)
 
@@ -65,7 +73,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         df["CC"] = pd.NA
 
     # -----------------------------
-    # Profit / Loss % (PnL)  ✅ NEW
+    # Profit / Loss % (PnL)
     # -----------------------------
     if {"AvgPrice", "LastClose"}.issubset(df.columns):
         df["PnL"] = (
@@ -82,7 +90,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
             df[rsi] = df[rsi].round(0)
 
     # -----------------------------
-    # Rename headers
+    # Rename MACD / RSI headers
     # -----------------------------
     df.rename(columns={
         "Day_MACD": "D_MACD",
@@ -93,14 +101,36 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         "Month_RSI": "M_RSI",
     }, inplace=True)
 
+    # -----------------------------
+    # Folio rule: append _Low
+    # -----------------------------
+    if {"Folio", "W_MACD", "M_MACD"}.issubset(df.columns):
+
+        def update_folio(row):
+            folio = str(row["Folio"]) if pd.notna(row["Folio"]) else ""
+            w = row["W_MACD"]
+            m = row["M_MACD"]
+
+            if (
+                (pd.notna(w) and w <= 0) or
+                (pd.notna(m) and m <= 0)
+            ):
+                if folio and not folio.endswith("_Low"):
+                    return f"{folio}_Low"
+            return folio
+
+        df["Folio"] = df.apply(update_folio, axis=1)
+
+    # -----------------------------
     # Drop helper columns
+    # -----------------------------
     df.drop(
         columns=[c for c in ["InvestedValue", "CurrentValue"] if c in df.columns],
         inplace=True
     )
 
     # -----------------------------
-    # Column order
+    # Final column order
     # -----------------------------
     desired_order = [
         "Symbol", "Folio", "IC", "CC", "PnL",
@@ -115,16 +145,27 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     remaining = [c for c in df.columns if c not in ordered]
     df = df[ordered + remaining]
 
+    # -----------------------------
+    # Write output
+    # -----------------------------
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     df.to_csv(output_file, index=False)
+
     print(f"[OK] Portfolio report generated: {output_file}")
+    print(f"[INFO] Rows: {len(df)}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Generate portfolio report with capital, PnL, and MACD-based folio tagging"
+    )
     parser.add_argument("--stock-file", required=True)
     parser.add_argument("--technical-file", required=True)
     parser.add_argument("--output", required=True)
     args = parser.parse_args()
 
-    merge_files(args.stock_file, args.technical_file, args.output)
+    merge_files(
+        stock_file=args.stock_file,
+        technical_file=args.technical_file,
+        output_file=args.output
+    )
