@@ -98,27 +98,14 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* ===== Canonical column order (UPDATED with PnL) ===== */
+/* ===== Canonical column order ===== */
 const COLUMN_ORDER = [
-  "Symbol",
-  "Folio",
-  "IC",
-  "CC",
-  "PnL",
-  "AvgPrice",
-  "LastClose",
-  "StopLoss",
-  "MarketCap",
-  "Sector",
-  "Notes",
-  "DD_High",
-  "4H_MACD",
-  "D_MACD",
-  "W_MACD",
-  "M_MACD",
-  "D_RSI",
-  "W_RSI",
-  "M_RSI"
+  "Symbol","Folio","IC","CC","PnL",
+  "AvgPrice","LastClose","StopLoss",
+  "MarketCap","Sector","Notes",
+  "DD_High","4H_MACD",
+  "D_MACD","W_MACD","M_MACD",
+  "D_RSI","W_RSI","M_RSI"
 ];
 
 let rawData = [];
@@ -144,16 +131,17 @@ function buildTabs() {
 
   /* Strength (default) */
   addTab("Strength", () => {
-    const filtered = rawData.filter(d => {
-      const v = parseFloat(d.D_MACD);
-      return !isNaN(v) && v >= 1 && v <= 5;
-    });
-    renderTable(filtered);
+    renderAndDefaultSort(
+      rawData.filter(d => {
+        const v = parseFloat(d.D_MACD);
+        return !isNaN(v) && v >= 1 && v <= 5;
+      })
+    );
   });
 
   /* Exit */
   addTab("EXIT", () => {
-    renderTable(
+    renderAndDefaultSort(
       rawData.filter(d =>
         d.StopLoss &&
         !isNaN(parseFloat(d.LastClose)) &&
@@ -162,16 +150,31 @@ function buildTabs() {
     );
   });
 
-  /* Portfolio */
-  addTab("Portfolio", () => {
-    renderTable([...rawData]);
+  /* Core Portfolio */
+  addTab("CorePortfolio", () => {
+    renderAndDefaultSort(
+      rawData.filter(d =>
+        d.Folio && d.Folio.includes("Core_")
+      )
+    );
   });
 
-  /* Folio tabs */
+  /* Sate Portfolio */
+  addTab("SatePortfolio", () => {
+    renderAndDefaultSort(
+      rawData.filter(d =>
+        d.Folio && d.Folio.includes("Sate_")
+      )
+    );
+  });
+
+  /* Individual Folio tabs */
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
     .forEach(folio =>
       addTab(folio, () => {
-        renderTable(rawData.filter(d => d.Folio === folio));
+        renderAndDefaultSort(
+          rawData.filter(d => d.Folio === folio)
+        );
       })
     );
 }
@@ -189,8 +192,14 @@ function addTab(label, action) {
 }
 
 /* ---------- Table ---------- */
-function renderTable(data) {
+function renderAndDefaultSort(data) {
   currentData = [...data];
+  sortState = {};               // reset user sort
+  defaultSortByDMACD();         // apply default sort
+  renderTable(currentData);
+}
+
+function renderTable(data) {
   const table = document.getElementById("dataTable");
   table.innerHTML = "";
   if (!data.length) return;
@@ -224,10 +233,9 @@ function renderRows(data) {
     COLUMN_ORDER.forEach(h => {
       if (!(h in r)) return;
 
-      const td = document.createElement("td");
       let v = r[h];
+      const td = document.createElement("td");
 
-      /* RSI: force 0 decimals */
       if (h.endsWith("_RSI") && v !== "") {
         v = Math.round(parseFloat(v));
       }
@@ -254,6 +262,17 @@ function renderRows(data) {
 }
 
 /* ---------- Sorting ---------- */
+function defaultSortByDMACD() {
+  currentData.sort((a, b) => {
+    const x = parseFloat(a.D_MACD);
+    const y = parseFloat(b.D_MACD);
+    if (isNaN(x) && isNaN(y)) return 0;
+    if (isNaN(x)) return 1;
+    if (isNaN(y)) return -1;
+    return x - y; // ascending
+  });
+}
+
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
