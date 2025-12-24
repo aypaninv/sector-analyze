@@ -3,7 +3,12 @@ name: Portfolio Report
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 3-10 * * 1-5"
+    # Every hour at :00 (04:00–10:00 UTC → 9:30–15:30 IST)
+    - cron: "0 4-10 * * 1-5"
+
+    # Every hour at :30 (03:30–10:30 UTC → 9:00–16:00 IST)
+    - cron: "30 3-10 * * 1-5"
+
 
 jobs:
   build:
