@@ -109,10 +109,12 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         df["LT_days"] = pd.NA
 
     # -----------------------------
-    # LT_Pert calculation
+    # LT_Pert (ABSOLUTE % CHANGE) ✅
     # -----------------------------
     if {"LT_Price", "CurPrice"}.issubset(df.columns):
-        df["LT_Pert"] = ((df["CurPrice"] / df["LT_Price"]) * 100).round(1)
+        df["LT_Pert"] = (
+            ((df["CurPrice"] - df["LT_Price"]) / df["LT_Price"]) * 100
+        ).round(1)
     else:
         df["LT_Pert"] = pd.NA
 
@@ -163,7 +165,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     )
 
     # -----------------------------
-    # Final column order (as requested)
+    # Final column order
     # -----------------------------
     desired_order = [
         "Symbol", "Folio", "IC", "CC", "PnL",
