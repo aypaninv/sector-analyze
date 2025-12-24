@@ -109,12 +109,13 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* Column order aligned with Python output */
+/* ---------- Column Order (MATCHES PYTHON) ---------- */
 const COLUMN_ORDER = [
-  "Symbol","Folio","IC","CC","PnL",
+  "Symbol","Folio",
+  "IC","CC","PnL","DD_High",
   "LT_days","LT_Pert",
-  "DD_High","4H_MACD",
-  "D_MACD","W_MACD","M_MACD",
+  "4H_MACD","D_MACD",
+  "W_MACD","M_MACD",
   "W_RSI","M_RSI",
   "AvgPrice","StopLoss","CurPrice",
   "Sector","MarketCap","Notes"
@@ -266,10 +267,12 @@ function sortBy(col) {
   renderTable(currentData);
 }
 
-/* ---------- TradingView ---------- */
+/* ---------- TradingView (FIXED) ---------- */
 function openChart(symbol) {
+  const safeSymbol = encodeURIComponent(symbol);
+
   window.open(
-    `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`,
+    `https://in.tradingview.com/chart/?symbol=NSE:${safeSymbol}`,
     "_blank",
     "width=1300,height=900,noopener,noreferrer"
   );
@@ -309,7 +312,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click(); // default: EXIT
+    document.querySelector(".tab").click();  // default EXIT
     updateLastRunTime();
   });
 </script>
