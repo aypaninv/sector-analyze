@@ -12,6 +12,16 @@ body {
   font-size: 13px;
 }
 
+/* ---------- Update Time ---------- */
+.update-time {
+  position: fixed;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #bbb;
+  z-index: 999;
+}
+
 /* ---------- Top Tabs ---------- */
 .topbar {
   display: flex;
@@ -89,6 +99,9 @@ td.num  { text-align: right; }
 
 <body>
 
+<!-- Last updated time -->
+<div class="update-time" id="updateTime"></div>
+
 <div class="topbar" id="topTabs"></div>
 
 <div class="content">
@@ -105,7 +118,7 @@ const COLUMN_ORDER = [
   "MarketCap","Sector","Notes",
   "DD_High","4H_MACD",
   "D_MACD","W_MACD","M_MACD",
-  "W_RSI","M_RSI"
+  "D_RSI","W_RSI","M_RSI"
 ];
 
 let rawData = [];
@@ -134,10 +147,7 @@ function buildTabs() {
     renderAndDefaultSort(
       rawData.filter(d => {
         const v = parseFloat(d.D_MACD);
-        return (
-          d.Folio && d.Folio.includes("Sate") &&
-          !isNaN(v) && v >= 1 && v <= 5
-        );
+        return d.Folio && d.Folio.includes("Sate") && !isNaN(v) && v >= 1 && v <= 5;
       })
     );
   });
@@ -147,10 +157,7 @@ function buildTabs() {
     renderAndDefaultSort(
       rawData.filter(d => {
         const v = parseFloat(d.D_MACD);
-        return (
-          d.Folio && d.Folio.includes("Core") &&
-          !isNaN(v) && v >= 1 && v <= 5
-        );
+        return d.Folio && d.Folio.includes("Core") && !isNaN(v) && v >= 1 && v <= 5;
       })
     );
   });
@@ -167,16 +174,16 @@ function buildTabs() {
   });
 
   /* Core Portfolio */
-  addTab("CoreALL", () => {
+  addTab("CorePortfolio", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Core"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Core_"))
     );
   });
 
   /* Sate Portfolio */
-  addTab("SateALL", () => {
+  addTab("SatePortfolio", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Sate"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Sate_"))
     );
   });
 
@@ -215,15 +222,12 @@ function renderTable(data) {
   const table = document.getElementById("dataTable");
   table.innerHTML = "";
   if (!data.length) return;
-
   renderHeader();
   renderRows(data);
 }
 
 function renderHeader() {
-  const table = document.getElementById("dataTable");
   const tr = document.createElement("tr");
-
   COLUMN_ORDER.forEach(h => {
     if (!(h in rawData[0])) return;
     const th = document.createElement("th");
@@ -232,25 +236,18 @@ function renderHeader() {
     if (h === "Symbol") th.classList.add("symbol-col");
     tr.appendChild(th);
   });
-
-  table.appendChild(tr);
+  dataTable.appendChild(tr);
 }
 
 function renderRows(data) {
-  const table = document.getElementById("dataTable");
-
   data.forEach(r => {
     const tr = document.createElement("tr");
-
     COLUMN_ORDER.forEach(h => {
       if (!(h in r)) return;
-
       let v = r[h];
       const td = document.createElement("td");
 
-      if (h.endsWith("_RSI") && v !== "") {
-        v = Math.round(parseFloat(v));
-      }
+      if (h.endsWith("_RSI") && v !== "") v = Math.round(parseFloat(v));
 
       if (h === "Symbol") {
         td.className = "symbol-col text";
@@ -268,8 +265,7 @@ function renderRows(data) {
 
       tr.appendChild(td);
     });
-
-    table.appendChild(tr);
+    dataTable.appendChild(tr);
   });
 }
 
@@ -278,20 +274,11 @@ function defaultSortByDMACD() {
   currentData.sort((a, b) => {
     const x = parseFloat(a.D_MACD);
     const y = parseFloat(b.D_MACD);
-
-    const xNaN = isNaN(x);
-    const yNaN = isNaN(y);
-
-    if (xNaN && yNaN) return 0;
-    if (xNaN) return 1;
-    if (yNaN) return -1;
-
-    const xPos = x > 0;
-    const yPos = y > 0;
-
-    if (xPos && !yPos) return -1;
-    if (!xPos && yPos) return 1;
-
+    if (isNaN(x) && isNaN(y)) return 0;
+    if (isNaN(x)) return 1;
+    if (isNaN(y)) return -1;
+    if (x > 0 && y <= 0) return -1;
+    if (x <= 0 && y > 0) return 1;
     return x - y;
   });
 }
@@ -300,23 +287,35 @@ function defaultSortByDMACD() {
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
-
   currentData.sort((a, b) => {
-    const x = a[col], y = b[col];
-    const nx = parseFloat(x), ny = parseFloat(y);
+    const nx = parseFloat(a[col]), ny = parseFloat(b[col]);
     if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
-    return asc
-      ? String(x).localeCompare(y)
-      : String(y).localeCompare(x);
+    return asc ? String(a[col]).localeCompare(b[col]) : String(b[col]).localeCompare(a[col]);
   });
-
   renderTable(currentData);
 }
 
 /* ---------- TradingView ---------- */
 function openChart(symbol) {
-  const url = `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`;
-  window.open(url, "_blank", "width=1300,height=900,noopener,noreferrer");
+  window.open(
+    `https://in.tradingview.com/chart/?symbol=NSE:${symbol}`,
+    "_blank",
+    "width=1300,height=900,noopener,noreferrer"
+  );
+}
+
+/* ---------- Last Updated Time (IST) ---------- */
+function updateLastRunTime() {
+  fetch(CSV_FILE, { method: "HEAD" })
+    .then(res => {
+      const lm = res.headers.get("Last-Modified");
+      if (!lm) return;
+      const utc = new Date(lm);
+      const ist = new Date(utc.getTime() + 5.5 * 60 * 60 * 1000);
+      const time = ist.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false });
+      const date = ist.toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "2-digit" });
+      document.getElementById("updateTime").innerText = `${time} / ${date}`;
+    });
 }
 
 /* ---------- Load ---------- */
@@ -325,7 +324,8 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click(); // Sate_STH default
+    document.querySelector(".tab").click();
+    updateLastRunTime();
   });
 </script>
 
