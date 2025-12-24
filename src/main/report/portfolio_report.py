@@ -168,10 +168,11 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     # Final column order
     # -----------------------------
     desired_order = [
-        "Symbol", "Folio", "IC", "CC", "PnL",
+        "Symbol", "Folio",
+        "IC", "CC", "PnL", "DD_High",
         "LT_days", "LT_Pert",
-        "DD_High", "4H_MACD",
-        "D_MACD", "W_MACD", "M_MACD",
+        "4H_MACD", "D_MACD",
+        "W_MACD", "M_MACD",
         "W_RSI", "M_RSI",
         "AvgPrice", "StopLoss", "CurPrice",
         "Sector", "MarketCap", "Notes"
