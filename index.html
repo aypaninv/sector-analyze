@@ -169,14 +169,14 @@ function buildTabs() {
   /* Core Portfolio */
   addTab("CoreALL", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Core_"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Core"))
     );
   });
 
   /* Sate Portfolio */
   addTab("SateALL", () => {
     renderAndDefaultSort(
-      rawData.filter(d => d.Folio && d.Folio.includes("Sate_"))
+      rawData.filter(d => d.Folio && d.Folio.includes("Sate"))
     );
   });
 
