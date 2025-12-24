@@ -244,10 +244,13 @@ function renderRows(data) {
     const tr = document.createElement("tr");
     COLUMN_ORDER.forEach(h => {
       if (!(h in r)) return;
+
       let v = r[h];
       const td = document.createElement("td");
 
-      if (h.endsWith("_RSI") && v !== "") v = Math.round(parseFloat(v));
+      if (h.endsWith("_RSI") && v !== "") {
+        v = Math.round(parseFloat(v));
+      }
 
       if (h === "Symbol") {
         td.className = "symbol-col text";
@@ -269,16 +272,19 @@ function renderRows(data) {
   });
 }
 
-/* ---------- Custom default sort ---------- */
+/* ---------- Default D_MACD sort (positive first) ---------- */
 function defaultSortByDMACD() {
   currentData.sort((a, b) => {
     const x = parseFloat(a.D_MACD);
     const y = parseFloat(b.D_MACD);
+
     if (isNaN(x) && isNaN(y)) return 0;
     if (isNaN(x)) return 1;
     if (isNaN(y)) return -1;
+
     if (x > 0 && y <= 0) return -1;
     if (x <= 0 && y > 0) return 1;
+
     return x - y;
   });
 }
@@ -287,11 +293,15 @@ function defaultSortByDMACD() {
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
+
   currentData.sort((a, b) => {
     const nx = parseFloat(a[col]), ny = parseFloat(b[col]);
     if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
-    return asc ? String(a[col]).localeCompare(b[col]) : String(b[col]).localeCompare(a[col]);
+    return asc
+      ? String(a[col]).localeCompare(b[col])
+      : String(b[col]).localeCompare(a[col]);
   });
+
   renderTable(currentData);
 }
 
@@ -304,18 +314,33 @@ function openChart(symbol) {
   );
 }
 
-/* ---------- Last Updated Time (IST) ---------- */
+/* ---------- Last Updated Time (IST - CORRECT) ---------- */
 function updateLastRunTime() {
   fetch(CSV_FILE, { method: "HEAD" })
     .then(res => {
       const lm = res.headers.get("Last-Modified");
       if (!lm) return;
-      const utc = new Date(lm);
-      const ist = new Date(utc.getTime() + 5.5 * 60 * 60 * 1000);
-      const time = ist.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: false });
-      const date = ist.toLocaleDateString("en-IN", { year: "numeric", month: "short", day: "2-digit" });
-      document.getElementById("updateTime").innerText = `${time} / ${date}`;
-    });
+
+      const d = new Date(lm);
+
+      const time = d.toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      });
+
+      const date = d.toLocaleDateString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        year: "numeric",
+        month: "short",
+        day: "2-digit"
+      });
+
+      document.getElementById("updateTime").innerText =
+        `${time} / ${date}`;
+    })
+    .catch(() => {});
 }
 
 /* ---------- Load ---------- */
@@ -324,7 +349,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click();
+    document.querySelector(".tab").click(); // Sate_STH default
     updateLastRunTime();
   });
 </script>
