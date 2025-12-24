@@ -1,6 +1,8 @@
 import pandas as pd
 import argparse
 import os
+from datetime import datetime
+import pytz
 
 
 def merge_files(stock_file: str, technical_file: str, output_file: str):
@@ -29,7 +31,8 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         "Qty", "AvgPrice", "StopLoss",
         "LastClose", "Close", "DD_High",
         "4H_MACD", "Day_MACD", "Week_MACD", "Month_MACD",
-        "Day_RSI", "Week_RSI", "Month_RSI"
+        "Day_RSI", "Week_RSI", "Month_RSI",
+        "LT_Price"
     ]
 
     for col in numeric_cols:
@@ -42,9 +45,13 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
             )
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    # Ensure LastClose exists
-    if "LastClose" not in df.columns and "Close" in df.columns:
-        df.rename(columns={"Close": "LastClose"}, inplace=True)
+    # -----------------------------
+    # Ensure CurPrice exists
+    # -----------------------------
+    if "LastClose" in df.columns:
+        df.rename(columns={"LastClose": "CurPrice"}, inplace=True)
+    elif "Close" in df.columns:
+        df.rename(columns={"Close": "CurPrice"}, inplace=True)
 
     # -----------------------------
     # Invested Capital (IC)
@@ -62,8 +69,8 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     # -----------------------------
     # Current Capital (CC)
     # -----------------------------
-    if {"Qty", "LastClose"}.issubset(df.columns):
-        df["CurrentValue"] = df["Qty"] * df["LastClose"]
+    if {"Qty", "CurPrice"}.issubset(df.columns):
+        df["CurrentValue"] = df["Qty"] * df["CurPrice"]
         total_current = df["CurrentValue"].sum(skipna=True)
         df["CC"] = (
             (df["CurrentValue"] / total_current * 100).round(1)
@@ -75,17 +82,44 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     # -----------------------------
     # Profit / Loss % (PnL)
     # -----------------------------
-    if {"AvgPrice", "LastClose"}.issubset(df.columns):
+    if {"AvgPrice", "CurPrice"}.issubset(df.columns):
         df["PnL"] = (
-            ((df["LastClose"] - df["AvgPrice"]) / df["AvgPrice"]) * 100
+            ((df["CurPrice"] - df["AvgPrice"]) / df["AvgPrice"]) * 100
         ).round(1)
     else:
         df["PnL"] = pd.NA
 
     # -----------------------------
+    # LT_days calculation (IST, DD-MM-YYYY)
+    # -----------------------------
+    if "LT_Date" in df.columns:
+        ist = pytz.timezone("Asia/Kolkata")
+        today_ist = datetime.now(ist).date()
+
+        df["LT_Date"] = pd.to_datetime(
+            df["LT_Date"],
+            format="%d-%m-%Y",
+            errors="coerce"
+        ).dt.date
+
+        df["LT_days"] = df["LT_Date"].apply(
+            lambda d: (today_ist - d).days if pd.notna(d) else pd.NA
+        )
+    else:
+        df["LT_days"] = pd.NA
+
+    # -----------------------------
+    # LT_Pert calculation
+    # -----------------------------
+    if {"LT_Price", "CurPrice"}.issubset(df.columns):
+        df["LT_Pert"] = ((df["CurPrice"] / df["LT_Price"]) * 100).round(1)
+    else:
+        df["LT_Pert"] = pd.NA
+
+    # -----------------------------
     # RSI formatting (0 decimals)
     # -----------------------------
-    for rsi in ["Day_RSI", "Week_RSI", "Month_RSI"]:
+    for rsi in ["Week_RSI", "Month_RSI"]:
         if rsi in df.columns:
             df[rsi] = df[rsi].round(0)
 
@@ -96,7 +130,6 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         "Day_MACD": "D_MACD",
         "Week_MACD": "W_MACD",
         "Month_MACD": "M_MACD",
-        "Day_RSI": "D_RSI",
         "Week_RSI": "W_RSI",
         "Month_RSI": "M_RSI",
     }, inplace=True)
@@ -130,15 +163,16 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     )
 
     # -----------------------------
-    # Final column order
+    # Final column order (as requested)
     # -----------------------------
     desired_order = [
         "Symbol", "Folio", "IC", "CC", "PnL",
-        "AvgPrice", "LastClose", "StopLoss",
-        "MarketCap", "Sector", "Notes",
+        "LT_days", "LT_Pert",
         "DD_High", "4H_MACD",
         "D_MACD", "W_MACD", "M_MACD",
-        "D_RSI", "W_RSI", "M_RSI"
+        "W_RSI", "M_RSI",
+        "AvgPrice", "StopLoss", "CurPrice",
+        "Sector", "MarketCap", "Notes"
     ]
 
     ordered = [c for c in desired_order if c in df.columns]
@@ -157,7 +191,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Generate portfolio report with capital, PnL, and MACD-based folio tagging"
+        description="Generate portfolio report with tranche metrics and MACD-based folio tagging"
     )
     parser.add_argument("--stock-file", required=True)
     parser.add_argument("--technical-file", required=True)
