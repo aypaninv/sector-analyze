@@ -109,13 +109,12 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* ✅ Column order aligned with Python output */
+/* Column order aligned with Python output */
 const COLUMN_ORDER = [
-  "Symbol","Folio",
-  "IC","CC","PnL","DD_High",
+  "Symbol","Folio","IC","CC","PnL",
   "LT_days","LT_Pert",
-  "4H_MACD","D_MACD",
-  "W_MACD","M_MACD",
+  "DD_High","4H_MACD",
+  "D_MACD","W_MACD","M_MACD",
   "W_RSI","M_RSI",
   "AvgPrice","StopLoss","CurPrice",
   "Sector","MarketCap","Notes"
@@ -142,25 +141,7 @@ function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
-  addTab("Sate_STH", () => {
-    renderAndDefaultSort(
-      rawData.filter(d => {
-        const v = parseFloat(d.D_MACD);
-        return d.Folio && d.Folio.includes("Sate") && !isNaN(v) && v >= 1 && v <= 5;
-      })
-    );
-  });
-
-  addTab("Core_STH", () => {
-    renderAndDefaultSort(
-      rawData.filter(d => {
-        const v = parseFloat(d.D_MACD);
-        return d.Folio && d.Folio.includes("Core") && !isNaN(v) && v >= 1 && v <= 5;
-      })
-    );
-  });
-
-  /* EXIT — logic unchanged, column aligned */
+  /* EXIT tab */
   addTab("EXIT", () => {
     renderAndDefaultSort(
       rawData.filter(d =>
@@ -171,18 +152,13 @@ function buildTabs() {
     );
   });
 
-  addTab("CorePortfolio", () => {
-    renderAndDefaultSort(rawData.filter(d => d.Folio && d.Folio.includes("Core_")));
-  });
-
-  addTab("SatePortfolio", () => {
-    renderAndDefaultSort(rawData.filter(d => d.Folio && d.Folio.includes("Sate_")));
-  });
-
+  /* Individual Folio tabs */
   [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
     .forEach(folio =>
       addTab(folio, () => {
-        renderAndDefaultSort(rawData.filter(d => d.Folio === folio));
+        renderAndDefaultSort(
+          rawData.filter(d => d.Folio === folio)
+        );
       })
     );
 }
@@ -333,7 +309,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click();
+    document.querySelector(".tab").click(); // default: EXIT
     updateLastRunTime();
   });
 </script>
