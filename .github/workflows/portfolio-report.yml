@@ -1,9 +1,9 @@
-name: Generate Portfolio Report
+name: Portfolio Report
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 3-10 * * 1-5"
+    - cron: "00 3-10 * * 1-5"
 
 jobs:
   build:
@@ -22,7 +22,7 @@ jobs:
       run: |
         pip install pandas numpy yfinance
 
-    - name: Run Portfolio report script
+    - name: Run report script
       run: |
         rm -rf output/portfolio/
         mkdir -p output

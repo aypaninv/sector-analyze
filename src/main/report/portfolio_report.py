@@ -1,0 +1,171 @@
+import pandas as pd
+import argparse
+import os
+
+
+def merge_files(stock_file: str, technical_file: str, output_file: str):
+
+    # -----------------------------
+    # Read inputs
+    # -----------------------------
+    df_stock = pd.read_csv(stock_file)
+    df_tech = pd.read_csv(technical_file)
+
+    df_stock.columns = [c.strip() for c in df_stock.columns]
+    df_tech.columns = [c.strip() for c in df_tech.columns]
+
+    if "Symbol" not in df_stock.columns or "Symbol" not in df_tech.columns:
+        raise ValueError("Both input files must contain 'Symbol' column")
+
+    # -----------------------------
+    # Merge
+    # -----------------------------
+    df = pd.merge(df_stock, df_tech, on="Symbol", how="left")
+
+    # -----------------------------
+    # Numeric cleanup
+    # -----------------------------
+    numeric_cols = [
+        "Qty", "AvgPrice", "StopLoss",
+        "LastClose", "Close", "DD_High",
+        "4H_MACD", "Day_MACD", "Week_MACD", "Month_MACD",
+        "Day_RSI", "Week_RSI", "Month_RSI"
+    ]
+
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = (
+                df[col]
+                .astype(str)
+                .str.replace(",", "", regex=False)
+                .replace("", pd.NA)
+            )
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    # Ensure LastClose exists
+    if "LastClose" not in df.columns and "Close" in df.columns:
+        df.rename(columns={"Close": "LastClose"}, inplace=True)
+
+    # -----------------------------
+    # Invested Capital (IC)
+    # -----------------------------
+    if {"Qty", "AvgPrice"}.issubset(df.columns):
+        df["InvestedValue"] = df["Qty"] * df["AvgPrice"]
+        total_invested = df["InvestedValue"].sum(skipna=True)
+        df["IC"] = (
+            (df["InvestedValue"] / total_invested * 100).round(1)
+            if total_invested > 0 else pd.NA
+        )
+    else:
+        df["IC"] = pd.NA
+
+    # -----------------------------
+    # Current Capital (CC)
+    # -----------------------------
+    if {"Qty", "LastClose"}.issubset(df.columns):
+        df["CurrentValue"] = df["Qty"] * df["LastClose"]
+        total_current = df["CurrentValue"].sum(skipna=True)
+        df["CC"] = (
+            (df["CurrentValue"] / total_current * 100).round(1)
+            if total_current > 0 else pd.NA
+        )
+    else:
+        df["CC"] = pd.NA
+
+    # -----------------------------
+    # Profit / Loss % (PnL)
+    # -----------------------------
+    if {"AvgPrice", "LastClose"}.issubset(df.columns):
+        df["PnL"] = (
+            ((df["LastClose"] - df["AvgPrice"]) / df["AvgPrice"]) * 100
+        ).round(1)
+    else:
+        df["PnL"] = pd.NA
+
+    # -----------------------------
+    # RSI formatting (0 decimals)
+    # -----------------------------
+    for rsi in ["Day_RSI", "Week_RSI", "Month_RSI"]:
+        if rsi in df.columns:
+            df[rsi] = df[rsi].round(0)
+
+    # -----------------------------
+    # Rename MACD / RSI headers
+    # -----------------------------
+    df.rename(columns={
+        "Day_MACD": "D_MACD",
+        "Week_MACD": "W_MACD",
+        "Month_MACD": "M_MACD",
+        "Day_RSI": "D_RSI",
+        "Week_RSI": "W_RSI",
+        "Month_RSI": "M_RSI",
+    }, inplace=True)
+
+    # -----------------------------
+    # Folio rule: append _Low
+    # -----------------------------
+    if {"Folio", "W_MACD", "M_MACD"}.issubset(df.columns):
+
+        def update_folio(row):
+            folio = str(row["Folio"]) if pd.notna(row["Folio"]) else ""
+            w = row["W_MACD"]
+            m = row["M_MACD"]
+
+            if (
+                (pd.notna(w) and w <= 0) or
+                (pd.notna(m) and m <= 0)
+            ):
+                if folio and not folio.endswith("_Low"):
+                    return f"{folio}_Low"
+            return folio
+
+        df["Folio"] = df.apply(update_folio, axis=1)
+
+    # -----------------------------
+    # Drop helper columns
+    # -----------------------------
+    df.drop(
+        columns=[c for c in ["InvestedValue", "CurrentValue"] if c in df.columns],
+        inplace=True
+    )
+
+    # -----------------------------
+    # Final column order
+    # -----------------------------
+    desired_order = [
+        "Symbol", "Folio", "IC", "CC", "PnL",
+        "AvgPrice", "LastClose", "StopLoss",
+        "MarketCap", "Sector", "Notes",
+        "DD_High", "4H_MACD",
+        "D_MACD", "W_MACD", "M_MACD",
+        "D_RSI", "W_RSI", "M_RSI"
+    ]
+
+    ordered = [c for c in desired_order if c in df.columns]
+    remaining = [c for c in df.columns if c not in ordered]
+    df = df[ordered + remaining]
+
+    # -----------------------------
+    # Write output
+    # -----------------------------
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    df.to_csv(output_file, index=False)
+
+    print(f"[OK] Portfolio report generated: {output_file}")
+    print(f"[INFO] Rows: {len(df)}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Generate portfolio report with capital, PnL, and MACD-based folio tagging"
+    )
+    parser.add_argument("--stock-file", required=True)
+    parser.add_argument("--technical-file", required=True)
+    parser.add_argument("--output", required=True)
+    args = parser.parse_args()
+
+    merge_files(
+        stock_file=args.stock_file,
+        technical_file=args.technical_file,
+        output_file=args.output
+    )

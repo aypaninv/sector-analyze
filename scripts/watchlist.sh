@@ -51,7 +51,7 @@ python src/main/technical/technical_data.py \
   --output $OUTPUT_DIR/technical_data.csv
 
 # run portfolio report
-python src/main/portfolio/portfolio_report.py \
+python src/main/report/portfolio_report.py \
   --stock-file $SYMBOL_FILE \
   --technical-file $OUTPUT_DIR/technical_data.csv \
   --output $OUTPUT_DIR/portfolio_report.csv

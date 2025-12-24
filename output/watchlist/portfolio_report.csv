@@ -1,50 +1,50 @@
-Symbol,IC,CC,LastClose,MarketCap,Sector,Notes,DD_High,4H_MACD,D_MACD,W_MACD,M_MACD,D_RSI,W_RSI,M_RSI
-TMB,,,503.0,Small Cap,Financials - Private Bank,IAS-Dec2025,-17.72,-20.0,-11.0,11.0,3.0,48.0,61.0,57.0
-MRPL,,,148.55,Small Cap,Petro - Refineries,,-48.64,3.0,-24.0,-1.0,-15.0,40.0,51.0,52.0
-CEATLTD,,,3909.3,Small Cap,Auto - Tyres,,-11.91,3.0,1.0,11.0,9.0,54.0,59.0,62.0
-GPIL,,,238.97,Small Cap,Metals - Iron & Steel,,-68.76,31.0,7.0,-5.0,7.0,47.0,52.0,51.0
-GALLANT,,,,,,,,,,,,,,
-TDPOWER,,,,,,,,,,,,,,
-POCL,,,1332.0,Small Cap,Metals - Misc,,-11.55,4.0,3.0,-5.0,6.0,54.0,60.0,71.0
-SANGHVIMOV,,,333.75,Small Cap,Auto - CV,,-55.35,13.0,5.0,-5.0,-16.0,54.0,50.0,50.0
-FORTIS,,,904.85,Mid Cap,Healthcare - Hospitals,,-18.06,13.0,5.0,-7.0,31.0,50.0,51.0,70.0
-ANANDRATHI,,,3017.0,Small Cap,Financials - Misc,,-9.16,15.0,8.0,-7.0,5.0,58.0,64.0,76.0
-TI,,,471.15,Small Cap,Beverages - Alcohol,,-14.29,15.0,2.0,-7.0,6.0,54.0,55.0,63.0
-TEGA,,,1966.7,Small Cap,Engineering,,-15.55,13.0,6.0,-11.0,4.0,60.0,59.0,66.0
-V2RETAIL,,,2231.7,Small Cap,Consumption - Retail,,-12.96,11.0,-14.0,-2.0,31.0,46.0,56.0,71.0
-THYROCARE,,,435.0,Small Cap,Healthcare - Diagnostics,,-18.94,15.0,-20.0,-4.0,9.0,45.0,53.0,60.0
-CARTRADE,,,2835.1,Small Cap,IT - Product/Platform,,-13.84,9.0,-23.0,-3.0,30.0,49.0,60.0,79.0
-NACLIND,,,161.5,Small Cap,Agrichem - Protection,,-52.42,-11.0,-3.0,-17.0,12.0,41.0,41.0,53.0
-MCLEODRUSS,,,44.55,Small Cap,Agri - Tea/Coffee,,-34.94,-4.0,-36.0,-3.0,25.0,34.0,48.0,54.0
-ETERNAL,,,286.6,Large Cap,IT - Product/Platform,,-22.21,-7.0,7.0,-9.0,-1.0,39.0,45.0,60.0
-RADICO,,,3173.0,Mid Cap,Beverages - Alcohol,,-11.66,1.0,-22.0,-3.0,36.0,47.0,61.0,78.0
-BOSCHLTD,,,36100.0,Large Cap,Auto - Replacement,,-13.93,-13.0,-3.0,-12.0,-1.0,43.0,47.0,60.0
-FORCEMOT,,,18515.0,Small Cap,Auto - PV/Trucks,,-15.8,12.0,2.0,-14.0,8.0,64.0,60.0,76.0
-FOSECOIND,,,5015.5,Small Cap,Chemicals - Specialty,,-26.74,-8.0,1.0,-12.0,6.0,39.0,45.0,57.0
-VIPIND,,,369.4,Small Cap,Consumption - Luggage,,-49.46,18.0,8.0,-13.0,6.0,51.0,43.0,43.0
-IONEXCHANG,,,374.4,Small Cap,Infra - Construction,SideCar,-51.28,-1.0,10.0,2.0,-12.0,54.0,38.0,38.0
-WABAG,,,1288.5,Small Cap,Infra - Construction,SideCar,-33.72,8.0,1.0,-14.0,-9.0,39.0,39.0,52.0
-KPITTECH,,,1231.6,Mid Cap,IT - Services,SideCar,-36.14,1.0,-9.0,7.0,-15.0,54.0,50.0,51.0
-KEC,,,746.9,Small Cap,Railways,IAS-Dec2025,-43.13,13.0,14.0,-9.0,-11.0,60.0,45.0,47.0
-MACPOWER,,,1014.0,Small Cap,Engineering,IAS-Dec2025,-41.62,-8.0,-5.0,7.0,-11.0,59.0,58.0,53.0
-JAYNECOIND,,,77.71,Small Cap,Metals - Iron & Steel,IAS-Dec2025,-4.3,18.0,8.0,-4.0,5.0,62.0,66.0,68.0
-GHCL,,,572.05,Small Cap,Chemicals - Bulk,IAS-Dec2025,-26.57,1.0,-6.0,-3.0,-9.0,43.0,44.0,47.0
-3BBLACKBIO,,,,,,IAS-Dec2025,,,,,,,,
-DCMSHRIRAM,,,1232.8,Small Cap,Others,IAS-Dec2025,-17.94,-7.0,-2.0,-17.0,7.0,50.0,51.0,54.0
-MTARTECH,,,2377.0,Small Cap,Defense - Misc,IAS-Dec2025,-18.61,11.0,-25.0,16.0,4.0,49.0,63.0,65.0
-VALIANT,,,,,,IAS-Dec2025,,,,,,,,
-CSBBANK,,,412.3,Small Cap,Financials - Private Bank,IAS-Dec2025,-7.76,15.0,1.0,-4.0,7.0,57.0,57.0,63.0
-FEDBANK,,,,,,IAS-Dec2025,,,,,,,,
-FEDERALBNK,,,270.15,Mid Cap,Financials - Private Bank,IAS-Dec2025,-0.35,1.0,-12.0,11.0,3.0,78.0,82.0,74.0
-EICHERMOT,,,7258.0,Large Cap,Auto - 2W,IAS-Dec2025,-0.96,1.0,-5.0,-2.0,32.0,59.0,69.0,80.0
-PYRAMID,,,163.62,Small Cap,Packaging,IAS-Dec2025,-36.82,-7.0,-4.0,6.0,-10.0,51.0,49.0,52.0
-LUMAXTECH,,,1550.4,Small Cap,Auto - Replacement,IAS-Dec2025,-2.86,1.0,-11.0,6.0,8.0,60.0,69.0,79.0
-KPL,,,,,,IAS-Dec2025,,,,,,,,
-GREAVESCOT,,,186.28,Small Cap,Industrial - Pumps/Engines,IAS-Dec2025,-41.7,12.0,1.0,-7.0,-5.0,45.0,43.0,50.0
-ECORECO,,,,,,IAS-Dec2025,,,,,,,,
-NAMOEWASTE,,,,,,IAS-Dec2025,,,,,,,,
-TINNARUBR,,,789.05,,,IAS-Dec2025,-27.53,13.0,7.0,-5.0,-6.0,38.0,33.0,53.0
-GRAVITA,,,1822.0,Small Cap,Metals - Misc,IAS-Dec2025,-32.52,-5.0,-3.0,9.0,-9.0,56.0,54.0,59.0
-GANECOS,,,894.4,Small Cap,Textile - Misc,IAS-Dec2025,-64.0,10.0,17.0,-20.0,-10.0,42.0,28.0,38.0
-ZTECH,,,602.2,,,IAS-Dec2025,-17.64,10.0,10.0,-43.0,-2.0,67.0,57.0,72.0
-RECLTD,,,343.35,Mid Cap,Financials - NBFC,IAS-Dec2025,-47.5,3.0,-13.0,-3.0,-13.0,42.0,36.0,45.0
+Symbol,IC,CC,PnL,LastClose,MarketCap,Sector,Notes,DD_High,4H_MACD,D_MACD,W_MACD,M_MACD,D_RSI,W_RSI,M_RSI
+TMB,,,,513.4,Small Cap,Financials - Private Bank,IAS-Dec2025,-16.02,1.0,-12.0,11.0,3.0,54.0,65.0,59.0
+MRPL,,,,146.66,Small Cap,Petro - Refineries,,-49.3,6.0,-25.0,-1.0,-15.0,38.0,50.0,52.0
+CEATLTD,,,,3903.2,Small Cap,Auto - Tyres,,-12.05,6.0,2.0,11.0,9.0,53.0,58.0,62.0
+GPIL,,,,258.95,Small Cap,Metals - Iron & Steel,,-66.15,33.0,8.0,-5.0,7.0,62.0,57.0,53.0
+GALLANT,,,,,,,,,,,,,,,
+TDPOWER,,,,,,,,,,,,,,,
+POCL,,,,1387.8,Small Cap,Metals - Misc,,-7.85,7.0,4.0,-5.0,6.0,60.0,63.0,72.0
+SANGHVIMOV,,,,365.25,Small Cap,Auto - CV,,-51.14,16.0,6.0,-5.0,1.0,65.0,56.0,53.0
+FORTIS,,,,901.6,Mid Cap,Healthcare - Hospitals,,-18.36,14.0,6.0,-7.0,31.0,48.0,50.0,69.0
+ANANDRATHI,,,,3030.5,Small Cap,Financials - Misc,,-8.76,19.0,9.0,-7.0,5.0,59.0,65.0,76.0
+TI,,,,469.05,Small Cap,Beverages - Alcohol,,-14.67,20.0,3.0,-7.0,6.0,54.0,55.0,62.0
+TEGA,,,,1995.5,Small Cap,Engineering,,-14.32,16.0,7.0,-11.0,4.0,66.0,61.0,67.0
+V2RETAIL,,,,2390.0,Small Cap,Consumption - Retail,,-6.79,14.0,1.0,-2.0,31.0,59.0,61.0,77.0
+THYROCARE,,,,457.25,Small Cap,Healthcare - Diagnostics,,-14.8,18.0,1.0,-4.0,9.0,52.0,56.0,63.0
+CARTRADE,,,,2792.9,Small Cap,IT - Product/Platform,,-15.12,13.0,-24.0,-3.0,30.0,47.0,59.0,77.0
+NACLIND,,,,169.57,Small Cap,Agrichem - Protection,,-50.05,2.0,1.0,-17.0,12.0,47.0,43.0,54.0
+MCLEODRUSS,,,,44.44,Small Cap,Agri - Tea/Coffee,,-35.1,1.0,-36.0,-3.0,25.0,35.0,48.0,54.0
+ETERNAL,,,,284.35,Large Cap,IT - Product/Platform,,-22.83,3.0,8.0,-9.0,-1.0,38.0,45.0,60.0
+RADICO,,,,3267.3,Mid Cap,Beverages - Alcohol,,-9.04,5.0,1.0,-3.0,36.0,55.0,66.0,80.0
+BOSCHLTD,,,,36305.0,Large Cap,Auto - Replacement,,-13.45,1.0,1.0,-12.0,-1.0,45.0,49.0,60.0
+FORCEMOT,,,,18453.0,Small Cap,Auto - PV/Trucks,,-16.08,14.0,3.0,-14.0,8.0,64.0,60.0,76.0
+FOSECOIND,,,,4986.0,Small Cap,Chemicals - Specialty,,-27.17,-11.0,1.0,-12.0,6.0,38.0,45.0,57.0
+VIPIND,,,,365.6,Small Cap,Consumption - Luggage,,-49.98,21.0,9.0,-13.0,6.0,49.0,42.0,43.0
+IONEXCHANG,,,,371.6,Small Cap,Infra - Construction,SideCar,-51.64,-5.0,11.0,2.0,-12.0,53.0,37.0,38.0
+WABAG,,,,1293.6,Small Cap,Infra - Construction,SideCar,-33.46,11.0,1.0,-14.0,-9.0,40.0,39.0,52.0
+KPITTECH,,,,1230.2,Mid Cap,IT - Services,SideCar,-36.22,4.0,-10.0,7.0,-15.0,54.0,50.0,51.0
+KEC,,,,743.15,Small Cap,Railways,IAS-Dec2025,-43.41,18.0,15.0,-9.0,-11.0,58.0,44.0,46.0
+MACPOWER,,,,1025.35,Small Cap,Engineering,IAS-Dec2025,-40.97,3.0,-6.0,7.0,-11.0,61.0,59.0,53.0
+JAYNECOIND,,,,77.67,Small Cap,Metals - Iron & Steel,IAS-Dec2025,-4.35,21.0,9.0,-4.0,5.0,61.0,66.0,68.0
+GHCL,,,,571.35,Small Cap,Chemicals - Bulk,IAS-Dec2025,-26.66,3.0,-7.0,-3.0,-9.0,42.0,44.0,47.0
+3BBLACKBIO,,,,,,,IAS-Dec2025,,,,,,,,
+DCMSHRIRAM,,,,1249.4,Small Cap,Others,IAS-Dec2025,-16.83,2.0,2.0,-17.0,7.0,54.0,53.0,55.0
+MTARTECH,,,,2434.1,Small Cap,Defense - Misc,IAS-Dec2025,-16.65,14.0,-23.0,16.0,4.0,53.0,64.0,66.0
+VALIANT,,,,,,,IAS-Dec2025,,,,,,,,
+CSBBANK,,,,412.7,Small Cap,Financials - Private Bank,IAS-Dec2025,-7.67,16.0,2.0,-4.0,7.0,58.0,57.0,63.0
+FEDBANK,,,,,,,IAS-Dec2025,,,,,,,,
+FEDERALBNK,,,,265.45,Mid Cap,Financials - Private Bank,IAS-Dec2025,-2.08,-1.0,-13.0,11.0,3.0,67.0,79.0,73.0
+EICHERMOT,,,,7303.0,Large Cap,Auto - 2W,IAS-Dec2025,-0.48,4.0,2.0,-2.0,32.0,61.0,70.0,80.0
+PYRAMID,,,,163.85,Small Cap,Packaging,IAS-Dec2025,-36.74,-10.0,-5.0,6.0,-10.0,51.0,49.0,52.0
+LUMAXTECH,,,,1574.7,Small Cap,Auto - Replacement,IAS-Dec2025,-2.8,4.0,-12.0,6.0,8.0,62.0,69.0,79.0
+KPL,,,,,,,IAS-Dec2025,,,,,,,,
+GREAVESCOT,,,,188.88,Small Cap,Industrial - Pumps/Engines,IAS-Dec2025,-40.88,16.0,2.0,-7.0,-5.0,46.0,44.0,51.0
+ECORECO,,,,,,,IAS-Dec2025,,,,,,,,
+NAMOEWASTE,,,,,,,IAS-Dec2025,,,,,,,,
+TINNARUBR,,,,807.7,,,IAS-Dec2025,-25.82,16.0,8.0,-5.0,-6.0,43.0,36.0,54.0
+GRAVITA,,,,1845.1,Small Cap,Metals - Misc,IAS-Dec2025,-31.66,2.0,-4.0,9.0,-9.0,59.0,56.0,60.0
+GANECOS,,,,863.55,Small Cap,Textile - Misc,IAS-Dec2025,-65.24,-4.0,18.0,-20.0,-10.0,35.0,27.0,37.0
+ZTECH,,,,626.9,,,IAS-Dec2025,-14.26,11.0,11.0,1.0,-2.0,71.0,61.0,73.0
+RECLTD,,,,354.2,Mid Cap,Financials - NBFC,IAS-Dec2025,-45.84,6.0,2.0,-3.0,-13.0,54.0,41.0,46.0
