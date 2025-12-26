@@ -12,28 +12,29 @@ body {
   background: #f4f4f4;
 }
 
-/* ---------- Navigation ---------- */
-.navbar {
+/* ---------- Global Tabs ---------- */
+.topbar {
   display: flex;
-  gap: 10px;
-  padding: 10px;
+  flex-wrap: wrap;
+  gap: 6px;
   background: #1e1e1e;
-}
-
-.navbar button {
-  background: #333;
   color: white;
-  border: none;
-  padding: 8px 14px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 13px;
+  padding: 8px;
 }
 
-.navbar button.active {
+.tab {
+  padding: 6px 12px;
+  cursor: pointer;
+  background: #333;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.tab.active {
   background: #007acc;
 }
 
+/* ---------- App Area ---------- */
 #app {
   padding: 0;
 }
@@ -42,50 +43,57 @@ body {
 
 <body>
 
-<div class="navbar">
-  <button id="btnPortfolio" class="active"
-          onclick="loadPage('portfolio.html', this)">
-    Portfolio
-  </button>
-  <button onclick="loadPage('sector.html', this)">
-    Sector (Coming)
-  </button>
-</div>
+<!-- Global Tab Bar -->
+<div class="topbar" id="globalTabs"></div>
 
+<!-- Feature Content -->
 <div id="app"></div>
 
 <script>
-function loadPage(page, btn) {
-  document.querySelectorAll(".navbar button")
-    .forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
+const globalTabs = document.getElementById("globalTabs");
+let firstTabActivated = false;
 
-  fetch(page)
-    .then(r => r.text())
-    .then(html => {
-      const app = document.getElementById("app");
-      app.innerHTML = html;
+/* Global tab registration API */
+window.registerTabs = function (tabBuilderFn) {
+  tabBuilderFn(addGlobalTab);
+};
 
-      /* 🔥 EXECUTE embedded scripts */
-      app.querySelectorAll("script").forEach(oldScript => {
-        const newScript = document.createElement("script");
-        if (oldScript.src) {
-          newScript.src = oldScript.src;
-        } else {
-          newScript.textContent = oldScript.textContent;
-        }
-        document.body.appendChild(newScript);
-        oldScript.remove();
-      });
-    })
-    .catch(() => {
-      document.getElementById("app").innerHTML =
-        "<p style='padding:10px'>Failed to load page</p>";
-    });
+/* Add tab to global bar */
+function addGlobalTab(label, onClick) {
+  const div = document.createElement("div");
+  div.className = "tab";
+  div.innerText = label;
+
+  div.onclick = () => {
+    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+    div.classList.add("active");
+    onClick();
+  };
+
+  globalTabs.appendChild(div);
+
+  /* Auto-activate first tab */
+  if (!firstTabActivated) {
+    firstTabActivated = true;
+    div.click();
+  }
 }
 
-/* Default load */
-loadPage("portfolio.html", document.getElementById("btnPortfolio"));
+/* Load portfolio first */
+fetch("portfolio.html")
+  .then(r => r.text())
+  .then(html => {
+    const app = document.getElementById("app");
+    app.innerHTML = html;
+
+    /* Execute embedded scripts */
+    app.querySelectorAll("script").forEach(oldScript => {
+      const s = document.createElement("script");
+      s.textContent = oldScript.textContent;
+      document.body.appendChild(s);
+      oldScript.remove();
+    });
+  });
 </script>
 
 </body>
