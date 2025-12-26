@@ -42,7 +42,6 @@ body {
 
 <body>
 
-<!-- Navigation -->
 <div class="navbar">
   <button id="btnPortfolio" class="active"
           onclick="loadPage('portfolio.html', this)">
@@ -53,7 +52,6 @@ body {
   </button>
 </div>
 
-<!-- Feature Container -->
 <div id="app"></div>
 
 <script>
@@ -65,7 +63,20 @@ function loadPage(page, btn) {
   fetch(page)
     .then(r => r.text())
     .then(html => {
-      document.getElementById("app").innerHTML = html;
+      const app = document.getElementById("app");
+      app.innerHTML = html;
+
+      /* 🔥 EXECUTE embedded scripts */
+      app.querySelectorAll("script").forEach(oldScript => {
+        const newScript = document.createElement("script");
+        if (oldScript.src) {
+          newScript.src = oldScript.src;
+        } else {
+          newScript.textContent = oldScript.textContent;
+        }
+        document.body.appendChild(newScript);
+        oldScript.remove();
+      });
     })
     .catch(() => {
       document.getElementById("app").innerHTML =
