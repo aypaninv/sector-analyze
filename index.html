@@ -87,11 +87,9 @@ tbody tr:nth-child(even) td {
   background: #f9f9f9;
 }
 
-/* Alignment */
 td.text { text-align: left; }
 td.num  { text-align: right; }
 
-/* Coloring */
 .green { background: #c8f7c5 !important; }
 .red   { background: #f7c5c5 !important; }
 </style>
@@ -109,7 +107,6 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
-/* ---------- Column Order ---------- */
 const COLUMN_ORDER = [
   "Symbol","Folio",
   "IC","CC","PnL","DD_High",
@@ -137,11 +134,37 @@ function parseCSV(text) {
   });
 }
 
+/* ---------- Tab ordering helper ---------- */
+function folioPriority(name) {
+  if (name.startsWith("Trade")) return 1;
+  if (name.startsWith("Sate"))  return 2;
+  if (name.startsWith("Core"))  return 3;
+  return 4;
+}
+
 /* ---------- Tabs ---------- */
 function buildTabs() {
   const bar = document.getElementById("topTabs");
   bar.innerHTML = "";
 
+  const folios =
+    [...new Set(rawData.map(d => d.Folio).filter(Boolean))]
+      .sort((a, b) => {
+        const pa = folioPriority(a);
+        const pb = folioPriority(b);
+        return pa !== pb ? pa - pb : a.localeCompare(b);
+      });
+
+  /* Folio tabs first */
+  folios.forEach(folio =>
+    addTab(folio, () => {
+      renderAndDefaultSort(
+        rawData.filter(d => d.Folio === folio)
+      );
+    })
+  );
+
+  /* EXIT tab last */
   addTab("EXIT", () => {
     renderAndDefaultSort(
       rawData.filter(d =>
@@ -151,15 +174,6 @@ function buildTabs() {
       )
     );
   });
-
-  [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
-    .forEach(folio =>
-      addTab(folio, () => {
-        renderAndDefaultSort(
-          rawData.filter(d => d.Folio === folio)
-        );
-      })
-    );
 }
 
 function addTab(label, action) {
@@ -220,7 +234,6 @@ function renderRows(data) {
         td.className = (!isNaN(v) && v !== "") ? "num" : "text";
       }
 
-      /* ✅ DD_High alert */
       if (h === "DD_High" && parseFloat(v) < -18)
         td.classList.add("red");
 
@@ -236,7 +249,7 @@ function renderRows(data) {
   });
 }
 
-/* ---------- Default sort ---------- */
+/* ---------- Sorting ---------- */
 function defaultSortByDMACD() {
   currentData.sort((a, b) => {
     const x = parseFloat(a.D_MACD);
@@ -253,7 +266,6 @@ function defaultSortByDMACD() {
   });
 }
 
-/* ---------- Manual sort ---------- */
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
@@ -302,8 +314,7 @@ function updateLastRunTime() {
 
       document.getElementById("updateTime").innerText =
         `${time} / ${date}`;
-    })
-    .catch(() => {});
+    });
 }
 
 /* ---------- Load ---------- */
@@ -312,7 +323,7 @@ fetch(CSV_FILE)
   .then(t => {
     rawData = parseCSV(t);
     buildTabs();
-    document.querySelector(".tab").click();
+    document.querySelector(".tab").click(); // first folio
     updateLastRunTime();
   });
 </script>
