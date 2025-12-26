@@ -87,9 +87,11 @@ tbody tr:nth-child(even) td {
   background: #f9f9f9;
 }
 
+/* Alignment */
 td.text { text-align: left; }
 td.num  { text-align: right; }
 
+/* Coloring */
 .green { background: #c8f7c5 !important; }
 .red   { background: #f7c5c5 !important; }
 </style>
@@ -107,6 +109,7 @@ td.num  { text-align: right; }
 <script>
 const CSV_FILE = "portfolio_report.csv";
 
+/* ---------- Column Order ---------- */
 const COLUMN_ORDER = [
   "Symbol","Folio",
   "IC","CC","PnL","DD_High",
@@ -134,23 +137,6 @@ function parseCSV(text) {
   });
 }
 
-/* ---------- Helpers ---------- */
-function isWeekTrend(d) {
-  return (
-    parseFloat(d.W_MACD) <= 0 ||
-    parseFloat(d.M_MACD) <= 0 ||
-    parseFloat(d.DD_High) < -18
-  );
-}
-
-function isStrongTrend(d) {
-  return (
-    parseFloat(d.W_MACD) > 0 &&
-    parseFloat(d.M_MACD) > 0 &&
-    parseFloat(d.DD_High) >= -18
-  );
-}
-
 /* ---------- Tabs ---------- */
 function buildTabs() {
   const bar = document.getElementById("topTabs");
@@ -166,21 +152,14 @@ function buildTabs() {
     );
   });
 
-  const folios = [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort();
-
-  folios.forEach(folio => {
-    addTab(`${folio}_Week`, () => {
-      renderAndDefaultSort(
-        rawData.filter(d => d.Folio === folio && isWeekTrend(d))
-      );
-    });
-
-    addTab(`${folio}_Stg`, () => {
-      renderAndDefaultSort(
-        rawData.filter(d => d.Folio === folio && isStrongTrend(d))
-      );
-    });
-  });
+  [...new Set(rawData.map(d => d.Folio).filter(Boolean))].sort()
+    .forEach(folio =>
+      addTab(folio, () => {
+        renderAndDefaultSort(
+          rawData.filter(d => d.Folio === folio)
+        );
+      })
+    );
 }
 
 function addTab(label, action) {
@@ -241,6 +220,7 @@ function renderRows(data) {
         td.className = (!isNaN(v) && v !== "") ? "num" : "text";
       }
 
+      /* ✅ DD_High alert */
       if (h === "DD_High" && parseFloat(v) < -18)
         td.classList.add("red");
 
@@ -256,18 +236,31 @@ function renderRows(data) {
   });
 }
 
-/* ---------- Sorting ---------- */
+/* ---------- Default sort ---------- */
 function defaultSortByDMACD() {
-  currentData.sort((a, b) => parseFloat(a.D_MACD) - parseFloat(b.D_MACD));
+  currentData.sort((a, b) => {
+    const x = parseFloat(a.D_MACD);
+    const y = parseFloat(b.D_MACD);
+
+    if (isNaN(x) && isNaN(y)) return 0;
+    if (isNaN(x)) return 1;
+    if (isNaN(y)) return -1;
+
+    if (x > 0 && y <= 0) return -1;
+    if (x <= 0 && y > 0) return 1;
+
+    return x - y;
+  });
 }
 
+/* ---------- Manual sort ---------- */
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
 
   currentData.sort((a, b) => {
-    const x = parseFloat(a[col]), y = parseFloat(b[col]);
-    if (!isNaN(x) && !isNaN(y)) return asc ? x - y : y - x;
+    const nx = parseFloat(a[col]), ny = parseFloat(b[col]);
+    if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
     return asc
       ? String(a[col]).localeCompare(b[col])
       : String(b[col]).localeCompare(a[col]);
@@ -280,7 +273,8 @@ function sortBy(col) {
 function openChart(symbol) {
   window.open(
     `https://in.tradingview.com/chart/?symbol=NSE:${encodeURIComponent(symbol)}`,
-    "_blank"
+    "_blank",
+    "width=1300,height=900,noopener,noreferrer"
   );
 }
 
@@ -290,12 +284,26 @@ function updateLastRunTime() {
     .then(res => {
       const lm = res.headers.get("Last-Modified");
       if (!lm) return;
+
       const d = new Date(lm);
+      const time = d.toLocaleTimeString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      });
+
+      const date = d.toLocaleDateString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        year: "numeric",
+        month: "short",
+        day: "2-digit"
+      });
+
       document.getElementById("updateTime").innerText =
-        d.toLocaleTimeString("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:false}) +
-        " / " +
-        d.toLocaleDateString("en-IN",{timeZone:"Asia/Kolkata",year:"numeric",month:"short",day:"2-digit"});
-    });
+        `${time} / ${date}`;
+    })
+    .catch(() => {});
 }
 
 /* ---------- Load ---------- */
