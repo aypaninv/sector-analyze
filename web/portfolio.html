@@ -4,7 +4,7 @@
 /* ---------- Update Time ---------- */
 .update-time {
   position: fixed;
-  top: 40px;
+  top: 6px;          /* ✅ FIXED: back to top-right */
   right: 10px;
   font-size: 11px;
   color: #bbb;
@@ -102,7 +102,7 @@ function folioPriority(name) {
   return 4;
 }
 
-/* ---------- Register Portfolio Tabs ---------- */
+/* ---------- Register Tabs ---------- */
 window.registerTabs(function (addTab) {
 
   fetch(CSV_FILE)
@@ -118,25 +118,23 @@ window.registerTabs(function (addTab) {
             return pa !== pb ? pa - pb : a.localeCompare(b);
           });
 
-      /* Folio tabs */
-      folios.forEach(folio => {
-        addTab(folio, () => {
+      folios.forEach(folio =>
+        addTab(folio, () =>
           renderAndDefaultSort(
             rawData.filter(d => d.Folio === folio)
-          );
-        });
-      });
+          )
+        )
+      );
 
-      /* EXIT tab */
-      addTab("EXIT", () => {
+      addTab("EXIT", () =>
         renderAndDefaultSort(
           rawData.filter(d =>
             d.StopLoss &&
             !isNaN(parseFloat(d.CurPrice)) &&
             parseFloat(d.CurPrice) < parseFloat(d.StopLoss)
           )
-        );
-      });
+        )
+      );
 
       updateLastRunTime();
     });
@@ -146,7 +144,7 @@ window.registerTabs(function (addTab) {
 function renderAndDefaultSort(data) {
   currentData = [...data];
   sortState = {};
-  defaultSortByDMACD();
+  defaultSortByDMACD();   // ✅ uses restored logic
   renderTable(currentData);
 }
 
@@ -175,8 +173,7 @@ function renderTable(data) {
 
       if (h === "Symbol") {
         td.className = "symbol-col text";
-        td.innerHTML =
-          `<a href="#" onclick="openChart('${v}')">${v}</a>`;
+        td.innerHTML = `<a href="#" onclick="openChart('${v}')">${v}</a>`;
       } else {
         td.innerText = v;
         td.className = (!isNaN(v) && v !== "") ? "num" : "text";
@@ -197,21 +194,36 @@ function renderTable(data) {
   });
 }
 
-/* ---------- Sorting ---------- */
+/* ---------- DEFAULT SORT (RESTORED) ---------- */
 function defaultSortByDMACD() {
-  currentData.sort((a, b) => parseFloat(a.D_MACD) - parseFloat(b.D_MACD));
+  currentData.sort((a, b) => {
+    const x = parseFloat(a.D_MACD);
+    const y = parseFloat(b.D_MACD);
+
+    if (isNaN(x) && isNaN(y)) return 0;
+    if (isNaN(x)) return 1;
+    if (isNaN(y)) return -1;
+
+    if (x > 0 && y <= 0) return -1;   // positives first
+    if (x <= 0 && y > 0) return 1;
+
+    return x - y;                     // ascending within group
+  });
 }
 
+/* ---------- Manual Sort ---------- */
 function sortBy(col) {
   const asc = !sortState[col];
   sortState = { [col]: asc };
+
   currentData.sort((a, b) => {
-    const x = parseFloat(a[col]), y = parseFloat(b[col]);
-    if (!isNaN(x) && !isNaN(y)) return asc ? x - y : y - x;
+    const nx = parseFloat(a[col]), ny = parseFloat(b[col]);
+    if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
     return asc
       ? String(a[col]).localeCompare(b[col])
       : String(b[col]).localeCompare(a[col]);
   });
+
   renderTable(currentData);
 }
 
