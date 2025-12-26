@@ -109,7 +109,7 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
         df["LT_days"] = pd.NA
 
     # -----------------------------
-    # LT_Pert (ABSOLUTE % CHANGE) ✅
+    # LT_Pert (ABSOLUTE % CHANGE)
     # -----------------------------
     if {"LT_Price", "CurPrice"}.issubset(df.columns):
         df["LT_Pert"] = (
@@ -139,16 +139,18 @@ def merge_files(stock_file: str, technical_file: str, output_file: str):
     # -----------------------------
     # Folio rule: append _Low
     # -----------------------------
-    if {"Folio", "W_MACD", "M_MACD"}.issubset(df.columns):
+    if {"Folio", "W_MACD", "M_MACD", "DD_High"}.issubset(df.columns):
 
         def update_folio(row):
             folio = str(row["Folio"]) if pd.notna(row["Folio"]) else ""
             w = row["W_MACD"]
             m = row["M_MACD"]
+            dd = row["DD_High"]
 
             if (
                 (pd.notna(w) and w <= 0) or
-                (pd.notna(m) and m <= 0)
+                (pd.notna(m) and m <= 0) or
+                (pd.notna(dd) and dd < -18)
             ):
                 if folio and not folio.endswith("_Low"):
                     return f"{folio}_Low"
