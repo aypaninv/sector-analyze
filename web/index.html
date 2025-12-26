@@ -3,329 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Technical Report</title>
+<title>Market Dashboard</title>
 
 <style>
 body {
   margin: 0;
   font-family: "Courier New", monospace;
+  background: #f4f4f4;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #1e1e1e;
+}
+
+.navbar button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
   font-size: 13px;
 }
 
-/* ---------- Update Time ---------- */
-.update-time {
-  position: fixed;
-  top: 6px;
-  right: 10px;
-  font-size: 11px;
-  color: #bbb;
-  z-index: 999;
-}
-
-/* ---------- Top Tabs ---------- */
-.topbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  background: #1e1e1e;
-  color: white;
-  padding: 8px;
-}
-
-.tab {
-  padding: 6px 12px;
-  cursor: pointer;
-  background: #333;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.tab.active {
+.navbar button.active {
   background: #007acc;
 }
 
-/* ---------- Content ---------- */
-.content {
-  height: calc(100vh - 52px);
-  overflow: auto;
-  padding: 8px;
+#app {
+  padding: 0;
 }
-
-/* ---------- Table ---------- */
-table {
-  border-collapse: collapse;
-  width: max-content;
-  font-size: 13px;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 6px 8px;
-  background: white;
-}
-
-th {
-  background: #f0f0f0;
-  position: sticky;
-  top: 0;
-  cursor: pointer;
-  z-index: 5;
-}
-
-/* Sticky Symbol column */
-th.symbol-col,
-td.symbol-col {
-  position: sticky;
-  left: 0;
-  background: #fafafa;
-  z-index: 6;
-  font-weight: bold;
-}
-
-/* Zebra striping */
-tbody tr:nth-child(even) td {
-  background: #f9f9f9;
-}
-
-td.text { text-align: left; }
-td.num  { text-align: right; }
-
-.green { background: #c8f7c5 !important; }
-.red   { background: #f7c5c5 !important; }
 </style>
 </head>
 
 <body>
 
-<div class="update-time" id="updateTime"></div>
-<div class="topbar" id="topTabs"></div>
-
-<div class="content">
-  <table id="dataTable"></table>
+<!-- Navigation -->
+<div class="navbar">
+  <button id="btnPortfolio" class="active"
+          onclick="loadPage('portfolio.html', this)">
+    Portfolio
+  </button>
+  <button onclick="loadPage('sector.html', this)">
+    Sector (Coming)
+  </button>
 </div>
 
+<!-- Feature Container -->
+<div id="app"></div>
+
 <script>
-const CSV_FILE = "portfolio_report.csv";
+function loadPage(page, btn) {
+  document.querySelectorAll(".navbar button")
+    .forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
 
-const COLUMN_ORDER = [
-  "Symbol","Folio",
-  "IC","CC","PnL","DD_High",
-  "LT_days","LT_Pert",
-  "4H_MACD","D_MACD",
-  "W_MACD","M_MACD",
-  "W_RSI","M_RSI",
-  "AvgPrice","StopLoss","CurPrice",
-  "Sector","MarketCap","Notes"
-];
-
-let rawData = [];
-let currentData = [];
-let sortState = {};
-
-/* ---------- CSV ---------- */
-function parseCSV(text) {
-  const lines = text.trim().split("\n");
-  const headers = lines[0].split(",");
-  return lines.slice(1).map(r => {
-    const v = r.split(",");
-    let o = {};
-    headers.forEach((h, i) => o[h] = v[i] ?? "");
-    return o;
-  });
-}
-
-/* ---------- Tab ordering helper ---------- */
-function folioPriority(name) {
-  if (name.startsWith("Trade")) return 1;
-  if (name.startsWith("Sate"))  return 2;
-  if (name.startsWith("Core"))  return 3;
-  return 4;
-}
-
-/* ---------- Tabs ---------- */
-function buildTabs() {
-  const bar = document.getElementById("topTabs");
-  bar.innerHTML = "";
-
-  const folios =
-    [...new Set(rawData.map(d => d.Folio).filter(Boolean))]
-      .sort((a, b) => {
-        const pa = folioPriority(a);
-        const pb = folioPriority(b);
-        return pa !== pb ? pa - pb : a.localeCompare(b);
-      });
-
-  /* Folio tabs first */
-  folios.forEach(folio =>
-    addTab(folio, () => {
-      renderAndDefaultSort(
-        rawData.filter(d => d.Folio === folio)
-      );
+  fetch(page)
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById("app").innerHTML = html;
     })
-  );
-
-  /* EXIT tab last */
-  addTab("EXIT", () => {
-    renderAndDefaultSort(
-      rawData.filter(d =>
-        d.StopLoss &&
-        !isNaN(parseFloat(d.CurPrice)) &&
-        parseFloat(d.CurPrice) < parseFloat(d.StopLoss)
-      )
-    );
-  });
-}
-
-function addTab(label, action) {
-  const div = document.createElement("div");
-  div.className = "tab";
-  div.innerText = label;
-  div.onclick = () => {
-    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-    div.classList.add("active");
-    action();
-  };
-  document.getElementById("topTabs").appendChild(div);
-}
-
-/* ---------- Table ---------- */
-function renderAndDefaultSort(data) {
-  currentData = [...data];
-  sortState = {};
-  defaultSortByDMACD();
-  renderTable(currentData);
-}
-
-function renderTable(data) {
-  const table = document.getElementById("dataTable");
-  table.innerHTML = "";
-  if (!data.length) return;
-  renderHeader();
-  renderRows(data);
-}
-
-function renderHeader() {
-  const tr = document.createElement("tr");
-  COLUMN_ORDER.forEach(h => {
-    if (!(h in rawData[0])) return;
-    const th = document.createElement("th");
-    th.innerText = h;
-    th.onclick = () => sortBy(h);
-    if (h === "Symbol") th.classList.add("symbol-col");
-    tr.appendChild(th);
-  });
-  dataTable.appendChild(tr);
-}
-
-function renderRows(data) {
-  data.forEach(r => {
-    const tr = document.createElement("tr");
-    COLUMN_ORDER.forEach(h => {
-      if (!(h in r)) return;
-
-      let v = r[h];
-      const td = document.createElement("td");
-
-      if (h === "Symbol") {
-        td.className = "symbol-col text";
-        td.innerHTML = `<a href="#" onclick="openChart('${v}')">${v}</a>`;
-      } else {
-        td.innerText = v;
-        td.className = (!isNaN(v) && v !== "") ? "num" : "text";
-      }
-
-      if (h === "DD_High" && parseFloat(v) < -18)
-        td.classList.add("red");
-
-      if (h.includes("MACD") && v !== "")
-        td.classList.add(parseFloat(v) >= 0 ? "green" : "red");
-
-      if (h.includes("RSI") && v !== "")
-        td.classList.add(parseFloat(v) >= 53 ? "green" : "red");
-
-      tr.appendChild(td);
-    });
-    dataTable.appendChild(tr);
-  });
-}
-
-/* ---------- Sorting ---------- */
-function defaultSortByDMACD() {
-  currentData.sort((a, b) => {
-    const x = parseFloat(a.D_MACD);
-    const y = parseFloat(b.D_MACD);
-
-    if (isNaN(x) && isNaN(y)) return 0;
-    if (isNaN(x)) return 1;
-    if (isNaN(y)) return -1;
-
-    if (x > 0 && y <= 0) return -1;
-    if (x <= 0 && y > 0) return 1;
-
-    return x - y;
-  });
-}
-
-function sortBy(col) {
-  const asc = !sortState[col];
-  sortState = { [col]: asc };
-
-  currentData.sort((a, b) => {
-    const nx = parseFloat(a[col]), ny = parseFloat(b[col]);
-    if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
-    return asc
-      ? String(a[col]).localeCompare(b[col])
-      : String(b[col]).localeCompare(a[col]);
-  });
-
-  renderTable(currentData);
-}
-
-/* ---------- TradingView ---------- */
-function openChart(symbol) {
-  window.open(
-    `https://in.tradingview.com/chart/?symbol=NSE:${encodeURIComponent(symbol)}`,
-    "_blank",
-    "width=1300,height=900,noopener,noreferrer"
-  );
-}
-
-/* ---------- Update Time ---------- */
-function updateLastRunTime() {
-  fetch(CSV_FILE, { method: "HEAD" })
-    .then(res => {
-      const lm = res.headers.get("Last-Modified");
-      if (!lm) return;
-
-      const d = new Date(lm);
-      const time = d.toLocaleTimeString("en-IN", {
-        timeZone: "Asia/Kolkata",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false
-      });
-
-      const date = d.toLocaleDateString("en-IN", {
-        timeZone: "Asia/Kolkata",
-        year: "numeric",
-        month: "short",
-        day: "2-digit"
-      });
-
-      document.getElementById("updateTime").innerText =
-        `${time} / ${date}`;
+    .catch(() => {
+      document.getElementById("app").innerHTML =
+        "<p style='padding:10px'>Failed to load page</p>";
     });
 }
 
-/* ---------- Load ---------- */
-fetch(CSV_FILE)
-  .then(r => r.text())
-  .then(t => {
-    rawData = parseCSV(t);
-    buildTabs();
-    document.querySelector(".tab").click(); // first folio
-    updateLastRunTime();
-  });
+/* Default load */
+loadPage("portfolio.html", document.getElementById("btnPortfolio"));
 </script>
 
 </body>
