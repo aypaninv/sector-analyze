@@ -38,6 +38,7 @@ jobs:
         mkdir public
         cp output/portfolio/portfolio_report.csv public/
         cp web/index.html public/
+        cp web/portfolio.html public/
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
